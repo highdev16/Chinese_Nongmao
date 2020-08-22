@@ -1,0 +1,38 @@
+
+/*pc端*/
+.prodPicStyle_1{width:100%; height:100%; position:relative;z-index: 62;}
+.prodPicStyle_1 .diyProbox_test{width: 100%;height: 100%;}
+.prodPicStyle_1 .diy_proImg{width:100%;overflow:hidden;zoom:1;height:80%;line-height:400px;text-align:center;vertical-align:middle; /* display: table-cell; */background:transparent;}
+.prodPicStyle_1 .diy_proImg img{width:100%;height:100%;vertical-align:middle;cursor:pointer;}
+.prodPicStyle_1 .diy_moreImg{overflow:hidden;zoom:1;width: 400px;margin: 12px auto;}
+.prodPicStyle_1 .diy_moreImg .diyproImgBox{float:left;overflow:hidden;zoom:1;position:relative;width: 360px;}
+.prodPicStyle_1 .diy_moreImg .diyproImgBox ul li img{width: 74px;height: 74px;object-fit: scale-down;}
+.prodPicStyle_1 .diy_moreImg .diy_qbox{padding: 0;margin:0px;overflow:hidden;zoom:1;width:999999px;/*position:absolute*/}
+.prodPicStyle_1 .diy_moreImg .diy_qbox li{float:left;margin-left:10px;cursor:pointer;}
+.prodPicStyle_1 .diy_moreImg .diy_qbox li img{border:2px solid transparent;}
+.prodPicStyle_1 .diy_moreImg .diy_pIcon{width:20px;text-align:center;padding-top:29px;float:left;overflow:hidden;zoom:1;cursor:pointer}
+.prodPicStyle_1 .diy_moreImg .diy_qbox li img.hotImg{border:2px solid #e4393c;}
+.prodPicStyle_1 .diy_moreImg .diy_pIcon img{border:0px;}
+.prodPicStyle_1 .diyproImgBox_moblie{visibility: hidden;}
+
+
+/*手机端*/
+.prodPicStyle_1 .diyproImgBox_moblie{width:100%; height:100%;}
+.prodPicStyle_1 .main_visual{height:100%; overflow:hidden; position:relative; }
+.prodPicStyle_1 .main_image{height:100%; overflow:hidden; position:relative;}
+.prodPicStyle_1 .main_image ul{width:100%!important; height:100%; overflow:hidden; position:absolute; top:0; left:0;}
+.prodPicStyle_1 .main_image li{float:left; width:100%!important; height:100%; }
+.prodPicStyle_1 .main_image li span{display:block; width:100%; height:100%; background-position: 50% 50%!important;background-size:contain!important;}
+.prodPicStyle_1 .main_image li a{display:block; width:100%; height:100%}
+.prodPicStyle_1 .flicking_con{position:absolute; bottom:20px;left:0%;z-index:999; width:100%; height:14px; text-align:center;}
+.prodPicStyle_1 .flicking_con a{float:none;width:21px;height:21px;margin:0;padding:0;background:url('btn_main_img.png') 0 0 no-repeat;display:inline-block;text-indent:-1000px}
+.prodPicStyle_1 .flicking_con a.on{background-position:0 -21px}
+
+
+/*响应式---480*/
+@media screen and (max-width: 481px){
+    .prodPicStyle_1{width:100%; height:100%; position:relative;}
+    .prodPicStyle_1 .diyproImgBox_moblie{visibility: visible;}
+    .prodPicStyle_1 .diyProbox{height: 0;overflow: hidden;}
+    .prodPicStyle_1 .diyproImgBox_moblie{width: 100%;}
+}
