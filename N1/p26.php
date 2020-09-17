@@ -130,7 +130,7 @@ while (strlen($temp) > 0) {
       margin-bottom: 5px;
   }
   .main_content_area{
-      margin-top: 50px;
+      margin-top: 10px;
       width: 100%;
       font-weight: 100 !important;
   }
@@ -143,7 +143,7 @@ while (strlen($temp) > 0) {
                   <script src='../js/js/all.js'></script>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／首页／<?php echo $categoryArr[$row['category']]; ?>／<?php echo htmlspecialchars($row['title']); ?> </p>
+        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/P1.php';">首页</span>／<span style="cursor:pointer" onclick="window.location.href='../N1/P25.php?category=<?php echo $row['category']; ?>';"><?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['title']); ?> </p>
       </div>
     </section>
     <section class="skrollable u-clearfix u-grey-10 u-section-3" id="sec-50da">
@@ -164,9 +164,13 @@ while (strlen($temp) > 0) {
                         <div style='width: 100%; height: 30px'></div>
                     </div>
                     <div style='width: 100%;' class='main_content_area'>
-                    <?php echo $row['content']; ?>
+                      <?php echo $row['content']; ?>
                     </div>
+                    <div style='width: 100%;'>
+                      <button style='background: white; border: 1px solid black'>上一页</button>
+                      <button style='background: white; border: 1px solid black'>下一页</button>
                     </div>
+                </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-white u-layout-cell-2" style='height: fit-content; min-height: 0px'>
                 <div class="u-container-layout u-container-layout-2">

@@ -44,7 +44,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-image u-section-4" id="sec-a01d" data-image-width="3491" data-image-height="1969">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-align-center u-text u-text-1"> 立即咨询 </p>
+        <p class="u-align-center u-text u-text-1" style='width: 300px'> 立即咨询 </p>
         <p class="u-align-center u-text u-text-default u-text-2"> 如果您有任何疑问，请随时与我们联系&nbsp;<br>我们努力在24小时内答复 
         </p>
         <div class="u-form u-form-1">

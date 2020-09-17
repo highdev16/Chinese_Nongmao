@@ -9,7 +9,9 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-a365">
-      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1200" data-image-height="596"></div>
+      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1200" data-image-height="596" style='
+    width: 1200px; max-width: calc(100% - 40px);
+'></div>
     </section>
     <section class="u-clearfix u-section-4" id="sec-aed1">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">

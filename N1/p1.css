@@ -524,30 +524,13 @@
 .u-section-10 .u-gallery-2 {height: 499px; grid-template-columns: auto auto; margin-top: 17px; margin-bottom: 47px; margin-right: initial; margin-left: initial} }.logo-image {
 vertical-align: middle;
 }
-.features-area > div:hover {
-transform: scale(1.05, 1.05);
-	z-index:9999;
-}
-.features-area {
-}
-.circles-area > div:hover img {
-	transform: scale(1.05, 1.05);
-}
-.circles-area > div:hover {
-	opacity: 1;
-	cursor: pointer;
-}
-.circles-area > div {
-border-radius:50%;
-background-color: black;
-	opacity:0.7;
-}
+
 .block7 {
 cursor:pointer;
 }
 @media (min-width: 1600px) {
   .u-sheet {
-    width: 1540px;
+    width: 1500px;
   }
   .u-section-5 .u-gallery-1 {
 	height: 292px;

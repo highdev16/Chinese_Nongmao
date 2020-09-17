@@ -22,7 +22,7 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-a679">
-      <div class="u-clearfix u-image u-shading u-sheet u-valign-top u-image-1" data-image-width="613" data-image-height="296"></div>
+      <div class="u-clearfix u-image u-shading u-sheet u-valign-top u-image-1" data-image-width="613" data-image-height="296" style='width: 1013px; max-width: calc(100% - 50px)'></div>
     </section>
     <section class="u-align-left u-clearfix u-section-4" id="sec-600a">
       <div class="u-clearfix u-sheet u-sheet-1">

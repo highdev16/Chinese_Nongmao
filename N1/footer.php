@@ -59,15 +59,14 @@
             <tbody class="u-table-body">
               <tr style="height: 55px;">
                 <td class="u-table-cell">经营范围</td>
-                <td class="u-table-cell">农贸市场设计</td>
-                <td class="u-table-cell">农贸市场远营</td>
-                <td class="u-block-undefined--Infinity u-table-cell">农贸市场投资</td>
-                <td class="u-block-undefined--Infinity u-table-cell">农贸新闻资讯</td>
-                <td class="u-block-undefined--Infinity u-table-cell">杭州光影</td>
+                <td class="u-table-cell">设计案例</td>
+                <td class="u-table-cell">市场营运</td>
+                <td class="u-block-undefined--Infinity u-table-cell">市场资讯</td>
+                <td class="u-block-undefined--Infinity u-table-cell">智能菜场</td>
+                <td class="u-block-undefined--Infinity u-table-cell">关于我们</td>
               </tr>
               <tr style="height: 51px;">
-                <td class="u-table-cell u-table-cell-52">&gt; 农贸市场设计<br>
-                </td>
+                <td class="u-table-cell u-table-cell-52">&gt; 农贸市场设计<br></td>
                 <td class="u-table-cell u-table-cell-53">&gt;&nbsp;农贸市场设计例</td>
                 <td class="u-table-cell u-table-cell-54">&gt; 农贸市场招商</td>
                 <td class="u-block-undefined--Infinity u-table-cell u-table-cell-55">&gt; 我要投资农贸</td>
@@ -83,7 +82,7 @@
                 <td class="u-block-undefined--Infinity u-table-cell u-table-cell-63">&gt; 光影简介</td>
               </tr>
               <tr style="height: 56px;">
-                <td class="u-table-cell u-table-cell-64">&gt; SG 智能设计</td>
+                <td class="u-table-cell u-table-cell-64">&gt; 5G 智能设计</td>
                 <td class="u-table-cell u-table-cell-65">&gt; 农贸市场建筑设计</td>
                 <td class="u-table-cell u-table-cell-66">&gt; 农贸市场电商</td>
                 <td class="u-block-undefined--Infinity u-table-cell u-table-cell-67">&gt; 政府合作</td>
@@ -118,7 +117,7 @@
           </table>
         </div>
         <p class="u-text u-text-default u-text-2">官方微信</p>
-        <p class="u-text u-text-3">联系电话:0571-887766550571-28120373<br>地址:杭州市拱墅区通益路861号録景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br>浙ICP备1049450号-1<br>
+        <p class="u-text u-text-3">联系电话:0571-887766550571-28120373<br>地址:杭州市拱墅区通益路861号録景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br><SPAN STYLE='cursor:pointer;' onclick='window.open("https://beian.miit.gov.cn/", "_blank");'>浙ICP备1049450号-1</span><br>
           <br>
         </p>
       </div></footer>

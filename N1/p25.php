@@ -2,10 +2,10 @@
 $bigTitle = "农贸新闻资讯";
 $label = $query = '';
 switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／首页／农贸设计百科'; break;
-  case 2: $label = '所在位置／首页／农贸新闻资讯'; break;
-  case 3: $label = '所在位置／首页／光影新闻动态'; break;
-  case 4: $label = '所在位置／首页／政府政策文件'; break;
+  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸设计百科'; break;
+  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸新闻资讯'; break;
+  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／光影新闻动态'; break;
+  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／政府政策文件'; break;
   default: exit;
 }
 
@@ -19,15 +19,6 @@ $pageIndex = isset($_REQUEST['pageIndex']) ? intval($_REQUEST['pageIndex']) - 1 
 $pageNum = 15;
 
 $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
-// switch ($mode) {
-//   case 1: $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_date DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
-//   case 2: $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . "  ORDER BY browse DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
-//   case 3: $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . "  ORDER BY stars DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
-//   default: exit;
-// }
-
-
-
 include('../N1/dbconfig.php');
 $db = getDbInstance();
 $pageTotal = $db->rawQuery("SELECT count(id) as co FROM news where category = " . intval($_REQUEST['category']));

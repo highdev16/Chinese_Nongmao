@@ -2,10 +2,10 @@
 $bigTitle = "农贸市场设计";
 $label = $query = '';
 switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／首页／农贸设计案例'; break;
-  case 2: $label = '所在位置／首页／农贸建筑设计'; break;
-  case 3: $label = '所在位置／首页／5G智能设计'; break;
-  case 4: $label = '所在位置／首页／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
+  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸设计案例'; break;
+  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸建筑设计'; break;
+  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／5G智能设计'; break;
+  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
   default: exit;
 }
 
@@ -136,20 +136,17 @@ $rows = $db->rawQuery($query);
     <script src='../js/jspaginator.js'></script>
     <script>
       if (<?php echo $pageTotal; ?> > 0) {
-      $.jqPaginator('#pagination1', {
-        totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
-        visiblePages: 10,
-        edges: 3,
-        currentPage: <?php echo $pageIndex; ?> + 1,
-        onPageChange: function (num, type) {
-          if (num - 1 == <?php echo $pageIndex; ?>) return;
-            window.location.href = 'p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
-        }
-    });
-});
-    $(document).ready(function() {
-      
-    })
+            $.jqPaginator('#pagination1', {
+              totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
+              visiblePages: 10,
+              edges: 3,
+              currentPage: <?php echo $pageIndex; ?> + 1,
+              onPageChange: function (num, type) {
+                if (num - 1 == <?php echo $pageIndex; ?>) return;
+                  window.location.href = 'p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
+              }
+          });
+      };    
     </script>
 <?php
 include('../N1/footer.php');

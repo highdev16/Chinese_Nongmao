@@ -79,7 +79,7 @@ include('../N1/header.php');
         if ($("#namefield").val().trim().length == 0) {
           $("#namefield").addClass('u-form-field-error');
         }
-        if ($("#emailfield").val().trim().length == 0 || $("#emailfield").val().indexOf('@') == -1) {
+        if ($("#emailfield").val().trim().length == 0) {
           $("#emailfield").addClass('u-form-field-error');
         }
         if ($("#messagefield").val().trim().length == 0 || $("#emailfield").val().indexOf('@') == -1) {

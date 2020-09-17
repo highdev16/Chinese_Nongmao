@@ -5,7 +5,7 @@ include('../N1/header.php');
     <section class="u-clearfix u-image u-section-2" id="sec-aed1" data-image-width="1920" data-image-height="400">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"></div>
     </section>
-    <section class="u-clearfix u-section-3" id="sec-b267">
+    <section class="u-clearfix u-section-3" id="sec-b267" style='padding-top: 50px'>
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-align-center u-text u-text-default u-text-1"> 联系我们 </h1>
         <h1 class="u-align-center u-text u-text-default u-text-2"> Contact
@@ -13,8 +13,8 @@ us </h1>
       </div>
     </section>
     <section class="u-clearfix u-section-4" id="sec-8479">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+      <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px'>
+        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='margin-top: 30px'>
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">

@@ -54,12 +54,32 @@ $oname = $oname[0];
             font-size: 14px;
         }
         header {
-          border-bottom: 1px solid #ddd
+          border-bottom: 1px solid #ddd;          
+        }
+        header.narrow {
+          height: 62px;
+        }
+        header.narrow a.logo-image {
+          margin-top: 5px;
+        }
+        header.narrow nav.u-menu {
+          margin-top: -42px;
+        }
+        .u-custom-menu {
+          height: 62px !important;
+          min-height: 0px !Important;
+        }
+        div.titlebar {
+          padding-top:20px !important;
+        }
+        header.narrow div.titlebar {
+          padding-top: 10px !important;
         }
     </style>
   </head>
   <body class="u-body">
-      <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style='box-shadow: 0 5px 10px rgba(0,0,0,.1)'><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
+      <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style='box-shadow: 0 5px 10px rgba(0,0,0,.1)'>
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 titlebar" style='height:80px'>
         <a href="/N1/p1.php" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98">
           <img src="images/logo.png" class="u-logo-image u-logo-image-1" data-image-width="242.1137">
         </a>
@@ -324,6 +344,10 @@ $oname = $oname[0];
       </div>
     </section>
     <script>
+        $(window).scroll(function(event) {
+          if ($(window).scrollTop() >= 40) $("header").addClass('narrow');
+          else if ($(window).scrollTop() <= 0) $("header").removeClass('narrow');
+        })
         $(document).ready(function() {
             let mousemove = false;
             $(".titlemainmenu").each(function(ind, ele) {
@@ -358,7 +382,7 @@ $oname = $oname[0];
                             $(this).css('color','');       
                             $(this).removeClass('active1');
                             $('section.mainmenu' + i).css('display', 'none');
-                        }, 500)
+                        }, 50)
                     }
                 }
             });
@@ -388,7 +412,7 @@ $oname = $oname[0];
             });
 
             $("section.titlesubmenu div.u-layout-row > div").each(function() {
-                if (window.location.href.toLowerCase().indexOf(($(this).attr('data-href') || "uahha").toLowerCase()) != -1) {
+                if (window.location.href.toLowerCase().indexOf(($(this).attr('data-href') || "nothinghref").toLowerCase()) != -1) {
                     $(this).find("p").addClass('active-submenu');
                 }
             })

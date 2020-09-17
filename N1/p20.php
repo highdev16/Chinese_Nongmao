@@ -2,10 +2,10 @@
 $bigTitle = "智能菜场";
 $label = $query = '';
 switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／首页／农贸设计案例'; break;
-  case 2: $label = '所在位置／首页／农贸建筑设计'; break;
-  case 3: $label = '所在位置／首页／5G智能设计'; break;
-  case 4: $label = '所在位置／首页／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
+  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸设计案例'; break;
+  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸建筑设计'; break;
+  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／5G智能设计'; break;
+  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
   default: exit;
 }
 
@@ -98,9 +98,9 @@ $rows = $db->rawQuery($query);
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
-            <div style='margin-top: 10px; margin-right: 10px; margin-left: 10px; width: calc(100% - 20px); height:231px; overflow:hidden;'>
+            <div style='margin-top: 10px; margin-right: 10px; margin-left: 10px; width: calc(100% - 20px); height:231px; overflow:hidden; display: flex'>
               <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                    src="<?php echo $r; ?>" style='background: black; object-fit: contain;  cursor:pointer; height: 231px' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover; min-width:100%; cursor:pointer; height: 231px' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
           </div>
               <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                 <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -135,7 +135,7 @@ $rows = $db->rawQuery($query);
     </section>
     <script src='../js/jspaginator.js'></script>
     <script>
-     if (<?php echo pageTotal; ?> > 0)
+     if (<?php echo $pageTotal; ?> > 0)
       $.jqPaginator('#pagination1', {
         totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
         visiblePages: 10,

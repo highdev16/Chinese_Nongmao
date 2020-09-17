@@ -116,7 +116,7 @@ while (strlen($temp) > 0) {
 </style>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／首页／<?php echo $categoryArr[$row['category']]; ?>／<?php echo htmlspecialchars($row['name']); ?> </p>
+        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/P1.php';">首页</span>／<span style="cursor:pointer" onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';"><?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
       </div>
     </section>
     <section class="skrollable u-clearfix u-grey-10 u-section-3" id="sec-50da">
@@ -137,19 +137,21 @@ while (strlen($temp) > 0) {
                       </colgroup>
                       <tbody class="u-table-body">
                         <tr style="height: 46px;" id='thumbnail-row'>
-                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell arrowcell" style='padding:0'><div class="prev preNext"></div><img src='../images/angle-left-solid.svg'></td>
-                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell" style='max-width: calc(100% - 50px); overflow: hidden; border: 0px solid #ddd'>
-                            <div style='width: <?php echo sizeof($imageURLs) * 160; ?>px; height: 100px; '>
+                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell arrowcell" style='padding:0'><div class="prev preNext" onmousedown='moveLeft(-1);' ></div><img onmousedown='moveLeft(-1);' src='../images/angle-left-solid.svg'></td>
+                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell" style='max-width: calc(100% - 50px); overflow: hidden; border: 0px solid #ddd' id='scrollParent'>
+                            <div style='width: <?php echo sizeof($imageURLs) * 160; ?>px; height: 100px; ' id='scrollContent'>
                               <?php
                                 for ($i = 0; $i < sizeof($imageURLs); $i++) {
                                   ?>
-                                  <img src='<?php echo $imageURLs[$i]; ?>' style='width:150px; height: 100px; margin-top: 0px; margin-left:5px; margin-right: 5px; float:left' class='thumbnail-image'>
+                                  <div style='width:150px; height: 100px; margin-top: 0px; margin-left:5px; margin-right: 5px; float:left; overflow: hidden; display:flex'>
+                                    <img src='<?php echo $imageURLs[$i]; ?>' style='min-width:150px; height: 100px; object-fit: cover' class='thumbnail-image'>
+                                  </div>
                                   <?php
                                 }
                               ?>
                             </div>
                           </td>
-                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell arrowcell"><div class="next preNext"></div><img src='../images/angle-right-solid.svg'></td>
+                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell arrowcell"><div class="next preNext" onclick='moveLeft(1);'></div><img onclick='moveLeft(1);' src='../images/angle-right-solid.svg'></td>
                         </tr>
                       </tbody>
                     </table>
@@ -381,7 +383,7 @@ while (strlen($temp) > 0) {
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 20px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;width: 100px;min-width: 100px;'><button class='btn btn-black' style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;width: 100px;min-width: 100px;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <div class="u-layout-row">
@@ -403,9 +405,9 @@ while (strlen($temp) > 0) {
                 <div class="u-container-layout u-container-layout-1" style='padding: 0'>
                   <div class=" u-white u-repeater-item-3 image-cell">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; padding: 10px'><!--blog_post_image-->
-                      <div style='width:100%; height:200px; overflow:hidden'>
+                    <div style='width:100%; height:200px; overflow:hidden; display:flex'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                            src="<?php echo $r; ?>" style='cursor:pointer; height:200px; background: black; object-fit: contain' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
+                            src="<?php echo $r; ?>" style='cursor:pointer; min-width:100%; height:200px; background: black; object-fit: cover' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
               </div>
                       <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-top: 5px; margin-bottom: 5px;'>
                         <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -449,8 +451,8 @@ while (strlen($temp) > 0) {
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 20px; font-weight:bold; font-size:22px;'>
-              <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;width: 100px;min-width: 100px;'><button class='btn btn-black' style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;'>其他精彩案例</div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;width: 100px;min-width: 100px;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <div class="u-layout-row">
@@ -472,9 +474,9 @@ while (strlen($temp) > 0) {
                 <div class="u-container-layout u-container-layout-1" style='padding: 0'>
                   <div class=" u-white u-repeater-item-3 image-cell">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; padding: 10px'><!--blog_post_image-->
-                      <div style='width:100%; height:200px; overflow:hidden'>
+                      <div style='width:100%; height:200px; overflow:hidden; display:flex'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                            src="<?php echo $r; ?>" style='cursor:pointer; height:200px; background: black; object-fit: contain' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
+                            src="<?php echo $r; ?>" style='cursor:pointer; min-width:100%; height:200px; background: black; object-fit: cover' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
               </div>
                       <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-top: 5px; margin-bottom: 5px;'>
                         <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -513,7 +515,20 @@ while (strlen($temp) > 0) {
         $("img.thumbnail-image.selected").removeClass('selected');
         $(this).addClass('selected');
         $("#mainImage").attr('src', $(this).attr('src'));
-      })
+      });
+
+      function moveLeft(direction) {
+        let pos = parseInt($("#scrollContent").css('margin-left')) || 0;
+        pos += direction * 100;
+        console.log(pos + parseInt($("#scrollContent").width()), parseInt($("#scrollParent").width()))
+        if (pos + parseInt($("#scrollContent").width()) < parseInt($("#scrollParent").width()))
+          $("#scrollContent").animate({'margin-left' : Math.min(0, parseInt($("#scrollParent").width()) - parseInt($("#scrollContent").width()))}, 100);
+        else if (pos >= 0)
+          $("#scrollContent").animate({'margin-left' : 0}, 1000);
+          
+        else 
+        $("#scrollContent").animate({'margin-left' : pos + 'px'}, 100);
+      }
     </script>
     
     <?php include('../N1/footer.php'); ?>

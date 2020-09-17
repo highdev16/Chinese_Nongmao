@@ -63,11 +63,12 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-image u-section-6" id="sec-9ca0" data-image-width="3491" data-image-height="1234">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-align-center u-text u-text-body-alt-color u-text-1"> 农贸市场投资政府合作 </p>
+        <p class="u-align-center u-text u-text-body-alt-color u-text-1" STYLE='WIDTH:600px'> 农贸市场投资政府合作 </p>
         <p class="u-align-center u-text u-text-body-alt-color u-text-2"> 光影农贸市场设计研究院为政府有关部门提供整个城市的农贸市场网点规划，<br>统一进行项目装修设计，统一装修，统一运营。 
         </p>
-        <p class="u-align-center u-text u-text-body-alt-color u-text-default u-text-3"> 政府合作方式一：我们投资，政府提供项目 </p>
-        <p class="u-align-center u-text u-text-body-alt-color u-text-default u-text-4"> 政府合作方式二：我们投资，政府提供补助 </p>
+        
+        <p class="u-align-center u-text u-text-body-alt-color u-text-default u-text-3" style='background-image: url("images/itemlist.png"); width: 652px; height: 74px; line-height: 74px'> 政府合作方式一：我们投资，政府提供项目 </p>
+        <p class="u-align-center u-text u-text-body-alt-color u-text-default u-text-4" style='background-image: url("images/itemlist.png"); width: 652px; height: 74px; line-height: 74px'> 政府合作方式二：我们投资，政府提供补助 </p>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-7" id="sec-ff9e">

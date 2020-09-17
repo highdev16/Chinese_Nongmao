@@ -12,6 +12,7 @@ for ($i = 0; $i < sizeof($rows); $i++) {
     $ab[] = htmlspecialchars($rows[$i]['title']);
     $ab[] = $categoryArr[$rows[$i]['category']];
     $ab[] = substr_count(strtolower($rows[$i]['content']), '<img ');
+    $ab[] = $rows[$i]['goodone'] ? "<input type='checkbox' checked disabled onclick='setBestOne({$rows[$i]['id']})'>" : '';
     $ab[] = "<button type='button' onclick=\"window.location.href='index2_detail.php?id={$rows[$i]['id']}';\" class='btn btn-success' style='float:left; margin-right: 20px;'>编辑</button><button type='button' onclick='deleteThis({$rows[$i]['id']})' class='btn btn-danger' style='float:left'>删除</button>";
     $result[] = $ab;
 } 

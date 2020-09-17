@@ -99,7 +99,8 @@ include ('config.php');
 									<th style='width: 5%'>No</th>
 									<th style='width: 50%'>资讯标题</th>
 									<th style='width: 10%'>资讯作家</th>
-									<th style='width: 10%'>图片</th>									
+									<th style='width: 10%'>图片</th>
+									<th style='width: 5%'>最好的资讯</th>																		
 									<th style='width: 10%'></th>
 								</tr>
 							</thead>

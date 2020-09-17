@@ -1,7 +1,71 @@
 <?php
 $bigTitle = "首页";
 include('header.php');
+include('../N1/dbconfig.php');
 ?>      
+<style>
+  img.article-image {
+    transition: transform .2s;
+  }
+  img.article-image:hover {
+    transform: scale(1.1);
+  }
+  .features-area > div:hover {
+    transform: scale(1.05, 1.05);
+    z-index:9999;
+  }
+  .circles-area > div img {
+    transition: transform .2s;
+  }
+  .circles-area > div:hover img {
+    transform: scale(1.1);
+  }
+  .circles-area > div:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .circles-area > div {
+    border-radius:50%;
+    background-color: black;
+    opacity:0.7;
+  }
+  a.selected-a-button {    
+    border: 2px solid #ff6500;
+    background: #ff6500;
+    margin-top: 20px;
+    color: white;
+    float:left;
+    padding: 5px 20px 5px 20px;
+    margin-right: 20px;
+  }
+  a.unselected-a-button {
+    padding: 5px 20px 5px 20px;
+    float:left;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+  }
+  .image-cell {
+    float:left;
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 20px;
+    overflow:hidden;
+    min-width: 300px;
+  }
+
+  div.image_cell_area {
+    height: 350px !important;
+  }
+  div.image_cell_area img {
+    height: 350px !important;
+    width:100% !important;
+    max-height: 350px !important;
+  }
+</style>
     <section id="carousel_8f27" class="u-carousel u-carousel-duration-2250 u-slide u-block-29ef-1" data-u-ride="carousel" data-interval="5000">
       <ol class="u-absolute-hcenter u-carousel-indicators u-opacity u-opacity-55 u-block-29ef-2">
         <li data-u-target="#carousel_8f27" class="u-white" data-u-slide-to="0"></li>
@@ -29,6 +93,7 @@ include('header.php');
         <span class="sr-only">Next</span>
       </a>
     </section>
+    <script src='../js/js/all.js'></script>
     <section class="u-clearfix u-section-2" id="sec-4fe7">
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="features-area u-expanded-width u-list u-repeater u-list-1">
@@ -145,51 +210,57 @@ include('header.php');
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="carousel_78ab">
-      <div class="u-clearfix u-sheet u-sheet-1"><!--blog--><!--blog_options_json--><!--{"type":"Recent","source":"","tags":""}--><!--/blog_options_json-->
-        <div class="u-blog u-expanded-width u-repeater u-repeater-1"><!--blog_post-->
-          <div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-1">
-            <div class="u-container-layout u-similar-container u-container-layout-1"><!--blog_post_image-->
-              <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-1" src="images/woman-enjoying-breath-wind_23-2147670157.jpg"><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-align-center u-blog-control u-post-content u-text u-text-1"><!--blog_post_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="&lt;!--blog_post_readmore_link--&gt;https://app.desktop.nicepage.com/app_desktop.html#&lt;!--/blog_post_readmore_link--&gt;" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-1"><!--blog_post_readmore_content-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
+      <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 10px; margin-bottom: 100px'>
+          <?php           
+          $db = getDbInstance();
+          $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
+          $pageTotal = $pageTotal[0]['co'];
+          $query = "SELECT * FROM cases WHERE goodone=1 limit 6";
+          $rows = $db->rawQuery($query);
+          
+          for ($i = 0; $i < sizeof($rows); $i++) {             
+            $row = $rows[$i];
+            $r = strpos($row['content'], '<img');
+            $alt = "No Image";
+            if ($r !== FALSE) {
+              $d = strpos(substr($row['content'], $r + 4), 'src=') + $r + 9;
+              $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
+              $r = substr($row['content'], $d, $r - $d);
+              $alt = "Image";
+            } else $r = '';
+            
+            ?>            
+          <div class=" u-white u-repeater-item-3 image-cell">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
+              <div class='image_cell_area' style='margin-top: 10px; margin-right: 10px; margin-left: 10px; width: calc(100% - 20px); overflow:hidden;
+              display: flex;justify-content: center;align-items: center; background:black;'>
+                <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
+              </div>
+              <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
+                <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
+              </div>
+              <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>                
+                <?php 
+                  for ($j = 0; $j < floatval($row['stars']); $j++) 
+                    echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
+                ?>                  
+                <div style='float:left; min-width:30px; min-height: 30px;'></div>
+                <div style='float:left; font-size: 14px;'>
+                  <i class="far fa-images"></i>&nbsp;
+                  <?php echo substr_count($row['content'], '<img'); ?>
+                </div>              
+                <div style='float:left; min-width:30px; min-height: 30px;'></div>
+                <div style='float:left;font-size: 14px;'>
+                  <i class="far fa-user"></i>&nbsp;
+                  <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
+                </div>              
+              </div>
+              <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 5px; margin-right:5px'>这样装修多少钱?
+              </a>
             </div>
-          </div><!--/blog_post--><!--blog_post-->
-          <div class="u-align-center u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-2">
-            <div class="u-container-layout u-similar-container u-container-layout-2"><!--blog_post_image-->
-              <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-2" src="images/silhouette-people-happy-time_1150-5371.jpg"><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-default u-text-2"><!--blog_post_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="&lt;!--blog_post_readmore_link--&gt;https://app.desktop.nicepage.com/app_desktop.html#&lt;!--/blog_post_readmore_link--&gt;" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-2"><!--blog_post_readmore_content-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><!--/blog_post--><!--blog_post-->
-          <div class="u-align-center u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-3">
-            <div class="u-container-layout u-similar-container u-container-layout-3"><!--blog_post_image-->
-              <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="images/Untitled-1.jpg"><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-default u-text-3"><!--blog_post_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="&lt;!--blog_post_readmore_link--&gt;https://app.desktop.nicepage.com/app_desktop.html#&lt;!--/blog_post_readmore_link--&gt;" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-3"><!--blog_post_readmore_content-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><!--/blog_post--><!--blog_post-->
-          <div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-3">
-            <div class="u-container-layout u-similar-container u-container-layout-3"><!--blog_post_image-->
-              <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="images/young-man-traveler-with-backpack-relaxing-outdoor_1421-190.jpg"><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-align-center u-blog-control u-post-content u-text u-text-default u-text-4"><!--blog_post_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="&lt;!--blog_post_readmore_link--&gt;https://app.desktop.nicepage.com/app_desktop.html#&lt;!--/blog_post_readmore_link--&gt;" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-4"><!--blog_post_readmore_content-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><!--/blog_post--><!--blog_post-->
-          <div class="u-align-center u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-3">
-            <div class="u-container-layout u-similar-container u-container-layout-3"><!--blog_post_image-->
-              <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="images/mountains-nature-landscape_1204-297.jpg"><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-default u-text-5"><!--blog_post_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="&lt;!--blog_post_readmore_link--&gt;https://app.desktop.nicepage.com/app_desktop.html#&lt;!--/blog_post_readmore_link--&gt;" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-5"><!--blog_post_readmore_content-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><!--/blog_post--><!--blog_post-->
-          <div class="u-align-center u-blog-post u-container-style u-repeater-item u-video-cover u-white u-repeater-item-3">
-            <div class="u-container-layout u-similar-container u-container-layout-3"><!--blog_post_image-->
-              <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-3" src="images/plane-passing-by-sun-cloudy-day_1286-143.jpg"><!--/blog_post_image--><!--blog_post_content-->
-              <div class="u-blog-control u-post-content u-text u-text-default u-text-6"><!--blog_post_content_content-->Sample small text. Lorem ipsum dolor sit amet.<!--/blog_post_content_content--></div><!--/blog_post_content--><!--blog_post_readmore-->
-              <a href="&lt;!--blog_post_readmore_link--&gt;https://app.desktop.nicepage.com/app_desktop.html#&lt;!--/blog_post_readmore_link--&gt;" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6"><!--blog_post_readmore_content-->Read More<!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
-            </div>
-          </div><!--/blog_post-->
-        </div><!--/blog-->
+          </div> 
+          <?php } ?>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-4" id="sec-dc3e">
@@ -199,7 +270,7 @@ include('header.php');
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/7.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1">
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="p2.php?category=1";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text" style="font-size: 1.5rem;">室内设计</p>
             </div>
@@ -208,7 +279,7 @@ include('header.php');
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/c2.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2">
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="p2.php?category=2";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text" style="font-size: 1.5rem;">建筑设计</p>
             </div>
@@ -217,7 +288,7 @@ include('header.php');
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/e624cbc5-e96f-6700-5942-f978bb060ac3.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3">
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="p2.php?category=3";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text" style="font-size: 1.5rem;">5G智能</p>
             </div>
@@ -226,7 +297,7 @@ include('header.php');
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/5td.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4">
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="p2.php?category=4";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text" style="font-size: 1.5rem;">设计流程</p>
             </div>
@@ -235,7 +306,7 @@ include('header.php');
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/4.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5">
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="../N4/p23.php";'>
               <h3 class="u-gallery-heading" style="background-image: none; font-size: 1.25rem;"></h3>
               <p class="u-gallery-text" style="background-image: none; font-size: 1.5rem;">政府合作</p>
             </div>
@@ -244,15 +315,15 @@ include('header.php');
       </div>
     </section>
     <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-section-5" id="sec-ff71">
-      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='width: 1500px !important; margin-left: calc(50% - 750px) !important'>
         <div class="u-layout">
           <div class="u-layout-col">
             <div class="u-size-30">
               <div class="u-layout-row">
                 <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" src="">
                   <div class="u-container-layout u-container-layout-1">
-                    <h2 class="u-text u-text-1">菜源佳佳营运合作</h2>
-                    <p class="u-text u-text-2">菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
+                    <h2 class="u-text u-text-1" style='font-size: 1.5rem; margin-top: 20px'>菜源佳佳营运合作</h2>
+                    <p class="u-text u-text-2" style='font-size: 1.1rem; margin-top: 20px'>菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
                   </div>
                 </div>
                 <div class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-2" data-image-width="1080" data-image-height="1080">
@@ -317,7 +388,10 @@ include('header.php');
     </section>
     <section class="block7 u-align-center u-clearfix u-grey-5 u-section-6" id="sec-30b7">
       <h2 class="u-text u-text-1">电商免费入驻-新零售</h2>
-      <div class="u-expanded-width u-list u-repeater u-list-1">
+      <div class="u-expanded-width u-list u-repeater u-list-1" style="
+    width: 1500px !important;
+    margin-left: calc(50% - 750px) !important;
+">
         <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-list-item u-repeater-item u-list-item-1">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
             <img src="images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
@@ -457,64 +531,38 @@ include('header.php');
     </section>
     <section class="u-align-center u-clearfix u-section-9" id="sec-03ad">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1">Design</h1>
+        <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>Design</h1>
         <h2 class="u-text u-text-2"> 装修设计百科 </h2>
-        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1">
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/1.svg">
+        <div style='height: 40px; width:100%'></div>
+        <?php 
+          $query = "SELECT * FROM news WHERE goodone = 1 limit 6";
+          $rows = $db->rawQuery($query);
+          for ($i = 0; $i < sizeof($rows); $i++) {             
+            $row = $rows[$i];
+            $r = strpos($row['content'], '<img');
+            $alt = "No Image";
+            if ($r !== FALSE) {
+              $d = strpos(substr($row['content'], $r + 4), 'src=') + $r + 9;
+              $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
+              $r = substr($row['content'], $d, $r - $d);
+              $alt = "Image";
+            } else $r = '';
+            
+            ?>            
+          <div class=" u-white u-repeater-item-3 image-cell">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:0px solid #ddd; overflow:hidden'><!--blog_post_image-->
+            <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:331px; overflow:hidden;margin-bottom: 0px; display:flex'>
+              <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 331px; min-width:100%' onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'>
+              <div onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'
+                    style='bottom: 0px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer; 
+                            width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
+                <?php echo htmlspecialchars($row['title']); ?>
+                </div>
+              </div>              
             </div>
-            <div class="u-over-slide u-shading u-over-slide-1">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/1.svg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-2">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/1.svg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-3">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/1.svg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-4">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item u-gallery-item-5" data-image-width="2000" data-image-height="1333">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/1.svg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-5">
-              <h3 class="u-gallery-heading" style="background-image: none;"></h3>
-              <p class="u-gallery-text" style="background-image: none;"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item u-gallery-item-6" data-image-width="2000" data-image-height="1333">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/1.svg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-6">
-              <h3 class="u-gallery-heading" style="background-image: none;"></h3>
-              <p class="u-gallery-text" style="background-image: none;"></p>
-            </div>
-          </div>
-        </div>
+          </div> 
+          <?php } ?>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-10" id="sec-4b7e">
