@@ -33,7 +33,6 @@ include('../N1/dbconfig.php');
   .circle-text {
     font-size: 1.5rem; font-weight: lighter !important; width:100%; height: 100%; background: #0005;
     border-radius: 50%;
-
     line-height: 292px;
   }
   .circle-text:hover {
