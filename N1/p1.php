@@ -20,14 +20,37 @@ include('../N1/dbconfig.php');
   .circles-area > div:hover img {
     transform: scale(1.1);
   }
+  .cross-text-image1 {
+    margin-left: 100px !Important;
+  }
   .circles-area > div:hover {
     opacity: 1;
     cursor: pointer;
   }
+  .u-section-5 {
+    margin-bottom: 80px !important;
+  }
+  .circle-text {
+    font-size: 1.5rem; font-weight: lighter !important; width:100%; height: 100%; background: #0005;
+    border-radius: 50%;
+
+    line-height: 292px;
+  }
+  .circle-text:hover {
+    background: #0000;
+  }
+  div.gridimage11 {
+    flex: none !Important;
+    width: 45.8% !important;    
+  }
+  div.gridimage21 {
+    flex: none !Important;
+    width: 54% !important;
+    max-width: 54% !important;
+  }
   .circles-area > div {
     border-radius:50%;
     background-color: black;
-    opacity:0.7;
   }
   a.selected-a-button {    
     border: 2px solid #ff6500;
@@ -47,11 +70,14 @@ include('../N1/dbconfig.php');
     background: white;
     color: black;
   }
+  div.bigcontainer {
+    width: 1552px !important;
+  }
   .image-cell {
     float:left;
     width: 30%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 1.66666666666%;
+    margin-right: 1.66666666666%;
     margin-top: 20px;
     overflow:hidden;
     min-width: 300px;
@@ -65,18 +91,30 @@ include('../N1/dbconfig.php');
     width:100% !important;
     max-height: 350px !important;
   }
+  .features-area > div:hover{
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  body * {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+  }
 </style>
     <section id="carousel_8f27" class="u-carousel u-carousel-duration-2250 u-slide u-block-29ef-1" data-u-ride="carousel" data-interval="5000">
       <ol class="u-absolute-hcenter u-carousel-indicators u-opacity u-opacity-55 u-block-29ef-2">
         <li data-u-target="#carousel_8f27" class="u-white" data-u-slide-to="0"></li>
       </ol>
       <div class="u-carousel-inner" role="listbox">
-        <div class="u-active u-align-left u-carousel-item u-clearfix u-image u-section-1-1">
+        <?php 
+          $db = getDbInstance();
+          $images = $db->query("SELECT * FROM banners ORDER BY morder");
+          $flag = 0;
+          foreach ($images as $image) {
+            $flag++;
+        ?>
+        <div class="<?php echo $flag !== 1? "" : "u-active"; ?> u-align-left u-carousel-item u-clearfix u-image u-section-1-<?php echo $flag; ?>" style='background-image: url(<?php echo $image['image']; ?>);'>
           <div class="u-clearfix u-sheet u-sheet-1"></div>
-        </div>
-        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-2" src="" data-image-width="700" data-image-height="480">
-          <div class="u-clearfix u-sheet u-sheet-1"></div>
-        </div>
+        </div>        
+        <?php } ?>
       </div>
       <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-hidden u-spacing-48 u-text-body-alt-color u-block-29ef-3" href="#carousel_8f27" role="button" data-u-slide="prev">
         <span aria-hidden="true">
@@ -103,8 +141,8 @@ include('../N1/dbconfig.php');
                 <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 267.5 267.5" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a8e0"></use></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 267.5 267.5" x="0px" y="0px" id="svg-a8e0" style="enable-background:new 0 0 267.5 267.5;"><path d="M256.975,100.34c0.041,0.736-0.013,1.485-0.198,2.229l-16.5,66c-0.832,3.325-3.812,5.663-7.238,5.681l-99,0.5  c-0.013,0-0.025,0-0.038,0H35c-3.444,0-6.445-2.346-7.277-5.688l-16.5-66.25c-0.19-0.764-0.245-1.534-0.197-2.289  C4.643,98.512,0,92.539,0,85.5c0-8.685,7.065-15.75,15.75-15.75S31.5,76.815,31.5,85.5c0,4.891-2.241,9.267-5.75,12.158  l20.658,20.814c5.221,5.261,12.466,8.277,19.878,8.277c8.764,0,17.12-4.162,22.382-11.135l33.95-44.984  C119.766,67.78,118,63.842,118,59.5c0-8.685,7.065-15.75,15.75-15.75s15.75,7.065,15.75,15.75c0,4.212-1.672,8.035-4.375,10.864  c0.009,0.012,0.02,0.022,0.029,0.035l33.704,45.108c5.26,7.04,13.646,11.243,22.435,11.243c7.48,0,14.514-2.913,19.803-8.203  l20.788-20.788C238.301,94.869,236,90.451,236,85.5c0-8.685,7.065-15.75,15.75-15.75s15.75,7.065,15.75,15.75  C267.5,92.351,263.095,98.178,256.975,100.34z M238.667,198.25c0-4.142-3.358-7.5-7.5-7.5h-194c-4.142,0-7.5,3.358-7.5,7.5v18  c0,4.142,3.358,7.5,7.5,7.5h194c4.142,0,7.5-3.358,7.5-7.5V198.25z"></path></svg>
               </span>
-              <h5 class="u-text u-text-default u-text-1">市场调研</h5>
-              <h3 class="u-align-center u-text u-text-2">调查规模人口&nbsp; 调查竟争对手3家 调查本地摊位大小和业态比例</h3>
+              <h5 class="u-text u-text-default u-text-1 graytitle" style='color: rgb(51, 51, 51); font-size: 18px'>市场调研</h5>
+              <h3 class="u-align-center u-text u-text-2" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>调查规模人口 调查竞争对手3家 调查本地摊位大小和业态比例</h3>
             </div>
           </div>
           <div class="u-container-style u-image u-list-item u-repeater-item u-image-2" data-image-width="232" data-image-height="224">
@@ -137,8 +175,8 @@ include('../N1/dbconfig.php');
 		s7,3.141,7,7S30.859,34,27,34z"></path>
 </g></svg>
               </span>
-              <h5 class="u-align-center u-text u-text-default u-text-3">业态分布</h5>
-              <h3 class="u-align-center u-text u-text-default u-text-4">平面设计、业态分布、人流动线、平衡人气设计</h3>
+              <h5 class="u-align-center u-text u-text-default u-text-3" style='color: rgb(51, 51, 51); font-size: 18px'>业态分布</h5>
+              <h3 class="u-align-center u-text u-text-default u-text-4" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px; margin-left: auto; margin-right: auto'>平面设计、业态分布、人流动线、<br>平衡人气设计</h3>
             </div>
           </div>
           <div class="u-align-center u-container-style u-image u-list-item u-repeater-item u-image-3" data-image-width="232" data-image-height="224">
@@ -173,8 +211,8 @@ include('../N1/dbconfig.php');
 		c0.844,0,1.688-0.321,2.33-0.963L49.701,34.087z"></path>
 </g></svg>
               </span>
-              <h5 class="u-text u-text-default u-text-5">绘效果图</h5>
-              <h3 class="u-align-center u-text u-text-default u-text-6">五星级农贸市场设计、现代风格、农贸超市风格、工业风格效果</h3>
+              <h5 class="u-text u-text-default u-text-5" style='color: rgb(51, 51, 51); font-size: 18px'>绘效果图</h5>
+              <h3 class="u-align-center u-text u-text-default u-text-6" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>五星级农贸市场设计、现代风格、农贸超市风格、工业风格效果</h3>
             </div>
           </div>
           <div class="u-container-style u-image u-list-item u-repeater-item u-image-4" data-image-width="232" data-image-height="224">
@@ -191,8 +229,8 @@ include('../N1/dbconfig.php');
 		c0.379,0,0.477,0.546,0.501,0.819L47.868,57.584z"></path><path d="M18,17h24c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,17,18,17z"></path><path d="M18,10h10c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,10,18,10z"></path><path d="M18,24h24c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,24,18,24z"></path>
 </g></svg>
               </span>
-              <h5 class="u-align-center u-text u-text-default u-text-7">画施工图</h5>
-              <h3 class="u-align-center u-text u-text-default u-text-8">农贸市场装修节点图、农贸市场消防水电暖图、农贸市场生活水电暖图</h3>
+              <h5 class="u-align-center u-text u-text-default u-text-7" style='color: rgb(51, 51, 51); font-size: 18px'>画施工图</h5>
+              <h3 class="u-align-center u-text u-text-default u-text-8" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>农贸市场装修节点图、农贸市场消防水电暖图、农贸市场生活水电暖图</h3>
             </div>
           </div>
           <div class="u-align-center u-container-style u-image u-list-item u-repeater-item u-image-5" data-image-width="232" data-image-height="224">
@@ -202,17 +240,17 @@ include('../N1/dbconfig.php');
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 54.953 54.953" x="0px" y="0px" id="svg-8faf" style="enable-background:new 0 0 54.953 54.953;"><g><circle cx="45.021" cy="25.976" r="1"></circle><circle cx="9.021" cy="25.976" r="1"></circle><circle cx="12.021" cy="28.976" r="1"></circle><circle cx="18.021" cy="28.976" r="1"></circle><circle cx="15.021" cy="31.976" r="1"></circle><circle cx="21.021" cy="31.976" r="1"></circle><circle cx="24.021" cy="34.976" r="1"></circle><circle cx="30.021" cy="34.976" r="1"></circle><circle cx="33.021" cy="31.976" r="1"></circle><circle cx="27.021" cy="37.976" r="1"></circle><circle cx="36.021" cy="28.976" r="1"></circle><circle cx="42.021" cy="28.976" r="1"></circle><circle cx="39.021" cy="31.976" r="1"></circle><path d="M45.559,32.796l9.394-5.367l-9.656-5.483l9.656-5.517L27.477,0.826L0,16.429l9.656,5.517L0,27.429l9.656,5.517L0,38.429   l27.477,15.698l27.477-15.698l-9.656-5.483l0.071-0.041C45.439,32.879,45.497,32.837,45.559,32.796z M27.477,3.125l23.436,13.309   l-7.637,4.364l0,0l-15.798,9.026L4.041,16.434L27.477,3.125z M11.129,23.409c0.162,0.333,0.497,0.567,0.892,0.567   c0.27,0,0.512-0.109,0.692-0.283l2.262,1.292c-0.53,0.025-0.954,0.455-0.954,0.991c0,0.552,0.448,1,1,1s1-0.448,1-1   c0-0.173-0.055-0.327-0.132-0.469l10.33,5.902c-0.116,0.163-0.198,0.352-0.198,0.567c0,0.552,0.448,1,1,1s1-0.448,1-1   c0-0.051-0.021-0.094-0.029-0.143l10.052-5.743c0.059,0.496,0.465,0.885,0.977,0.885c0.552,0,1-0.448,1-1   c0-0.325-0.165-0.601-0.406-0.783l2.202-1.258c0.068,0.015,0.132,0.041,0.204,0.041c0.444,0,0.807-0.294,0.938-0.694l0.32-0.183   l7.634,4.335l-1.983,1.133c-0.157-0.347-0.503-0.591-0.908-0.591c-0.552,0-1,0.448-1,1c0,0.216,0.083,0.405,0.199,0.568   l-3.945,2.254l0,0l-6.388,3.65c0.078-0.142,0.134-0.298,0.134-0.472c0-0.552-0.448-1-1-1s-1,0.448-1,1   c0,0.537,0.426,0.967,0.957,0.991l-2.263,1.293c-0.18-0.174-0.423-0.284-0.694-0.284c-0.552,0-1,0.448-1,1   c0,0.08,0.028,0.151,0.046,0.226l-4.59,2.622l-5.517-3.152c-0.13-0.401-0.494-0.696-0.939-0.696c-0.073,0-0.138,0.027-0.206,0.042   l-2.201-1.257c0.241-0.183,0.407-0.458,0.407-0.784c0-0.552-0.448-1-1-1c-0.512,0-0.919,0.391-0.977,0.887L6.991,29.12   c0.007-0.049,0.029-0.093,0.029-0.144c0-0.552-0.448-1-1-1c-0.239,0-0.449,0.095-0.621,0.235l-1.359-0.776L11.129,23.409z    M50.912,38.434l-23.436,13.39L4.041,38.434l7.633-4.335l15.803,9.028l15.802-9.028L50.912,38.434z"></path>
 </g></svg>
               </span>
-              <h5 class="u-text u-text-default u-text-9">现场指导</h5>
-              <h3 class="u-align-center u-text u-text-default u-text-10">现场讲解方案满意为止、现场放线指导施工图 、竣工验收通过创卫为止</h3>
+              <h5 class="u-text u-text-default u-text-9" style='color: rgb(51, 51, 51); font-size: 18px'>现场指导</h5>
+              <h3 class="u-align-center u-text u-text-default u-text-10" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>现场讲解方案满意为止、现场放线指导施工图 、竣工验收通过创卫为止</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="carousel_78ab">
-      <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 10px; margin-bottom: 100px'>
+      <div class="u-clearfix u-sheet u-sheet-1 bigcontainer" style='min-height: 10px; margin-bottom: 100px'>
           <?php           
-          $db = getDbInstance();
+          
           $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
           $pageTotal = $pageTotal[0]['co'];
           $query = "SELECT * FROM cases WHERE goodone=1 limit 6";
@@ -272,7 +310,7 @@ include('../N1/dbconfig.php');
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="p2.php?category=1";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
-              <p class="u-gallery-text" style="font-size: 1.5rem;">室内设计</p>
+              <p class="u-gallery-text circle-text" style="">室内设计</p>
             </div>
           </div>
           <div class="u-gallery-item">
@@ -281,7 +319,7 @@ include('../N1/dbconfig.php');
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="p2.php?category=2";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
-              <p class="u-gallery-text" style="font-size: 1.5rem;">建筑设计</p>
+              <p class="u-gallery-text circle-text">建筑设计</p>
             </div>
           </div>
           <div class="u-gallery-item">
@@ -290,7 +328,7 @@ include('../N1/dbconfig.php');
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="p2.php?category=3";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
-              <p class="u-gallery-text" style="font-size: 1.5rem;">5G智能</p>
+              <p class="u-gallery-text circle-text">5G智能</p>
             </div>
           </div>
           <div class="u-gallery-item">
@@ -299,7 +337,7 @@ include('../N1/dbconfig.php');
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="p2.php?category=4";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
-              <p class="u-gallery-text" style="font-size: 1.5rem;">设计流程</p>
+              <p class="u-gallery-text circle-text">设计流程</p>
             </div>
           </div>
           <div class="u-gallery-item u-gallery-item-5" data-image-width="2000" data-image-height="1333">
@@ -307,87 +345,86 @@ include('../N1/dbconfig.php');
               <img class="u-back-image u-expanded" src="images/4.jpg">
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="../N4/p23.php";'>
-              <h3 class="u-gallery-heading" style="background-image: none; font-size: 1.25rem;"></h3>
-              <p class="u-gallery-text" style="background-image: none; font-size: 1.5rem;">政府合作</p>
+              <p class="u-gallery-text circle-text">政府合作</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-section-5" id="sec-ff71">
+    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-section-5" id="sec-ff71" style='margin-bottom: 30px'>
       <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='width: 1500px !important; margin-left: calc(50% - 750px) !important'>
         <div class="u-layout">
           <div class="u-layout-col">
             <div class="u-size-30">
               <div class="u-layout-row">
-                <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" src="">
+                <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1 gridimage21" src="">
                   <div class="u-container-layout u-container-layout-1">
-                    <h2 class="u-text u-text-1" style='font-size: 1.5rem; margin-top: 20px'>菜源佳佳营运合作</h2>
-                    <p class="u-text u-text-2" style='font-size: 1.1rem; margin-top: 20px'>菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
+                    <h2 class="u-text u-text-1 cross-text-image1" style='font-size: 26px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>菜源佳佳营运合作</h2>
+                    <p class="u-text u-text-2 cross-text-image1" style='font-size: 14px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
                   </div>
                 </div>
-                <div class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-2" data-image-width="1080" data-image-height="1080">
+                <div class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-2  gridimage11" data-image-width="1080" data-image-height="1080">
                   <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
                 </div>
               </div>
             </div>
             <div class="u-size-30">
               <div class="u-layout-row">
-                <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-3">
+                <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-3 gridimage11">
                   <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
                 </div>
-                <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4" src="">
-                  <div class="u-container-layout u-container-layout-4">
-                    <h2 class="u-text u-text-3">智能菜场大数据应用</h2>
-                    <p class="u-text u-text-4">智能硬件：智能电子称、智能商户屏、智能检测仪、智能水电表、智能触摸屏、智能大数据分析屏、智能积分充值器、智能监控。<br>
+                <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4 gridimage21" src="" style='display:block'>
+                  <div class="u-container-layout u-container-layout-4" style='padding-bottom: 0px'>
+                    <h2 class="u-text u-text-3" style='font-size: 26px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>智能菜场大数据应用</h2>
+                    <p class="u-text u-text-4"  style='font-size: 14px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>智能硬件：智能电子称、智能商户屏、智能检测仪、智能水电表、智能触摸屏、智能大数据分析屏、智能积分充值器、智能监控。<br>
                       <br>智能软件：非现金结算系统 、电子追溯系统、商户信息系统 、智能检测系统、缴费系统、查询系统 、大数据分析系统 、用户交互系统
                     </p>
                   </div>
+                  <div style="display: flex; flex-direction: row; margin-left: 30px">
+                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                      <div class="u-background-effect u-expanded"  style='overflow:visible'>
+                        <div class="u-background-effect-image u-expanded u-image u-image-4" data-image-width="152" data-image-height="152"></div>
+                      </div>
+                      <div class="u-container-layout u-container-layout-7"></div>
+                    </div>
+                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-30-md u-layout-cell-8" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                      <div class="u-background-effect u-expanded" style='overflow:visible'>
+                        <div class="u-background-effect-image u-expanded u-image u-image-5" data-image-width="152" data-image-height="152"></div>
+                      </div>
+                      <div class="u-container-layout u-container-layout-8"></div>
+                    </div>
+                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-right-cell u-size-12 u-size-30-md u-layout-cell-9" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                      <div class="u-background-effect u-expanded" style='overflow:visible'>
+                        <div class="u-background-effect-image u-expanded u-image u-image-6" data-image-width="152" data-image-height="152"></div>
+                      </div>
+                      <div class="u-container-layout u-container-layout-9"></div>
+                    </div>
+                  <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                      <div class="u-background-effect u-expanded" style='overflow:visible'>
+                        <div class="u-background-effect-image u-expanded u-image u-image-7" data-image-width="152" data-image-height="152"></div>
+                      </div>
+                  <div class="u-container-layout u-container-layout-7"></div>
+                    </div><div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                      <div class="u-background-effect u-expanded" style='overflow:visible'>
+                        <div class="u-background-effect-image u-expanded u-image u-image-8" data-image-width="152" data-image-height="152"></div>
+                      </div>
+                      <div class="u-container-layout u-container-layout-7"></div>
+                  </div></div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
       </div>
       <div class="u-clearfix u-layout-wrap u-layout-wrap-2">
         <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-style u-effect-hover-zoom u-layout-cell u-left-cell u-size-12 u-size-20-md u-layout-cell-5" data-image-width="152" data-image-height="152">
-              <div class="u-background-effect u-expanded">
-                <div class="u-background-effect-image u-expanded u-image u-image-4" data-image-width="152" data-image-height="152"></div>
-              </div>
-              <div class="u-container-layout u-valign-top u-container-layout-5"></div>
-            </div>
-            <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-6" data-image-width="152" data-image-height="152">
-              <div class="u-background-effect u-expanded">
-                <div class="u-background-effect-image u-expanded u-image u-image-5" data-image-width="152" data-image-height="152"></div>
-              </div>
-              <div class="u-container-layout u-container-layout-6"></div>
-            </div>
-            <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152">
-              <div class="u-background-effect u-expanded">
-                <div class="u-background-effect-image u-expanded u-image u-image-6" data-image-width="152" data-image-height="152"></div>
-              </div>
-              <div class="u-container-layout u-container-layout-7"></div>
-            </div>
-            <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-30-md u-layout-cell-8" data-image-width="152" data-image-height="152">
-              <div class="u-background-effect u-expanded">
-                <div class="u-background-effect-image u-expanded u-image u-image-7" data-image-width="152" data-image-height="152"></div>
-              </div>
-              <div class="u-container-layout u-container-layout-8"></div>
-            </div>
-            <div class="u-container-style u-effect-hover-zoom u-layout-cell u-right-cell u-size-12 u-size-30-md u-layout-cell-9" data-image-width="152" data-image-height="152">
-              <div class="u-background-effect u-expanded">
-                <div class="u-background-effect-image u-expanded u-image u-image-8" data-image-width="152" data-image-height="152"></div>
-              </div>
-              <div class="u-container-layout u-container-layout-9"></div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
     <section class="block7 u-align-center u-clearfix u-grey-5 u-section-6" id="sec-30b7">
-      <h2 class="u-text u-text-1">电商免费入驻-新零售</h2>
+      <h2 class="u-text u-text-1" style="font-family: 'Microsoft YaHei' !important;">电商免费入驻-新零售</h2>
       <div class="u-expanded-width u-list u-repeater u-list-1" style="
     width: 1500px !important;
     margin-left: calc(50% - 750px) !important;
@@ -395,47 +432,46 @@ include('../N1/dbconfig.php');
         <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-list-item u-repeater-item u-list-item-1">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
             <img src="images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
-            <h4 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2">市场入驻</h4>
-            <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费、提供现场指导培训、免50去花6个时间长期养一个团队打造电商的高额成本</p>
+            <h4 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2" style='font-family: "Microsoft Yahei" !important; font-size: 20px'>市场入驻</h4>
+            <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费、提供现场指导培训、免50去花6个时间长期养一个团队打造电商的高额成本。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-2">
             <img src="images/2_2.png" alt="" class="u-image u-image-default u-image-2" data-image-width="200" data-image-height="200">
-            <h4 class="u-text u-text-default u-text-4">商户免费入驻</h4>
-            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-5">不抽取任何佣金   提供现场指导培训，保证商家会使用互联网销售</p>
+            <h4 class="u-text u-text-default u-text-4"style='font-family: "Microsoft Yahei" !important; font-size: 20px'>商户免费入驻</h4>
+            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-5" >不抽取任何佣金   提供现场指导培训，保证商家会使用互联网销售。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-3">
             <img src="images/2_3.png" alt="" class="u-image u-image-default u-image-3" data-image-width="200" data-image-height="200">
-            <h4 class="u-text u-text-default u-text-6">互联网农贸市场</h4>
-            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-7">线上线下新零售是领导未来农贸市场发展趋势。</p>
+            <h4 class="u-text u-text-default u-text-6"style='font-family: "Microsoft Yahei" !important; font-size: 20px'>互联网农贸市场</h4>
+            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-7">线上线下新零售是领导未来农贸市场<br>发展趋势。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-4">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-4">
             <img src="images/2_4.png" alt="" class="u-image u-image-default u-image-4" data-image-width="200" data-image-height="200">
-            <h4 class="u-text u-text-default u-text-8">先进管理高收益</h4>
-            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-9">智能高效管理系统，让你省时省力高收益；</p>
+            <h4 class="u-text u-text-default u-text-8" style='font-family: "Microsoft Yahei" !important; font-size: 20px'>先进管理高收益</h4>
+            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-9" >智能高效管理系统，让你省时省力高收益。</p>
           </div>
         </div>
       </div>
     </section>
     <section class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-align-center u-text u-text-1"> 光影集团专注农贸行业 19年 </h2>
+        <h2 class="u-align-center u-text u-text-1" STYLE='font-size:2.25rem'> 光影集团专注农贸行业 19年 </h2>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-size-20 u-size-30-md">
+              <div class="u-size-18 u-size-30-md">
                 <div class="u-layout-col">
                   <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-60 u-image-1">
-                    <div class="u-container-layout u-container-layout-1"></div>
                   </div>
                 </div>
               </div>
-              <div class="u-size-15 u-size-30-md">
+              <div class="u-size-13 u-size-30-md">
                 <div class="u-layout-col">
                   <div class="u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-2">
                     <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
@@ -452,8 +488,8 @@ include('../N1/dbconfig.php');
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
                     <div class="u-container-layout u-valign-middle u-container-layout-4">
-                      <p class="u-text u-text-default u-text-3"> 光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究，农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
-                      <img src="images/ScreenShot2020-07-28at6.48.54AM.png" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176">
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px'> 光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究，农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
+                      <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176">
                     </div>
                   </div>
                 </div>
@@ -482,8 +518,8 @@ include('../N1/dbconfig.php');
                   <div class="u-size-23">
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
-                        <div class="u-container-layout u-container-layout-2">
-                          <p class="u-text u-text-3"> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
+                        <div class="u-container-layout u-container-layout-2" style='padding-top: 0px'>
+                          <p class="u-text u-text-3" style='font-size: 18px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
                           </p>
                         </div>
                       </div>
@@ -516,7 +552,7 @@ include('../N1/dbconfig.php');
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-palette-2-base u-text-4"> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司 
+                          <p class="u-text u-text-palette-2-base u-text-4" style='margin-left:0'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司 
                           </p>
                         </div>
                       </div>
@@ -531,7 +567,7 @@ include('../N1/dbconfig.php');
     </section>
     <section class="u-align-center u-clearfix u-section-9" id="sec-03ad">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>Design</h1>
+        <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>DESIGN</h1>
         <h2 class="u-text u-text-2"> 装修设计百科 </h2>
         <div style='height: 40px; width:100%'></div>
         <?php 
@@ -567,8 +603,9 @@ include('../N1/dbconfig.php');
     </section>
     <section class="u-align-center u-clearfix u-section-10" id="sec-4b7e">
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px'>
-        <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77">
-        <h2 class="u-text u-text-1">合作伙伴</h2>
+        <!-- <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
+        <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>PARTNER</h1>
+        <h2 class="u-text u-text-2">合作伙伴</h2>
         <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1">
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="300" data-image-height="150">
