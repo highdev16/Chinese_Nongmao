@@ -111,7 +111,7 @@ include('../N1/dbconfig.php');
           foreach ($images as $image) {
             $flag++;
         ?>
-        <div class="<?php echo $flag !== 1? "" : "u-active"; ?> u-align-left u-carousel-item u-clearfix u-image u-section-1-<?php echo $flag; ?>" style='background-image: url(<?php echo $image['image']; ?>);'>
+        <div class="<?php echo $flag !== 1? "" : "u-active"; ?> u-align-left u-carousel-item u-clearfix u-image u-section-1-<?php echo $flag; ?>" style='background-image: url(/banners/<?php echo $image['image']; ?>);'>
           <div class="u-clearfix u-sheet u-sheet-1"></div>
         </div>        
         <?php } ?>
