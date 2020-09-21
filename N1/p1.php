@@ -83,12 +83,12 @@ include('../N1/dbconfig.php');
   }
 
   div.image_cell_area {
-    height: 350px !important;
+    height: 300px !important;
   }
   div.image_cell_area img {
-    height: 350px !important;
+    height: 300px !important;
     width:100% !important;
-    max-height: 350px !important;
+    max-height: 300px !important;
   }
   .features-area > div:hover{
     transition: transform 0.2s;
@@ -269,7 +269,7 @@ include('../N1/dbconfig.php');
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
-              <div class='image_cell_area' style='margin-top: 10px; margin-right: 10px; margin-left: 10px; width: calc(100% - 20px); overflow:hidden;
+              <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
               display: flex;justify-content: center;align-items: center; background:black;'>
                 <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
                     src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
@@ -282,19 +282,20 @@ include('../N1/dbconfig.php');
                   for ($j = 0; $j < floatval($row['stars']); $j++) 
                     echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
                 ?>                  
-                <div style='float:left; min-width:30px; min-height: 30px;'></div>
-                <div style='float:left; font-size: 14px;'>
+                <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                <div style='float:left; font-size: 12px;line-height: 24px'>
                   <i class="far fa-images"></i>&nbsp;
                   <?php echo substr_count($row['content'], '<img'); ?>
                 </div>              
-                <div style='float:left; min-width:30px; min-height: 30px;'></div>
-                <div style='float:left;font-size: 14px;'>
+                <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                <div style='float:left;font-size: 12px;line-height: 24px'>
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>              
+                <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
-              <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 5px; margin-right:5px'>这样装修多少钱?
-              </a>
+              
+              
             </div>
           </div> 
           <?php } ?>
@@ -431,28 +432,28 @@ include('../N1/dbconfig.php');
         <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-list-item u-repeater-item u-list-item-1">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
             <img src="images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
-            <h4 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2" style='font-family: "Microsoft Yahei" !important; font-size: 20px'>市场入驻</h4>
-            <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费、提供现场指导培训、免50去花6个时间长期养一个团队打造电商的高额成本。</p>
+            <h4 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2" style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>市场入驻</h4>
+            <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费,提供现场指导培训,免50去花6个时间长期养一个团队打造<br>电商的高额成本</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-2">
             <img src="images/2_2.png" alt="" class="u-image u-image-default u-image-2" data-image-width="200" data-image-height="200">
-            <h4 class="u-text u-text-default u-text-4"style='font-family: "Microsoft Yahei" !important; font-size: 20px'>商户免费入驻</h4>
-            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-5" >不抽取任何佣金   提供现场指导培训，保证商家会使用互联网销售。</p>
+            <h4 class="u-text u-text-default u-text-4"style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>商户免费入驻</h4>
+            <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-5" >不抽取任何佣金 提供现场指导培训，保证商家会使用互联网销售。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-3">
             <img src="images/2_3.png" alt="" class="u-image u-image-default u-image-3" data-image-width="200" data-image-height="200">
-            <h4 class="u-text u-text-default u-text-6"style='font-family: "Microsoft Yahei" !important; font-size: 20px'>互联网农贸市场</h4>
+            <h4 class="u-text u-text-default u-text-6"style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>互联网农贸市场</h4>
             <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-7">线上线下新零售是领导未来农贸市场<br>发展趋势。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-4">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-4">
             <img src="images/2_4.png" alt="" class="u-image u-image-default u-image-4" data-image-width="200" data-image-height="200">
-            <h4 class="u-text u-text-default u-text-8" style='font-family: "Microsoft Yahei" !important; font-size: 20px'>先进管理高收益</h4>
+            <h4 class="u-text u-text-default u-text-8" style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>先进管理高收益</h4>
             <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-9" >智能高效管理系统，让你省时省力高收益。</p>
           </div>
         </div>
@@ -487,7 +488,7 @@ include('../N1/dbconfig.php');
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
                     <div class="u-container-layout u-valign-middle u-container-layout-4">
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px'> 光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究，农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究，农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
                       <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176">
                     </div>
                   </div>
@@ -604,7 +605,7 @@ include('../N1/dbconfig.php');
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px'>
         <!-- <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>PARTNER</h1>
-        <h2 class="u-text u-text-2">合作伙伴</h2>
+        <h2 class="u-text u-text-2" style='font-size: 36px; line-height: 50px'>合作伙伴</h2>
         <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1">
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="300" data-image-height="150">
