@@ -479,25 +479,25 @@ include('../N1/dbconfig.php');
     </section>
     <section class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-align-center u-text u-text-1" STYLE='font-size:2.25rem'> 光影集团专注农贸行业 19年 </h2>
+        <h2 class="u-align-center u-text u-text-1" STYLE='font-size:2.25rem'> 光影集团专注农贸行业 <span style='color: #c00; font-size: 120%'>19年</span> </h2>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
               <div class="u-size-18 u-size-30-md">
                 <div class="u-layout-col">
-                  <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-60 u-image-1">
+                  <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-left-cell u-image-1">
                   </div>
                 </div>
               </div>
               <div class="u-size-13 u-size-30-md">
                 <div class="u-layout-col">
-                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-2">
+                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-2" style='flex: 1 1 auto'>
                     <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
                   </div>
-                  <div class="u-align-justify u-container-style u-layout-cell u-size-20 u-layout-cell-3">
-                    <div class="u-container-layout u-valign-middle u-container-layout-3">
-                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2"> 不敢出示营业执照都是虚报年限<br>没有真正十几年的农贸行业经验 
-                      </p>
+                  <div class="u-align-justify u-container-style u-layout-cell u-size-20 u-layout-cell-3"  style='    flex: 0 1 auto;'>
+                    <div class="u-container-layout u-valign-middle u-container-layout-3" style='margin-top: 20px'>
+                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2"> 不敢出示营业执照都是虚报年限</p>
+                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2">没有真正十几年的农贸行业经验</p>
                     </div>
                   </div>
                 </div>
@@ -506,8 +506,12 @@ include('../N1/dbconfig.php');
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
                     <div class="u-container-layout u-valign-middle u-container-layout-4">
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究，农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
-                      <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176">
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究，农贸市场</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
+                      <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 0 1 auto'>
                     </div>
                   </div>
                 </div>
@@ -537,7 +541,7 @@ include('../N1/dbconfig.php');
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
                         <div class="u-container-layout u-container-layout-2" style='padding-top: 0px'>
-                          <p class="u-text u-text-3" style='font-size: 18px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
+                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 50px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
                           </p>
                         </div>
                       </div>
@@ -547,7 +551,7 @@ include('../N1/dbconfig.php');
               </div>
               <div class="u-size-20 u-size-60-md">
                 <div class="u-layout-row">
-                  <div class="u-size-34 u-size-60-md">
+                  <div class="u-size-34">
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-left-cell u-size-4 u-layout-cell-3">
                         <div class="u-container-layout u-container-layout-3"></div>
@@ -564,7 +568,7 @@ include('../N1/dbconfig.php');
                       <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-60-md u-image-5" src="">
                         <div class="u-container-layout u-container-layout-7"></div>
                       </div>
-                    </div>
+                    </div>                    
                   </div>
                   <div class="u-size-26 u-size-60-md">
                     <div class="u-layout-row">
@@ -576,8 +580,32 @@ include('../N1/dbconfig.php');
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>                
               </div>
+              <div class='u-size-60-md'>
+              <div class="u-layout-row">
+              <div class="u-size-34">
+                <div class="u-layout-row"  style='height: 50px; min-height: 0'>
+                  <div class="u-container-style u-layout-cell u-left-cell u-size-4 u-layout-cell-3" style='height: 50px'>                        
+                  </div>
+                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-12" src="" style='height: 50px; text-align:center; flex-direction: column'>
+                  (设计专利)
+                  </div>
+                  <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-size-14 u-image-13" style='height: 50px; text-align:center; flex-direction: column'>
+                  (设计专利)
+                  </div>
+                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-14" src="" style='height: 50px; text-align:center; flex-direction: column'>
+                  (知识产权)
+                  </div>
+                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-60-md u-image-15" src="" style='height: 50px; text-align:center; flex-direction: column'>
+                  (管理著作)
+                  </div>
+                </div></div>                
+              </div></div>
+              <div class="u-layout-row">
+                <div class='u-size-34' style='height: 50px; min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px'>
+                  打假办法通过企查查查出这个公司的注册时间
+              </div></div>
             </div>
           </div>
         </div>
