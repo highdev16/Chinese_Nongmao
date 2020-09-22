@@ -86,7 +86,9 @@ include ('config.php');
 	<script src="js/jquery.ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src='js/dt.js'></script>
-<script src='js/bs.js'></script>
+	<script src='js/bs.js'></script>
+	<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+	<script src="dist/jstree.min.js"></script>
 </head>
 
 <body>
@@ -173,29 +175,45 @@ include ('config.php');
 		}, 100);
 		
 	});
-
+	var imagetable, selectedItem = {id: "allimages"};
 	function BrowseImage() {
 		Swal.fire({
 			title: "选择一个图片。",
-			html: "<table id='imagetable' class='table table-striped table-bordered' style='min-width:700px; max-width:700px'><thead>" + 
+			html: "<table><tr><td style=' display:block; '><div style='width: 350px; text-align: left;overflow: auto' id='jsTree'></div></td><td><table id='imagetable' class='table table-striped table-bordered' style='float:left;min-width:700px; max-width:700px'><thead>" + 
 					`<tr>
 						<th style='width: 5%'>No</th>
-						<th style='width: 20%'>图片</th>
-						<th style='width: 20%'>文件名</th>
+						<th style='width: 20%'>图片</th>						
 						<th style='width: 20%'>URL</td>
-						<th style='width: 20%'>说明</td>
 						<th style='width: 15%'></th>
-					</tr></thead></table>`,
-			width: 800
+					</tr></thead></table></td></tr></table>`,
+			width: 1150
 		})
-		$("#imagetable").DataTable({
+		imagetable = $("#imagetable").DataTable({
 			"language": {
 				"url": "js/chinese.json"
 			},
-			"ajax" : "index7_images.php",
+			"ajax" : "load_all_images.php?path=allimages&mode=select",
 			"lengthMenu": [[5, 10, 20, 50, 100, -1], [5, 10, 20, 50, 100, "看都"]],
 			"pageLength" : 5
 		});
+		let foldertree = $("#jsTree").jstree({
+			'core' : {
+				'data' : {
+					'url' : 'get_tree_image.php',
+					'data' : function (node) {
+						return { 'id' : node.id };
+					}
+				}
+			}
+		});
+		$('#jsTree')
+			// listen for event
+			.on('changed.jstree', function (e, data) {
+				selectedItem = data && data.node;
+				if (!selectedItem || !selectedItem.id) selectedItem = {id: "allimages"};
+				imagetable.ajax.url("load_all_images.php?mode=select&path=" + encodeURIComponent(selectedItem.id));
+				imagetable.ajax.reload(null, true);
+			})
 	}
 
 	function SelectImage(url) {
@@ -254,6 +272,9 @@ include ('config.php');
 			alert("保存内容时出错。");
 		})
 	}
+	$(document).ready(function() {
+		
+	})
 	</script>
 </body>
 </html>

@@ -33,7 +33,7 @@ include('../N1/dbconfig.php');
   .circle-text {
     font-size: 1.5rem; font-weight: lighter !important; width:100%; height: 100%; background: #0005;
     border-radius: 50%;
-    line-height: 292px;
+    line-height: 252px;
   }
   .circle-text:hover {
     background: #0000;
@@ -359,8 +359,26 @@ include('../N1/dbconfig.php');
               <div class="u-layout-row">
                 <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1 gridimage21" src="">
                   <div class="u-container-layout u-container-layout-1">
-                    <h2 class="u-text u-text-1 cross-text-image1" style='font-size: 26px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>菜源佳佳营运合作</h2>
+                    <h2 class="u-text u-text-1 cross-text-image1" style='font-size: 26px; margin-top: 0px; font-family: "Microsoft YaHei" !important'>菜源佳佳营运合作</h2>
                     <p class="u-text u-text-2 cross-text-image1" style='font-size: 14px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
+                    <table style='margin-top: 20px'>
+                      <tr>
+                        <td><img src='images/a1.png' style='margin-left: 100px; width: 50px; height: 50px;'></td>
+                        <td style='font-size:20px;color: #555;font-family: "Microsoft Yahei" !important'>高效管理模式</td>
+                        <td><img src='images/a2.png' style='width: 50px; height: 50px; margin-left: 100px'></td>
+                        <td style='font-size:20px; color: #555;font-family: "Microsoft Yahei" !important'>商场般的环境</td>
+                      </tr>
+                      <tr>
+                        <td><img src='images/a3.png' style='margin-left: 100px; width: 50px; height: 50px;'></td>
+                        <td style='font-size:20px;color: #555;font-family: "Microsoft Yahei" !important'>智能化的应用</td>
+                        <td><img src='images/a4.png' style='width: 50px; height: 50px; margin-left: 100px'></td>
+                        <td style='font-size:20px;color: #555;font-family: "Microsoft Yahei" !important'>新型商业模式</td>
+                      </tr>
+                      <tr>
+                        <td><img src='images/a5.png' style='margin-left: 100px; width: 50px; height: 50px;'></td>
+                        <td style='font-size:20px;color: #555;font-family: "Microsoft Yahei" !important'>品牌化的业态</td>                        
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <div class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-2  gridimage11" data-image-width="1080" data-image-height="1080">
@@ -606,180 +624,15 @@ include('../N1/dbconfig.php');
         <!-- <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>PARTNER</h1>
         <h2 class="u-text u-text-2" style='font-size: 36px; line-height: 50px'>合作伙伴</h2>
-        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1">
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-1">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-2">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-3">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-4">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-5">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-6">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item u-gallery-item-7" data-image-width="1280" data-image-height="720">
-            <div class="u-back-slide u-back-slide-7" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain u-back-image-7" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-7">
-              <h3 class="u-gallery-heading" style="background-image: none;"></h3>
-              <p class="u-gallery-text" style="background-image: none;"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item u-gallery-item-8" data-image-width="1280" data-image-height="777">
-            <div class="u-back-slide u-back-slide-8" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain u-back-image-8" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-8">
-              <h3 class="u-gallery-heading" style="background-image: none;"></h3>
-              <p class="u-gallery-text" style="background-image: none;"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item" data-image-width="300" data-image-height="150">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-9">
-              <h3 class=" u-gallery-heading"></h3>
-              <p class=" u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item" data-image-width="300" data-image-height="150">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-10">
-              <h3 class=" u-gallery-heading"></h3>
-              <p class=" u-gallery-text"></p>
-            </div>
-          </div>
-        </div>
-        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-2">
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-11">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-12">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-13">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-14">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-15">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-16">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item u-gallery-item-17" data-image-width="1280" data-image-height="720">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain u-back-image-17" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-17">
-              <h3 class="u-gallery-heading" style="background-image: none;"></h3>
-              <p class="u-gallery-text" style="background-image: none;"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item u-gallery-item-18" data-image-width="1280" data-image-height="777">
-            <div class="u-back-slide" data-image-width="300" data-image-height="150">
-              <img class="u-back-image u-expanded u-image-contain u-back-image-18" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-18">
-              <h3 class="u-gallery-heading" style="background-image: none;"></h3>
-              <p class="u-gallery-text" style="background-image: none;"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item" data-image-width="300" data-image-height="150">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/parnter1.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-19">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
+        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1" style='display: flex; flex-direction: row; height: auto; padding-bottom: 40px'>
+          <?php
+          $rows = $db->rawQuery("SELECT * FROM partners order by morder");
+          foreach ($rows as $image) {
+            ?>
+            <img style='height: 80px;' src='/banners/<?php echo $image['image']; ?>'>
+            <?php
+          }
+          ?>
         </div>
       </div>
     </section>

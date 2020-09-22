@@ -80,9 +80,13 @@ include ('config.php');
 	  	}
 	  </style>
 	  <script src="js/app.js"></script>
+	  
+	  
 	  <!-- <script src="js/jquery.1.12.4.js"></script> -->
 	<script src="js/jquery.ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+	<script src="dist/jstree.min.js"></script>
 </head>
 <script src='js/dt.js'></script>
 <script src='js/bs.js'></script>
@@ -94,44 +98,65 @@ include ('config.php');
 		<div class="main">
 			<?php include('nav.php'); ?>			
 
-			<main class="content">				
+			<main class="content">			
 				<div class="container-fluid p-0">
 					<div class="row">
-						<div style='float: left; width: 100%;'>
-						<table id='phones' class='table table-striped table-bordered db-show-table' style='width: 100%;'>
-							<thead>
+						<div  style='float: left; width:20%; max-width: 20%; overflow: auto'>
+							<table>
 								<tr>
-									<th style='width: 5%'>No</th>
-									<th style='width: 20%'>图片</th>
-									<th style='width: 20%'>文件名</th>
-									<th style='width: 20%'>URL</td>
-									<th style='width: 20%'>说明</td>
-									<th style='width: 15%'></th>
+									<td><div>
+										<table>
+											<tr>
+												<td><button class='btn btn-primary' onclick='addnewfolder()'>+创建</button></td>
+												<td><button class='btn btn-success' style='margin-left: 10px' onclick='renamefolder()'>更改</button></td>
+												<td><button class='btn btn-danger' style='margin-left: 10px' onclick='deletefolder()'>-删除</button></td>
+											</tr>
+										</table></div>
+									</td>
+								<tr>
+									<td>
+										<div style='max-width: 100%; overflow: auto' id='jsTree'>
+										</div>
+									</td>
 								</tr>
-							</thead>
-							<tbody>
-							<?php
-								$categoryArr = array('', '室内设计', '建筑设计', '5G智能设计', '运营案例');
-								$db = getDbInstance();
-								$rows = $db->rawQuery("select * from images order by id desc");
-								for ($i = 0; $i < sizeof($rows); $i++) {									
-							?> <tr id='row_<?php echo $rows[$i]['id']; ?>'>
-								<td style='width: 5%; cursor:pointer'><?php echo $i + 1; ?></td>
-								<td style='width: 20%; cursor:pointer'><img src='<?php echo $rows[$i]['url']; ?>' style='width: 80%; margin: 3px 10% 3px 10%;' onclick='window.open(this.src, "_blank")'></td>
-								<td style='width: 20%; cursor:pointer'><?php echo $rows[$i]['filename']; ?></td>
-								<td style='width: 20%; cursor:pointer'><?php echo $rows[$i]['url']; ?></td>
-								<td style='width: 20%; cursor:pointer'><?php echo htmlspecialchars($rows[$i]['description']); ?></td>
-								<td style='width: 15%; cursor:pointer'><button type='button' onclick='deleteThis(<?php echo $rows[$i]["id"]; ?>)' class='btn btn-danger'>删除</button></td>
-								</tr>
-							<?php } ?>
-							</tbody>
-						</table>
+							</table>
+						</div>
+						<div style='float: left; width: 80%;'>
+							<table id='phones' class='table table-striped table-bordered db-show-table' style='width: 100%;'>
+								<thead>
+									<tr>
+										<th style='width: 5%'>No</th>
+										<th style='width: 20%'>图片</th>
+										<th style='width: 50%'>文件名</th>										
+										<th style='width: 5%'></th>
+									</tr>
+								</thead>
+								<tbody>
+								<!-- < ?php
+									$categoryArr = array('', '室内设计', '建筑设计', '5G智能设计', '运营案例');
+									$db = getDbInstance();
+									$rows = $db->rawQuery("select * from images order by id desc");
+									for ($i = 0; $i < sizeof($rows); $i++) {									
+								?> <tr id='row_< ?php echo $rows[$i]['id']; ?>'>
+									<td style='width: 5%; cursor:pointer'>< ?php echo $i + 1; ?></td>
+									<td style='width: 20%; cursor:pointer'><img src='< ?php echo $rows[$i]['url']; ?>' style='max-width: 80%; margin: 3px 10% 3px 10%; height: 50px' onclick='window.open(this.src, "_blank")'></td>
+									<td style='width: 50%; cursor:pointer'>< ? php echo $rows[$i]['filename']; ?></td>
+									<td style='width: 20%; cursor:pointer; display:none'>< ?php echo $rows[$i]['url']; ?></td> 
+									<td style='width: 20%; cursor:pointer'>< ?php echo htmlspecialchars($rows[$i]['description']); ?></td> 
+									<td style='width: 5%; cursor:pointer'><button type='button' onclick='deleteThis(< ?php echo $rows[$i]["id"]; ?>)' class='btn btn-danger'>删除</button></td>
+									</tr>
+								< ?php } ?> -->
+								</tbody>
+							</table>
 
 					    </div>
-					    <div style="clear: both; margin-top: 50px;">
-					        <button type='button' class='btn btn-primary' onclick='addNewPicture();' id='submitButton'>添加</button>
-					    </div>
+					    
 					</div>
+					<div class='row' style='flex-direction: row-reverse'>
+					<div style="clear: both; margin-top: 50px;">
+					        <button type='button' class='btn btn-primary' style='width: 100px; height: 50px; float:right' onclick='addNewPicture();' id='submitButton'>添加</button>
+						</div>
+									</div>
 				</div>
 			</main>
 			<input type='file' style='position: absolute; left: -10000px; top: -10000px' id='fileselect'>
@@ -140,16 +165,22 @@ include ('config.php');
 	
 </body>
 <script>
+var foldertree, selectedItem = {id: "allimages"};	
 	var phoneTable = $("#phones").DataTable({
 		"language": {
 			"url": "js/chinese.json"
-		}
+		},
+		"ajax" : "load_all_images.php?path=allimages",
+		"lengthMenu": [[5, 10, 20, 50, 100, -1], ["5个", "10个", "20个", "50个", "100个", "查看全部"]],
+		"pageLength": 10
 	});
 	function deleteThis(id) {
 		if (!confirm("确定要删除吗?")) return;
 		$.post('save_image.php', {del_id: id}, function(a,b) {
 			if (a == 'success') {
-				phoneTable.row("#row_" + id).remove().draw();
+				phoneTable.ajax.reload(null, false);
+			} else {
+				alert ("失败");
 			}
 		})
 	}
@@ -157,13 +188,12 @@ include ('config.php');
 		Swal.fire({
 			title: "新图片",
 			width: 600,
-			html: "<div style='font-size:1.125em !important; text-align:left'>选择文件。</div><input type='file' id='image'><br style='height:20px'>\
-			<div style='font-size:1.125em !important; text-align:left'>输入说明。</div><div><textarea style='width:500px; height: 200px' id='description'></textarea>"
+			html: "<div style='font-size:1.125em !important; text-align:left'>选择文件。(*.jpg, *.jpeg, *.png, *.gif, *.bmp)</div><input type='file' id='image'><br style='height:20px'>\
+			<div style='font-size:1.125em !important; text-align:left'>资料夹路径:  /" + selectedItem.id + "</div>"
 		}).then(result => {
-			let description = $("#description").val();
 			var formData = new FormData();
 			formData.append("image", $("#image")[0].files[0]);
-			formData.append("description", description);
+			formData.append("path", selectedItem.id);
 			formData.append('id', '-1');
 			$.ajax({
 				url: 'save_image.php',
@@ -172,26 +202,94 @@ include ('config.php');
 				processData: false,
 				contentType: false,
 				success: function(data) {
-					console.log(data);
-					try {
-						data = JSON.parse(data);
-					} catch (e) {}
-					if (data['result'] == 'success') {
+					if (data == 'success') {
 						alert("成功！");
-						data = data.data;
-						let jRow = $("<tr id='row_" + data.id + "'>").append("<td>" + (phoneTable.rows().count() + 1) + "</td>"
-								+ "<td><img src='" + data.url + "' style='width: 80%; margin: 3px 10% 3px 10%;' onclick='window.open(this.src, \"_blank\")'></td>"
-								+ "<td>" + data.filename + "</td>"
-								+ "<td>" + data.url + "</td>"
-								+ "<td>" + data.description + "</td>"
-								+ "<td style='width: 15%; cursor:pointer'><button type='button' onclick='deleteThis(" + data.id + ")' class='btn btn-danger'>删除</button></td>")
-						phoneTable.row.add(jRow).draw();
+						phoneTable.ajax.reload(null, false);
+					} else {
+						alert("失败！");
 					}
 				},
 				error: function(error) {
 					alert("保存内容时出错。");
 				}
 			});
+		})
+	}
+
+	
+	$(document).ready(function() {
+		foldertree = $("#jsTree").jstree({
+			'core' : {
+				'data' : {
+					'url' : 'get_tree_image.php',
+					'data' : function (node) {
+						return { 'id' : node.id };
+					}
+				}
+			}
+		});
+		$('#jsTree')
+			// listen for event
+			.on('changed.jstree', function (e, data) {
+				selectedItem = data && data.node;
+				if (!selectedItem || !selectedItem.id) selectedItem = {id: "allimages"};
+				phoneTable.ajax.url("load_all_images.php?path=" + encodeURIComponent(selectedItem.id));
+				phoneTable.ajax.reload(null, true);
+			})
+	})
+
+	function addnewfolder() {
+		if (!selectedItem) return;
+		let location = selectedItem.id;
+		let newname = prompt("您将在  “/" + location + "”  中添加新文件夹。 输入文件夹的名称。", "");
+		if (!newname || newname.trim().length == 0) {
+			return;
+		}
+		$.post("create_new_folder.php", {path: location, name: newname.trim()}, function(a,b) {
+			if (b == 'success' && a == b) {
+				foldertree.jstree("refresh");
+				alert("成功！"); return;
+			}
+			else alert(a); return;
+		}).fail(function() {
+			alert("失败！"); return;
+		})
+	}
+	function renamefolder() {
+		if (!selectedItem) return;
+		let location = selectedItem.id;
+		if (location == 'allimages') {
+			alert("您无法更改根文件夹。"); return;
+		}
+		let newname = prompt("您将在  “/" + location + "”  中添加新文件夹。 输入文件夹的名称。", "");
+		if (!newname || newname.trim().length == 0) {
+			alert("空名称。失败！"); return;
+		}
+		$.post("create_new_folder.php", {mode: 1, path: location, name: newname.trim()}, function(a,b) {
+			if (b == 'success' && a == b) {
+				foldertree.jstree("refresh");
+				alert("成功！"); return;
+			}
+			else alert(a); return;
+		}).fail(function() {
+			alert("失败！"); return;
+		})
+	}
+	function deletefolder() {
+		if (!selectedItem) return;
+		let location = selectedItem.id;
+		if (location == 'allimages') {
+			alert("您无法删除根文件夹。"); return;
+		}
+		if (!confirm("您确定要删除此文件夹吗？")) return;
+		$.post("create_new_folder.php", {mode: 2, path: location, name: ""}, function(a,b) {
+			if (b == 'success' && a == b) {
+				foldertree.jstree("refresh");
+				alert("成功！"); return;
+			}
+			else alert(a); return;
+		}).fail(function() {
+			alert("失败！"); return;
 		})
 	}
 </script>
