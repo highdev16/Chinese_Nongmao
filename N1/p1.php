@@ -22,6 +22,7 @@ include('../N1/dbconfig.php');
   }
   div.partner-area {
     grid-gap: 17px 31.4px !important;
+    display: grid; grid-template-columns: auto auto auto auto auto auto auto auto !important;
   }
   .circles-area > div img {
     transition: transform .2s;
@@ -659,7 +660,7 @@ include('../N1/dbconfig.php');
         <!-- <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>PARTNER</h1>
         <h2 class="u-text u-text-2" style='font-size: 36px; line-height: 50px'>合作伙伴</h2>
-        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1 partner-area" style='display: flex;     flex-wrap: wrap; flex-direction: row; height: auto; padding-bottom: 40px'>
+        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1 partner-area" style=' height: auto; padding-bottom: 40px'>
           <?php
           $rows = $db->rawQuery("SELECT * FROM partners order by morder");
           foreach ($rows as $image) {
