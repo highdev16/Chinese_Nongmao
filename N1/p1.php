@@ -506,8 +506,8 @@ include('../N1/dbconfig.php');
                   </div>
                   <div class="u-align-justify u-container-style u-layout-cell u-size-20 u-layout-cell-3"  style='    flex: 0 1 auto;'>
                     <div class="u-container-layout u-valign-middle u-container-layout-3" style='margin-top: 20px'>
-                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2" style='color: black'> 不敢出示营业执照都是虚报年限</p>
-                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2" style='color: black'>没有真正十几年的农贸行业经验</p>
+                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2" style='color: black !important'> 不敢出示营业执照都是虚报年限</p>
+                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2" style='color: black !important'>没有真正十几年的农贸行业经验</p>
                     </div>
                   </div>
                 </div>
