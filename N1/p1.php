@@ -4,11 +4,17 @@ include('header.php');
 include('../N1/dbconfig.php');
 ?>      
 <style>
-  img.article-image {
-    transition: transform .2s;
+  img.article-image:hover {
+    transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -webkit-transition: transform .2s linear;
   }
   img.article-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);    
   }
   .features-area > div:hover {
     transform: scale(1.05, 1.05);
@@ -70,13 +76,13 @@ include('../N1/dbconfig.php');
     color: black;
   }
   div.bigcontainer {
-    width: 1552px !important;
+    width: 1500px !important;
   }
   .image-cell {
     float:left;
     width: 30%;
-    margin-left: 1.66666666666%;
-    margin-right: 1.66666666666%;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 20px;
     overflow:hidden;
     min-width: 300px;
@@ -248,8 +254,7 @@ include('../N1/dbconfig.php');
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="carousel_78ab">
       <div class="u-clearfix u-sheet u-sheet-1 bigcontainer" style='min-height: 10px; margin-bottom: 100px'>
-          <?php           
-          
+          <?php                     
           $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
           $pageTotal = $pageTotal[0]['co'];
           $query = "SELECT * FROM cases WHERE goodone=1 limit 6";
@@ -265,7 +270,9 @@ include('../N1/dbconfig.php');
               $r = substr($row['content'], $d, $r - $d);
               $alt = "Image";
             } else $r = '';
-            
+            if ($i % 3 == 0) {
+              echo "<div style='display: flex; justify-content: space-between'>";
+            }
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
@@ -298,7 +305,7 @@ include('../N1/dbconfig.php');
               
             </div>
           </div> 
-          <?php } ?>
+          <?php if ($i % 3 == 2) echo "</div>"; } ?>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-4" id="sec-dc3e">
@@ -532,16 +539,16 @@ include('../N1/dbconfig.php');
                 <div class="u-layout-row">
                   <div class="u-size-37">
                     <div class="u-layout-col">
-                      <div class="u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-60 u-image-1" src="">
-                        <div class="u-container-layout u-container-layout-1"></div>
+                      <div class="u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-60 u-image-1">
+                        <img src='images/lADPGoxXcnQXxIjNCSLNDOs_3307_2338.jpg' style='width:100%; height: 100%'>
                       </div>
                     </div>
                   </div>
                   <div class="u-size-23">
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
-                        <div class="u-container-layout u-container-layout-2" style='padding-top: 0px'>
-                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 50px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
+                        <div class="u-container-layout u-container-layout-2" style='padding-top: 0px; padding-left: 95px'>
+                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 70px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
                           </p>
                         </div>
                       </div>
@@ -551,11 +558,8 @@ include('../N1/dbconfig.php');
               </div>
               <div class="u-size-20 u-size-60-md">
                 <div class="u-layout-row">
-                  <div class="u-size-34">
-                    <div class="u-layout-row">
-                      <div class="u-container-style u-layout-cell u-left-cell u-size-4 u-layout-cell-3">
-                        <div class="u-container-layout u-container-layout-3"></div>
-                      </div>
+                  <div class="u-size-37">
+                    <div class="u-layout-row" style='    justify-content: space-between;'> 
                       <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-2" src="">
                         <div class="u-container-layout u-container-layout-4"></div>
                       </div>
@@ -570,11 +574,11 @@ include('../N1/dbconfig.php');
                       </div>
                     </div>                    
                   </div>
-                  <div class="u-size-26 u-size-60-md">
+                  <div class="u-size-23 u-size-60-md">
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-palette-2-base u-text-4" style='margin-left:0'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司 
+                          <p class="u-text u-text-palette-2-base u-text-4" style='margin-left:0; line-height: 60px'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司 
                           </p>
                         </div>
                       </div>
@@ -615,7 +619,7 @@ include('../N1/dbconfig.php');
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>DESIGN</h1>
         <h2 class="u-text u-text-2"> 装修设计百科 </h2>
-        <div style='height: 40px; width:100%'></div>
+        <div style='height: 40px; width:100%'></div>        
         <?php 
           $query = "SELECT * FROM news WHERE goodone = 1 limit 6";
           $rows = $db->rawQuery($query);
@@ -629,7 +633,7 @@ include('../N1/dbconfig.php');
               $r = substr($row['content'], $d, $r - $d);
               $alt = "Image";
             } else $r = '';
-            
+            if ($i % 3 == 0) echo '<div style="justify-content: space-between;display: flex;">';
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:0px solid #ddd; overflow:hidden'><!--blog_post_image-->
@@ -644,7 +648,7 @@ include('../N1/dbconfig.php');
               </div>              
             </div>
           </div> 
-          <?php } ?>
+          <?php if ($i % 3 == 2) echo '</div>'; } ?>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-10" id="sec-4b7e">

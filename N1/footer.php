@@ -25,6 +25,15 @@
           width: 100%;
         }
       }
+      .u-table th, .u-table td {
+        padding-left: 0px;
+      }
+      .u-footer .u-table-2 {
+        width: 1120px;
+      }
+      .u-footer .u-sheet-1 {
+        min-height: auto;
+      }
     </style>
     <footer class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-clearfix u-footer u-grey-80 u-footer" id="sec-dc14">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 20px'>
