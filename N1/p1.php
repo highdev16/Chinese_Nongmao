@@ -362,7 +362,7 @@ include('../N1/dbconfig.php');
       </div>
     </section>
     <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-section-5" id="sec-ff71" style='margin-bottom: 30px'>
-      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='width: 1500px !important; margin-left: calc(50% - 750px) !important'>
+      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='width: 1500px !important; margin-left: calc(50% - 750px) !important; margin-bottom: 30px'>
         <div class="u-layout">
           <div class="u-layout-col">
             <div class="u-size-30">
