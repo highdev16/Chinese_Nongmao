@@ -21,7 +21,7 @@ include('../N1/dbconfig.php');
     z-index:9999;
   }
   div.partner-area {
-    grid-gap: 31.5px 17px !important;
+    grid-gap: 17px 31.4px !important;
   }
   .circles-area > div img {
     transition: transform .2s;
