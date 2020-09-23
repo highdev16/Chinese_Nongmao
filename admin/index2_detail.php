@@ -117,7 +117,8 @@ include ('config.php');
 							<div style='float: left; width: 100px'>类别</div>
                             <div style='width: 350px'><select id='category' style='width: 250px'><option value=1>农贸设计百科</option><option value=2>农贸新闻资讯</option>
 										<option value=3>光影新闻动态</option><option value=4>运营案例</option></select></div>
-							<div style='float: left; width: 180px'>最好的案例(1个在首页)</div>
+							<div style='height: 10px'></div>
+							<div style='float: left; width: 180px;line-height: 35px;'>最好的案例(1个在首页)</div>
 							<div><input type='checkbox' id='goodone' style='width: 25px; height:25px'></div>
 							<div style='height: 20px'></div>
 							<div>内容</div>
