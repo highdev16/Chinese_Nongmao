@@ -158,7 +158,7 @@ include ('config.php');
 		$("#service_time").val(data['service_time'] || "");
 		$("#location").val(data['location'] || "");
 		$("#category").val(data['category'] || "");
-		$("#goodone").prop('checked', (data['category'] || 0) ? true : false);
+		$("#goodone").prop('checked', (data['goodone'] || 0) ? true : false);
 
 		let buttonTimer = setInterval(function() {
 			if ($("button.trumbowyg-insertImage-button")[0]) {

@@ -20,12 +20,12 @@ $id = intval($_REQUEST['id']);
 $text = $_REQUEST['text'];
 
 if ($id < 0) {
-    $db->rawQuery("insert into news(title,category,browse,content,created_time,writer) values(?,?,?,?,?,?)",
-    array($_REQUEST['title'],$_REQUEST['category'],0,$_REQUEST['text'], time(), $_REQUEST['writer']));
+    $db->rawQuery("insert into news(title,category,browse,content,created_time,writer,goodone) values(?,?,?,?,?,?,?)",
+    array($_REQUEST['title'],$_REQUEST['category'],0,$_REQUEST['text'], time(), $_REQUEST['writer'], $_REQUEST['goodone']));
     $id = $db->getInsertId();
 } else {
-    $db->rawQuery("update news set title=?,category=?,browse=0,content=?,writer=? where id = $id",
-    array($_REQUEST['title'], $_REQUEST['category'],$_REQUEST['text'], $_REQUEST['writer']));
+    $db->rawQuery("update news set title=?,category=?,browse=0,content=?,writer=?, goodone=? where id = $id",
+    array($_REQUEST['title'], $_REQUEST['category'],$_REQUEST['text'], $_REQUEST['writer'], $_REQUEST['writer']));
 }
 
 echo json_encode(array('result' => 'success', 'data' => $id));
