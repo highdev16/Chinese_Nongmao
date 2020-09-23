@@ -25,7 +25,7 @@ if ($id < 0) {
     $id = $db->getInsertId();
 } else {
     $db->rawQuery("update news set title=?,category=?,browse=0,content=?,writer=?, goodone=? where id = $id",
-    array($_REQUEST['title'], $_REQUEST['category'],$_REQUEST['text'], $_REQUEST['writer'], $_REQUEST['writer']));
+    array($_REQUEST['title'], $_REQUEST['category'],$_REQUEST['text'], $_REQUEST['writer'], $_REQUEST['goodone']));
 }
 
 echo json_encode(array('result' => 'success', 'data' => $id));
