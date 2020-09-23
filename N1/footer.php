@@ -6,7 +6,12 @@
       } else $rows = $db->rawQuery("select * from links");
     ?>
     <style>
-
+      table.footertable tr{
+        height: 30px !Important;
+      }
+      table.footertable tr td {
+        padding-top: 0px !Important; padding-bottom: 0px !Important;
+      }
       div.friendly_links a {
         width: 11%; float:left;
       }
@@ -56,71 +61,71 @@
           
         <img src="../N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
         <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2">
-          <table class="u-table-entity">
+          <table class="u-table-entity footertable">
             <colgroup>
               <col width="16.6%">
               <col width="16.6%">
               <col width="16.6%">
               <col width="16.6%">
               <col width="16.6%">
-              <col width="17.000000000000004%">
+              <col width="17%">
             </colgroup>
             <tbody class="u-table-body">
               <tr style="height: 55px;">
                 <td class="u-table-cell">经营范围</td>
                 <td class="u-table-cell">设计案例</td>
                 <td class="u-table-cell">市场营运</td>
-                <td class="u-block-undefined--Infinity u-table-cell">市场资讯</td>
-                <td class="u-block-undefined--Infinity u-table-cell">智能菜场</td>
-                <td class="u-block-undefined--Infinity u-table-cell">关于我们</td>
+                <td class="u-table-cell">市场资讯</td>
+                <td class="u-table-cell">智能菜场</td>
+                <td class="u-table-cell">关于我们</td>
               </tr>
               <tr style="height: 51px;">
                 <td class="u-table-cell u-table-cell-52">&gt; 农贸市场设计<br></td>
                 <td class="u-table-cell u-table-cell-53">&gt;&nbsp;农贸市场设计例</td>
                 <td class="u-table-cell u-table-cell-54">&gt; 农贸市场招商</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-55">&gt; 我要投资农贸</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-56">&gt; 农贸设计百科</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-57">&gt; 联系我们</td>
+                <td class="u-table-cell u-table-cell-55">&gt; 我要投资农贸</td>
+                <td class="u-table-cell u-table-cell-56">&gt; 农贸设计百科</td>
+                <td class="u-table-cell u-table-cell-57">&gt; 联系我们</td>
               </tr>
               <tr style="height: 56px;">
                 <td class="u-table-cell u-table-cell-58">&gt; 农贸市场建筑设计</td>
                 <td class="u-table-cell u-table-cell-59">&gt; 5G智能设计</td>
                 <td class="u-table-cell u-table-cell-60">&gt; 农贸市场运营</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-61">&gt; 我有农贸项目</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-62">&gt; 农图新国资讯</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-63">&gt; 光影简介</td>
+                <td class="u-table-cell u-table-cell-61">&gt; 我有农贸项目</td>
+                <td class="u-table-cell u-table-cell-62">&gt; 农图新国资讯</td>
+                <td class="u-table-cell u-table-cell-63">&gt; 光影简介</td>
               </tr>
               <tr style="height: 56px;">
                 <td class="u-table-cell u-table-cell-64">&gt; 5G 智能设计</td>
                 <td class="u-table-cell u-table-cell-65">&gt; 农贸市场建筑设计</td>
                 <td class="u-table-cell u-table-cell-66">&gt; 农贸市场电商</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-67">&gt; 政府合作</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-68">&gt; 政府政策文件</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-69">&gt; 资料专区</td>
+                <td class="u-table-cell u-table-cell-67">&gt; 政府合作</td>
+                <td class="u-table-cell u-table-cell-68">&gt; 政府政策文件</td>
+                <td class="u-table-cell u-table-cell-69">&gt; 资料专区</td>
               </tr>
               <tr style="height: 56px;">
                 <td class="u-table-cell u-table-cell-70">&gt;农贸市场运营</td>
                 <td class="u-table-cell u-table-cell-71">&gt;设计合作流程</td>
                 <td class="u-table-cell u-table-cell-72">&gt; 农贸市场综合体</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-73">&gt;光影置业</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-74">&gt; 光影新闻动态</td>
-                <td class="u-block-undefined--Infinity u-table-cell u-table-cell-75"></td>
+                <td class="u-table-cell u-table-cell-73">&gt;光影置业</td>
+                <td class="u-table-cell u-table-cell-74">&gt; 光影新闻动态</td>
+                <td class="u-table-cell u-table-cell-75"></td>
               </tr>
               <tr style="height: 27px;">
                 <td class="u-table-cell u-table-cell-76">&gt; 农图投资加盟</td>
                 <td class="u-table-cell u-table-cell-77">&gt; 政府合作</td>
                 <td class="u-table-cell"></td>
-                <td class="u-block-undefined--Infinity u-table-cell"></td>
-                <td class="u-block-undefined--Infinity u-table-cell"></td>
-                <td class="u-block-undefined--Infinity u-table-cell"></td>
+                <td class="u-table-cell"></td>
+                <td class="u-table-cell"></td>
+                <td class="u-table-cell"></td>
               </tr>
               <tr style="height: 50px;">
                 <td class="u-table-cell u-table-cell-82">&gt;&nbsp;农贸市场电商</td>
                 <td class="u-table-cell"></td>
                 <td class="u-table-cell"></td>
-                <td class="u-block-undefined--Infinity u-table-cell"></td>
-                <td class="u-block-undefined--Infinity u-table-cell"></td>
-                <td class="u-block-undefined--Infinity u-table-cell"></td>
+                <td class="u-table-cell"></td>
+                <td class="u-table-cell"></td>
+                <td class="u-table-cell"></td>
               </tr>
             </tbody>
           </table>
