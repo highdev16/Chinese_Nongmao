@@ -664,7 +664,7 @@ include('../N1/dbconfig.php');
           $rows = $db->rawQuery("SELECT * FROM partners order by morder");
           foreach ($rows as $image) {
             ?>
-            <img style='height: 80px; margin-left: 16px; margin-right: 16px' src='/banners/<?php echo $image['image']; ?>'>
+            <img style='height: 80px; width: 160px' src='/banners/<?php echo $image['image']; ?>'>
             <?php
           }
           ?>
