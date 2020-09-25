@@ -123,7 +123,7 @@ $rows = $db->rawQuery($query);
               
             </div>
           </div> 
-          <?php if ($i % 3 == 2) echo "</div>"; } ?>
+          <?php if ($i % 3 == 2) echo "</div>"; } if (sizeof($rows) % 3 == 2) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  ?>
       </div>
     </section>
     <section class='class="u-align-center u-clearfix u-section-3'>
