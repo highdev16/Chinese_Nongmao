@@ -221,10 +221,13 @@ $oname = $oname[0];
       body *.yahei {
         font-family: "Microsoft Yahei" !important;
       }
+      headeronly {
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      }
     </style>
   </head>
   <body class="u-body">
-      <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style='box-shadow: 0 5px 10px rgba(0,0,0,.1); z-index:9999999'>
+      <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style=' z-index:9999999'>
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 titlebar">
         <a href="/N1/p1.php" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>
           <img src="images/logo.png" class="u-logo-image u-logo-image-1" data-image-width="242.1137">
