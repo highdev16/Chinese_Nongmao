@@ -44,21 +44,25 @@ $rows = $db->rawQuery($query);
   img.article-image:hover {
     transform: scale(1.1);
   }
-  a.selected-a-button {    
-    border: 2px solid #ff6500;
-    background: #ff6500;
+  a.selected-a-button, a.unselected-a-button:hover {    
+    border: 1px solid #EE7D25;
+    background: #EE7D25;
     margin-top: 20px;
     color: white;
+    text-decoration:none;
     float:left;
     padding: 5px 20px 5px 20px;
     margin-right: 20px;
-  }
+    font-size: 14px; border-radius: 4px
+  }  
   a.unselected-a-button {
+    text-decoration:none;
     padding: 5px 20px 5px 20px;
     float:left;
     margin-top: 20px;
+    font-size: 14px; border-radius: 4px;
     margin-right: 20px;
-    border: 2px solid black;
+    border: 1px solid #c4c1c1;
     background: white;
     color: black;
   }
@@ -71,8 +75,8 @@ $rows = $db->rawQuery($query);
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
         <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>" >最新发布</a>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>" >热点案例</a>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>" >面积排序</a>
+        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
+        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">面积排序</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 30px'>
