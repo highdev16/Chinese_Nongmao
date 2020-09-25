@@ -452,7 +452,7 @@ div.percentage-20 {
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
                         <div class="u-container-layout u-container-layout-2" style='padding-top: 0px; padding-left: 95px'>
-                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 70px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
+                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
                           </p>
                         </div>
                       </div>
