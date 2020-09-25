@@ -69,6 +69,9 @@
     overflow:hidden;
     min-width: 300px;
   }
+  hr {
+    margin-bottom: 0px !important;
+  }
 </style>
 <script src='../js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
