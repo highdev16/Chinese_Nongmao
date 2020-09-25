@@ -114,8 +114,14 @@ while (strlen($temp) > 0) {
     border-color: #f0f0f0;
     border: 0px solid red;
   }
+  #product_details tr td:nth-child(2n + 1) {
+    background-color: #f5f5f5 !Important;
+  }
   #product_details td {
-    padding-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #646464;
+    border:   1px solid #dadada;
   }
   td.arrowcell img {
     margin-top: -10px;
@@ -183,7 +189,7 @@ while (strlen($temp) > 0) {
                           <td style='border:1px solid #ddd; padding-left: 10px'><?php echo htmlspecialchars($row['name']); ?></td>
                         </tr>
                         <tr style="height: 47px;">
-                          <td style='background-color:#eee;border:1px solid #ddd; padding-left:10px'>项目风格&nbsp;&nbsp;</td>
+                          <td style='background-color:#eee;border:1px solid #ddd; padding-left:10px'>项目风格</td>
                           <td style='border:1px solid #ddd; padding-left: 10px'><?php echo htmlspecialchars($row['project_style']); ?></td>                          
                         </tr>
                         <tr style="height: 47px;">
@@ -199,7 +205,7 @@ while (strlen($temp) > 0) {
                           <td style='border:1px solid #ddd; padding-left: 10px'><?php echo htmlspecialchars($row['areas']); ?>平方</td>
                         </tr>
                         <tr style="height: 47px;">
-                          <td style='background-color:#eee;border:1px solid #ddd; padding-left:10px'>项目位置&nbsp;</td>
+                          <td style='background-color:#eee;border:1px solid #ddd; padding-left:10px'>项目位置</td>
                           <td style='border:1px solid #ddd; padding-left: 10px'><?php echo htmlspecialchars($row['location']); ?></td>
                         </tr>
                       </tbody>
