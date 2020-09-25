@@ -101,7 +101,9 @@ $rows = $db->rawQuery($query);
               $r = substr($row['content'], $d, $r - $d);
               $alt = "Image";
             } else $r = '';
-            
+            if ($i % 3 == 0) {
+              echo "<div style='display: flex; justify-content: space-between'>";
+            }
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
@@ -132,7 +134,7 @@ $rows = $db->rawQuery($query);
               </a>
             </div>
           </div> 
-          <?php } ?>
+          <?php  if ($i % 3 == 2) echo "</div>"; } if (sizeof($rows) % 3 == 2) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  ?>
       </div>
     </section>
     <section class='class="u-align-center u-clearfix u-section-3'>
