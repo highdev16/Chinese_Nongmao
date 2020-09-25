@@ -129,7 +129,7 @@ while (strlen($temp) > 0) {
 </style>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/P1.php';">首页</span>／<span style="cursor:pointer" onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';"><?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
+        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/p1.php';">首页</span>／<span style="cursor:pointer" onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';"><?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
       </div>
     </section>
     <section class="skrollable u-clearfix u-grey-10 u-section-3" id="sec-50da">

@@ -2,10 +2,10 @@
 $bigTitle = "农贸新闻资讯";
 $label = $query = '';
 switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸设计百科'; break;
-  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／农贸新闻资讯'; break;
-  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／光影新闻动态'; break;
-  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/P1.php\';">首页</span>／政府政策文件'; break;
+  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸设计百科'; break;
+  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸新闻资讯'; break;
+  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／光影新闻动态'; break;
+  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／政府政策文件'; break;
   default: exit;
 }
 
