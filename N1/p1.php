@@ -2,16 +2,18 @@
 $bigTitle = "首页";
 include('header.php');
 include('../N1/dbconfig.php');
-?>      
+?>
 <style>
-  
+div.percentage-20 {
+  width: 20% !important;
+}
 </style>
     <section id="carousel_8f27" class="u-carousel u-carousel-duration-2250 u-slide u-block-29ef-1" data-u-ride="carousel" data-interval="5000">
       <ol class="u-absolute-hcenter u-carousel-indicators u-opacity u-opacity-55 u-block-29ef-2">
         <li data-u-target="#carousel_8f27" class="u-white" data-u-slide-to="0"></li>
       </ol>
       <div class="u-carousel-inner" role="listbox">
-        <?php 
+        <?php
           $db = getDbInstance();
           $images = $db->query("SELECT * FROM banners ORDER BY morder");
           $flag = 0;
@@ -20,7 +22,7 @@ include('../N1/dbconfig.php');
         ?>
         <div class="<?php echo $flag !== 1? "" : "u-active"; ?> u-align-left u-carousel-item u-clearfix u-image u-section-1-<?php echo $flag; ?>" style='background-image: url(/banners/<?php echo $image['image']; ?>);'>
           <div class="u-clearfix u-sheet u-sheet-1"></div>
-        </div>        
+        </div>
         <?php } ?>
       </div>
       <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-hidden u-spacing-48 u-text-body-alt-color u-block-29ef-3" href="#carousel_8f27" role="button" data-u-slide="prev">
@@ -156,13 +158,13 @@ include('../N1/dbconfig.php');
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="carousel_78ab">
       <div class="u-clearfix u-sheet u-sheet-1 bigcontainer" style='min-height: 10px; margin-bottom: 100px'>
-          <?php                     
+          <?php
           $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
           $pageTotal = $pageTotal[0]['co'];
           $query = "SELECT * FROM cases WHERE goodone=1 limit 6";
           $rows = $db->rawQuery($query);
-          
-          for ($i = 0; $i < sizeof($rows); $i++) {             
+
+          for ($i = 0; $i < sizeof($rows); $i++) {
             $row = $rows[$i];
             $r = strpos($row['content'], '<img');
             $alt = "No Image";
@@ -175,38 +177,38 @@ include('../N1/dbconfig.php');
             if ($i % 3 == 0) {
               echo "<div style='display: flex; justify-content: space-between'>";
             }
-            ?>            
+            ?>
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
               <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
               display: flex;justify-content: center;align-items: center; background:black;'>
-                <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+                <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                     src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
               </div>
               <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                 <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
               </div>
-              <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>                
-                <?php 
-                  for ($j = 0; $j < floatval($row['stars']); $j++) 
+              <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>
+                <?php
+                  for ($j = 0; $j < floatval($row['stars']); $j++)
                     echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                ?>                  
+                ?>
                 <div style='float:left; min-width:20px; min-height: 30px;'></div>
                 <div style='float:left; font-size: 12px;line-height: 24px'>
                   <i class="far fa-images"></i>&nbsp;
                   <?php echo substr_count($row['content'], '<img'); ?>
-                </div>              
+                </div>
                 <div style='float:left; min-width:20px; min-height: 30px;'></div>
                 <div style='float:left;font-size: 12px;line-height: 24px'>
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                </div>              
+                </div>
                 <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
-              
-              
+
+
             </div>
-          </div> 
+          </div>
           <?php if ($i % 3 == 2) echo "</div>"; } ?>
       </div>
     </section>
@@ -285,7 +287,7 @@ include('../N1/dbconfig.php');
                       </tr>
                       <tr>
                         <td><img src='images/a5.png' style='margin-left: 100px; width: 50px; height: 50px;'></td>
-                        <td style='font-size:20px;color: #555;font-family: "Microsoft Yahei" !important'>品牌化的业态</td>                        
+                        <td style='font-size:20px;color: #555;font-family: "Microsoft Yahei" !important'>品牌化的业态</td>
                       </tr>
                     </table>
                   </div>
@@ -339,14 +341,14 @@ include('../N1/dbconfig.php');
                   </div></div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
       </div>
       <div class="u-clearfix u-layout-wrap u-layout-wrap-2">
         <div class="u-layout">
-          
+
         </div>
       </div>
     </section>
@@ -450,7 +452,7 @@ include('../N1/dbconfig.php');
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
                         <div class="u-container-layout u-container-layout-2" style='padding-top: 0px; padding-left: 95px'>
-                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 70px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。 
+                          <p class="u-text u-text-3" style='font-size: 18px; line-height: 70px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
                           </p>
                         </div>
                       </div>
@@ -461,57 +463,41 @@ include('../N1/dbconfig.php');
               <div class="u-size-20 u-size-60-md">
                 <div class="u-layout-row">
                   <div class="u-size-37">
-                    <div class="u-layout-row" style='    justify-content: space-between;'> 
-                      <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-2" src="">
-                        <div class="u-container-layout u-container-layout-4"></div>
+                    <div class="u-layout-row" style='position: relative'>
+                      <div style='height: 300px; padding-left: 8px;padding-right: 8px; width: 100%; flex-direction: row; display: flex; justify-content: space-between;'>
+                        <img src='images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.png' class='u-size-14' style='object-fit: contain; width: 20%'>
+                        <img src='images/lALPD26eMHDuBeLNA-zNAsc_711_1004.png' class='u-size-14' style='object-fit: contain; width: 20%'>
+                        <img src='images/lADPD26eMHDpLQPNCSLNBnU_1653_2338.jpg' class='u-size-14' style='object-fit: contain; width: 20%'>
+                        <img src='images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%'>
                       </div>
-                      <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-size-14 u-image-3" data-image-width="711" data-image-height="1004">
-                        <div class="u-container-layout u-container-layout-5"></div>
+                      <div class="u-layout-row"  style='height: 50px; min-height: 0; display: flex; justify-content: space-between'>                  
+                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
+                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
+                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(知识产权)</div>
+                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(管理著作)</div>
+
                       </div>
-                      <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-4" src="">
-                        <div class="u-container-layout u-container-layout-6"></div>
-                      </div>
-                      <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-60-md u-image-5" src="">
-                        <div class="u-container-layout u-container-layout-7"></div>
-                      </div>
-                    </div>                    
+                    </div>
                   </div>
                   <div class="u-size-23 u-size-60-md">
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-palette-2-base u-text-4" style='margin-left:0; line-height: 60px'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司 
+                          <p class="u-text u-text-palette-2-base u-text-4" style='margin-left:0; line-height: 60px'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>                
+                </div>
               </div>
               <div class='u-size-60-md'>
-              <div class="u-layout-row">
-              <div class="u-size-34">
-                <div class="u-layout-row"  style='height: 50px; min-height: 0'>
-                  <div class="u-container-style u-layout-cell u-left-cell u-size-4 u-layout-cell-3" style='height: 50px'>                        
+                <div class="u-layout-row">
+                  <div class='u-size-34' style=' min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px'>
+                    打假办法通过企查查查出这个公司的注册时间
                   </div>
-                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-12" src="" style='height: 50px; text-align:center; flex-direction: column'>
-                  (设计专利)
-                  </div>
-                  <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-size-14 u-image-13" style='height: 50px; text-align:center; flex-direction: column'>
-                  (设计专利)
-                  </div>
-                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-30-md u-image-14" src="" style='height: 50px; text-align:center; flex-direction: column'>
-                  (知识产权)
-                  </div>
-                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-14 u-size-60-md u-image-15" src="" style='height: 50px; text-align:center; flex-direction: column'>
-                  (管理著作)
-                  </div>
-                </div></div>                
-              </div></div>
-              <div class="u-layout-row">
-                <div class='u-size-34' style='height: 50px; min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px'>
-                  打假办法通过企查查查出这个公司的注册时间
-              </div></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -521,11 +507,11 @@ include('../N1/dbconfig.php');
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>DESIGN</h1>
         <h2 class="u-text u-text-2"> 装修设计百科 </h2>
-        <div style='height: 40px; width:100%'></div>        
-        <?php 
+        <div style='height: 40px; width:100%'></div>
+        <?php
           $query = "SELECT * FROM news WHERE goodone = 1 limit 6";
           $rows = $db->rawQuery($query);
-          for ($i = 0; $i < sizeof($rows); $i++) {             
+          for ($i = 0; $i < sizeof($rows); $i++) {
             $row = $rows[$i];
             $r = strpos($row['content'], '<img');
             $alt = "No Image";
@@ -536,20 +522,20 @@ include('../N1/dbconfig.php');
               $alt = "Image";
             } else $r = '';
             if ($i % 3 == 0) echo '<div style="justify-content: space-between;display: flex;">';
-            ?>            
-          <div class=" u-white u-repeater-item-3 image-cell">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:0px solid #ddd; overflow:hidden'><!--blog_post_image-->
+            ?>
+          <div class=" u-white u-repeater-item-3 image-cell" style='box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.15)'>
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; '>
             <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:331px; overflow:hidden;margin-bottom: 0px; display:flex'>
-              <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+              <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                     src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 331px; min-width:100%' onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'>
               <div onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'
-                    style='bottom: 0px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer; 
+                    style='bottom: 0px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer;
                             width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
                 <?php echo htmlspecialchars($row['title']); ?>
                 </div>
-              </div>              
+              </div>
             </div>
-          </div> 
+          </div>
           <?php if ($i % 3 == 2) echo '</div>'; } ?>
       </div>
     </section>
@@ -558,7 +544,7 @@ include('../N1/dbconfig.php');
         <!-- <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>PARTNER</h1>
         <h2 class="u-text u-text-2" style='font-size: 36px; line-height: 50px'>合作伙伴</h2>
-        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1 partner-area" style=' height: auto; padding-bottom: 40px'>
+        <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1 partner-area" style=' height: auto; padding-bottom: 60px'>
           <?php
           $rows = $db->rawQuery("SELECT * FROM partners order by morder");
           foreach ($rows as $image) {
