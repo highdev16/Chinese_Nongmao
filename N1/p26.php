@@ -70,6 +70,7 @@ while (strlen($temp) > 0) {
   }
   #maincontent_area img {
     width: 100% !important;
+    height: auto !important;
   }
   #thumbnail-row td {
     padding: 0;
