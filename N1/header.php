@@ -224,6 +224,9 @@ $oname = $oname[0];
       headeronly {
         box-shadow: 0 5px 10px rgba(0,0,0,.1);
       }
+      section.titlesubmenu {
+        background: white !important;
+      }
     </style>
   </head>
   <body class="u-body">
