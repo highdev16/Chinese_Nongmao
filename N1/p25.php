@@ -1,36 +1,36 @@
 <?php
-$bigTitle = "农贸新闻资讯";
-$label = $query = '';
-switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸设计百科'; break;
-  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸新闻资讯'; break;
-  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／光影新闻动态'; break;
-  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／政府政策文件'; break;
-  default: exit;
-}
+  $bigTitle = "农贸新闻资讯";
+  $label = $query = '';
+  switch (intval($_REQUEST['category'])) {
+    case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸设计百科'; break;
+    case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸新闻资讯'; break;
+    case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／光影新闻动态'; break;
+    case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／政府政策文件'; break;
+    default: exit;
+  }
 
-include('header.php');
-if (!isset($_REQUEST['s'])) $_REQUEST['s'] = 1;
-$mode = intval($_REQUEST['s']);
-$selectedMode = 'selected-a-button';
-$unselectedMode = 'unselected-a-button';
+  include('header.php');
+  if (!isset($_REQUEST['s'])) $_REQUEST['s'] = 1;
+  $mode = intval($_REQUEST['s']);
+  $selectedMode = 'selected-a-button';
+  $unselectedMode = 'unselected-a-button';
 
-$pageIndex = isset($_REQUEST['pageIndex']) ? intval($_REQUEST['pageIndex']) - 1 : 0;
-$pageNum = 15;
+  $pageIndex = isset($_REQUEST['pageIndex']) ? intval($_REQUEST['pageIndex']) - 1 : 0;
+  $pageNum = 15;
 
-$query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
-include('../N1/dbconfig.php');
-$db = getDbInstance();
-$pageTotal = $db->rawQuery("SELECT count(id) as co FROM news where category = " . intval($_REQUEST['category']));
+  $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
+  include('../N1/dbconfig.php');
+  $db = getDbInstance();
+  $pageTotal = $db->rawQuery("SELECT count(id) as co FROM news where category = " . intval($_REQUEST['category']));
 
-$pageTotal = $pageTotal[0]['co'];
+  $pageTotal = $pageTotal[0]['co'];
 
-$rows = $db->rawQuery($query);
+  $rows = $db->rawQuery($query);
 
 ?>
  <link href='../css/paginaitor.css' rel="stylesheet" />
 <style>
-  img.article-image {
+  img.article-image:hover {
     transition: transform .2s;
   }
   img.article-image:hover {
@@ -54,11 +54,17 @@ $rows = $db->rawQuery($query);
     background: white;
     color: black;
   }
+  .image-cell:nth-child(3n + 1), .image-cell:nth-child(3n + 2) {
+    margin-right:2.5%;
+  }
+  .image-cell:nth-child(3n + 3), .image-cell:nth-child(3n + 2) {
+    margin-left:2.5%;
+  }
   .image-cell {
     float:left;
     width: 30%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 20px;
     overflow:hidden;
     min-width: 300px;
@@ -87,10 +93,10 @@ $rows = $db->rawQuery($query);
             
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:0px solid #ddd; overflow:hidden'><!--blog_post_image-->
-            <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:231px; overflow:hidden;margin-bottom: 0px'>
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
+            <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:300px; width:100%; overflow:hidden;margin-bottom: 0px'>
               <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                    src="<?php echo $r; ?>" style='background: black; object-fit: fill;  cursor:pointer; height: 231px' onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'>
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 300px; width:100%;' onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'>
               <div onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'
                     style='margin-top: -30px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer; 
                             width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>

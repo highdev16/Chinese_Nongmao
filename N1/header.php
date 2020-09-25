@@ -1,4 +1,4 @@
-<?php 
+<?php
 error_reporting(0);
 $url = basename($_SERVER['REQUEST_URI']);
 $url = explode('?', $url);
@@ -16,7 +16,7 @@ $oname = $oname[0];
 <meta name="description" content="abc">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title><?php echo $bigTitle; ?></title>
-    <?php 
+    <?php
         echo '<link rel="stylesheet" href="../N1/p2.css" media="screen">';
     ?>
     <link rel="stylesheet" href="../N1/nicepage.css" media="screen">
@@ -30,176 +30,206 @@ $oname = $oname[0];
     <meta name="theme-color" content="#478ac9">
     <meta property="og:url" content="index.html">
     <style>
-    img.article-image:hover {
-    transition: transform .2s linear;
-    -o-transition: transform .2s linear;
-    -moz-transition: transform .2s linear;
-    -webkit-transition: transform .2s linear;
-  }
-  img.article-image:hover {
-    transform: scale(1.1, 1.1);
-    -o-transform: scale(1.1, 1.1);
-    -moz-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);    
-  }
-  .features-area > div:hover {
-    transform: scale(1.05, 1.05);
-    z-index:9999;
-  }
-  div.partner-area {
-    grid-gap: 17px 31.4px !important;
-    display: grid; grid-template-columns: auto auto auto auto auto auto auto auto !important;
-  }
-  .circles-area > div img {
-    transition: transform .2s;
-  }
-  .circles-area > div:hover img {
-    transform: scale(1.1);
-  }
-  .cross-text-image1 {
-    margin-left: 100px !Important;
-  }
-  .circles-area > div:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-  .u-section-5 {
-    margin-bottom: 80px !important;
-  }
-  .circle-text {
-    font-size: 1.5rem; font-weight: lighter !important; width:100%; height: 100%; background: #0005;
-    border-radius: 50%;
-    line-height: 252px;
-  }
-  .circle-text:hover {
-    background: #0000;
-  }
-  div.gridimage11 {
-    flex: none !Important;
-    width: 45.8% !important;    
-  }
-  div.gridimage21 {
-    flex: none !Important;
-    width: 54% !important;
-    max-width: 54% !important;
-  }
-  .circles-area > div {
-    border-radius:50%;
-    background-color: black;
-  }
-  a.selected-a-button {    
-    border: 2px solid #ff6500;
-    background: #ff6500;
-    margin-top: 20px;
-    color: white;
-    float:left;
-    padding: 5px 20px 5px 20px;
-    margin-right: 20px;
-  }
-  a.unselected-a-button {
-    padding: 5px 20px 5px 20px;
-    float:left;
-    margin-top: 20px;
-    margin-right: 20px;
-    border: 2px solid black;
-    background: white;
-    color: black;
-  }
-  div.bigcontainer {
-    width: 1500px !important;
-  }
-  .image-cell {
-    float:left;
-    width: 30%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
-    overflow:hidden;
-    min-width: 300px;
-  }
+      div.titlebar{
+        margin-top: 0px !Important;
+        padding-top: 0px !important;
+        height: 80px;
+      }
+      img.article-image:hover {
+        transition: transform .2s linear;
+        -o-transition: transform .2s linear;
+        -moz-transition: transform .2s linear;
+        -webkit-transition: transform .2s linear;
+      }
+      img.article-image:hover {
+        transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+      }
+      .features-area > div:hover {
+        transform: scale(1.05, 1.05);
+        z-index:9999;
+      }
+      div.partner-area {
+        grid-gap: 17px 31.4px !important;
+        display: grid; grid-template-columns: auto auto auto auto auto auto auto auto !important;
+      }
+      .circles-area > div img {
+        transition: transform .2s;
+      }
+      .circles-area > div:hover img {
+        transform: scale(1.1);
+      }
+      .cross-text-image1 {
+        margin-left: 100px !Important;
+      }
+      .circles-area > div:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .u-section-5 {
+        margin-bottom: 80px !important;
+      }
+      .circle-text {
+        font-size: 1.5rem; font-weight: lighter !important; width:100%; height: 100%; background: #0005;
+        border-radius: 50%;
+        line-height: 252px;
+      }
+      .circle-text:hover {
+        background: #0000;
+      }
+      div.gridimage11 {
+        flex: none !Important;
+        width: 45.8% !important;
+      }
+      div.gridimage21 {
+        flex: none !Important;
+        width: 54% !important;
+        max-width: 54% !important;
+      }
+      .circles-area > div {
+        border-radius:50%;
+        background-color: black;
+      }
+      a.selected-a-button {
+        border: 2px solid #ff6500;
+        background: #ff6500;
+        margin-top: 20px;
+        color: white;
+        float:left;
+        padding: 5px 20px 5px 20px;
+        margin-right: 20px;
+      }
+      a.unselected-a-button {
+        padding: 5px 20px 5px 20px;
+        float:left;
+        margin-top: 20px;
+        margin-right: 20px;
+        border: 2px solid black;
+        background: white;
+        color: black;
+      }
+      div.bigcontainer {
+        width: 1500px !important;
+      }
+      .image-cell {
+        float:left;
+        width: 30%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 20px;
+        overflow:hidden;
+        min-width: 300px;
+      }
 
-  div.image_cell_area {
-    height: 300px !important;
-  }
-  div.image_cell_area img {
-    height: 300px !important;
-    width:100% !important;
-    max-height: 300px !important;
-  }
-  .features-area > div:hover{
-    transition: transform 0.2s;
-    cursor: pointer;
-  }
-  body * {
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
-  }
+      div.image_cell_area {
+        height: 300px !important;
+      }
+      div.image_cell_area img {
+        height: 300px !important;
+        width:100% !important;
+        max-height: 300px !important;
+      }
+      .features-area > div:hover{
+        transition: transform 0.2s;
+        cursor: pointer;
+      }
+      body * {
+        font-family: "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+      }
       header *, section.titlesubmenu {
         font-size: 16px !important;
         font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
       }
-        * {
-          font-weight: 400 !important;
-        }
-        body {
-          font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif;
-        }
-        .active1 {
-            border-width: 4px !important;
-            border-color: #ff6500 !important;
-        }
-        .active-submenu {
-            color: #ff6500 !important;
-        }
-        .titlesubmenu {
-            width: 100% !important;
-        }
-        section.titlesubmenu p.u-text {
-            font-size: 14px;
-        }
-        header {
-          border-bottom: 1px solid #ddd;          
-        }
-        header.narrow {
-          height: 62px;
-        }
-        header.narrow a.logo-image {
-          margin-top: 5px;
-        }
-        header.narrow nav.u-menu {
-          margin-top: -42px;
-        }
-        .u-custom-menu {
-          height: 62px !important;
-          min-height: 0px !Important;
-        }
-        div.titlebar {
-          padding-top:20px !important;
-        }
-        header.narrow div.titlebar {
-          padding-top: 10px !important;
-        }
-        @media (min-width: 1600px) {
+      * {
+        font-weight: 400 !important;
+      }
+      body {
+        font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif;
+      }
+      .active1 {
+          border-width: 0px !important;
+          border-color: #ff6500 !important;
+      }
+      .active-submenu {
+          color: #ff6500 !important;
+      }
+      .titlesubmenu {
+          width: 100% !important;
+      }
+      section.titlesubmenu p.u-text {
+          font-size: 14px;
+      }
+      header {
+        border-bottom: 1px solid #ddd;
+      }
+      header.narrow,header.narrow div.titlebar {
+        height: 62px;
+        min-height: 62px;
+      }
+      header.narrow a.logo-image {
+        margin-top: 0px;
+      }
+      .u-custom-menu {
+        height: 100% !important;
+        min-height: 0px !Important;
+      }
+      @media (min-width: 1500px) {
         .u-sheet {
             width: 1500px;
         }
-        }
-        div.image_cell_area {
-    height: 300px !important;
-  }
-  div.image_cell_area img {
-    height: 300px !important;
-    width:100% !important;
-    max-height: 300px !important;
-  }
+      }
+      div.image_cell_area {
+        height: 300px !important;
+      }
+      div.image_cell_area img {
+        height: 300px !important;
+        width:100% !important;
+        max-height: 300px !important;
+      }
+      .u-header .u-menu-1 {
+        margin: 0px 250px 0px;
+        position: absolute;
+        top: 0px; bottom: 0px;
+      }
+      div.u-custom-menu.u-nav-container {
+        height: 100%;
+      }
+      li.u-nav-item a.titlemainmenu {
+        height: 100%;
+        line-height: 80px;
+        border-width: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+      li.u-nav-item a.titlemainmenu.active:after{
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #ff6500;
+        position: absolute;
+        bottom: -1px;
+      }
+      header.narrow li.u-nav-item a.titlemainmenu {
+        line-height: 62px;
+      }
+      body *.element-center {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body *.yahei {
+        font-family: "Microsoft Yahei" !important;
+      }
     </style>
   </head>
   <body class="u-body">
       <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style='box-shadow: 0 5px 10px rgba(0,0,0,.1); z-index:9999999'>
-      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 titlebar" style='height:80px'>
-        <a href="/N1/p1.php" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 titlebar">
+        <a href="/N1/p1.php" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>
           <img src="images/logo.png" class="u-logo-image u-logo-image-1" data-image-width="242.1137">
         </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; flex-direction: column; justify-content: space-around'>
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
             <a class="u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
@@ -208,20 +238,20 @@ $oname = $oname[0];
                 </defs></svg>
             </a>
           </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
-                <li class="u-nav-item">     <a class="titlemainmenu mainmenu1 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="/N1/p1.php" style="padding: 10px 0;">首页</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="p2.html" style="padding: 10px 0;">农贸市场设计</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu3 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 10px 0; cursor:pointer">农贸市场运营</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu4 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 10px 0;cursor:pointer">智能菜场</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu5 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 10px 0;cursor:pointer">农贸市场投资</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 10px 0;cursor:pointer">农贸新闻资讯</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 10px 0;cursor:pointer">光影集团</a></li>
+          <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: column; justify-content: space-around'>
+            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" style='height:100%'>
+                <li class="u-nav-item">     <a class="titlemainmenu mainmenu1 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="/N1/p1.php" style="padding: 0px 0;">首页</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="p2.html" style="padding: 0px 0;">农贸市场设计</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu3 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸市场运营</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu4 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">智能菜场</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu5 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸市场投资</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
             </ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-menu-close"></div>              
+              <div class="u-menu-close"></div>
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
                   <li class="u-nav-item"><a class="u-button-style u-nav-link titlemainmenu mainmenu1" href="/N1/p1.php" style="padding: 10px 0;">首页</a></li>
                   <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu2" style="padding: 10px 0;">农贸市场设计</a></li>
@@ -473,9 +503,9 @@ $oname = $oname[0];
                     $(this).attr('href','javascript:void(0)');
                 }
             });
-
+            let isMouseOnSubMenu = false;
             $(".titlemainmenu").hover(function() {
-              $("section.titlesubmenu").css('display', 'none');                
+              $("section.titlesubmenu").css('display', 'none');
                 mousemove = 0;
                 for (let i = 1; i <= 7; i++) {
                     if ($(this).hasClass('mainmenu' + i)) {
@@ -491,19 +521,20 @@ $oname = $oname[0];
                     if ($(this).hasClass('mainmenu' + i)) {
                         $('section.mainmenu' + i).css('z-index', '999');
                         setTimeout(() => {
-                            if (mousemove == i && i > 1) return;
-                            if (i == 1) {
-                                $(this).removeClass('active1'); return;
-                            }
-                            $(this).css('color','');       
-                            $(this).removeClass('active1');
-                            $('section.mainmenu' + i).css('display', 'none');
-                        }, 50)
+                          if (mousemove == i && i > 1) return;
+                          if (i == 1) {
+                              $(this).removeClass('active1'); return;
+                          }
+                          if (isMouseOnSubMenu) return;
+                          $(this).css('color','');
+                          $(this).removeClass('active1');
+                          $('section.mainmenu' + i).css('display', 'none');
+                        }, 50);
                     }
                 }
             });
-            
-            $("section.titlesubmenu").hover(function() {                
+
+            $("section.titlesubmenu").hover(function() {
                 $(this).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('top', $('header').height()).slideDown();
                 for (let i = 1; i <= 7; i++) {
                     if ($(this).hasClass('mainmenu' + i)) {
@@ -512,16 +543,18 @@ $oname = $oname[0];
                         $("a.mainmenu" + i).addClass('active1');
                         break;
                     }
-                }                     
+                }
+                isMouseOnSubMenu = true;
             }, function() {
-                $("section.titlesubmenu").css('display', 'none');                
+                $("section.titlesubmenu").css('display', 'none');
                 $(".active1").removeClass('active1');
+                isMouseOnSubMenu = false;
             });
 
             $("section.titlesubmenu div.u-layout-cell").hover(function() {
-                $(this).css('cursor', 'pointer').find('p').css('color','#ff6500');                
+                $(this).css('cursor', 'pointer').find('p').css('color','#ff6500');
             }, function() {
-                $(this).find('p').css('color','');                
+                $(this).find('p').css('color','');
             });
             $('section.titlesubmenu div[data-href]').click(function() {
                 window.open($(this).attr('data-href'), '_blank');
@@ -533,6 +566,6 @@ $oname = $oname[0];
                 }
             })
 
-        })        
-        
+        })
+
     </script>

@@ -2,20 +2,33 @@
 $bigTitle = "光影集团";
 include('../N1/header.php');
 ?>
+<style>
+  div.boss-profile {
+    display: flex;
+    flex-direction: 'row';
+  }
+  div.boss-profile div.board-content {
+    width: calc(100% - 400px)
+  }
+
+  #sec-275e {
+    min-height: 0px;
+  }
+</style>
     <section class="u-clearfix u-section-2" id="sec-217c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-19 u-layout-cell-1">
+            <div class="u-layout-row boss-profile">
+              <div class="u-container-style u-layout-cell u-left-cell u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
                   <img src="images/ScreenShot2020-08-17at7.21.56AM.png" alt="" class="u-image u-image-default u-image-1" data-image-width="438" data-image-height="440">
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-41 u-layout-cell-2">
+              <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-2 board-content">
                 <div class="u-container-layout u-container-layout-2">
                   <h2 class="u-align-center u-text u-text-default u-text-1">
-                    <a href="http://www.gygygy.com/us.html?pageid=169611" target="http://www.gygygy.com/">董事长简介</a>
+                    <a href="http://www.gygygy.com/us.html?pageid=169611" target="http://www.gygygy.com/" class='yahei'>董事长简介</a>
                   </h2>
                   <p class="u-align-center u-text u-text-default u-text-2">CHAIRMAN OF THE BOARD</p>
                   <p class="u-text u-text-default u-text-3"> 中国光影农贸市场设计研究院院长
@@ -32,8 +45,8 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-grey-10 u-section-3" id="sec-dca0">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1" style='margin-top: 40px'>杭州光影简介</h2>
-        <p class="u-align-center u-text u-text-2" style='width: 300px; margin-bottom: 50px'>COMPANY PROFILE</p>
+        <h2 class="u-align-center u-text u-text-default u-text-1 yahei" style='margin-top: 50px'>杭州光影简介</h2>
+        <p class="u-align-center u-text u-text-2" style='width: 300px; margin-top: 10px; margin-bottom: 30px'>COMPANY PROFILE</p>
         <p class="u-align-center u-text u-text-default u-text-3" style='margin-botttom: 20px'> 杭州光影建筑设计有限公司，光影农贸市场设计研究院专注农贸市场设计18年，成功案例遍及全中国32个省市县镇，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究、农贸市场定位、农贸市场室内设计、建筑设计，农贸市场营运管理、农贸市场招商、
 农贸市场电商o2o，农贸市场培训指导，农贸市场智能升级、智能菜场运营管理等。专业提供农贸市场设计、菜市场设计、生鲜超市设计、农贸市场建筑设计、农贸市场效果图、农贸市场改造、菜市场效果图、菜市场改造等一整套农贸市场解决方案服务。&nbsp;&nbsp;</p>
         <img src="images/20190119173051760.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1399" data-image-height="300" style='margin-top: 30px'>
@@ -47,7 +60,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-4" id="sec-d817">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-default u-text-1" style='margin-top: 40px'> 企业文化</h1>
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei" style='margin-top: 50px'> 企业文化</h1>
         <p class="u-align-center u-text u-text-2" style='width: 300px'>ENTERPRISE CULTURE<br>
         </p>
         <p class="u-align-center u-custom-font u-heading-font u-text u-text-3">创新：扎根实干，积极创新；&nbsp; &nbsp; &nbsp; &nbsp;责任：项目到人，尽职尽责；&nbsp;<br>工艺：精雕细刻，炉火纯青；&nbsp; &nbsp; &nbsp; &nbsp;情怀：积极探寻，永不放弃；&nbsp;<br>细节：认真严谨，注重细节；&nbsp; &nbsp; &nbsp; &nbsp;和谐：以人为本，和谐发展；<br>共享：价值共创，财富共享；&nbsp; &nbsp; &nbsp; &nbsp;包含：海纳百川，有容乃大；
@@ -56,7 +69,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-5" id="sec-275e">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-1"> 企业环境 </h1>
+        <h1 class="u-align-center u-text u-text-1 yahei"> 企业环境 </h1>
         <p class="u-align-center u-text u-text-2" style='width: 300px'>ENTERPRISE ENVIRONMENT<br>
         </p>
         <div class="u-expanded-width u-gallery u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">

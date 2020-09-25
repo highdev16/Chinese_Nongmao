@@ -80,8 +80,8 @@
 .u-section-1 .u-text-5 {font-size: 1rem; line-height: 1.6; margin-top: -30px; margin-right: 21px; margin-left: 19px} }.u-section-2 .u-sheet-1 {min-height: 500px}
 .u-section-2 .u-layout-wrap-1 {margin-top: 60px; margin-bottom: 0}
 .u-section-2 .u-layout-cell-1 {min-height: 488px}
-.u-section-2 .u-container-layout-1 {padding: 30px}
-.u-section-2 .u-image-1 {width: 323px; height: 324px; margin: 36px -21px 0 auto}
+.u-section-2 .u-container-layout-1 {padding: 30px; padding-left: 0px;}
+.u-section-2 .u-image-1 {width: 323px; height: 324px;}
 .u-section-2 .u-layout-cell-2 {min-height: 488px}
 .u-section-2 .u-container-layout-2 {padding: 30px}
 .u-section-2 .u-text-1 {margin: 20px auto 0}

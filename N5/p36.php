@@ -7,9 +7,8 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-3" id="sec-b267" style='padding-top: 50px'>
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-default u-text-1"> 联系我们 </h1>
-        <h1 class="u-align-center u-text u-text-default u-text-2"> Contact
-us </h1>
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei"> 联系我们 </h1>
+        <h1 class="u-align-center u-text u-text-default u-text-2"> CONTACT US </h1>
       </div>
     </section>
     <section class="u-clearfix u-section-4" id="sec-8479">
@@ -20,7 +19,7 @@ us </h1>
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
                   <img class="u-expand-resize u-image u-image-1" src="images/2019011711285412.png" data-image-width="200" data-image-height="200">
-                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b>客服专线</b><b></b>
+                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>客服专线</b><b></b>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 服务时间：7*24H专家必接&nbsp;&nbsp;<br>全国统一客服热线：0571-28120373 
                   </p>
@@ -29,7 +28,7 @@ us </h1>
               <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
                   <img class="u-expand-resize u-image u-image-2" src="images/20190117112911729.png" data-image-width="200" data-image-height="200">
-                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-3"><b>合作联系</b><b></b>
+                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-3 yahei"><b class='yahei'>合作联系</b><b></b>
                     <br>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-4">电话：0571-28120373&nbsp;<br>邮箱：712323016@qq.com
@@ -39,7 +38,7 @@ us </h1>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <img class="u-expand-resize u-image u-image-3" src="images/20190117112925987.png" data-image-width="200" data-image-height="200">
-                  <p class="u-custom-font u-heading-font u-text u-text-5"><b>杭州总部地址</b><b></b>
+                  <p class="u-custom-font u-heading-font u-text u-text-5"><b class='yahei'>杭州总部地址</b><b></b>
                     <br>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-6">地址：杭州市拱墅区绿景国际1幢5F&nbsp;<br>电话：0571-28120373<br> 邮箱：712323016@qq.com&nbsp;&nbsp;
@@ -59,7 +58,7 @@ us </h1>
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
                   <img class="u-expand-resize u-image u-image-1" src="images/2019011711285412.png" data-image-width="200" data-image-height="200">
-                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b>在线客服</b><b></b>
+                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>在线客服</b><b></b>
                     <br>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">杭州光影农贸市场研究院专注农贸市场研究17年，提供农贸市场需求一站式解决方案，顾客可以在线咨询&nbsp;&nbsp;</p>
@@ -68,7 +67,7 @@ us </h1>
               <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
                   <img class="u-expand-resize u-image u-image-2" src="images/20190117112000767.png" data-image-width="200" data-image-height="200">
-                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-3" style='width:100px'><b>产品咨询</b><b></b>
+                  <p class="u-custom-font u-heading-font u-text u-text-default u-text-3" style='width:100px'><b class='yahei'>产品咨询</b><b></b>
                     <br>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-4">对于农贸市场定位，设计，营运，招商，电商，智能菜场升级有任何疑问，既可以在心留言也可以拨打我们的客服专线：0571-28120373&nbsp;&nbsp;</p>
@@ -77,7 +76,7 @@ us </h1>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <img class="u-expand-resize u-image u-image-3" src="images/20190117130841629.png" data-image-width="200" data-image-height="200">
-                  <p class="u-custom-font u-heading-font u-text u-text-5"><b>友情链接</b><b>/广告合作</b>
+                  <p class="u-custom-font u-heading-font u-text u-text-5"><b class='yahei'>友情链接/广告合作</b>
                     <br>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-6">电话：0571-28120373&nbsp;<br>邮箱：712323016@qq.com&nbsp;&nbsp;

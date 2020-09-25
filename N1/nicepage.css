@@ -28854,7 +28854,7 @@ a.u-link.u-text-hover-grey-90:hover {
 /*end-variables sitestylecss*/
  .u-header {background-image: none}
 .u-header .u-sheet-1 {min-height: 80px}
-.u-header .u-image-1 {margin: 17px auto 0 0}
+.u-header .u-image-1 {margin: 0px auto 0 0}
 .u-header .u-logo-image-1 {max-width: 168px; max-height: 168px}
 .u-header .u-menu-1 {margin: -41px 250px 23px}
 .u-header .u-nav-1 {font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase}
@@ -28970,7 +28970,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-table-cell-77 {font-size: 0.875rem}
 .u-footer .u-table-cell-82 {font-size: 0.875rem}
 .u-block-adf5-196 {height: 46px}
-.u-footer .u-text-2 {margin: -172px 125px 0 auto}
+.u-footer .u-text-2 {margin: -177px 120px 10px auto}
 .u-footer .u-text-3 {margin: 160px 594px 30px 0} 
 @media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 927px}
 .u-footer .u-text-1 {width: auto; margin-top: 37px}

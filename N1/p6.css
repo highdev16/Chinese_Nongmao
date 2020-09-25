@@ -84,13 +84,13 @@
 @media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 281px} }
 
 @media (max-width: 575px){ .u-section-2 .u-sheet-1 {min-height: 215px} }.u-section-3 {background-image: none}
-.u-section-3 .u-sheet-1 {min-height: 278px}
-.u-section-3 .u-text-1 {margin-left: 0; margin-right: 0; margin-bottom: 30px; font-size: 1.5rem} 
+.u-section-3 .u-sheet-1 { min-height: 0px }
+.u-section-3 .u-text-1 {margin-left: 0; margin-right: 0; margin-bottom: 30px; font-size: 1.5rem; margin-top: 30px} 
 
 @media (max-width: 991px){ .u-section-3 .u-text-1 {font-size: 1.25rem} }
 
 @media (max-width: 575px){ .u-section-3 .u-text-1 {font-size: 1.125rem} }.u-section-4 {min-height: 685px}
-.u-section-4 .u-layout-wrap-1 {margin: 65px auto 0 0}
+.u-section-4 .u-layout-wrap-1 {margin: 25px auto 0 0}
 .u-section-4 .u-layout-cell-1 {min-height: 315px}
 .u-section-4 .u-container-layout-1 {padding: 30px 40px}
 .u-section-4 .u-text-1 {margin: 27px 0 0}
@@ -142,7 +142,7 @@
 .u-section-4 .u-image-2 {min-height: 201px}
 .u-section-4 .u-text-3 {margin-right: 0; margin-left: 45px} }.u-section-5 {background-image: url("images/goodwoman.jpg"); margin-top: 0; margin-bottom: 0}
 .u-section-5 .u-sheet-1 {min-height: 651px}
-.u-section-5 .u-group-1 {min-height: 468px; width: 501px; height: auto; margin: 183px auto 0 26px}
+.u-section-5 .u-group-1 {min-height: 468px; width: 501px; height: auto; margin: 183px auto 0 196px}
 .u-section-5 .u-container-layout-1 {padding: 30px}
 .u-section-5 .u-text-1 {font-size: 1.875rem; margin: 89px 0 0}
 .u-section-5 .u-text-2 {font-size: 1.875rem; background-image: none; font-family: Alata; margin: 51px 0 0} 

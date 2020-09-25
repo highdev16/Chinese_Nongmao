@@ -2,25 +2,40 @@
 $bigTitle = "农贸市场运营";
 include('../N1/header.php');
 ?>
+<style>  
+  .u-text-palette-2-dark-1 {
+    color: green !important;
+  }
+  h1.bigtitle {
+    font-family: "Microsoft Yahei" !important; font-size: 34px !important;
+  }
+  h2.smalltitle {
+    font-family: "Microsoft Yahei" !important; font-size: 22px !important;
+  }
+  .u-section-5 {
+    margin-bottom: 50px !Important;
+    margin-top: 10px !important;
+  }
+</style>
     <section class="u-clearfix u-section-2" id="sec-f0db">
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-expand-resize u-image u-image-1" src="images/afccb8e4-01ca-fa31-9e5b-fdbed9b132d4.jpg">
         <div class="u-container-style u-group u-group-1">
           <div class="u-container-layout u-container-layout-1"></div>
         </div>
-        <p class="u-text u-text-grey-40 u-text-1">New Machinery Products</p>
-        <p class="u-align-left u-text u-text-black u-text-2"> 农贸市场招商 </p>
+        <p class="u-text u-text-grey-40 u-text-1 yahei">New Machinery Products</p>
+        <p class="u-align-left u-text u-text-black u-text-2 yahei"> 农贸市场招商 </p>
         <p class="u-align-left u-text u-text-grey-75 u-text-3"> 成功的农贸市场招商不仅仅能为市场带来优质的商户，还能顺势快速塑造市场的品牌形象和影响力，从而在消费者心中树立良好形象，促进消费者转化为市场的客户，增加市场的人气，使市场进去商户精-品牌多-人气旺-商户更多的良性循环中。国内各行业的招商工作一片欣欣向荣之势发展，唯独农贸行业的招商工作发展缓慢，缺乏系统的招商经验，导致农贸项目招商工作效果不能保证。 </p>
       </div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-7cb0">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1"> 农贸市场招商难题 </h1>
+        <h1 class="u-text u-text-default u-text-1 yahei"> 农贸市场招商难题 </h1>
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-4" id="sec-c41e">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1" style='min-height: 180px'>
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-image u-layout-cell u-left-cell u-size-20 u-size-30-md u-image-1" data-image-width="483" data-image-height="269">
@@ -29,13 +44,13 @@ include('../N1/header.php');
               <div class="u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
                   <p class="u-align-center u-text u-text-palette-2-dark-1 u-text-1">03</p>
-                  <p class="u-align-center u-text u-text-default u-text-2"> 招商难，招商工作难以推进，商户不愿入驻 </p>
+                  <p class="u-align-center u-text u-text-default u-text-2 element-center"> 招商难，招商工作难以推进，<br>商户不愿入驻 </p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <p class="u-align-center u-text u-text-palette-2-dark-1 u-text-3">04</p>
-                  <p class="u-align-center u-text u-text-default u-text-4"> 管理难，管理官推，经营户难以把控，无法做到统一管理！ </p>
+                  <p class="u-align-center u-text u-text-default u-text-4 element-center"> 管理难，管理官推，经营户难<br>以把控，无法做到统一管理!</p>
                 </div>
               </div>
               <div class="u-container-style u-image u-layout-cell u-right-cell u-size-20 u-size-30-md u-image-2" data-image-width="483" data-image-height="269">
@@ -51,27 +66,21 @@ include('../N1/header.php');
                 <div class="u-container-layout u-container-layout-5">
                   <p class="u-align-center u-text u-text-default u-text-palette-2-dark-1 u-text-5">01</p>
                   <p class="u-align-center u-text u-text-palette-2-dark-1 u-text-6">02</p>
-                  <p class="u-align-center u-text u-text-7"> 收入低，营运成本越来越高，市场营收却越来越少 </p>
-                  <p class="u-align-center u-text u-text-8"> 收入低，营运成本越来越高，市场营收却越来越少 </p>
+                  <p class="u-align-center u-text u-text-7"> 收入低，营运成本越来越高，<br>市场营收却越来越少 </p>
+                  <p class="u-align-center u-text u-text-8"> 收入低，营运成本越来越高，<br>市场营收却越来越少 </p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-image u-layout-cell u-size-20 u-size-30-md u-image-3" data-image-width="483" data-image-height="269">
                 <div class="u-container-layout u-container-layout-6"></div>
               </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-7">
-                <div class="u-container-layout u-container-layout-7">
-                  <p class="u-align-center u-text u-text-default u-text-palette-2-dark-1 u-text-9">05</p>
-                  <p class="u-align-center u-text u-text-10"> 人气低，开业期间或开业一段<br>时间后人气迅速降低！ 
-                  </p>
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-size-30-md u-layout-cell-5">
+                <div class="u-container-layout u-container-layout-5">
+                  <p class="u-align-center u-text u-text-default u-text-palette-2-dark-1 u-text-5">05</p>
+                  <p class="u-align-center u-text u-text-palette-2-dark-1 u-text-6">06</p>
+                  <p class="u-align-center u-text u-text-7"> 人气低，开业期间或开业一段<br>时间后人气迅速降低!</p>
+                  <p class="u-align-center u-text u-text-8"> 无品牌，单一业态传统模<br>式无法形成品牌效应!</p>
                 </div>
-              </div>
-              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-8">
-                <div class="u-container-layout u-container-layout-8">
-                  <p class="u-align-center u-text u-text-palette-2-dark-1 u-text-11">06</p>
-                  <p class="u-align-center u-text u-text-12"> 无品牌，单一业态传统模<br>式无法形成品牌效应！ 
-                  </p>
-                </div>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
@@ -79,8 +88,8 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-5" id="carousel_cdb4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1"> 菜源佳佳招商的优势：“三快三省一系统”的优点 </h1>
-        <h2 class="u-text u-text-default u-text-2">NEW MACHINERY PRODUCTS</h2>
+        <h1 class="u-text u-text-default u-text-1 bigtitle"> 菜源佳佳招商的优势：“三快三省一系统”的优点 </h1>
+        <h2 class="u-text u-text-default u-text-2 smalltitle">NEW MACHINERY PRODUCTS</h2>
       </div>
     </section>
     <section class="u-clearfix u-section-6" id="sec-d54b">
@@ -90,7 +99,7 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-grey-10 u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
-                  <p class="u-text u-text-default u-text-1">&nbsp; &nbsp;1、<!--[endif]-->指快速回笼资金：高效专业的运营模式销快速吸引大量的优质商户入驻，可迅速招募大量资金；&nbsp;&nbsp;</p>
+                  <p class="u-text u-text-default u-text-1">&nbsp; &nbsp;1、指快速回笼资金：高效专业的运营模式销快速吸引大量的优质商户入驻，可迅速招募大量资金；&nbsp;&nbsp;</p>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
@@ -100,7 +109,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-grey-10 u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-valign-middle u-container-layout-3">
-                  <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、<!--[endif]-->快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；
+                  <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；
 快速形成品牌化&nbsp;&nbsp;</p>
                 </div>
               </div>
@@ -117,7 +126,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-grey-50 u-layout-cell u-size-20 u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <p class="u-text u-text-default u-text-5">&nbsp; 2、<!--[endif]-->快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；
+                  <p class="u-text u-text-default u-text-5">&nbsp; 2、快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；
 快速形成品牌化&nbsp;&nbsp;</p>
                 </div>
               </div>
@@ -133,99 +142,19 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-7" id="sec-d5d6">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-default u-text-1"> 菜源佳佳农贸市场招商（放几张平面图）&nbsp;<br>1、对接全国优质的招商资源：基地、批发、农产品厂家：联合康康、知味观、雨润。（配商家图）农产品有机菜、台州无公害蔬菜、浙江放心菜、 
+        <p class="u-text u-text-default u-text-1 yahei" style='font-size: 20px'> 菜源佳佳农贸市场招商（放几张平面图）<br>1、对接全国优质的招商资源：基地、批发、农产品厂家：联合康康、知味观、雨润。（配商家图）农产品有机菜、台州无公害蔬菜、浙江放心菜、 
         </p>
         <div class="u-gallery u-no-transition u-show-text-on-hover u-gallery-1">
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941099851.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-1">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941100121.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-2">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941100701.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-3">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941101031.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-4">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="201" data-image-height="103">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941102741.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-5">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item">
-            <div class="u-back-slide" data-image-width="203" data-image-height="101">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941102931.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-6">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item" data-image-width="172" data-image-height="124">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941103461.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-7">
-              <h3 class=" u-gallery-heading"></h3>
-              <p class=" u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item" data-image-width="197" data-image-height="114">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941104701.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-8">
-              <h3 class=" u-gallery-heading"></h3>
-              <p class=" u-gallery-text"></p>
-            </div>
-          </div>
-          <div class="u-effect-fade u-gallery-item" data-image-width="189" data-image-height="121">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded u-image-contain" src="images/15941127501.jpg">
-            </div>
-            <div class="u-over-slide u-shading u-over-slide-9">
-              <h3 class=" u-gallery-heading"></h3>
-              <p class=" u-gallery-text"></p>
-            </div>
-          </div>
+          <img src='images/support.jpg' style='width: 100%'>
         </div>
-        <p class="u-text u-text-default u-text-2"> 2、招商对象：夫妻店、基地、品牌商家、&nbsp;<br>3、招商方法：系统化定向招商，确保招商效果，使招商入驻率高达90%以上&nbsp;<br>4、招商政策制定：根据当地情况进行调研并制定前期招商策略 
+        <p class="u-text u-text-default u-text-2 yahei" style='font-size: 24px'> 2、招商对象：夫妻店、基地、品牌商家、&nbsp;<br>3、招商方法：系统化定向招商，确保招商效果，使招商入驻率高达90%以上&nbsp;<br>4、招商政策制定：根据当地情况进行调研并制定前期招商策略 
         </p>
       </div>
     </section>
     <section class="u-align-left u-clearfix u-image u-shading u-section-8" src="" id="sec-a760">
       <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
-        <h1 class="u-text u-text-default u-title u-text-1"> 2019年，你是否有以下困惑： </h1>
-        <p class="u-large-text u-text u-text-variant u-text-2"> 1、你是否有一个场地想要整体出租做农贸市场？&nbsp;&nbsp;<br>2、你是否想引进高端的农贸市场品牌商家，不知道如何去找？&nbsp;&nbsp;<br>3、你是否想打造自己的品牌农贸市场，却不知道如何下手？ 
+        <h1 class="u-text u-text-default u-title u-text-1 yahei"> 2019年，你是否有以下困惑： </h1>
+        <p class="u-large-text u-text u-text-variant u-text-2 yahei"> 1、你是否有一个场地想要整体出租做农贸市场？&nbsp;&nbsp;<br>2、你是否想引进高端的农贸市场品牌商家，不知道如何去找？&nbsp;&nbsp;<br>3、你是否想打造自己的品牌农贸市场，却不知道如何下手？ 
         </p>
       </div>
     </section>

@@ -2,6 +2,12 @@
 $bigTitle = "农贸市场运营";
 include('../N1/header.php');
 ?>
+<style>
+  .u-section-5 {
+    width: 1500px;
+    margin: 0 auto;
+  }
+</style>
     <section class="u-clearfix u-section-2" id="sec-3314">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
@@ -23,10 +29,10 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-image u-shading u-section-3" id="sec-a679" data-image-width="1600" data-image-height="1000">
-      <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1"  style='padding-bottom: 50px; min-height: 0px'>
         <p class="u-align-center u-text u-text-1">菜源佳佳品牌加盟</p>
         <p class="u-align-center u-text u-text-default u-text-2"> 整租合作、股份合作、委托经营 </p>
-        <p class="u-align-left u-text u-text-3"><!--[if !supportLists]-->1、<!--[endif]-->加盟菜源佳佳品牌，采用菜源佳佳整套智能菜场系统。&nbsp;<!--[if !supportLists]-->
+        <p class="u-align-left u-text u-text-3 yahei" style='width: fit-content; margin: 30px auto 0 auto; font-size: 20px'><!--[if !supportLists]-->1、<!--[endif]-->加盟菜源佳佳品牌，采用菜源佳佳整套智能菜场系统。&nbsp;<!--[if !supportLists]-->
           <br>2、<!--[endif]-->建立标准化的：管理标准，监督标准，智能标准。建立双方股权合作机制，共同发展智能菜场新事业。&nbsp;<!--[if !supportLists]-->
           <br>3、<!--[endif]-->委托经营管理：打造标准化的五星级农贸市场和超市商场般的品质。&nbsp;<!--[if !supportLists]-->
           <br>4、<!--[endif]-->菜源佳佳管理优势：&nbsp;<!--[if !supportLists]-->
@@ -37,9 +43,9 @@ include('../N1/header.php');
         </p>
       </div>
     </section>
-    <section class="u-clearfix u-section-4" id="sec-fb1d">
+    <section class="u-clearfix u-section-4" id="sec-fb1d" style='margin-top: 50px'>
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-default u-text-1"> 菜源佳佳指导培训 </h1>
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei"> 菜源佳佳指导培训 </h1>
         <p class="u-align-center u-text u-text-default u-text-2"> 管理员培训、经营户培训、招商、开业、长效管理 </p>
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -104,7 +110,9 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-5" id="sec-600a">
-      <div class="u-clearfix u-image u-sheet u-image-1"></div>
+      <div class='row'>
+        <img src='images/ScreenShot2020-08-17at4.41.36AM.png' style='width: 1500px; margin: 0 auto 0 auto'>
+      </div>
     </section>
     
     

@@ -90,16 +90,16 @@
 .u-section-3 .u-sheet-1 {min-height: 529px}
 .u-section-3 .u-layout-wrap-1 {margin: 60px auto 0 0}
 .u-section-3 .u-layout-cell-1 {min-height: 409px}
-.u-section-3 .u-container-layout-1 {padding: 30px 60px}
-.u-section-3 .u-text-1 {font-size: 2.25rem; margin: 0 -60px 0 0}
+.u-section-3 .u-container-layout-1 {padding: 30px 60px 0px 0px;}
+.u-section-3 .u-text-1 {font-size: 24px; font-family: "Microsoft Yahei" !important; line-height: 40px; margin: 0 -60px 0 0}
 .u-section-3 .u-layout-cell-2 {min-height: 409px}
 .u-section-3 .u-container-layout-2 {padding: 30px}
-.u-section-3 .u-image-1 {width: 509px; height: 288px; margin: 102px auto 0 -269px}
+.u-section-3 .u-image-1 {width: 709px; height: 388px; margin: 32px auto 0 -269px}
 .u-section-3 .u-layout-wrap-2 {margin: 0 auto 60px 0}
 .u-section-3 .u-layout-cell-3 {min-height: 409px}
-.u-section-3 .u-container-layout-3 {padding: 30px}
+.u-section-3 .u-container-layout-3 {padding: 30px; padding-left: 0px}
 .u-section-3 .u-image-2 {width: 509px; height: 288px; margin: 101px auto 0 491px}
-.u-section-3 .u-text-2 {font-size: 2.25rem; margin: -389px -325px 0 0}
+.u-section-3 .u-text-2 {font-size: 24px; font-family: "Microsoft Yahei" !important; line-height: 40px; margin: 0 -60px 0 0}
 .u-section-3 .u-layout-cell-4 {min-height: 409px}
 .u-section-3 .u-container-layout-4 {padding: 30px} 
 

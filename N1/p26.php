@@ -137,9 +137,17 @@ while (strlen($temp) > 0) {
 	table.class_specified tr td:last-child {
 		padding-left: 20px;
     vertical-align: top;
-
-
-  } </style>
+  } 
+  button.gotootherpage:hover {
+    border: 1px solid #ff6500 !important;
+    background-color: #ff6500 !important;
+    color: white;
+  }
+  button.gotootherpage {
+    background: white; border: 1px solid black;
+    padding: 6px 30px;
+  }
+  </style>
                   <script src='../js/js/all.js'></script>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -166,13 +174,13 @@ while (strlen($temp) > 0) {
                     <div style='width: 100%;' class='main_content_area'>
                       <?php echo $row['content']; ?>
                     </div>
-                    <div style='width: 100%;'>
-                      <button style='background: white; border: 1px solid black'>上一页</button>
-                      <button style='background: white; border: 1px solid black'>下一页</button>
+                    <div style='width: 100%; display: flex; justify-content: center; margin-top: 30px'>
+                      <button class='gotootherpage' style='margin-right: 10px'>上一页</button>
+                      <button class='gotootherpage'>下一页</button>
                     </div>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-white u-layout-cell-2" style='height: fit-content; min-height: 0px'>
+              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-white u-layout-cell-2" id='fixed_sidebar' style='height: fit-content; min-height: 0px'>
                 <div class="u-container-layout u-container-layout-2">
                   <p class="u-custom-font u-text u-text-default u-text-1">我需要： （可多选)</p>
                   <div class="u-clearfix u-custom-html u-custom-html-1">
@@ -253,9 +261,72 @@ while (strlen($temp) > 0) {
         $("#mainImage").attr('src', $(this).attr('src'));
       });
 
+      let sidebarFixed = null, sidebar;
       $(document).ready(function() {
-          let myCategory = <?php echo $info[0]['category']; ?>;
-          $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu')
+        sidebar = $("#fixed_sidebar");
+        let position = sidebar.offset();
+        let width = Number(sidebar.width()) + 16;
+        let height = sidebar.height();
+        let s = sidebar.clone().insertAfter($("footer"));
+        sidebarFixed = s;
+        s.addClass('sidebar-fixed')
+            .css('position', 'fixed')
+            .css('left', position.left + "px")
+            .css('top', "70px")
+            .css('height', 750 + "px")
+            .css('width', width + "px")
+            .css('border', "8px solid #fff0")
+            .css('padding', "5px 30px 30px 15px").hide();
+        window.addEventListener('scroll', function(){
+          let gita = ($("footer"));          
+          if (document.documentElement.scrollTop < 70) {
+            sidebarFixed[0].style.display = 'none';
+            sidebar.show();
+          }
+          else {
+            if (gita.offset().top - 15 < document.documentElement.scrollTop + 750) {
+              sidebarFixed.css('top', gita.offset().top - 15 - 750 -document.documentElement.scrollTop + "px");
+            } else sidebarFixed.css('top', "70px");
+            sidebarFixed[0].style.display = 'block';
+            sidebar.hide();
+          }
+        });
+
+        s.find("input, textarea").each(function(ind, ele) {
+          if (this.hasAttribute('id')) {
+            $(this).attr('id', $(this).attr('id') + "_second");
+            if (($(this).attr('type') || "").toLowerCase() == 'checkbox') {
+              let self = this;
+
+              $(this).change(function() {
+                $("#" + self.id.substr(0, self.id.length - 7)).prop('checked', (this.checked));
+              })
+            } else {
+              let self = this;
+              $(this).change(function() {
+                $("#" + self.id.substr(0, self.id.length - 7)).val((self.value));
+              })
+            }
+          }
+        })
+        sidebar.find("input, textarea").each(function(ind, ele) {
+          if (this.hasAttribute('id')) {
+            if (($(this).attr('type') || "").toLowerCase() == 'checkbox') {
+              let self = this;
+              $(this).change(function() {
+                $("#" + self.id + "_second").prop('checked', (this.checked));
+              })
+            } else {
+              let self = this;
+              $(this).change(function() {
+                $("#" + self.id + "_second").val((self.value));
+              })
+            }
+          }
+        })
+      
+        let myCategory = <?php echo $info[0]['category']; ?>;
+        $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu')
       })
    
       function submitForm() {

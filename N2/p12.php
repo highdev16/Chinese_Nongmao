@@ -12,9 +12,11 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-4" id="sec-d460">
-      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1337" data-image-height="567"></div>
+      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1337" data-image-height="567">
+        <img src='images/ScreenShot2020-08-11at5.37.20AM.png' style='width: 100%'>
+      </div>
     </section>
-    <section class="u-clearfix u-section-5" id="sec-9cef">
+    <section class="u-clearfix u-section-5" id="sec-9cef" style='margin-bottom: 0px !Important'>
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <img class="u-expand-resize u-expanded-width u-image u-image-1" src="images/41.jpg" data-image-width="1920" data-image-height="1029">
       </div>

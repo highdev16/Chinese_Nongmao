@@ -2,21 +2,21 @@
 $bigTitle = "智能菜场";
 include('../N1/header.php');
 ?>
+<img src="images/bkg.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1001" data-image-height="439" style='width: 100%'>
     <section class="u-clearfix u-section-2" id="sec-3314">
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px'>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='margin-bottom: 0px'>
-          <div class="u-gutter-0 u-layout">
+          <div class="">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
-                <div class="u-container-layout u-valign-bottom u-container-layout-1">
-                  <img src="images/ScreenShot2020-08-17at6.06.16AM.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1001" data-image-height="439">
-                  <p class="u-align-center u-text u-text-1">&nbsp; 城市智能菜场应用&nbsp;&nbsp;<br><b></b>
+                <div class="u-container-layout u-valign-bottom u-container-layout-1">                  
+                  <p class="u-align-center u-text u-text-1 yahei">城市智能菜场应用
                   </p>
                   <p class="u-align-center u-text u-text-default u-text-2"> SMART MARKET APPLICATION</p>
                   <p class="u-align-left u-text u-text-3"> 打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；
 为政府部门提高食品安全监管提供食品溯源通道；为商户增加客源提高收入，同时简化销售流程更高效；
 为消费者提供诚信安全的消费环境，良好的购物体验。智能农贸信息化管理平台通过物联网的技术实时采集电子秤交易数据、客流检测仪数据、食品安全检测数据，为市场招商，商家采购货物以及蔬菜是实现市场的舆情分析和判断。 </p>
-                  <p class="u-align-center u-text u-text-default u-text-4" style='margin-top: 70px'>三大核心应用场景</p>
+                  <p class="u-align-center u-text u-text-default u-text-4 yahei" style='margin-top: 70px'>三大核心应用场景</p>
                   <p class="u-align-center u-text u-text-default u-text-5">THREE CORE APPLICATION SCENARIOS</p>
                 </div>
               </div>

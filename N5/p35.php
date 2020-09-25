@@ -2,16 +2,23 @@
 $bigTitle = "光影集团";
 include('../N1/header.php');
 ?>
+<style>
+  .full-width {
+    width: 1500px !important;
+    margin: 0 auto 0 auto;
+  }
+  .u-section-5 {
+    margin-bottom: 0px !important;
+  }
+</style>
     <section class="u-clearfix u-section-2" id="sec-d817">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-default u-text-1"> 光影团队 </h1>
-        <p class="u-align-center u-custom-font u-heading-font u-text u-text-2">&nbsp; 企业顶尖团队技术成员100多人在17年时间对全国32省市的农贸市场进行了大量调研，高水准设计出符合全国本土化的星级农贸市场，科学设计摊位大小，合理分布蔬菜水果鲜肉家禽水产干货粮油业态，设计风格亲民有档次，摊位美观适用，树立多个城市五星四星三星农贸市场样板，赢得了政府，消费者，经营户一致的好评。&nbsp;&nbsp;</p>
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei" style='margin-top: 70px'> 光影团队 </h1>
+        <p class="u-align-center u-custom-font u-heading-font u-text u-text-2" style='font-size: 22px !important'>企业顶尖团队技术成员100多人在17年时间对全国32省市的农贸市场进行了大量调研，高水准设计出符合全国本土化的星级农贸市场，科学设计摊位大小，合理分布蔬菜水果鲜肉家禽水产干货粮油业态，设计风格亲民有档次，摊位美观适用，树立多个城市五星四星三星农贸市场样板，赢得了政府，消费者，经营户一致的好评。&nbsp;&nbsp;</p>
       </div>
     </section>
-    <section class="u-clearfix u-section-3" id="sec-a365">
-      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1200" data-image-height="596" style='
-    width: 1200px; max-width: calc(100% - 40px);
-'></div>
+    <section class="u-clearfix u-section-3 full-width" id="sec-a365">
+      <img src='images/scchtd.jpg' style='width: 100%'>
     </section>
     <section class="u-clearfix u-section-4" id="sec-aed1">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">

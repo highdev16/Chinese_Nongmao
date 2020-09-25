@@ -63,7 +63,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-image u-section-6" id="sec-9ca0" data-image-width="3491" data-image-height="1234">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-align-center u-text u-text-body-alt-color u-text-1" STYLE='WIDTH:600px'> 农贸市场投资政府合作 </p>
+        <p class="u-align-center u-text u-text-body-alt-color u-text-1 yahei" STYLE='WIDTH:600px'> 农贸市场投资政府合作 </p>
         <p class="u-align-center u-text u-text-body-alt-color u-text-2"> 光影农贸市场设计研究院为政府有关部门提供整个城市的农贸市场网点规划，<br>统一进行项目装修设计，统一装修，统一运营。 
         </p>
         

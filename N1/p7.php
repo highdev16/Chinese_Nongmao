@@ -348,7 +348,6 @@ while (strlen($temp) > 0) {
     <script>
       let sidebarFixed = null, sidebar;
       $(document).ready(function() {
-
         sidebar = $("#fixed_sidebar");
         let position = sidebar.offset();
         let width = Number(sidebar.width()) + 16;
@@ -365,11 +364,14 @@ while (strlen($temp) > 0) {
             .css('padding', "5px 30px 30px 15px").hide();
         window.addEventListener('scroll', function(){
           let gita = ($("#gita_area"));
-          if (gita.offset().top - 70 < document.documentElement.scrollTop + 750 || document.documentElement.scrollTop < 70) {
+          if (document.documentElement.scrollTop < 70) {
             sidebarFixed[0].style.display = 'none';
             sidebar.show();
           }
           else {
+            if (gita.offset().top - 85 < document.documentElement.scrollTop + 750) {
+              sidebarFixed.css('top', gita.offset().top - 85 - 750 -document.documentElement.scrollTop + "px");
+            } else sidebarFixed.css('top', "70px");
             sidebarFixed[0].style.display = 'block';
             sidebar.hide();
           }

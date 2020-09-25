@@ -42,8 +42,8 @@
     </style>
     <footer class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-clearfix u-footer u-grey-80 u-footer" id="sec-dc14">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 20px'>
-        <h3 class="u-text u-text-default u-text-1"  style='margin-bottom: 30px; '>友情链接:</h3>
-        <div class='friendly_links' style='margin-bottom: 30px'>
+        <h3 class="u-text u-text-default u-text-1"  style='margin-bottom: 20px; '>友情链接:</h3>
+        <div class='friendly_links' style='margin-bottom: 20px'>
         	<table style='width:100%'>
         <?php
           for ($i = 0; $i < sizeof($rows);) { ?>
@@ -131,7 +131,7 @@
           </table>
         </div>
         <p class="u-text u-text-default u-text-2">官方微信</p>
-        <p class="u-text u-text-3" style='font-weight: 200 !important; margin-bottom: 10px !important'>联系电话: 0571-887766550571-28120373<br>地址:杭州市拱墅区通益路861号録景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br><SPAN STYLE='cursor:pointer;' onclick='window.open("https://beian.miit.gov.cn/", "_blank");'>浙ICP备1049450号-1</span><br>
+        <p class="u-text u-text-3" style='font-weight: 200 !important; margin-top: 180px; margin-bottom: 10px !important'>联系电话: 0571-887766550571-28120373<br>地址:杭州市拱墅区通益路861号録景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br><SPAN STYLE='cursor:pointer;' onclick='window.open("https://beian.miit.gov.cn/", "_blank");'>浙ICP备1049450号-1</span><br>
           <br>
         </p>
       </div></footer>

@@ -2,6 +2,31 @@
 $bigTitle = "农贸市场投资";
 include('../N1/header.php');
 ?>
+<style>
+  .u-section-5 {
+    margin-bottom: 0px !important;
+  }
+  div.grid-3 > div > div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-section-5 .u-sheet-1 {
+    min-height: 18px !important;
+  }
+  div.grid-3 > div {
+    width: 32%;
+    max-width: 32%;
+    flex: 0 0 32%;
+  }
+  div.grid-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .u-section-5 {
+    width: 1500px;
+    margin: 0 auto;
+  }
+</style>
     <section class="u-clearfix u-section-2" id="sec-217c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -34,27 +59,27 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-5" id="sec-0f1f">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-1" style='margin-bottom: 20px'> 投资项目展示（选） </h1>
+        <h1 class="u-align-center u-text u-text-1 yahei" style='margin-bottom: 0px; font-size: 30px;'> 投资项目展示(选) </h1>
       </div>
     </section>
     <section class="u-clearfix u-section-6" id="sec-e983">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1" style='margin-top: 0'>
           <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+            <div class="u-layout-row  grid-3">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
                   <img src="images/lADPD2eDMzJwVyzNDbTNE2E_4961_3508.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="4961" data-image-height="3508">
                   <p class="u-align-center u-text u-text-default u-text-1" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+              <div class="u-container-style u-layout-cell u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
                   <img src="images/7.png" alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="638" data-image-height="302">
                   <p class="u-align-center u-text u-text-default u-text-2" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+              <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <img src="images/lADPD3lGrGpWrZvNDbTNE2E_4961_35081.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="1600" data-image-height="1131">
                   <p class="u-align-center u-text u-text-default u-text-3" style='width:100%'> 案例名称 </p>
@@ -65,20 +90,20 @@ include('../N1/header.php');
         </div>
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
           <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
+            <div class="u-layout-row grid-3">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell  u-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <img src="images/9.png" alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="342" data-image-height="206">
                   <p class="u-align-center u-text u-text-default u-text-4" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5">
+              <div class="u-container-style u-layout-cell  u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
                   <img src="images/10.png" alt="" class="u-expanded-width u-image u-image-default u-image-5" data-image-width="287" data-image-height="196">
                   <p class="u-align-center u-text u-text-default u-text-5" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
+              <div class="u-container-style u-layout-cell u-right-cell  u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
                   <img src="images/111.png" alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="636" data-image-height="295">
                   <p class="u-align-center u-text u-text-default u-text-6" style='width:100%'> 案例名称 </p>
@@ -89,5 +114,5 @@ include('../N1/header.php');
         </div>
       </div>
     </section>
-    
+    <div style='width: 100%; height: 50px'></div>
     <?php include('../N1/footer.php'); ?>
