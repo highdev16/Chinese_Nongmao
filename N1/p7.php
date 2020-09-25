@@ -23,7 +23,7 @@ while (strlen($temp) > 0) {
   if ($r !== FALSE) {
     $d = strpos(substr($temp, $r + 4), 'src=') + $r + 9;
     $r = strpos(substr($temp, $d + 10), '"') + $d + 10;
-    $imageURLs[] = substr($temp, $d, $r - $d);    
+    $imageURLs[] = substr($temp, $d, $r - $d);
     $temp = substr($temp, $r);
   } else break;
 }
@@ -39,7 +39,7 @@ while (strlen($temp) > 0) {
       img.article-image:hover {
         transform: scale(1.1);
       }
-      a.selected-a-button {    
+      a.selected-a-button {
         border: 2px solid #ff6500;
         background: #ff6500;
         margin-top: 20px;
@@ -105,7 +105,7 @@ while (strlen($temp) > 0) {
     position: absolute;
   }
   td.arrowcell:hover img {
-    opacity: 0.5;    
+    opacity: 0.5;
   }
   td.arrowcell {
     cursor:pointer;
@@ -190,7 +190,7 @@ while (strlen($temp) > 0) {
                         </tr>
                         <tr style="height: 47px;">
                           <td style='background-color:#eee;border:1px solid #ddd; padding-left:10px'>项目风格</td>
-                          <td style='border:1px solid #ddd; padding-left: 10px'><?php echo htmlspecialchars($row['project_style']); ?></td>                          
+                          <td style='border:1px solid #ddd; padding-left: 10px'><?php echo htmlspecialchars($row['project_style']); ?></td>
                         </tr>
                         <tr style="height: 47px;">
                           <td style='background-color:#eee;border:1px solid #ddd; padding-left:10px'>星级标准</td>
@@ -251,7 +251,7 @@ while (strlen($temp) > 0) {
                   </div>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-white u-layout-cell-2">
+              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-white u-layout-cell-2" id='fixed_sidebar'>
                 <div class="u-container-layout u-container-layout-2">
                   <p class="u-custom-font u-text u-text-default u-text-1">我需要： （可多选)</p>
                   <div class="u-clearfix u-custom-html u-custom-html-1">
@@ -264,7 +264,7 @@ while (strlen($temp) > 0) {
 		margin-right: 20px;
 		vertical-align: top;
   }
-  
+
 	table.class_specified tr td:last-child {
 		padding-left: 20px;
     vertical-align: top;
@@ -330,7 +330,7 @@ while (strlen($temp) > 0) {
                   <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
                     <p style="text-align:center">已有<big style="color: red">235</big>业主申请了此服务
                     </p>
-                    <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655 
+                    <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655
                     </p>
                   </div>
                 </div>
@@ -346,17 +346,83 @@ while (strlen($temp) > 0) {
       }
     </style>
     <script>
+      let sidebarFixed = null, sidebar;
+      $(document).ready(function() {
+
+        sidebar = $("#fixed_sidebar");
+        let position = sidebar.offset();
+        let width = Number(sidebar.width()) + 16;
+        let height = sidebar.height();
+        let s = sidebar.clone().insertAfter($("footer"));
+        sidebarFixed = s;
+        s.addClass('sidebar-fixed')
+            .css('position', 'fixed')
+            .css('left', position.left + "px")
+            .css('top', "70px")
+            .css('height', 750 + "px")
+            .css('width', width + "px")
+            .css('border', "8px solid #fff0")
+            .css('padding', "5px 30px 30px 15px").hide();
+        window.addEventListener('scroll', function(){
+          let gita = ($("#gita_area"));
+          if (gita.offset().top - 70 < document.documentElement.scrollTop + 750 || document.documentElement.scrollTop < 70) {
+            sidebarFixed[0].style.display = 'none';
+            sidebar.show();
+          }
+          else {
+            sidebarFixed[0].style.display = 'block';
+            sidebar.hide();
+          }
+        });
+
+        s.find("input, textarea").each(function(ind, ele) {
+          if (this.hasAttribute('id')) {
+            $(this).attr('id', $(this).attr('id') + "_second");
+            if (($(this).attr('type') || "").toLowerCase() == 'checkbox') {
+              let self = this;
+
+              $(this).change(function() {
+                $("#" + self.id.substr(0, self.id.length - 7)).prop('checked', (this.checked));
+              })
+            } else {
+              let self = this;
+              $(this).change(function() {
+                $("#" + self.id.substr(0, self.id.length - 7)).val((self.value));
+              })
+            }
+          }
+        })
+        sidebar.find("input, textarea").each(function(ind, ele) {
+          if (this.hasAttribute('id')) {
+            if (($(this).attr('type') || "").toLowerCase() == 'checkbox') {
+              let self = this;
+              $(this).change(function() {
+                $("#" + self.id + "_second").prop('checked', (this.checked));
+              })
+            } else {
+              let self = this;
+              $(this).change(function() {
+                $("#" + self.id + "_second").val((self.value));
+              })
+            }
+          }
+        })
+      })
+
       function submitForm() {
         $("div.u-form-send-message").hide();
         $(".u-form-field-error").removeClass('u-form-field-error');
         if ($("#namefield").val().trim().length == 0) {
           $("#namefield").addClass('u-form-field-error');
+          $("#namefield_second").addClass('u-form-field-error');
         }
         if ($("#emailfield").val().trim().length == 0) {
           $("#emailfield").addClass('u-form-field-error');
+          $("#emailfield_second").addClass('u-form-field-error');
         }
-        if ($("#messagefield").val().trim().length == 0 || $("#emailfield").val().indexOf('@') == -1) {
+        if ($("#messagefield").val().trim().length == 0) {
           $("#messagefield").addClass('u-form-field-error');
+          $("#messagefield_second").addClass('u-form-field-error');
         }
         let type = [];
         if ($("#s111111")[0].checked) type.push('设计');
@@ -364,14 +430,14 @@ while (strlen($temp) > 0) {
         if ($("#s111113")[0].checked) type.push('投资');
         if ($("#s111114")[0].checked) type.push('融资');
         $.post('save_consult.php', { data: {
-                    name: $("#namefield").val().trim(), 
-                    email: $("#emailfield").val().trim(), 
-                    message: $("#messagefield").val().trim(), 
+                    name: $("#namefield").val().trim(),
+                    email: $("#emailfield").val().trim(),
+                    message: $("#messagefield").val().trim(),
                     type
               }}, function(a,b) {
                 if (a == 'success') {
                   $("div.u-form-send-success").show(0).delay(3000).hide(0);
-                } else 
+                } else
                   $("div.u-form-send-error").show(0).delay(3000).hide(0);
               }).fail(function() {
                 alert("失败！网络错误。");
@@ -388,14 +454,14 @@ while (strlen($temp) > 0) {
                   <?php echo $row['content']; ?>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="u-clearfix u-white u-section-5" id="sec-3302">
-    
+
       <script src='../js/jspaginator.js'></script>
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
@@ -403,15 +469,15 @@ while (strlen($temp) > 0) {
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
               <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
-              <button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  id='gita_area'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
-            <div class="u-layout-row">
-              <?php 
+            <div class="u-layout-row"  style='padding: 0; justify-content: space-between'>
+              <?php
               $data = $db->rawQuery("select * from cases where category=" . intval($info[0]['category']) . " and id != $caseIndex order by created_date desc limit 0, 3");
 
-              for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) { 
-                $row = $data[$k - 1]; 
+              for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) {
+                $row = $data[$k - 1];
                 $r = strpos($row['content'], '<img');
                 $alt = "No Image";
                 if ($r !== FALSE) {
@@ -425,35 +491,35 @@ while (strlen($temp) > 0) {
                   <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
                     <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
                     display: flex;justify-content: center;align-items: center; background:black;'>
-                      <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+                      <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                           src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
                     </div>
                     <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                       <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
                     </div>
-                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>                
-                      <?php 
-                        for ($j = 0; $j < floatval($row['stars']); $j++) 
+                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>
+                      <?php
+                        for ($j = 0; $j < floatval($row['stars']); $j++)
                           echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                      ?>                  
+                      ?>
                       <div style='float:left; min-width:20px; min-height: 30px;'></div>
                       <div style='float:left; font-size: 12px;line-height: 24px'>
                         <i class="far fa-images"></i>&nbsp;
                         <?php echo substr_count($row['content'], '<img'); ?>
-                      </div>              
+                      </div>
                       <div style='float:left; min-width:20px; min-height: 30px;'></div>
                       <div style='float:left;font-size: 12px;line-height: 24px'>
                         <i class="far fa-user"></i>&nbsp;
                         <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                      </div>              
+                      </div>
                       <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                     </div>
-                    
-                    
+
+
                   </div>
-                </div> 
+                </div>
               <?php } if (sizeof($data) < 3) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>"; ?>
-              
+
             </div>
           </div>
         </div>
@@ -463,23 +529,23 @@ while (strlen($temp) > 0) {
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>
     <section class="u-clearfix u-white u-section-5" id="sec-3302">
-    
+
       <script src='../js/jspaginator.js'></script>
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
-              <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;'>其他精彩案例</div>
+              <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;' id='gita_area1'>其他精彩案例</div>
               <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
-            <?php 
+            <?php
             $data = $db->rawQuery("select * from cases where id in (select max(id) from cases where category != " . intval($info[0]['category']) . " group by category) order by category");
             ?>
-            <div class="u-layout-row" style='padding: 0; justify-content: space-between'>              
+            <div class="u-layout-row" style='padding: 0; justify-content: space-between'>
             <?php
-              for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) { 
-                $row = $data[$k - 1]; 
+              for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) {
+                $row = $data[$k - 1];
                 $r = strpos($row['content'], '<img');
                 $alt = "No Image";
                 if ($r !== FALSE) {
@@ -493,35 +559,35 @@ while (strlen($temp) > 0) {
                   <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
                     <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
                     display: flex;justify-content: center;align-items: center; background:black;'>
-                      <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+                      <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                           src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
                     </div>
                     <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                       <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
                     </div>
-                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>                
-                      <?php 
-                        for ($j = 0; $j < floatval($row['stars']); $j++) 
+                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>
+                      <?php
+                        for ($j = 0; $j < floatval($row['stars']); $j++)
                           echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                      ?>                  
+                      ?>
                       <div style='float:left; min-width:20px; min-height: 30px;'></div>
                       <div style='float:left; font-size: 12px;line-height: 24px'>
                         <i class="far fa-images"></i>&nbsp;
                         <?php echo substr_count($row['content'], '<img'); ?>
-                      </div>              
+                      </div>
                       <div style='float:left; min-width:20px; min-height: 30px;'></div>
                       <div style='float:left;font-size: 12px;line-height: 24px'>
                         <i class="far fa-user"></i>&nbsp;
                         <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                      </div>              
+                      </div>
                       <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                     </div>
-                    
-                    
+
+
                   </div>
-                </div> 
+                </div>
               <?php } if (sizeof($data) < 3) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>"; ?>
-              
+
             </div>
           </div>
         </div>
@@ -542,10 +608,10 @@ while (strlen($temp) > 0) {
           $("#scrollContent").animate({'margin-left' : Math.min(0, parseInt($("#scrollParent").width()) - parseInt($("#scrollContent").width()))}, 100);
         else if (pos >= 0)
           $("#scrollContent").animate({'margin-left' : 0}, 1000);
-          
-        else 
+
+        else
         $("#scrollContent").animate({'margin-left' : pos + 'px'}, 100);
       }
     </script>
-    
+
     <?php include('../N1/footer.php'); ?>
