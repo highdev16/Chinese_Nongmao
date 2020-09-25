@@ -48,7 +48,7 @@ include('../N1/dbconfig.php');
                 <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 267.5 267.5" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a8e0"></use></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 267.5 267.5" x="0px" y="0px" id="svg-a8e0" style="enable-background:new 0 0 267.5 267.5;"><path d="M256.975,100.34c0.041,0.736-0.013,1.485-0.198,2.229l-16.5,66c-0.832,3.325-3.812,5.663-7.238,5.681l-99,0.5  c-0.013,0-0.025,0-0.038,0H35c-3.444,0-6.445-2.346-7.277-5.688l-16.5-66.25c-0.19-0.764-0.245-1.534-0.197-2.289  C4.643,98.512,0,92.539,0,85.5c0-8.685,7.065-15.75,15.75-15.75S31.5,76.815,31.5,85.5c0,4.891-2.241,9.267-5.75,12.158  l20.658,20.814c5.221,5.261,12.466,8.277,19.878,8.277c8.764,0,17.12-4.162,22.382-11.135l33.95-44.984  C119.766,67.78,118,63.842,118,59.5c0-8.685,7.065-15.75,15.75-15.75s15.75,7.065,15.75,15.75c0,4.212-1.672,8.035-4.375,10.864  c0.009,0.012,0.02,0.022,0.029,0.035l33.704,45.108c5.26,7.04,13.646,11.243,22.435,11.243c7.48,0,14.514-2.913,19.803-8.203  l20.788-20.788C238.301,94.869,236,90.451,236,85.5c0-8.685,7.065-15.75,15.75-15.75s15.75,7.065,15.75,15.75  C267.5,92.351,263.095,98.178,256.975,100.34z M238.667,198.25c0-4.142-3.358-7.5-7.5-7.5h-194c-4.142,0-7.5,3.358-7.5,7.5v18  c0,4.142,3.358,7.5,7.5,7.5h194c4.142,0,7.5-3.358,7.5-7.5V198.25z"></path></svg>
               </span>
-              <h5 class="u-text u-text-default u-text-1 graytitle" style='color: rgb(51, 51, 51); font-size: 18px'>市场调研</h5>
+              <h5 class="u-text u-text-default u-text-1 graytitle yahei" style='color: rgb(51, 51, 51); font-size: 18px'>市场调研</h5>
               <h3 class="u-align-center u-text u-text-2" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>调查规模人口 调查竞争对手3家 调查本地摊位大小和业态比例</h3>
             </div>
           </div>
@@ -82,7 +82,7 @@ include('../N1/dbconfig.php');
 		s7,3.141,7,7S30.859,34,27,34z"></path>
 </g></svg>
               </span>
-              <h5 class="u-align-center u-text u-text-default u-text-3" style='color: rgb(51, 51, 51); font-size: 18px'>业态分布</h5>
+              <h5 class="u-align-center u-text u-text-default u-text-3 yahei" style='color: rgb(51, 51, 51); font-size: 18px'>业态分布</h5>
               <h3 class="u-align-center u-text u-text-default u-text-4" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px; margin-left: auto; margin-right: auto'>平面设计、业态分布、人流动线、<br>平衡人气设计</h3>
             </div>
           </div>
@@ -118,7 +118,7 @@ include('../N1/dbconfig.php');
 		c0.844,0,1.688-0.321,2.33-0.963L49.701,34.087z"></path>
 </g></svg>
               </span>
-              <h5 class="u-text u-text-default u-text-5" style='color: rgb(51, 51, 51); font-size: 18px'>绘效果图</h5>
+              <h5 class="u-text u-text-default u-text-5 yahei" style='color: rgb(51, 51, 51); font-size: 18px'>绘效果图</h5>
               <h3 class="u-align-center u-text u-text-default u-text-6" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>五星级农贸市场设计、现代风格、农贸超市风格、工业风格效果</h3>
             </div>
           </div>
@@ -136,7 +136,7 @@ include('../N1/dbconfig.php');
 		c0.379,0,0.477,0.546,0.501,0.819L47.868,57.584z"></path><path d="M18,17h24c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,17,18,17z"></path><path d="M18,10h10c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,10,18,10z"></path><path d="M18,24h24c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,24,18,24z"></path>
 </g></svg>
               </span>
-              <h5 class="u-align-center u-text u-text-default u-text-7" style='color: rgb(51, 51, 51); font-size: 18px'>画施工图</h5>
+              <h5 class="u-align-center u-text u-text-default u-text-7 yahei" style='color: rgb(51, 51, 51); font-size: 18px'>画施工图</h5>
               <h3 class="u-align-center u-text u-text-default u-text-8" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>农贸市场装修节点图、农贸市场消防水电暖图、农贸市场生活水电暖图</h3>
             </div>
           </div>
@@ -147,7 +147,7 @@ include('../N1/dbconfig.php');
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 54.953 54.953" x="0px" y="0px" id="svg-8faf" style="enable-background:new 0 0 54.953 54.953;"><g><circle cx="45.021" cy="25.976" r="1"></circle><circle cx="9.021" cy="25.976" r="1"></circle><circle cx="12.021" cy="28.976" r="1"></circle><circle cx="18.021" cy="28.976" r="1"></circle><circle cx="15.021" cy="31.976" r="1"></circle><circle cx="21.021" cy="31.976" r="1"></circle><circle cx="24.021" cy="34.976" r="1"></circle><circle cx="30.021" cy="34.976" r="1"></circle><circle cx="33.021" cy="31.976" r="1"></circle><circle cx="27.021" cy="37.976" r="1"></circle><circle cx="36.021" cy="28.976" r="1"></circle><circle cx="42.021" cy="28.976" r="1"></circle><circle cx="39.021" cy="31.976" r="1"></circle><path d="M45.559,32.796l9.394-5.367l-9.656-5.483l9.656-5.517L27.477,0.826L0,16.429l9.656,5.517L0,27.429l9.656,5.517L0,38.429   l27.477,15.698l27.477-15.698l-9.656-5.483l0.071-0.041C45.439,32.879,45.497,32.837,45.559,32.796z M27.477,3.125l23.436,13.309   l-7.637,4.364l0,0l-15.798,9.026L4.041,16.434L27.477,3.125z M11.129,23.409c0.162,0.333,0.497,0.567,0.892,0.567   c0.27,0,0.512-0.109,0.692-0.283l2.262,1.292c-0.53,0.025-0.954,0.455-0.954,0.991c0,0.552,0.448,1,1,1s1-0.448,1-1   c0-0.173-0.055-0.327-0.132-0.469l10.33,5.902c-0.116,0.163-0.198,0.352-0.198,0.567c0,0.552,0.448,1,1,1s1-0.448,1-1   c0-0.051-0.021-0.094-0.029-0.143l10.052-5.743c0.059,0.496,0.465,0.885,0.977,0.885c0.552,0,1-0.448,1-1   c0-0.325-0.165-0.601-0.406-0.783l2.202-1.258c0.068,0.015,0.132,0.041,0.204,0.041c0.444,0,0.807-0.294,0.938-0.694l0.32-0.183   l7.634,4.335l-1.983,1.133c-0.157-0.347-0.503-0.591-0.908-0.591c-0.552,0-1,0.448-1,1c0,0.216,0.083,0.405,0.199,0.568   l-3.945,2.254l0,0l-6.388,3.65c0.078-0.142,0.134-0.298,0.134-0.472c0-0.552-0.448-1-1-1s-1,0.448-1,1   c0,0.537,0.426,0.967,0.957,0.991l-2.263,1.293c-0.18-0.174-0.423-0.284-0.694-0.284c-0.552,0-1,0.448-1,1   c0,0.08,0.028,0.151,0.046,0.226l-4.59,2.622l-5.517-3.152c-0.13-0.401-0.494-0.696-0.939-0.696c-0.073,0-0.138,0.027-0.206,0.042   l-2.201-1.257c0.241-0.183,0.407-0.458,0.407-0.784c0-0.552-0.448-1-1-1c-0.512,0-0.919,0.391-0.977,0.887L6.991,29.12   c0.007-0.049,0.029-0.093,0.029-0.144c0-0.552-0.448-1-1-1c-0.239,0-0.449,0.095-0.621,0.235l-1.359-0.776L11.129,23.409z    M50.912,38.434l-23.436,13.39L4.041,38.434l7.633-4.335l15.803,9.028l15.802-9.028L50.912,38.434z"></path>
 </g></svg>
               </span>
-              <h5 class="u-text u-text-default u-text-9" style='color: rgb(51, 51, 51); font-size: 18px'>现场指导</h5>
+              <h5 class="u-text u-text-default u-text-9 yahei" style='color: rgb(51, 51, 51); font-size: 18px'>现场指导</h5>
               <h3 class="u-align-center u-text u-text-default u-text-10" style='color: rgb(102, 102, 102); font-size: 12px;  line-height: 20px'>现场讲解方案满意为止、现场放线指导施工图 、竣工验收通过创卫为止</h3>
             </div>
           </div>
