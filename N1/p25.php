@@ -72,7 +72,7 @@
 </style>
 <script src='../js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
-      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 1.5%; margin-top: 20px'>
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
         <hr>        
       </div>
