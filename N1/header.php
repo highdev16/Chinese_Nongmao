@@ -30,6 +30,109 @@ $oname = $oname[0];
     <meta name="theme-color" content="#478ac9">
     <meta property="og:url" content="index.html">
     <style>
+    img.article-image:hover {
+    transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -webkit-transition: transform .2s linear;
+  }
+  img.article-image:hover {
+    transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);    
+  }
+  .features-area > div:hover {
+    transform: scale(1.05, 1.05);
+    z-index:9999;
+  }
+  div.partner-area {
+    grid-gap: 17px 31.4px !important;
+    display: grid; grid-template-columns: auto auto auto auto auto auto auto auto !important;
+  }
+  .circles-area > div img {
+    transition: transform .2s;
+  }
+  .circles-area > div:hover img {
+    transform: scale(1.1);
+  }
+  .cross-text-image1 {
+    margin-left: 100px !Important;
+  }
+  .circles-area > div:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .u-section-5 {
+    margin-bottom: 80px !important;
+  }
+  .circle-text {
+    font-size: 1.5rem; font-weight: lighter !important; width:100%; height: 100%; background: #0005;
+    border-radius: 50%;
+    line-height: 252px;
+  }
+  .circle-text:hover {
+    background: #0000;
+  }
+  div.gridimage11 {
+    flex: none !Important;
+    width: 45.8% !important;    
+  }
+  div.gridimage21 {
+    flex: none !Important;
+    width: 54% !important;
+    max-width: 54% !important;
+  }
+  .circles-area > div {
+    border-radius:50%;
+    background-color: black;
+  }
+  a.selected-a-button {    
+    border: 2px solid #ff6500;
+    background: #ff6500;
+    margin-top: 20px;
+    color: white;
+    float:left;
+    padding: 5px 20px 5px 20px;
+    margin-right: 20px;
+  }
+  a.unselected-a-button {
+    padding: 5px 20px 5px 20px;
+    float:left;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+  }
+  div.bigcontainer {
+    width: 1500px !important;
+  }
+  .image-cell {
+    float:left;
+    width: 30%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 20px;
+    overflow:hidden;
+    min-width: 300px;
+  }
+
+  div.image_cell_area {
+    height: 300px !important;
+  }
+  div.image_cell_area img {
+    height: 300px !important;
+    width:100% !important;
+    max-height: 300px !important;
+  }
+  .features-area > div:hover{
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  body * {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+  }
       header *, section.titlesubmenu {
         font-size: 16px !important;
         font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
@@ -75,6 +178,19 @@ $oname = $oname[0];
         header.narrow div.titlebar {
           padding-top: 10px !important;
         }
+        @media (min-width: 1600px) {
+        .u-sheet {
+            width: 1500px;
+        }
+        }
+        div.image_cell_area {
+    height: 300px !important;
+  }
+  div.image_cell_area img {
+    height: 300px !important;
+    width:100% !important;
+    max-height: 300px !important;
+  }
     </style>
   </head>
   <body class="u-body">

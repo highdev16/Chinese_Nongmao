@@ -29,6 +29,10 @@ while (strlen($temp) > 0) {
 }
 ?>
 <style>
+      .u-gutter-54 .u-layout {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
       img.article-image {
         transition: transform .2s;
       }
@@ -56,11 +60,14 @@ while (strlen($temp) > 0) {
       .image-cell {
         float:left;
         width: 30%;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-top: 20px;
         overflow:hidden;
         min-width: 300px;
+      }
+      div.case_detail_content {
+        width: 100% !important; max-width: 100% !important; flex: auto !important; margin-right: 3px !important;
       }
     </style>
 <link href='../css/paginaitor.css' rel="stylesheet" />
@@ -107,12 +114,18 @@ while (strlen($temp) > 0) {
     border-color: #f0f0f0;
     border: 0px solid red;
   }
+  #product_details td {
+    padding-left: 10px;
+  }
   td.arrowcell img {
     margin-top: -10px;
     position: absolute;
     width:20px; height:20px;
     left:0px;
   }
+  .u-section-5 .u-text-6 {
+    margin: 13px 13px 0;
+}
 </style>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -124,10 +137,10 @@ while (strlen($temp) > 0) {
         <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-16 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1" >
                 <div class="u-container-layout u-container-layout-1" style='padding: 20px;'>
                   <img src="<?php echo $imageURLs[0]; ?>" id='mainImage' alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="609" data-image-height="480"
-                      style='object-fit: contain; background: black'>
+                      style='object-fit: cover; background: black'>
                   <div class="u-expanded-width u-table u-table-responsive u-table-1">
                     <table class="u-table-entity" style='width:100%; table-layout: fixed;' >
                       <colgroup>
@@ -210,7 +223,7 @@ while (strlen($temp) > 0) {
                           <th class="u-table-cell"></th>
                         </tr>
                       </thead>
-                      <tbody class="u-table-body">
+                      <tbody class="u-table-body" id='product_details'>
                         <tr style="height: 49px;">
                           <td class="u-border-1 u-border-grey-dark-1 u-grey-15 u-table-cell u-table-cell-31">项目名称</td>
                           <td class="u-border-1 u-border-grey-dark-1 u-table-cell"><?php echo htmlspecialchars($row['name']); ?></td>
@@ -364,7 +377,7 @@ while (strlen($temp) > 0) {
         <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1 case_detail_content" >
                 <div class="u-container-layout u-container-layout-1" id='maincontent_area'>
                   <?php echo $row['content']; ?>
                 </div>
@@ -381,9 +394,10 @@ while (strlen($temp) > 0) {
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
-            <div class="u-layout-row" style='padding-left: 20px; font-weight:bold; font-size:22px;'>
+            <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;width: 100px;min-width: 100px;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
+              <button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <div class="u-layout-row">
@@ -401,40 +415,38 @@ while (strlen($temp) > 0) {
                   $alt = "Image";
                 } else $r = '';
                 ?>
-              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-<?php echo $k; ?>" style='border: 1px'>
-                <div class="u-container-layout u-container-layout-1" style='padding: 0'>
-                  <div class=" u-white u-repeater-item-3 image-cell">
-                    <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; padding: 10px'><!--blog_post_image-->
-                    <div style='width:100%; height:200px; overflow:hidden; display:flex'>
+              <div class=" u-white u-repeater-item-3 image-cell">
+                  <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
+                    <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
+                    display: flex;justify-content: center;align-items: center; background:black;'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                            src="<?php echo $r; ?>" style='cursor:pointer; min-width:100%; height:200px; background: black; object-fit: cover' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
-              </div>
-                      <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-top: 5px; margin-bottom: 5px;'>
-                        <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
-                      </div>
-                      <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-top: 5px; margin-bottom: 5px;'>                
-                        <?php 
-                          for ($j = 0; $j < floatval($row['stars']); $j++) 
-                            echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                        ?>                  
-                        <div style='float:left; min-width:30px; min-height: 30px;'></div>
-                        <div style='float:left; font-size: 14px;'>
-                          <i class="far fa-images"></i>&nbsp;
-                          <?php echo substr_count($row['content'], '<img'); ?>
-                        </div>              
-                        <div style='float:left; min-width:30px; min-height: 30px;'></div>
-                        <div style='float:left;font-size: 14px;'>
-                          <i class="far fa-user"></i>&nbsp;
-                          <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                        </div>              
-                      </div>
-                      <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='margin: 13px 0 0 auto; border-radius: 5px; margin-bottom: 5px; margin-right:5px'>这样装修多少钱?
-                      </a>
+                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
                     </div>
+                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
+                      <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
+                    </div>
+                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>                
+                      <?php 
+                        for ($j = 0; $j < floatval($row['stars']); $j++) 
+                          echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
+                      ?>                  
+                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                      <div style='float:left; font-size: 12px;line-height: 24px'>
+                        <i class="far fa-images"></i>&nbsp;
+                        <?php echo substr_count($row['content'], '<img'); ?>
+                      </div>              
+                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                      <div style='float:left;font-size: 12px;line-height: 24px'>
+                        <i class="far fa-user"></i>&nbsp;
+                        <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
+                      </div>              
+                      <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                    </div>
+                    
+                    
                   </div>
-                </div>
-              </div>
-              <?php } ?>
+                </div> 
+              <?php } if (sizeof($data) < 3) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>"; ?>
               
             </div>
           </div>
@@ -450,15 +462,16 @@ while (strlen($temp) > 0) {
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
-            <div class="u-layout-row" style='padding-left: 20px; font-weight:bold; font-size:22px;'>
+            <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;'>其他精彩案例</div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;width: 100px;min-width: 100px;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
-            <div class="u-layout-row">
-              <?php 
-              $data = $db->rawQuery("select * from cases where id in (select max(id) from cases where category != " . intval($info[0]['category']) . " group by category) order by category");
-
+            <?php 
+            $data = $db->rawQuery("select * from cases where id in (select max(id) from cases where category != " . intval($info[0]['category']) . " group by category) order by category");
+            ?>
+            <div class="u-layout-row" style='padding: 0; justify-content: space-between'>              
+            <?php
               for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) { 
                 $row = $data[$k - 1]; 
                 $r = strpos($row['content'], '<img');
@@ -470,40 +483,38 @@ while (strlen($temp) > 0) {
                   $alt = "Image";
                 } else $r = '';
                 ?>
-              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-<?php echo $k; ?>" style='border: 1px'>
-                <div class="u-container-layout u-container-layout-1" style='padding: 0'>
-                  <div class=" u-white u-repeater-item-3 image-cell">
-                    <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; padding: 10px'><!--blog_post_image-->
-                      <div style='width:100%; height:200px; overflow:hidden; display:flex'>
+                <div class=" u-white u-repeater-item-3 image-cell">
+                  <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
+                    <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
+                    display: flex;justify-content: center;align-items: center; background:black;'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                            src="<?php echo $r; ?>" style='cursor:pointer; min-width:100%; height:200px; background: black; object-fit: cover' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
-              </div>
-                      <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-top: 5px; margin-bottom: 5px;'>
-                        <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
-                      </div>
-                      <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-top: 5px; margin-bottom: 5px;'>                
-                        <?php 
-                          for ($j = 0; $j < floatval($row['stars']); $j++) 
-                            echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                        ?>                  
-                        <div style='float:left; min-width:30px; min-height: 30px;'></div>
-                        <div style='float:left; font-size: 14px;'>
-                          <i class="far fa-images"></i>&nbsp;
-                          <?php echo substr_count($row['content'], '<img'); ?>
-                        </div>              
-                        <div style='float:left; min-width:30px; min-height: 30px;'></div>
-                        <div style='float:left;font-size: 14px;'>
-                          <i class="far fa-user"></i>&nbsp;
-                          <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                        </div>              
-                      </div>
-                      <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='margin: 13px 0 0 auto; border-radius: 5px; margin-bottom: 5px; margin-right:5px'>这样装修多少钱?
-                      </a>
+                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
                     </div>
+                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
+                      <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
+                    </div>
+                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>                
+                      <?php 
+                        for ($j = 0; $j < floatval($row['stars']); $j++) 
+                          echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
+                      ?>                  
+                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                      <div style='float:left; font-size: 12px;line-height: 24px'>
+                        <i class="far fa-images"></i>&nbsp;
+                        <?php echo substr_count($row['content'], '<img'); ?>
+                      </div>              
+                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                      <div style='float:left;font-size: 12px;line-height: 24px'>
+                        <i class="far fa-user"></i>&nbsp;
+                        <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
+                      </div>              
+                      <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                    </div>
+                    
+                    
                   </div>
-                </div>
-              </div>
-              <?php } ?>
+                </div> 
+              <?php } if (sizeof($data) < 3) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>"; ?>
               
             </div>
           </div>
