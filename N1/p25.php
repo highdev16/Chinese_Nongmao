@@ -72,12 +72,12 @@
 </style>
 <script src='../js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
-      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px; min-height:0px;'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
         <hr>        
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 30px'>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 0px'>
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 10px; margin-bottom: 100px'>
           <?php 
           for ($i = 0; $i < sizeof($rows); $i++) {             
