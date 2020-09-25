@@ -268,7 +268,7 @@ include('../N1/dbconfig.php');
               <div class="u-layout-row">
                 <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1 gridimage21" src="">
                   <div class="u-container-layout u-container-layout-1">
-                    <h2 class="u-text u-text-1 cross-text-image1" style='font-size: 26px; margin-top: 0px; font-family: "Microsoft YaHei" !important'>菜源佳佳营运合作</h2>
+                    <h2 class="u-text u-text-1 cross-text-image1 yahei" style='font-size: 26px; margin-top: 0px; font-family: "Microsoft YaHei" !important'>菜源佳佳营运合作</h2>
                     <p class="u-text u-text-2 cross-text-image1" style='font-size: 14px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
                     <table style='margin-top: 20px'>
                       <tr>
@@ -432,7 +432,7 @@ include('../N1/dbconfig.php');
     </section>
     <section class="u-align-center u-clearfix u-section-8" id="sec-993c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-1"> 不是任何设计公司都叫专业农贸市场设计 </h2>
+        <h2 class="u-text u-text-1 yahei"> 不是任何设计公司都叫专业农贸市场设计 </h2>
         <p class="u-text u-text-2"> 掌握核心技术才是有实力的公司 </p>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
