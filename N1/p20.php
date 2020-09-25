@@ -44,24 +44,31 @@ $rows = $db->rawQuery($query);
   img.article-image:hover {
     transform: scale(1.1);
   }
-  a.selected-a-button {    
-    border: 2px solid #ff6500;
-    background: #ff6500;
+  a.selected-a-button, a.unselected-a-button:hover {    
+    border: 1px solid #EE7D25;
+    background: #EE7D25;
     margin-top: 20px;
     color: white;
+    text-decoration:none;
     float:left;
     padding: 5px 20px 5px 20px;
     margin-right: 20px;
-  }
+    font-size: 14px; border-radius: 4px
+  }  
   a.unselected-a-button {
+    text-decoration:none;
     padding: 5px 20px 5px 20px;
     float:left;
     margin-top: 20px;
+    font-size: 14px; border-radius: 4px;
     margin-right: 20px;
-    border: 2px solid black;
+    border: 1px solid #c4c1c1;
     background: white;
     color: black;
   }
+  .u-section-3 .u-text-6 {
+    margin: 13px 13px 0;
+}
   .image-cell {
     float:left;
     width: 30%;
