@@ -2,7 +2,7 @@
 $bigTitle = "农贸市场设计";
 include('../N1/header.php');
 ?>
-    <section class="u-clearfix u-image u-section-2" id="sec-aed1" data-image-width="720" data-image-height="331">
+    <section class="u-clearfix u-image u-section-2" id="sec-aed1" data-image-width="720" data-image-height="331" style='height: 500px;'>
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"></div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-b267">
