@@ -40,7 +40,7 @@ include('../N1/header.php');
       <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1 managementsystem-text">
         <div class="u-layout">
           <div class="u-layout-row">
-            <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+            <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">              
               <div class="u-container-layout u-container-layout-1">
                 <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-opacity u-opacity-55 u-white u-group-1">
                   <div class="u-container-layout u-valign-middle u-container-layout-2">
@@ -73,8 +73,8 @@ include('../N1/header.php');
                   <div class="u-container-layout u-container-layout-1"></div>
                 </div>
                 <div class="u-align-center u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-30 u-layout-cell-2">
-                  <div class="u-container-layout u-valign-middle u-container-layout-2">
-                    <p class="u-text u-text-default u-text-1">&nbsp;农+超管理运营&nbsp;<br>超市化管理标准运营&nbsp;<br>超市卫生管理制度<br>
+                  <div class="u-container-layout u-valign-middle u-container-layout-2" style='background-color: #bfb'>
+                    <p class="u-text u-text-default u-text-1" style='color: black'>&nbsp;农+超管理运营&nbsp;<br>超市化管理标准运营&nbsp;<br>超市卫生管理制度<br>
                     </p>
                   </div>
                 </div>
@@ -83,8 +83,8 @@ include('../N1/header.php');
             <div class="u-size-30">
               <div class="u-layout-row">
                 <div class="u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-layout-cell-3">
-                  <div class="u-container-layout u-valign-bottom u-container-layout-3">
-                    <p class="u-align-center u-text u-text-2">&nbsp; 超市卫生管理制度<br> 超市安全管理制度<br> 超市员工行为规范管理制度<br> 超市日常工作管理制度<br> 商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
+                  <div class="u-container-layout u-valign-bottom u-container-layout-3" style='background-color: #bfb'>
+                    <p class="u-align-center u-text u-text-2" style='color: black'>&nbsp; 超市卫生管理制度<br> 超市安全管理制度<br> 超市员工行为规范管理制度<br> 超市日常工作管理制度<br> 商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
                     </p>
                   </div>
                 </div>
@@ -107,43 +107,43 @@ include('../N1/header.php');
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1"  style='margin-top: 20px'>
           <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
+            <div class="u-layout-row" style='display: grid; grid-auto-flow: column; grid-gap: 20px 20px'>
+              <div class="u-container-style u-layout-cell u-left-cell u-size-30-md u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
                   <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-1">
-                    <div class="u-container-layout u-container-layout-2">
+                    <div class="u-container-layout u-container-layout-2" style='background-color: green'>
                       <p class="u-text u-text-1"> 免</p>
-                      <p class="u-text u-text-2">租 金&nbsp;</p>
+                      <p class="u-text u-text-2">租 金</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-3">
-                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-2">
-                    <div class="u-container-layout u-container-layout-4">
-                      <p class="u-text u-text-3"> 免</p>
-                      <p class="u-text u-text-4">入场费</p>
+              <div class="u-container-style u-layout-cell u-left-cell u-size-30-md u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-1">
+                    <div class="u-container-layout u-container-layout-2" style='background-color: green'>
+                      <p class="u-text u-text-1"> 免</p>
+                      <p class="u-text u-text-2">运营费</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
-                <div class="u-container-layout u-container-layout-5">
-                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-3">
-                    <div class="u-container-layout u-container-layout-6">
-                      <p class="u-text u-text-5"> 免</p>
-                      <p class="u-text u-text-6">运营费</p>
+              <div class="u-container-style u-layout-cell u-left-cell u-size-30-md u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-1">
+                    <div class="u-container-layout u-container-layout-2" style='background-color: green'>
+                      <p class="u-text u-text-1"> 免</p>
+                      <p class="u-text u-text-2">入场费&nbsp;</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-4">
-                <div class="u-container-layout u-container-layout-7">
-                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-4">
-                    <div class="u-container-layout u-container-layout-8">
-                      <p class="u-text u-text-7"> 免</p>
-                      <p class="u-text u-text-8">物业费</p>
+              <div class="u-container-style u-layout-cell u-left-cell u-size-30-md u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-1">
+                    <div class="u-container-layout u-container-layout-2" style='background-color: green'>
+                      <p class="u-text u-text-1"> 免</p>
+                      <p class="u-text u-text-2">物业费</p>
                     </div>
                   </div>
                 </div>
@@ -167,6 +167,7 @@ include('../N1/header.php');
               <div class="u-size-30">
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+                    <div style='position: absolute; left:0; top: 0; width: 500px; height: 500px; background-color: #dfd'></div>
                     <div class="u-container-layout u-container-layout-1">
                       <img src="images/IMG_20180805_191110copy.jpg" alt="" class="u-image u-image-default u-image-1">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-1">
@@ -204,15 +205,17 @@ include('../N1/header.php');
                     </div>
                   </div>
                   <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4">
+                    <div style='position: absolute; bottom:-40px; right: 0; width: 500px; height: 500px; background-color: #dfd'></div>
                     <div class="u-container-layout u-container-layout-7">
                       <img src="images/IMG_20180922_144005.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="600" data-image-height="456">
-                      <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-4">
+                      <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-4" style='background-color: white'>
                         <div class="u-container-layout u-container-layout-8">
                           <p class="u-text u-text-7 market-operation-detail-title"> 技术驱动全能变革 </p>
                           <p class="u-text u-text-grey-40 u-text-8 market-operation-detail-detail"> 智能设备、智慧平台应用，大数据优化消费体验 </p>
                         </div>
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -221,5 +224,5 @@ include('../N1/header.php');
         </div>
       </div>
     </section>
-    
+    <div style='height: 50px; width: 100%'></div>
     <?php include('../N1/footer.php'); ?>
