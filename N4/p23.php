@@ -2,12 +2,17 @@
 $bigTitle = "农贸市场投资";
 include('../N1/header.php');
 ?>
+<style>
+  .u-section-2 {
+    height: 500px;
+  }
+</style>
     <section class="u-align-left u-clearfix u-image u-shading u-section-2" src="" id="sec-a760" data-image-width="1920" data-image-height="940">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-8b2c">
       <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
-        <p class="u-align-center u-text u-text-default u-text-1">农贸市场投资政府合作</p>
+        <p class="u-align-center u-text u-text-default u-text-1 yahei">农贸市场投资政府合作</p>
       </div>
     </section>
     <section class="u-clearfix u-section-4" id="sec-a5d1">
@@ -58,7 +63,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-5" id="sec-ee4e">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-default u-text-1"> 免费咨询热线：0571-88776655 </h2>
+        <h2 class="u-align-center u-text u-text-default u-text-1 yahei"> 免费咨询热线：0571-88776655 </h2>
       </div>
     </section>
     <section class="u-clearfix u-image u-section-6" id="sec-9ca0" data-image-width="3491" data-image-height="1234">
