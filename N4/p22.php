@@ -2,6 +2,11 @@
 $bigTitle = "农贸市场投资";
 include('../N1/header.php');
 ?>
+<style>
+  .u-section-2 {
+    height: 500px;
+  }
+</style>
     <section class="u-align-left u-clearfix u-image u-shading u-section-2" src="" id="sec-a760" data-image-width="697" data-image-height="592">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>

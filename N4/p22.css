@@ -77,7 +77,8 @@
 .u-section-1 .u-image-4 {margin-top: 9px; margin-left: 20px}
 .u-section-1 .u-text-4 {font-size: 1rem; line-height: 1.6; margin-top: -35px; margin-right: 19px; margin-left: 21px}
 .u-section-1 .u-image-5 {margin-top: 8px; margin-left: 20px}
-.u-section-1 .u-text-5 {font-size: 1rem; line-height: 1.6; margin-top: -30px; margin-right: 21px; margin-left: 19px} }.u-section-2 {background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/lALPGpNyb6prL9PNAlDNArk_697_592.png"); background-position: 50% 50%}
+.u-section-1 .u-text-5 {font-size: 1rem; line-height: 1.6; margin-top: -30px; margin-right: 21px; margin-left: 19px} }
+.u-section-2 {background-image: url("images/bkg22.jpg"); background-position: 50% 50%}
 .u-section-2 .u-sheet-1 {min-height: 634px} 
 
 @media (max-width: 1199px){ .u-section-2 .u-sheet-1 {min-height: 523px} }
