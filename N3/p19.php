@@ -101,7 +101,7 @@ include('../N1/header.php');
                   <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-6">
                     <div class="u-container-layout u-valign-middle u-container-layout-6">
                       <p class="u-text u-text-3 detail-text yahei">3. 城市智能监管平台的建立&nbsp;<br>(1) 市场规范化和标准化的建设;
-(2) 监测规范和监控资料自动上传;
+(2) 监测规范和监控资料自动上传;<br>
 (3) 建立全市农产品电子追溯系统;
 (4) 建立智能分析大数据分析系统; 
                       </p>
