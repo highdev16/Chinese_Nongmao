@@ -48,7 +48,13 @@ include('../N1/header.php');
     <section class="u-clearfix u-section-4" id="sec-fb1d">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 50px'>
         <h1 class="u-align-center u-text u-text-default u-text-1 yahei bigtitle"> 智能市场云系统 </h1>
-        <img src="images/QQ20200710104710.png" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="1344" data-image-height="829">
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei bigtitle" style='font-size: 24px;'> 智能农贸信息化管理平台 </h1>
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei bigtitle" style='font-size: 18px'> 互联网+农贸市场的信息化管理平台 </h1>
+        <p class="u-align-left u-text u-text-2">
+        智慧农贸市场信息管理平台采用物联网、互联网、云计算、大数据分析技术打造了一个集“信息公示、产品溯源、价格检测、联网监督、智能监控”功能于一身的智慧农贸市场综合信息化管理平台，使传统农贸市场在运营管理、市场服务和智能监管、信息追溯方面实现信息网络化、工作规范化、管理现代化从而升级成为智慧菜市场。
+
+        </p>
+        <img src="images/cloud_detail.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="1344" data-image-height="829">
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-5" id="sec-600a">

@@ -19,6 +19,29 @@ include('../N1/header.php');
     display: flex;
     justify-content: space-between;
   }
+  .u-section-3 .u-text-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  div.nine-items{
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+    width: 250px;
+    height: 250px;
+    background-color: #03a1f3;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+  }
+  div.nine-items-line {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+  }
 </style>
     <section class="u-clearfix u-section-2" id="sec-3314">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -30,7 +53,7 @@ include('../N1/header.php');
                   <img src="images/20190128200246982.png" alt="" class="u-image u-image-default u-image-1" data-image-width="606" data-image-height="415">
                   <p class="u-align-center u-text u-text-1 yahei">智能农贸信息化管理平台
                   </p>
-                  <p class="u-align-center u-text u-text-default u-text-2 yahei"> 互联网+农贸市场的信息化管理平台 </p>
+                  <!-- <p class="u-align-center u-text u-text-default u-text-2 yahei"> 互联网+农贸市场的信息化管理平台 </p> -->
                   <p class="u-align-left u-text u-text-3">&nbsp; 智慧农贸市场信息管理平台采用物联网，互联网，云计算，大数据分析技术打造的一个集“信息公示、产品溯源、价格检测、联网监督、智能监控”功能于一身的智慧农贸市场综合信息化管理平台，使传统农贸市场在运营管理、市场服务和智能监管，信息追溯方面实现信息网络化、工作规范化、管理现代化从而升级成为智慧菜市场。打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；为政府部门提高食品安全监管提供食品溯源通道；为商户增加客源提高收入，同时简化销售流程更高效；为消费者提供诚信安全的消费环境，良好的购物体验。智能农贸信息化管理平台通过物联网的技术实时采集电子秤交易数据、客流检测仪数据、食品安全检测数据，为市场招商，商家采购货物以及蔬菜是实现市场的舆情分析和判断。&nbsp;&nbsp;</p>
                 </div>
               </div>
@@ -39,9 +62,28 @@ include('../N1/header.php');
         </div>
       </div>
     </section>
+    <div style='height: 30px; width: 100%'></div>
     <section class="u-clearfix u-section-3 full-width" id="sec-a679">
-      <img src='images/QQ20200710105429.png' class='full-width'>
+      <h1 class="u-align-center u-text u-text-1 u-text-default yahei bigtitle" style='width: 100%; font-size: 30px'>九大功能</h1>
+      <div style='height: 30px; width: 100%'></div>
+      <!-- <img src='images/QQ20200710105429.png' class='full-width'> -->
+      <div class='nine-items-line'>
+        <div style='width:93.75px; height: 100px;'></div>
+        <div class='nine-items'>非现金<br>结算系统</div>
+        <div class='nine-items'>智能<br>追溯系统</div>
+        <div class='nine-items'>商户信息<br>管理系统</div>
+        <div class='nine-items'>智能<br>检测系统</div>
+        <div style='width:93.75px; height: 100px;'></div>
+      </div>
+      <div class='nine-items-line'>
+        <div class='nine-items'>智能手机<br>缴费系统</div>
+        <div class='nine-items'>智能积分<br>充值系统</div>
+        <div class='nine-items'>人流<br>监控系统</div>
+        <div class='nine-items'>大数据<br>分析系统</div>
+        <div class='nine-items'>用户<br>查询系统</div>
+      </div>
     </section>
+    <div style='height: 30px; width: 100%'></div>
     <section class="u-align-left u-clearfix u-section-4" id="sec-600a">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
