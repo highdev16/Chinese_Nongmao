@@ -19,8 +19,8 @@ include('../N1/header.php');
                   <p class="u-align-center u-text u-text-1 yahei">城市智能菜场应用
                   </p>
                   <p class="u-align-center u-text u-text-default u-text-2"> SMART MARKET APPLICATION</p>
-                  <p class="u-align-left u-text u-text-3" style='line-height:40px'> 打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；
-为政府部门提高食品安全监管提供食品溯源通道；为商户增加客源提高收入，同时简化销售流程更高效；
+                  <p class="u-align-left u-text u-text-3" style='line-height:40px'> 打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度;
+为政府部门提高食品安全监管提供食品溯源通道;为商户增加客源提高收入，同时简化销售流程更高效;
 为消费者提供诚信安全的消费环境，良好的购物体验。智能农贸信息化管理平台通过物联网的技术实时采集电子秤交易数据、客流检测仪数据、食品安全检测数据，为市场招商，商家采购货物以及蔬菜是实现市场的舆情分析和判断。 </p>
                   <p class="u-align-center u-text u-text-default u-text-4 yahei" style='margin-top: 70px'>三大核心应用场景</p>
                   <p class="u-align-center u-text u-text-default u-text-5">THREE CORE APPLICATION SCENARIOS</p>
@@ -47,7 +47,7 @@ include('../N1/header.php');
                 <div class="u-layout-row">
                   <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2">
                     <div class="u-container-layout u-valign-middle u-container-layout-2">
-                      <p class="u-text u-text-1 detail-text"> 1. 城市智能菜场管理平台的建立&nbsp;&nbsp;<br>(1) 商户管理 
+                      <p class="u-text u-text-1 detail-text yahei"> 1. 城市智能菜场管理平台的建立&nbsp;&nbsp;<br>(1) 商户管理 
 (2) 监测管理 
 (3) 追溯管理 
 (4) 摊位管理 
@@ -77,7 +77,7 @@ include('../N1/header.php');
                 <div class="u-layout-row">
                   <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
                     <div class="u-container-layout u-valign-middle u-container-layout-4">
-                      <p class="u-text u-text-2 detail-text">2. 城市农贸电商平台的建立<br>城市农贸电商o2o平台实现全程配送，半小时到家，让消费者足不出户也能吃到安全放心的产品。
+                      <p class="u-text u-text-2 detail-text yahei">2. 城市农贸电商平台的建立<br>城市农贸电商o2o平台实现全程配送，半小时到家，让消费者足不出户也能吃到安全放心的产品。
                       </p>
                     </div>
                   </div>
@@ -100,10 +100,10 @@ include('../N1/header.php');
                 <div class="u-layout-row">
                   <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-6">
                     <div class="u-container-layout u-valign-middle u-container-layout-6">
-                      <p class="u-text u-text-3 detail-text">3. 城市智能监管平台的建立&nbsp;<br>(1) 市场规范化和标准化的建设；
-(2) 监测规范和监控资料自动上传；
-(3) 建立全市农产品电子追溯系统；
-(4) 建立智能分析大数据分析系统； 
+                      <p class="u-text u-text-3 detail-text yahei">3. 城市智能监管平台的建立&nbsp;<br>(1) 市场规范化和标准化的建设;
+(2) 监测规范和监控资料自动上传;
+(3) 建立全市农产品电子追溯系统;
+(4) 建立智能分析大数据分析系统; 
                       </p>
                     </div>
                   </div>
