@@ -19,7 +19,7 @@ include('../N1/header.php');
                   <p class="u-align-center u-text u-text-1 yahei">城市智能菜场应用
                   </p>
                   <p class="u-align-center u-text u-text-default u-text-2"> SMART MARKET APPLICATION</p>
-                  <p class="u-align-left u-text u-text-3"> 打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；
+                  <p class="u-align-left u-text u-text-3" style='line-height:40px'> 打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；
 为政府部门提高食品安全监管提供食品溯源通道；为商户增加客源提高收入，同时简化销售流程更高效；
 为消费者提供诚信安全的消费环境，良好的购物体验。智能农贸信息化管理平台通过物联网的技术实时采集电子秤交易数据、客流检测仪数据、食品安全检测数据，为市场招商，商家采购货物以及蔬菜是实现市场的舆情分析和判断。 </p>
                   <p class="u-align-center u-text u-text-default u-text-4 yahei" style='margin-top: 70px'>三大核心应用场景</p>
