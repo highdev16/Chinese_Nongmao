@@ -128,6 +128,7 @@ include('header.php');
         <p class="u-align-center u-custom-font u-text u-text-1" style='font-family: "Microsoft Yahei" !important'> 光影农贸市场研究院农贸市场城市整体改造升级四步走 </p>
       </div>
     </section>
+    <div style='height: 20px; width: 100%'></div>
     <section class="u-clearfix u-hidden-lg u-hidden-md u-hidden-xl u-hidden-xs u-section-7" id="sec-379e">
       <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="ttttt u-expanded-width u-hidden-xs u-table u-table-responsive u-table-1">
@@ -219,4 +220,5 @@ include('header.php');
         </div>
       </div>
     </section>
+    <div style='height: 50px; width: 100%'></div>
     <?php include('../N1/footer.php'); ?>
