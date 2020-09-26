@@ -109,20 +109,8 @@ include('header.php');
           </div>
         </div>
       </div>
-    </section>
-    <section class="u-clearfix u-image u-section-5" id="sec-490d" data-image-width="1644" data-image-height="1096" style='margin-top: 30px'>
-      <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
-        <div class="u-black u-border-3 u-border-grey-30 u-container-style u-group u-opacity u-opacity-50 u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 
-            </h2>
-            <p class="u-align-left u-custom-font u-text u-text-2"><img src='images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>400-000-3840</div></p>
-            <div style='clear: both'></div>
-            <p class="u-align-left u-custom-font u-text u-text-5"><img src='images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section>    
+    <div style='height: 40px; width: 100%'></div>
     <section class="u-clearfix u-section-6" id="sec-9fab">
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
         <p class="u-align-center u-custom-font u-text u-text-1" style='font-family: "Microsoft Yahei" !important'> 光影农贸市场研究院农贸市场城市整体改造升级四步走 </p>
@@ -220,5 +208,18 @@ include('header.php');
         </div>
       </div>
     </section>
-    <div style='height: 50px; width: 100%'></div>
+    <div style='height: 20px; width: 100%'></div>
+    <section class="u-clearfix u-image u-section-5" id="sec-490d" data-image-width="1644" data-image-height="1096" style='margin-top: 30px'>
+      <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
+        <div class="u-black u-border-3 u-border-grey-30 u-container-style u-group u-opacity u-opacity-50 u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 
+            </h2>
+            <p class="u-align-left u-custom-font u-text u-text-2"><img src='images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>400-000-3840</div></p>
+            <div style='clear: both'></div>
+            <p class="u-align-left u-custom-font u-text u-text-5"><img src='images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <?php include('../N1/footer.php'); ?>
