@@ -2,6 +2,11 @@
 $bigTitle = "农贸市场投资";
 include('../N1/header.php');
 ?>
+<style>
+  .u-section-2 {
+    height: 500px;
+  }
+  </style>
     <section class="u-align-left u-clearfix u-image u-shading u-section-2" src="" id="sec-a760" data-image-width="697" data-image-height="592">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>
@@ -50,31 +55,65 @@ include('../N1/header.php');
         <p class="u-align-center u-text u-text-default u-text-2"> 如果您有任何疑问，请随时与我们联系&nbsp;<br>我们努力在24小时内答复 
         </p>
         <div class="u-form u-form-1">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
+          <form action="#"  onsubmit="return false;" method="POST" class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
             <input type="hidden" id="siteId" name="siteId" value="131115840">
             <input type="hidden" id="pageId" name="pageId" value="1226506653">
             <div class="u-form-group u-form-name u-form-group-1">
               <label for="name-22cf" class="u-form-control-hidden u-label">Name</label>
-              <input type="text" placeholder="名称" id="name-22cf" name="name" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required="">
+              <input type="text" placeholder="名称" id="namefield" name="name" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-email u-form-group u-form-group-2">
               <label for="email-22cf" class="u-form-control-hidden u-label">Email</label>
-              <input type="email" placeholder="邮箱" id="email-22cf" name="email" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required="">
+              <input type="text" placeholder="邮箱" id="emailfield" name="email" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-group u-form-message u-form-group-3">
               <label for="message-22cf" class="u-form-control-hidden u-label">Message</label>
-              <textarea placeholder="信息" rows="6" cols="50" id="message-22cf" name="message" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required=""></textarea>
+              <textarea placeholder="信息" rows="6" cols="50" id="messagefield" name="message" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required=""></textarea>
             </div>
-            <div class="u-align-left u-form-group u-form-submit u-form-group-4" style='display: flex; justify-content: space-around'>
-              <a href="#" class="u-btn u-btn-submit u-button-style" style='background-color: #ff6500 !important'>发送</a>
+            <div class="u-align-left u-form-group u-form-group-4" style='display: flex; justify-content: space-around'>
+              <a href="#" class="u-btn u-button-style" style='background-color: #ff6500 !important' onclick='submitForm()'>发送</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <div class="u-form-send-message u-form-send-success"> 成功！ </div>
+            <div class="u-form-send-error u-form-send-message"> 失败！</div>
             <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div>
     </section>
-    
+    <script>
+      function submitForm() {
+        $("div.u-form-send-message").hide();
+        $(".u-form-field-error").removeClass('u-form-field-error');
+        if ($("#namefield").val().trim().length == 0) {
+          $("#namefield").addClass('u-form-field-error');
+          $("#namefield_second").addClass('u-form-field-error');
+          return;
+        }
+        if ($("#emailfield").val().trim().length == 0) {
+          $("#emailfield").addClass('u-form-field-error');
+          $("#emailfield_second").addClass('u-form-field-error');
+          return;
+        }
+        if ($("#messagefield").val().trim().length == 0) {
+          $("#messagefield").addClass('u-form-field-error');
+          $("#messagefield_second").addClass('u-form-field-error');
+          return;
+        }
+        let type = 1;        
+        $.post('/N1/save_consult.php', { data: {
+                    name: $("#namefield").val().trim(),
+                    email: $("#emailfield").val().trim(),
+                    message: $("#messagefield").val().trim(),
+                    type: type
+              }}, function(a,b) {
+                if (a == 'success') {
+                  $("div.u-form-send-success").show(0).delay(3000).hide(0);
+                } else
+                  $("div.u-form-send-error").show(0).delay(3000).hide(0);
+              }).fail(function() {
+                alert("失败！网络错误。");
+              })
+      }
+    </script>
     <?php include('../N1/footer.php'); ?>

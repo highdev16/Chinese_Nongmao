@@ -39,8 +39,10 @@ include('../N1/header.php');
     width: 1500px;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
+  }
+  div.empty-item {
+    width:93.75px; height: 100px;
   }
 </style>
     <section class="u-clearfix u-section-2" id="sec-3314">
@@ -68,12 +70,12 @@ include('../N1/header.php');
       <div style='height: 30px; width: 100%'></div>
       <!-- <img src='images/QQ20200710105429.png' class='full-width'> -->
       <div class='nine-items-line'>
-        <div style='width:93.75px; height: 100px;'></div>
+        <div class='empty-item'></div>
         <div class='nine-items'>非现金<br>结算系统</div>
         <div class='nine-items'>智能<br>追溯系统</div>
         <div class='nine-items'>商户信息<br>管理系统</div>
         <div class='nine-items'>智能<br>检测系统</div>
-        <div style='width:93.75px; height: 100px;'></div>
+        <div class='empty-item'></div>
       </div>
       <div class='nine-items-line'>
         <div class='nine-items'>智能手机<br>缴费系统</div>

@@ -432,7 +432,7 @@ while (strlen($temp) > 0) {
         if ($("#s111112")[0].checked) type.push('远营');
         if ($("#s111113")[0].checked) type.push('投资');
         if ($("#s111114")[0].checked) type.push('融资');
-        $.post('save_consult.php', { data: {
+        $.post('/N1/save_consult.php', { data: {
                     name: $("#namefield").val().trim(),
                     email: $("#emailfield").val().trim(),
                     message: $("#messagefield").val().trim(),
