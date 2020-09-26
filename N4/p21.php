@@ -55,7 +55,8 @@ include('../N1/header.php');
         <p class="u-align-center u-text u-text-default u-text-2"> 如果您有任何疑问，请随时与我们联系&nbsp;<br>我们努力在24小时内答复 
         </p>
         <div class="u-form u-form-1">
-          <form action="#"  onsubmit="return false;" method="POST" class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
+          <form action="#"  onsubmit="return false;" method="POST" 
+            class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
             <input type="hidden" id="siteId" name="siteId" value="131115840">
             <input type="hidden" id="pageId" name="pageId" value="1226506653">
             <div class="u-form-group u-form-name u-form-group-1">
@@ -71,7 +72,7 @@ include('../N1/header.php');
               <textarea placeholder="信息" rows="6" cols="50" id="messagefield" name="message" class="u-border-5 u-border-white u-input u-input-rectangle u-white" required=""></textarea>
             </div>
             <div class="u-align-left u-form-group u-form-group-4" style='display: flex; justify-content: space-around'>
-              <a href="#" class="u-btn u-button-style" style='background-color: #ff6500 !important' onclick='submitForm()'>发送</a>
+              <a href="javascript:void(0)" class="u-btn u-button-style" style='background-color: #ff6500 !important' onclick='submitForm()'>发送</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success"> 成功！ </div>
