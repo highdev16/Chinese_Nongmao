@@ -30,6 +30,15 @@ $oname = $oname[0];
     <meta name="theme-color" content="#478ac9">
     <meta property="og:url" content="index.html">
     <style>
+      @media (max-width: 990px) {
+        nav.u-menu {
+          right: 0px;
+          margin-right: 0px !important;
+        }
+        .u-custom-menu {
+          display: none !Important;
+        }
+      }
       div.titlebar{
         margin-top: 0px !Important;
         padding-top: 0px !important;

@@ -26,12 +26,15 @@ include('../N1/header.php');
   .u-section-5 {
     min-height: 400px;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
+    .u-section-3 .u-sheet-1 {
+      min-height: 0px !important;
+    }
     p.boss-detail-text {
-    line-height: 70px;
-    margin-top: 0px !important;
-  }
-    
+      line-height: 30px;    
+      margin-top: 50px !important;
+      margin-left: 0px !important;
+    }    
   }
   .u-section-5 .u-text-1 {
     margin-top: 50px;
@@ -46,7 +49,7 @@ include('../N1/header.php');
         </div>
         <img src="images/23.jpg" alt="" class="u-image u-image-default u-image-1">
         <p class="u-text u-text-1 boss-detail-text">传统的农贸市场的业态单一，消费群体单一，消费欲望不强，市场环境差，随着社会文明进步的发展，显而易见，传统的农贸俨然已经无法满足当代年轻人的消费需求，传统单一的农贸市场已经逐步被淘汰。<br>
-          <br>光影集团董事会主席陈志勇在从事农贸行业20余年，通过对农贸市场建设工作的长期积累，考察调研以及制定相关的改造方案与实践，在全国率先提出符合农贸市场发展未来趋势的农贸市场行形态--农贸市场商业综合体。菜源佳佳开创了中国农贸市场商业综合体的新模式。
+          光影集团董事会主席陈志勇在从事农贸行业20余年，通过对农贸市场建设工作的长期积累，考察调研以及制定相关的改造方案与实践，在全国率先提出符合农贸市场发展未来趋势的农贸市场行形态--农贸市场商业综合体。菜源佳佳开创了中国农贸市场商业综合体的新模式。
         </p>
       </div>
     </section>
