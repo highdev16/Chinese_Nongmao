@@ -73,7 +73,7 @@ include('../N1/header.php');
                   <div class="u-container-layout u-container-layout-1"></div>
                 </div>
                 <div class="u-align-center u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-30 u-layout-cell-2">
-                  <div class="u-container-layout u-valign-middle u-container-layout-2" style='background-color: #bfb'>
+                  <div class="u-container-layout u-valign-middle u-container-layout-2" style='background-color: #dfd'>
                     <p class="u-text u-text-default u-text-1" style='color: black'>农+超管理运营<br>超市化管理标准运营<br>超市卫生管理制度<br>
                     </p>
                   </div>
@@ -83,7 +83,7 @@ include('../N1/header.php');
             <div class="u-size-30">
               <div class="u-layout-row">
                 <div class="u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-layout-cell-3">
-                  <div class="u-container-layout u-valign-bottom u-container-layout-3" style='background-color: #bfb'>
+                  <div class="u-container-layout u-valign-bottom u-container-layout-3" style='background-color: #dfd'>
                     <p class="u-align-center u-text u-text-2" style='color: black'>超市卫生管理制度<br>超市安全管理制度<br>超市员工行为规范管理制度<br>超市日常工作管理制度<br>商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
                     </p>
                   </div>
@@ -168,7 +168,7 @@ include('../N1/header.php');
               <div class="u-size-30">
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
-                    <div style='position: absolute; left:0; top: 0; width: 500px; height: 500px; background-color: #bfb'></div>
+                    <div style='position: absolute; left:0; top: 0; width: 500px; height: 500px; background-color: #dfd'></div>
                     <div class="u-container-layout u-container-layout-1">
                       <img src="images/IMG_20180805_191110copy.jpg" alt="" class="u-image u-image-default u-image-1">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-1">
@@ -206,7 +206,7 @@ include('../N1/header.php');
                     </div>
                   </div>
                   <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4">
-                    <div style='position: absolute; bottom:-40px; right: 0; width: 500px; height: 500px; background-color: #bfb'></div>
+                    <div style='position: absolute; bottom:-40px; right: 0; width: 500px; height: 500px; background-color: #dfd'></div>
                     <div class="u-container-layout u-container-layout-7">
                       <img src="images/IMG_20180922_144005.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="600" data-image-height="456">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-4" style='background-color: white'>
