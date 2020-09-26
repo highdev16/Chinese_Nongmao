@@ -74,7 +74,7 @@ include('../N1/header.php');
                 </div>
                 <div class="u-align-center u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-30 u-layout-cell-2">
                   <div class="u-container-layout u-valign-middle u-container-layout-2" style='background-color: #bfb'>
-                    <p class="u-text u-text-default u-text-1" style='color: black'>&nbsp;农+超管理运营&nbsp;<br>超市化管理标准运营&nbsp;<br>超市卫生管理制度<br>
+                    <p class="u-text u-text-default u-text-1" style='color: black'>农+超管理运营<br>超市化管理标准运营<br>超市卫生管理制度<br>
                     </p>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ include('../N1/header.php');
               <div class="u-layout-row">
                 <div class="u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-layout-cell-3">
                   <div class="u-container-layout u-valign-bottom u-container-layout-3" style='background-color: #bfb'>
-                    <p class="u-align-center u-text u-text-2" style='color: black'>&nbsp; 超市卫生管理制度<br> 超市安全管理制度<br> 超市员工行为规范管理制度<br> 超市日常工作管理制度<br> 商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
+                    <p class="u-align-center u-text u-text-2" style='color: black'>超市卫生管理制度<br>超市安全管理制度<br>超市员工行为规范管理制度<br>超市日常工作管理制度<br>商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
                     </p>
                   </div>
                 </div>
