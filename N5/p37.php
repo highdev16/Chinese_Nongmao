@@ -23,12 +23,12 @@ include('../N1/header.php');
     <div class='yahei' style='text-align: center; margin-top: 50px; margin-bottom: 30px; font-size: 30px;'>案例节选(部分)</div>
     <section class="u-clearfix u-section-6" id="sec-1761">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-expand-resize u-image u-image-1" src="images/2.jpg" style='width: 1500px; height: auto'>
+        <img class="u-expand-resize u-image u-image-1" src="images/2.jpg" style='width: 1000px; height: auto'>
       </div>
     </section>
     <section class="u-clearfix u-section-6" id="sec-1761">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-expand-resize u-image u-image-1" src="images/3.jpg"  style='width: 1500px; height: auto'>
+        <img class="u-expand-resize u-image u-image-1" src="images/3.jpg"  style='width: 1000px; height: auto'>
       </div>
     </section>
     
