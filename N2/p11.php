@@ -16,6 +16,13 @@ include('../N1/header.php');
     margin-bottom: 50px !Important;
     margin-top: 10px !important;
   }
+  p.detail-text {
+    line-height: 60px;
+    margin-top: 50px !important;
+  }
+  p.detail-title {
+    line-height: 50px;
+  }
 </style>
     <section class="u-clearfix u-section-2" id="sec-f0db">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -24,8 +31,8 @@ include('../N1/header.php');
           <div class="u-container-layout u-container-layout-1"></div>
         </div>
         <p class="u-text u-text-grey-40 u-text-1 yahei">New Machinery Products</p>
-        <p class="u-align-left u-text u-text-black u-text-2 yahei"> 农贸市场招商 </p>
-        <p class="u-align-left u-text u-text-grey-75 u-text-3"> 成功的农贸市场招商不仅仅能为市场带来优质的商户，还能顺势快速塑造市场的品牌形象和影响力，从而在消费者心中树立良好形象，促进消费者转化为市场的客户，增加市场的人气，使市场进去商户精-品牌多-人气旺-商户更多的良性循环中。国内各行业的招商工作一片欣欣向荣之势发展，唯独农贸行业的招商工作发展缓慢，缺乏系统的招商经验，导致农贸项目招商工作效果不能保证。 </p>
+        <p class="u-align-left u-text u-text-black u-text-2 yahei detail-title"> 农贸市场招商 </p>
+        <p class="u-align-left u-text u-text-grey-75 u-text-3 detail-text" > 成功的农贸市场招商不仅仅能为市场带来优质的商户，还能顺势快速塑造市场的品牌形象和影响力，从而在消费者心中树立良好形象，促进消费者转化为市场的客户，增加市场的人气，使市场进去商户精-品牌多-人气旺-商户更多的良性循环中。国内各行业的招商工作一片欣欣向荣之势发展，唯独农贸行业的招商工作发展缓慢，缺乏系统的招商经验，导致农贸项目招商工作效果不能保证。 </p>
       </div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-7cb0">
@@ -142,7 +149,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-7" id="sec-d5d6">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-default u-text-1 yahei" style='font-size: 20px'> 菜源佳佳农贸市场招商（放几张平面图）<br>1、对接全国优质的招商资源：基地、批发、农产品厂家：联合康康、知味观、雨润。（配商家图）农产品有机菜、台州无公害蔬菜、浙江放心菜、 
+        <p class="u-text u-text-default u-text-1 yahei" style='font-size: 20px'> 菜源佳佳农贸市场招商<br>1、对接全国优质的招商资源：基地、批发、农产品厂家：联合康康、知味观、雨润。农产品有机菜、台州无公害蔬菜、浙江放心菜、 
         </p>
         <div class="u-gallery u-no-transition u-show-text-on-hover u-gallery-1">
           <img src='images/support.jpg' style='width: 100%'>
