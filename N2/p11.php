@@ -17,8 +17,8 @@ include('../N1/header.php');
     margin-top: 10px !important;
   }
   p.detail-text {
-    line-height: 60px;
-    margin-top: 50px !important;
+    line-height: 70px;
+    margin-top: 30px !important;
   }
   p.detail-title {
     line-height: 50px;
