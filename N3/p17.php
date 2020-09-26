@@ -43,7 +43,7 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-a679">
-      <img src='images/13.jpg' style='width: 100%'>
+      <img src='images/13.jpg' style='width: 100%; height: 650px; object-fit: cover'>
     </section>
     <section class="u-clearfix u-section-4" id="sec-fb1d">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 50px'>
