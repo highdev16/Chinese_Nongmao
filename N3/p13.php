@@ -26,6 +26,13 @@ include('../N1/header.php');
   .u-section-5 {
     min-height: 400px;
   }
+  @media (max-width: 700px) {
+    p.boss-detail-text {
+    line-height: 70px;
+    margin-top: 0px !important;
+  }
+    
+  }
   .u-section-5 .u-text-1 {
     margin-top: 50px;
   }
