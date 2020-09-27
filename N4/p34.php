@@ -10,7 +10,10 @@ include('../N1/header.php');
   div.boss-profile div.board-content {
     width: calc(100% - 550px)
   }
-
+  .u-section-4 .u-text-3 {
+    width: 100%;
+    font-size: 20px;
+  }
   #sec-275e {
     min-height: 0px;
   }
