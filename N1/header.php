@@ -243,13 +243,13 @@ $oname = $oname[0];
       }
       header.narrow  div.free-consultation {
         line-height: 62px;
-        margin-left: 50px;
-        margin-right: 50px;
         color: #999;
       }
       div.free-consultation {
         line-height: 80px;
         font-family: "Roboto" !important;
+        margin-left: 50px;
+        margin-right: 50px;
       }
     </style>
   </head>
