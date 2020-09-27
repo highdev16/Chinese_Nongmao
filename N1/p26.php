@@ -131,7 +131,7 @@ while (strlen($temp) > 0) {
       margin-bottom: 5px;
   }
   .main_content_area{
-      margin-top: 10px;
+      margin-top: 30px;
       width: 100%;
       font-weight: 100 !important;
   }
