@@ -188,7 +188,7 @@ div.percentage-20 {
               <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                 <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
               </div>
-              <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>
+              <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' padding-left: 13px; width: 100%; margin-left: 0px; margin-right: 0px; padding-right: 13px'>
                 <?php
                   for ($j = 0; $j < floatval($row['stars']); $j++)
                     echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";

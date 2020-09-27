@@ -12,14 +12,15 @@ $oname = $oname[0];
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-<meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
-<meta name="description" content="abc">
+    <meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
+    <meta name="description" content="abc">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title><?php echo $bigTitle; ?></title>
     <?php
         echo '<link rel="stylesheet" href="../N1/p2.css" media="screen">';
     ?>
     <link rel="stylesheet" href="../N1/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../N1/images/fontawesome.min.css" media="screen">
     <link rel="stylesheet" href="..<?php echo $oname; ?>.css" media="screen">
     <script src="../js/jquery1.js"></script>
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -152,13 +153,13 @@ $oname = $oname[0];
       }
       header *, section.titlesubmenu {
         font-size: 16px !important;
-        font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+        font-family: "Microsoft Yahei" !important; /*, "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;*/
       }
       * {
         font-weight: 400 !important;
       }
       body {
-        font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif;
+        font-family: "Microsoft Yahei"; /*, "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;*/
       }
       .active1 {
           border-width: 0px !important;
@@ -254,6 +255,8 @@ $oname = $oname[0];
         margin-right: 50px;
         font-weight: 1000 !important;
         color: #000;
+        opacity: 0.7;
+        display: flex;
       }
     </style>
   </head>
@@ -282,7 +285,9 @@ $oname = $oname[0];
                 </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
                 </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
             </ul>
-            <div class='free-consultation'>400-000-3840/免费咨询/19957895916</div>
+            <div class='free-consultation'>
+              <img src='/N1/images/phonering.png' style='margin:auto 5px auto 0; height: 20px'><span style='font-style: italic'>400-000-3840</span>
+            </div>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
@@ -564,30 +569,31 @@ $oname = $oname[0];
                           $(this).css('color','');
                           $(this).removeClass('active1');
                           $('section.mainmenu' + i).css('display', 'none');
-                        }, 0);
+                        }, 100);
                     }
                 }
             });
 
             $("section.titlesubmenu").hover(function() {
-                $(this).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('top', $('header').height()).slideDown();
-                for (let i = 1; i <= 7; i++) {
-                    if ($(this).hasClass('mainmenu' + i)) {
-                        mousemove = i;
-                        $('.active1').removeClass('active1')
-                        $("a.mainmenu" + i).addClass('active1');
-                        break;
-                    }
-                }
-                isMouseOnSubMenu = true;
+              $(this).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('top', $('header').height()).slideDown();
+              for (let i = 1; i <= 7; i++) {
+                  if ($(this).hasClass('mainmenu' + i)) {
+                      mousemove = i;
+                      $('.active1').removeClass('active1')
+                      $("a.mainmenu" + i).addClass('active1');
+                      break;
+                  }
+              }
+              isMouseOnSubMenu = true;
             }, function() {
-                $("section.titlesubmenu").css('display', 'none');
-                $(".active1").removeClass('active1');
-                isMouseOnSubMenu = false;
+              $("section.titlesubmenu").css('display', 'none');
+              $(".active1").removeClass('active1');
+              mousemove = -1;
+              isMouseOnSubMenu = false;
             });
 
             $("section.titlesubmenu div.u-layout-cell").hover(function() {
-                $(this).css('cursor', 'pointer').find('p').css('color','#ff6500');
+              $(this).css('cursor', 'pointer').find('p').css('color','#ff6500');
             }, function() {
                 $(this).find('p').css('color','');
             });
