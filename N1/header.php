@@ -148,7 +148,7 @@ $oname = $oname[0];
         font-family: "Microsoft YaHei" !important;
       }
       body * {
-        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+        font-family: "Microsoft YaHei" !important;
       }
       header *, section.titlesubmenu {
         font-size: 16px !important;
