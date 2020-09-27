@@ -10,6 +10,12 @@ include('../N1/header.php');
   .u-section-5 {
     margin-bottom: 0px !important;
   }
+
+  .u-section-5 img {
+    width: 70% !important;
+    height: auto !important;
+    margin: 0 auto 20px auto !Important;
+  }
 </style>
     <section class="u-clearfix u-section-2" id="sec-d817">
       <div class="u-clearfix u-sheet u-sheet-1">
