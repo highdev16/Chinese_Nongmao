@@ -27,12 +27,12 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img src="images/ScreenShot2020-08-17at6.55.32AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-2" data-image-width="352" data-image-height="621">
+                  <img src="images/3.jpg" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-2" data-image-width="352" data-image-height="621">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/ScreenShot2020-08-17at6.56.03AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-3" data-image-width="351" data-image-height="621">
+                  <img src="images/4.jpg" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-3" data-image-width="351" data-image-height="621">
                 </div>
               </div>
             </div>
