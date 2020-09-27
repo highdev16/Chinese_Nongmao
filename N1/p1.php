@@ -475,11 +475,10 @@ div.percentage-20 {
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(知识产权)</div>
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(管理著作)</div>
-
                       </div>
                     </div>
                   </div>
-                  <div class="u-size-23 u-size-60-md">
+                  <div class="u-size-23">
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
