@@ -2,6 +2,12 @@
 $bigTitle = "光影集团";
 include('../N1/header.php');
 ?>
+<style>
+  .u-section-6 {
+    width: 1500px;
+    margin: 0 auto 50px auto;
+  }
+</style>
     <section class="u-clearfix u-image u-section-2" id="sec-aed1" data-image-width="1920" data-image-height="400">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"></div>
     </section>
