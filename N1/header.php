@@ -249,7 +249,7 @@ $oname = $oname[0];
         font-family: "Roboto" !important;
         margin-left: 50px;
         margin-right: 50px;
-        font-weight: 1000;
+        font-weight: 1000 !important;
         color: #000;
       }
     </style>
