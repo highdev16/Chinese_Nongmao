@@ -471,10 +471,10 @@ div.percentage-20 {
                         <img src='images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%'>
                       </div>
                       <div class="u-layout-row"  style='height: 50px; min-height: 0; display: flex; justify-content: space-between'>                  
-                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
-                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
-                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(知识产权)</div>
-                        <div class="percentage-20" style='height: 50px; text-align:center; flex-direction: column'>(管理著作)</div>
+                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
+                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
+                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(知识产权)</div>
+                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(管理著作)</div>
 
                       </div>
                     </div>
@@ -483,7 +483,7 @@ div.percentage-20 {
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-palette-2-base u-text-4  style='margin-left:0; line-height: 60px; font-size: 18px'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司
+                          <p class="u-text u-text-palette-2-base u-text-4 yahei"  style='margin-left:0; line-height: 60px; font-size: 18px'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司
                           </p>
                         </div>
                       </div>
@@ -493,7 +493,7 @@ div.percentage-20 {
               </div>
               <div class='u-size-60-md'>
                 <div class="u-layout-row">
-                  <div class='u-size-34' style=' min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px'>
+                  <div class='u-size-34 yahei' style=' min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px'>
                     打假办法通过企查查查出这个公司的注册时间
                   </div>
                 </div>
