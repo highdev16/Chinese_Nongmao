@@ -151,6 +151,9 @@ $oname = $oname[0];
       body * {
         font-family: "Microsoft YaHei" !important;
       }
+      section.titlesubmenu.narrow {
+        top: 62px;
+      }      
       header *, section.titlesubmenu {
         font-size: 16px !important;
         font-family: "Microsoft Yahei" !important; /*, "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;*/
@@ -170,6 +173,7 @@ $oname = $oname[0];
       }
       .titlesubmenu {
           width: 100% !important;
+          top: 80px;
       }
       section.titlesubmenu p.u-text {
           font-size: 14px;
@@ -531,8 +535,8 @@ $oname = $oname[0];
     </section>
     <script>
         $(window).scroll(function(event) {
-          if ($(window).scrollTop() >= 40) $("header").addClass('narrow');
-          else if ($(window).scrollTop() <= 0) $("header").removeClass('narrow');
+          if ($(window).scrollTop() >= 40) $("header, .titlesubmenu").addClass('narrow');
+          else if ($(window).scrollTop() <= 0) $("header, .titlesubmenu").removeClass('narrow');
         })
         $(document).ready(function() {
             let mousemove = false;
@@ -550,7 +554,7 @@ $oname = $oname[0];
                 for (let i = 1; i <= 7; i++) {
                     if ($(this).hasClass('mainmenu' + i)) {
                         $(this).css('color','#ff6500');
-                        $('section.mainmenu' + i).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('z-index', '9999').css('top', $('header').height()).slideDown();
+                        $('section.mainmenu' + i).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('z-index', '9999').slideDown();
                         // mousemove = i;
                     }
                 }
@@ -575,7 +579,7 @@ $oname = $oname[0];
             });
 
             $("section.titlesubmenu").hover(function() {
-              $(this).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('top', $('header').height()).slideDown();
+              $(this).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').slideDown();
               for (let i = 1; i <= 7; i++) {
                   if ($(this).hasClass('mainmenu' + i)) {
                       mousemove = i;
