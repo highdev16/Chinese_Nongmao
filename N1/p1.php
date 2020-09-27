@@ -465,10 +465,10 @@ div.percentage-20 {
                   <div class="u-size-37">
                     <div class="u-layout-row" style='position: relative'>
                       <div style='height: 300px; padding-left: 8px;padding-right: 8px; width: 100%; flex-direction: row; display: flex; justify-content: space-between;'>
-                        <img src='images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.png' class='u-size-14' style='object-fit: contain; width: 20%'>
-                        <img src='images/lALPD26eMHDuBeLNA-zNAsc_711_1004.png' class='u-size-14' style='object-fit: contain; width: 20%'>
-                        <img src='images/lADPD26eMHDpLQPNCSLNBnU_1653_2338.jpg' class='u-size-14' style='object-fit: contain; width: 20%'>
-                        <img src='images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%'>
+                        <img src='images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.png' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;'>
+                        <img src='images/lALPD26eMHDuBeLNA-zNAsc_711_1004.png' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;'>
+                        <img src='images/lADPD26eMHDpLQPNCSLNBnU_1653_2338.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;'>
+                        <img src='images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%; height: min-intrinsic;'>
                       </div>
                       <div class="u-layout-row"  style='height: 50px; min-height: 0; display: flex; justify-content: space-between'>                  
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>

@@ -219,6 +219,7 @@ $oname = $oname[0];
         background: #ff6500;
         position: absolute;
         bottom: -1px;
+        left: 0px;
       }
       header.narrow li.u-nav-item a.titlemainmenu {
         line-height: 62px;
@@ -559,7 +560,7 @@ $oname = $oname[0];
                           $(this).css('color','');
                           $(this).removeClass('active1');
                           $('section.mainmenu' + i).css('display', 'none');
-                        }, 50);
+                        }, 0);
                     }
                 }
             });
