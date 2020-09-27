@@ -242,14 +242,15 @@ $oname = $oname[0];
         font-family: "Microsoft Yahei" !important;
       }
       header.narrow  div.free-consultation {
-        line-height: 62px;
-        color: #999;
+        line-height: 62px;        
       }
       div.free-consultation {
         line-height: 80px;
         font-family: "Roboto" !important;
         margin-left: 50px;
         margin-right: 50px;
+        font-weight: 1000;
+        color: #000;
       }
     </style>
   </head>
