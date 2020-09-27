@@ -145,7 +145,7 @@ $oname = $oname[0];
         cursor: pointer;
       }
       body * {
-        font-family: "Helvetica Neue", Helvetica, "PingFang SC","Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
       }
       header *, section.titlesubmenu {
         font-size: 16px !important;
