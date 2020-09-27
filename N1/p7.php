@@ -254,7 +254,7 @@ while (strlen($temp) > 0) {
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-white u-layout-cell-2" id='fixed_sidebar'>
                 <div class="u-container-layout u-container-layout-2">
-                  <p class="u-custom-font u-text u-text-default u-text-1">我需要： （可多选)</p>
+                  <p class="u-custom-font u-text u-text-default u-text-1 yahei">我需要： （可多选)</p>
                   <div class="u-clearfix u-custom-html u-custom-html-1">
                     <style> table.class_specified tr td:first-child input {
 		width: 20px;

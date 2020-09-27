@@ -162,7 +162,7 @@ while (strlen($temp) > 0) {
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">                
                 <div class="u-container-layout u-container-layout-1" id='maincontent_area' style='padding: 30px 30px 30px 30px'>
-                    <div style='font-size: 24px; font-weight: bold;'><?php echo htmlspecialchars($row['title']); ?> </div>
+                    <div class='yahei' style='font-size: 24px; font-weight: bold;'><?php echo htmlspecialchars($row['title']); ?> </div>
                     <div style='font-size: 14px; font-weight: 100; color: #999; margin-top: 10px'>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-clock'></i></div>
                         <div style='float:left; margin-right: 50px'><?php echo date('Y-m-d H:i:s', $row['created_time']); ?></div>
