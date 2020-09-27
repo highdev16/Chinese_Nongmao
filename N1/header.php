@@ -222,6 +222,7 @@ $oname = $oname[0];
       }
       header.narrow li.u-nav-item a.titlemainmenu {
         line-height: 62px;
+        font-family: "Microsoft Yahei" !important;
       }
       body *.element-center {
         margin-left: auto !important;
@@ -235,6 +236,19 @@ $oname = $oname[0];
       }
       section.titlesubmenu {
         background: white !important;
+      }
+      section.titlesubmenu p.u-text {
+        font-family: "Microsoft Yahei" !important;
+      }
+      header.narrow  div.free-consultation {
+        line-height: 62px;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: #999;
+      }
+      div.free-consultation {
+        line-height: 80px;
+        font-family: "Roboto" !important;
       }
     </style>
   </head>
@@ -253,7 +267,7 @@ $oname = $oname[0];
                 </defs></svg>
             </a>
           </div>
-          <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: column; justify-content: space-around'>
+          <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: row; justify-content: space-around'>
             <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" style='height:100%'>
                 <li class="u-nav-item">     <a class="titlemainmenu mainmenu1 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="/N1/p1.php" style="padding: 0px 0;">首页</a>
                 </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="p2.html" style="padding: 0px 0;">农贸市场设计</a>
@@ -263,6 +277,7 @@ $oname = $oname[0];
                 </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
                 </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
             </ul>
+            <div class='free-consultation'>400-000-3840/免费咨询/19957895916</div>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
