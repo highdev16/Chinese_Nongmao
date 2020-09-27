@@ -144,6 +144,9 @@ $oname = $oname[0];
         transition: transform 0.2s;
         cursor: pointer;
       }
+      footer * {
+        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
+      }
       body * {
         font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, "Hiragino Sans GB", Arial, sans-serif !important;
       }
