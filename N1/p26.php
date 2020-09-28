@@ -166,7 +166,7 @@ include('header.php');
                         <button class='gotootherpage' style='margin-left: 10px' id='nextLinkButton'>下一页</button>                        
                       </div>
                     </div>
-                    <div style='margin-top: 60px; color: #888'>
+                    <div style='margin-top: 60px; color: #888; margin-bottom: 30px'>
                       声明：本站原创文章所有权归光影农贸市场研究院所有，转载务必注明来源；<br>
                       转载文章仅代表原作者观点，不代表本站立场；如有侵权、违规，请联系qq：712323016。
                     </div>
