@@ -1,32 +1,6 @@
 <?php
 $bigTitle = "农贸新闻资讯";
 include('header.php');
-include('../N1/dbconfig.php');
-$db = getDbInstance();
-if (!isset($_REQUEST['r'])) {
-  header('location: /N1/p1.php');
-  exit;
-}
-$caseIndex = intval($_REQUEST['r']);
-$info = $db->rawQuery("select * from news where id = $caseIndex");
-$db->rawQuery("update news set browse = browse + 1 where id = $caseIndex");
-if (sizeof($info) == 0) {
-  header('location: /N1/p1.php');
-  exit;
-}
-$categoryArr = array('', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件');
-$row = $info[0];
-$temp = $row['content'];
-$imageURLs = array();
-while (strlen($temp) > 0) {
-  $r = strpos($temp, '<img');
-  if ($r !== FALSE) {
-    $d = strpos(substr($temp, $r + 4), 'src=') + $r + 9;
-    $r = strpos(substr($temp, $d + 10), '"') + $d + 10;
-    $imageURLs[] = substr($temp, $d, $r - $d);    
-    $temp = substr($temp, $r);
-  } else break;
-}
 ?>
 <style>
       img.article-image {
@@ -140,19 +114,23 @@ while (strlen($temp) > 0) {
     vertical-align: top;
   } 
   button.gotootherpage:hover {
-    border: 1px solid #ff6500 !important;
+    border: 0px solid #ff6500 !important;
     background-color: #ff6500 !important;
     color: white;
   }
   button.gotootherpage {
-    background: white; border: 1px solid black;
-    padding: 6px 30px;
+    background: white; border: 0px solid black;    
+    color: rgb(0, 205, 0);
+    font-weight: bold !Important;
   }
   </style>
-                  <script src='../js/js/all.js'></script>
+  <script src='../js/js/all.js'></script>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/p1.php';">首页</span>／<span style="cursor:pointer" onclick="window.location.href='../N1/p25.php?category=<?php echo $row['category']; ?>';"><?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['title']); ?> </p>
+        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置<span style='font-family: "Helvetica Neue" !important;'>／</span>
+        <span style="cursor:pointer" onclick="window.location.href='../N1/p1.php';">首页</span><span style='font-family: "Helvetica Neue" !important;'>／</span>
+        <span style="cursor:pointer" onclick="" id='categoryLabel'></span><span style='font-family: "Helvetica Neue" !important;'>／</span>
+        <span id='articleTitle'></span></p>
       </div>
     </section>
     <section class="skrollable u-clearfix u-grey-10 u-section-3" id="sec-50da">
@@ -160,24 +138,37 @@ while (strlen($temp) > 0) {
         <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-16 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">                
-                <div class="u-container-layout u-container-layout-1" id='maincontent_area' style='padding: 30px 30px 30px 30px'>
-                    <div class='yahei' style='font-size: 24px; font-weight: bold; text-align: center'><?php echo htmlspecialchars($row['title']); ?> </div>
+                <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">                
+                  <div class="u-container-layout u-container-layout-1" id='maincontent_area' style='padding: 30px 30px 30px 30px'>
+                    <div class='yahei' style='font-size: 24px; font-weight: bold; text-align: center' id='titleLabel'><?php echo htmlspecialchars($row['title']); ?> </div>
                     <div style='font-size: 14px; font-weight: 100; color: #999; margin-top: 10px'>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-clock'></i></div>
-                        <div style='float:left; margin-right: 50px'><?php echo date('Y-m-d H:i:s', $row['created_time']); ?></div>
+                        <div style='float:left; margin-right: 50px' id='createdTimeLabel'><?php echo date('Y-m-d H:i:s', $row['created_time']); ?></div>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-user'></i></div>
-                        <div style='float:left;margin-right: 50px'><?php echo htmlspecialchars($row['writer']); ?></div>
+                        <div style='float:left;margin-right: 50px' id='writerLabel'><?php echo htmlspecialchars($row['writer']); ?></div>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-eye'></i></div>
-                        <div style='float:left;'><?php echo htmlspecialchars($row['browse']); ?></div>
+                        <div style='float:left;' id='browsecount'></div>
                         <div style='width: 100%; height: 30px'></div>
                     </div>
                     <div style='width: 100%;' class='main_content_area'>
-                      <?php echo $row['content']; ?>
                     </div>
-                    <div style='width: 100%; display: flex; justify-content: center; margin-top: 30px'>
-                      <button class='gotootherpage' style='margin-right: 10px'>上一页</button>
-                      <button class='gotootherpage'>下一页</button>
+                    <div style='width: 100%; display: flex; justify-content: space-between; margin-top: 30px'>
+                      <div style='display: flex'>
+                        <button class='gotootherpage' style='margin-right: 10px' id='prevLinkButton'>上一页</button>
+                        <div style='max-width: 100px; text-overflow: ellipsis;' id='prevLinkLabel'>OKsadfsadfsafsa</div>
+                      </div>
+                      <div style='display: flex'>
+                        <button class='gotootherpage' style='margin-right: 10px' id='currentCategoryButton'>返回</button>
+                        <div style='max-width: 100px; text-overflow: ellipsis;' id='currentCategoryLabel'>OKsadfsadfsafsa</div>
+                      </div>
+                      <div style='display: flex'>
+                        <div style='max-width: 100px; text-overflow: ellipsis;' id='nextLinkLabel'>OKsadfsadfsafsa</div>
+                        <button class='gotootherpage' style='margin-left: 10px' id='nextLinkButton'>下一页</button>                        
+                      </div>
+                    </div>
+                    <div style='margin-top: 60px; color: #888'>
+                      声明：本站原创文章所有权归光影农贸市场研究院所有，转载务必注明来源；<br>
+                      转载文章仅代表原作者观点，不代表本站立场；如有侵权、违规，请联系qq：712323016。
                     </div>
                 </div>
               </div>
@@ -253,8 +244,7 @@ while (strlen($temp) > 0) {
           </div>
         </div>
       </div>
-    </section>
-     
+    </section>    
     <script>
       $("img.thumbnail-image").click(function() {
         $("img.thumbnail-image.selected").removeClass('selected');
@@ -325,9 +315,61 @@ while (strlen($temp) > 0) {
             }
           }
         })
-      
-        let myCategory = <?php echo $info[0]['category']; ?>;
-        $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu')
+///------------------ content fill ------------------////
+        let href = window.location.href;
+        let r;
+        if (href.includes(".php")) {
+          r = href.indexOf("r=");
+          r = Number(href.substr(r + 2));
+        } else {
+          r = href.indexOf("__");
+          r = parseInt(href.substr(r + 2));
+        }
+
+        let categoryArr = ['', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件'];
+        $.post('/api/getarticle.php', {r}, function(a,b) {
+          if (b == 'success') {
+            try {
+              a = JSON.parse(a);
+              if (a['result'] == 'success') {
+                a = a.data;
+                let myCategory = a['row']['category'];
+                $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu');
+                $("#browsecount").html(a.row.browse + "");
+                $("#categoryLabel").html(categoryArr[a.row['category']]).click(function() {
+                  window.location.href='../N1/p25.php?category=' + a.row.category;
+                });
+                $("#articleTitle").html(a.row.title);
+                $("#titleLabel").html(a.row.title);
+                $("#createTimeLabel").html(a.row.created_time);
+                $("#writerLabel").html(a.row.writer);
+                
+                $("#currentCategoryButton").click(function() {
+                    window.location.href='../N1/p25.php?category=' + a.row.category;
+                  });
+                $("#currentCategoryLabel").html(categoryArr[a.row.category]);
+                if (a.next) {
+                  $("#nextLinkLabel").html(a.next.title);
+                  $("#nextLinkButton").click(function() {
+                    window.location.href='../N1/p26.php?r=' + a.next.id;
+                  });
+                } else {
+                  $("#nextLinkButton, #nextLinkLabel").css('opacity', 0);
+                }
+
+                if (a.prev) {
+                  $("#prevLinkLabel").html(a.prev.title);
+                  $("#prevLinkButton").click(function() {
+                    window.location.href='../N1/p26.php?r=' + a.prev.id;
+                  });
+                } else {
+                  $("#prevLinkButton, #prevLinkLabel").css('opacity', 0);
+                }
+                $("div.main_content_area").html(a.row.content);
+              }
+            } catch(e) {}
+          }
+        })
       })
    
       function submitForm() {
@@ -361,5 +403,7 @@ while (strlen($temp) > 0) {
                 alert("失败！网络错误。");
               })
       }
+
+
     </script>
     <?php include('../N1/footer.php'); ?>
