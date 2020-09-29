@@ -153,7 +153,7 @@ include('../N1/header.php');
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <img src="images/20190201124249109.png" alt="" class="u-image u-image-default u-image-4" data-image-width="568" data-image-height="426">
                   <p class="u-align-left u-text u-text-7 yahei" style='font-size: 20px'> 交易信息数据分析系统： </p>
-                  <p class="u-align-left u-text u-text-default u-text-8 yahei" style='font-size: 16px'> 将交易信息汇总到只智能农贸管理平台，对数据进行查询，统计，挖掘，对比，分析之后形成统计报表，分析报表和预测报表。进行数据建模对交易数据进行分析预测，为农贸市场管理单位决策者提供决策参考依据。 </p>
+                  <p class="u-align-left u-text u-text-default u-text-8 yahei" style='font-size: 16px'> 将交易信息汇总到智能农贸管理平台，对数据进行查询，统计，挖掘，对比，分析之后形成统计报表，分析报表和预测报表。进行数据建模对交易数据进行分析预测，为农贸市场管理单位决策者提供决策参考依据。 </p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-5">
