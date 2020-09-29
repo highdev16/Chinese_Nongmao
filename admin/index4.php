@@ -96,7 +96,7 @@ include ('config.php');
 
 			<main class="content">				
 				<div class="container-fluid p-0">
-					<div class="row">
+					<div class="row" STYLE='margin-bottom: 20px'>
 						<div style='float:left; margin-right: 30px;'>咨询表单数量</div>
 						<div style='float:left; '><input type='text' id='initValue'></div>
 						<div style='float:left; '><button class='btn btn-primary' onclick='save_init_value()'>保存</div>
