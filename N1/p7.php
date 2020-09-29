@@ -137,7 +137,7 @@ while (strlen($temp) > 0) {
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/p1.php';">首页</span>／
-        <span style="cursor:pointer" onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';">
+        <span style="cursor:pointer" onclick="window.location.href='../N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';">
         <?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
       </div>
     </section>
@@ -474,7 +474,7 @@ while (strlen($temp) > 0) {
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
               <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
-              <button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  id='gita_area'>更多</button></div>
+              <button class='btn btn-black' onclick="window.location.href='../N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  id='gita_area'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <div class="u-layout-row"  style='padding: 0; justify-content: space-between'>
@@ -541,7 +541,7 @@ while (strlen($temp) > 0) {
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;' id='gita_area1'>其他精彩案例</div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='../N1/P2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='../N1/p2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <?php
