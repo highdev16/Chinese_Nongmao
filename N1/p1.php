@@ -416,13 +416,13 @@ div.percentage-20 {
               <div class="u-size-25 u-size-60-md">
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
-                    <div class="u-container-layout u-valign-middle u-container-layout-4" style='justify-content: space-between !important;'>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
-                      <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 0 1 auto'>
+                    <div class="u-container-layout u-valign-middle u-container-layout-4" style='padding-right: 0px; justify-content: space-between !important; display: flex; -webkit-justify-content: space-between !important; display: -webkit-flex;'>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
+                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
+                      <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>
                     </div>
                   </div>
                 </div>
