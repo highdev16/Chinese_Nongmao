@@ -331,7 +331,7 @@ include('header.php');
             try {
               a = JSON.parse(a);
               if (a['result'] == 'success') {
-                $("#applicant_number").html(a.data);
+                $("#applicant_number").html(a.data + "");
               }
             } catch(e) {}
           }
