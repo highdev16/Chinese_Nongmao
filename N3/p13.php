@@ -96,8 +96,8 @@ include('../N1/header.php');
             <div class="u-container-style u-grey-30 u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2">
               <div class="u-container-layout u-container-layout-2">
                 <h2 class="u-align-center u-text u-text-1 yahei">综合体运营</h2>
-                <p class="u-align-left u-text u-text-2">  我们按照万达商业的团队和万达商业综合体的制度以及万达双效的管理模式进行综合管理，<br>
-                  <br>  综合运营。这是我们菜源佳佳未来主要核心推广的合作发展模式。 
+                <p class="u-align-left u-text u-text-2">  我们按照万达商业的团队和万达商业综合体的制度以及万达双效的管理模式进行综合管理，综合运营。<br>
+                  <br>这是我们菜源佳佳未来主要核心推广的合作发展模式。 
                 </p>
               </div>
             </div>
