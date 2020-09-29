@@ -108,6 +108,54 @@ include('../N1/header.php');
             </div>
           </div>
         </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+          <div class="u-layout">
+            <div class="u-layout-row grid-3">
+              <div class="u-container-style u-layout-cell u-left-cellu-layout-cell-4">
+                <div class="u-container-layout u-valign-top u-container-layout-4">
+                  <img src="images/t1.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
+                  <p class="u-align-center u-text u-text-default u-text-5">新型智能电子结算秤</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-layout-cell-5">
+                <div class="u-container-layout u-container-layout-5">
+                  <img src="images/t2.jpg" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
+                  <p class="u-align-center u-text u-text-default u-text-6">新型智慧展示屏</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-6">
+                <div class="u-container-layout u-container-layout-6">
+                  <img src="images/t3.jpg" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
+                  <p class="u-align-center u-text u-text-default u-text-7">智能巡查仪器</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+          <div class="u-layout">
+            <div class="u-layout-row grid-3">
+              <div class="u-container-style u-layout-cell u-left-cellu-layout-cell-4">
+                <div class="u-container-layout u-valign-top u-container-layout-4">
+                  <img src="images/t4.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
+                  <p class="u-align-center u-text u-text-default u-text-5">多功能信息查询机</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-layout-cell-5">
+                <div class="u-container-layout u-container-layout-5">
+                  <img src="images/t5.jpg" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
+                  <p class="u-align-center u-text u-text-default u-text-6">多功能扫码器</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-6">
+                <div class="u-container-layout u-container-layout-6">
+                  <img src="images/t6.jpg" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
+                  <p class="u-align-center u-text u-text-default u-text-7">全方位监控探头</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     
