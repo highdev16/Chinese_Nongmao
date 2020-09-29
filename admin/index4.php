@@ -107,10 +107,11 @@ include ('config.php');
 							<thead>
 								<tr>
 									<th style='width: 5%'>No</th>
-									<th style='width: 25%'>输人您的姓名</th>
-									<th style='width: 25%'>输人您的电话</th>
-									<th style='width: 25%'>我需要解决的同题是</th>
-									<th style='width: 20%'></th>
+									<th style='width: 20%'>输人您的姓名</th>
+									<th style='width: 20%'>输人您的电话</th>
+									<th style='width: 20%'>我需要解决的同题是</th>
+									<th style='width: 20%'>提交时间</th>
+									<th style='width: 15%'></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -122,12 +123,13 @@ include ('config.php');
                                     $row = $rows[$i];								
 							?> <tr id='row_<?php echo $rows[$i]['id']; ?>' customdata="<?php echo addslashes($rows[$i]['customdata']); ?>" onclick='showInfo(this)'>
 								<td style='width: 5%; cursor:pointer'><?php echo $i + 1; ?></td>
-								<td style='width: 25%; cursor:pointer'><?php echo htmlspecialchars($row['name']); ?></td>
-								<td style='width: 25%; cursor:pointer'><?php echo htmlspecialchars($row['email']); ?></td>
-								<td style='width: 25%; cursor:pointer; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
+								<td style='width: 20%; cursor:pointer'><?php echo htmlspecialchars($row['name']); ?></td>
+								<td style='width: 20%; cursor:pointer'><?php echo htmlspecialchars($row['email']); ?></td>
+								<td style='width: 20%; cursor:pointer; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
 									<?php echo htmlspecialchars($row['message']); ?>
 								</td>
-								<td style='width: 20%; cursor:pointer'><button type='button' onclick='deleteThis(<?php echo $rows[$i]["id"]; ?>)' class='btn btn-danger'>删除</button></td>
+								<td style='width: 20%; cursor:pointer'><?php echo htmlspecialchars($row['created_time']); ?></td>
+								<td style='width: 15%; cursor:pointer'><button type='button' onclick='deleteThis(<?php echo $rows[$i]["id"]; ?>)' class='btn btn-danger'>删除</button></td>
 								</tr>
 							<?php } ?>
 							</tbody>
