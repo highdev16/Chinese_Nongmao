@@ -358,7 +358,7 @@ include('header.php');
                 });
                 $("#articleTitle").html(a.row.title);
                 $("#titleLabel").html(a.row.title);
-                $("#createdTimeLabel").html(GetDateStringOf(new Date(a.row.created_time)));
+                $("#createdTimeLabel").html(GetDateStringOf(new Date(a.row.created_time * 1000)));
                 $("#writerLabel").html(a.row.writer);
                 
                 $("#currentCategoryButton").click(function() {
