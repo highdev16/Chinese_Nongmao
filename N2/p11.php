@@ -46,7 +46,7 @@ include('../N1/header.php');
               <div class="u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <p class="u-align-center u-text u-text-palette-2-dark-1 u-text-3">04</p>
-                  <p class="u-align-center u-text u-text-default u-text-4 element-center"> 管理难，管理官推，经营户难<br>以把控，无法做到统一管理!</p>
+                  <p class="u-align-center u-text u-text-default u-text-4 element-center"> 管理难，管理团队，经营户难<br>以把控，无法做到统一管理!</p>
                 </div>
               </div>
               <div class="u-container-style u-image u-layout-cell u-right-cell u-size-20 u-size-30-md u-image-2" data-image-width="483" data-image-height="269">
