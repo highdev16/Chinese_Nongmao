@@ -246,6 +246,13 @@ include('header.php');
       </div>
     </section>    
     <script>
+      function make2(s) {
+        return s < 10? "0" + s : s;
+      }
+      function GetDateStringOf(s) {
+        return s.getFullYear() + "-" + make2(s.getMonth() + 1) + "-" + make2(s.getDate()) + " "
+              + make2(s.getHours()) + ":" + make2(s.getMinutes()) + ":" + make2(s.getSeconds());
+      }
       $("img.thumbnail-image").click(function() {
         $("img.thumbnail-image.selected").removeClass('selected');
         $(this).addClass('selected');
@@ -351,7 +358,7 @@ include('header.php');
                 });
                 $("#articleTitle").html(a.row.title);
                 $("#titleLabel").html(a.row.title);
-                $("#createdTimeLabel").html(a.row.created_time);
+                $("#createdTimeLabel").html(GetDateStringOf(new Date(a.row.created_time)));
                 $("#writerLabel").html(a.row.writer);
                 
                 $("#currentCategoryButton").click(function() {
