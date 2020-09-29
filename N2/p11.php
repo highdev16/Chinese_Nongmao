@@ -95,13 +95,11 @@ include('../N1/header.php');
         <p class="u-align-left u-text u-text-grey-75 u-text-3 detail-text" > 成功的农贸市场招商不仅仅能为市场带来优质的商户，还能顺势快速塑造市场的品牌形象和影响力，从而在消费者心中树立良好形象，促进消费者转化为市场的客户，增加市场的人气，使市场进去商户精-品牌多-人气旺-商户更多的良性循环中。国内各行业的招商工作一片欣欣向荣之势发展，唯独农贸行业的招商工作发展缓慢，缺乏系统的招商经验，导致农贸项目招商工作效果不能保证。 </p>
       </div>
     </section>
-    <section class="u-clearfix u-section-5" id="carousel_cdb4">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1 bigtitle"> 菜源佳佳招商的优势：“三快三省一系统”的优点 </h1>
-        <h2 class="u-text u-text-default u-text-2 smalltitle">NEW MACHINERY PRODUCTS</h2>
+    <section class="u-clearfix u-section-6" id="sec-d54b" style='background-color: #ccc'>
+      <div style='margin: 50px auto 50px auto;'>
+        <h1 class="u-text u-text-default u-text-1 bigtitle" style='width: 100%; text-align: center'> 菜源佳佳招商的优势：“三快三省一系统”的优点 </h1>
+        <h2 class="u-text u-text-default u-text-2 smalltitle" style='width: 100%; text-align: center; margin-top: 20px'>NEW MACHINERY PRODUCTS</h2>
       </div>
-    </section>
-    <section class="u-clearfix u-section-6" id="sec-d54b">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -128,7 +126,7 @@ include('../N1/header.php');
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
-                <div class="u-container-layout u-valign-middle u-container-layout-4">
+                <div class="u-container-layout u-valign-middle u-container-layout-4" style='background: white'>
                   <p class="u-text u-text-default u-text-4"> 指快速回笼资金 </p>
                 </div>
               </div>
@@ -138,7 +136,7 @@ include('../N1/header.php');
                 </div>
               </div>
               <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
-                <div class="u-container-layout u-valign-middle u-container-layout-6">
+                <div class="u-container-layout u-valign-middle u-container-layout-6" style='background: white'>
                   <p class="u-text u-text-default u-text-6"> 快速形成品牌化 </p>
                 </div>
               </div>
