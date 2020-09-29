@@ -76,7 +76,7 @@ $rows = $db->rawQuery($query);
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
         <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>" >最新发布</a>
         <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">文字替换</a>
+        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">星级排序</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 30px'>
