@@ -417,8 +417,10 @@ while (strlen($temp) > 0) {
 
         $.post('/api/get_applicants_number.php', function(a,b) {
           if (b == 'success') {
+            console.log(a, b)
             try {
               a = JSON.parse(a);
+              console.log(a, b)
               if (a['result'] == 'success') {
                 $("#applicant_number").html(a.data);
               }
