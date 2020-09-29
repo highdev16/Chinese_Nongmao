@@ -84,7 +84,7 @@ include('../N1/header.php');
               <div class="u-layout-row">
                 <div class="u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-layout-cell-3">
                   <div class="u-container-layout u-valign-bottom u-container-layout-3" style='background-color: #dfd'>
-                    <p class="u-align-center u-text u-text-2" style='color: black'>超市卫生管理制度<br>超市安全管理制度<br>超市员工行为规范管理制度<br>超市日常工作管理制度<br>商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
+                    <p class="u-align-center u-text u-text-2" style='color: black'>超市安全管理制度<br>超市员工行为规范管理制度<br>超市日常工作管理制度<br>商品保管管理制度<br> 超市办公设备管理制度&nbsp;&nbsp;
                     </p>
                   </div>
                 </div>
