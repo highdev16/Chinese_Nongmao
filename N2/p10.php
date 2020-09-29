@@ -170,7 +170,7 @@ include('../N1/header.php');
                   <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                     <div style='position: absolute; left:0; top: 0; width: 500px; height: 500px; background-color: #dfd'></div>
                     <div class="u-container-layout u-container-layout-1">
-                      <img src="images/IMG_20180805_191110copy.jpg" alt="" class="u-image u-image-default u-image-1">
+                      <img src="images/aa1.jpg" alt="" class="u-image u-image-default u-image-1">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-1">
                         <div class="u-container-layout u-container-layout-2">
                           <p class="u-text u-text-1 market-operation-detail-title"> 专业理论指导 </p>
@@ -181,7 +181,7 @@ include('../N1/header.php');
                   </div>
                   <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                     <div class="u-container-layout u-container-layout-3">
-                      <img src="images/IMG_20180805_191932.jpg" alt="" class="u-image u-image-default u-image-2" data-image-width="600" data-image-height="417">
+                      <img src="images/aa2.jpg" alt="" class="u-image u-image-default u-image-2" data-image-width="600" data-image-height="417">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-2">
                         <div class="u-container-layout u-container-layout-4">
                           <p class="u-text u-text-3 market-operation-detail-title"> 黄金招商策略 </p>
@@ -196,7 +196,7 @@ include('../N1/header.php');
                 <div class="u-layout-row">
                   <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-5">
-                      <img src="images/IMG_20180922_143901.jpg" alt="" class="u-image u-image-default u-image-3" data-image-width="600" data-image-height="440">
+                      <img src="images/aa3.jpg" alt="" class="u-image u-image-default u-image-3" data-image-width="600" data-image-height="440">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-3">
                         <div class="u-container-layout u-container-layout-6">
                           <p class="u-text u-text-5 market-operation-detail-title"> 新消费形态突起 </p>
@@ -208,7 +208,7 @@ include('../N1/header.php');
                   <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4">
                     <div style='position: absolute; bottom:-40px; right: 0; width: 500px; height: 500px; background-color: #dfd'></div>
                     <div class="u-container-layout u-container-layout-7">
-                      <img src="images/IMG_20180922_144005.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="600" data-image-height="456">
+                      <img src="images/aa4.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="600" data-image-height="456">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-4" style='background-color: white'>
                         <div class="u-container-layout u-container-layout-8">
                           <p class="u-text u-text-7 market-operation-detail-title"> 技术驱动全能变革 </p>
