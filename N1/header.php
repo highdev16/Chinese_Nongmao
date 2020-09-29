@@ -290,7 +290,7 @@ $oname = $oname[0];
                 </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
             </ul>
             <div class='free-consultation'>
-              <img src='/N1/images/phonering.png' style='margin:auto 5px auto 0; height: 20px'><span style='font-style: italic'>400-000-3840</span>
+              <img src='/N1/images/phonering.png' style='margin:auto 5px auto 0; height: 20px'><span style='font-style: italic'>19957895916</span>
             </div>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">

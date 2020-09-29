@@ -95,7 +95,7 @@ include('header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-image u-layout-cell u-left-cell u-shading u-size-15 u-size-30-md u-image-1" data-image-width="594" data-image-height="427">
                 <div class="u-container-layout u-container-layout-1">
-                  <p class="p5-celltitle u-align-center u-text u-text-3">市场调研</p>
+                  <p class="p5-celltitle u-align-center u-text u-text-3">招商/收益 </p>
                   <ul class="u-align-left u-text u-text-default u-text-4 design-detail">
                     <li>菜源平衡式设计</li>
                     <li>保证摊位无死角</li>
@@ -107,7 +107,7 @@ include('header.php');
               </div>
               <div class="u-container-style u-image u-layout-cell u-shading u-size-15 u-size-30-md u-image-2" data-image-width="1600" data-image-height="1200">
                 <div class="u-container-layout u-container-layout-2">
-                  <p class="p5-celltitle u-align-center u-text u-text-5">市场调研</p>
+                  <p class="p5-celltitle u-align-center u-text u-text-5">农贸市场设计技术</p>
                   <ul class="u-align-left u-text u-text-6 design-detail">
                     <li style="">家禽区隔离</li>
                     <li style="">国家设计专利</li>
@@ -118,7 +118,7 @@ include('header.php');
               </div>
               <div class="u-container-style u-image u-layout-cell u-shading u-size-15 u-size-30-md u-image-3" data-image-width="1600" data-image-height="1080">
                 <div class="u-container-layout u-container-layout-3">
-                  <p class="p5-celltitle u-align-center u-text u-text-7">市场调研</p>
+                  <p class="p5-celltitle u-align-center u-text u-text-7">农贸市场专利</p>
                   <ul class="u-align-left u-text u-text-8 design-detail">
                     <li style="">出版市场管理书籍八册</li>
                     <li style="">水产区设计专利</li>
@@ -132,7 +132,7 @@ include('header.php');
               </div>
               <div class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-15 u-size-30-md u-image-4" data-image-width="1600" data-image-height="1200">
                 <div class="u-container-layout u-container-layout-4">
-                  <p class="p5-celltitle u-align-center u-text u-text-9">市场调研</p>
+                  <p class="p5-celltitle u-align-center u-text u-text-9">空间科学</p>
                   <ul class="u-align-left u-text u-text-10 design-detail">
                     <li>菜源平衡式设计</li>
                     <li>保证摊位无死角</li>
