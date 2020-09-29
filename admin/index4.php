@@ -97,6 +97,11 @@ include ('config.php');
 			<main class="content">				
 				<div class="container-fluid p-0">
 					<div class="row">
+						<div style='float:left; margin-right: 30px;'>咨询表单数量</div>
+						<div style='float:left; '><input type='text' id='initValue'></div>
+						<div style='float:left; '><button class='btn btn-primary' onclick='save_init_value()'>保存</div>
+					</div>
+					<div class="row">
 						<div style='float: left; width: 100%;'>
 						<table id='phones' class='table table-striped table-bordered db-show-table' style='width: 100%;'>
 							<thead>
@@ -179,5 +184,26 @@ include ('config.php');
 			}
 		})
 	}	
+
+	function save_init_value() {
+		let value = $("#initValue").val();
+		$.post('/api/save_init_consultform_value.php', {value, method: 'save'}, function(a,b) {
+			if (a == b && b == 'success')
+				alert("成功！")；
+			else alert("失败！")；
+		}).fail(function() {
+			alert("失败！")；
+		})
+	}
+
+	$(document).ready(function() {
+		$.post('/api/save_init_consultform_value.php', {value, method: 'load'}, function(a,b) {
+			if (a.substr(0, 7) == b && b == 'success')
+				$("#initValue").val(a.substr(7));
+			else $("#initValue").val("0");
+		}).fail(function() {
+			$("#initValue").val("0");
+		})
+	})
 </script>
 </html>

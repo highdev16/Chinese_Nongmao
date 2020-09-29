@@ -95,9 +95,9 @@ include ('config.php');
 			<?php include('nav.php'); ?>			
             <?php
                 $data = explode(PHP_EOL, file_get_contents('../N1/header.php'));
-                $keywords = substr($data[14],31);
+                $keywords = substr(trim($data[14]),31);
                 $keywords = substr($keywords, 0, strlen($keywords) - 2);
-                $description = substr($data[15],34);
+                $description = substr(trim($data[15]),34);
                 $description = substr($description, 0, strlen($description) - 2);
             ?>
 			<main class="content">				

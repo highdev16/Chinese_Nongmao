@@ -235,7 +235,7 @@ include('header.php');
                   <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
                     <p style="text-align:center">已有<big style="color: red" class='applicant_number'></big>业主申请了此服务
                     </p>
-                    <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655 
+                    <p style="text-align:center; background: lightgray">7×24免费装修设计咨询<br> 0571-88776655 
                     </p>
                   </div>
                 </div>

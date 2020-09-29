@@ -12,8 +12,8 @@ $oname = $oname[0];
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
-    <meta name="description" content="abc">
+  <meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
+  <meta name="description" content="abc">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title><?php echo $bigTitle; ?></title>
     <?php
