@@ -133,14 +133,14 @@ include('../N1/header.php');
                 <div class="u-container-layout u-container-layout-2">
                   <img src="images/20190129215520477.png" alt="" class="u-image u-image-contain u-image-default u-image-2" data-image-width="1600" data-image-height="641">
                   <p class="u-align-left u-text u-text-3 yahei" style='font-size: 20px'> 监测数据分析系统： </p>
-                  <p class="u-align-left u-text u-text-default u-text-4 yahei" style='font-size: 16px'> 把商品监测数据彩采集汇总至智能农贸管理平台，然后对商品监测数据进行查询，统计，分析，挖掘，最终形成各种统计报表，分析报表和预测报表。数据分析的类型主要有商品合格率统计分析以及分类合格率统计分析。 </p>
+                  <p class="u-align-left u-text u-text-default u-text-4 yahei" style='font-size: 16px'> 把商品监测数据采集汇总至智能农贸管理平台，然后对商品监测数据进行查询，统计，分析，挖掘，最终形成各种统计报表，分析报表和预测报表。数据分析的类型主要有商品合格率统计分析以及分类合格率统计分析。 </p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
                   <img src="images/201901211629187011.png" alt="" class="u-image u-image-default u-image-3" data-image-width="420" data-image-height="420">
                   <p class="u-align-left u-text u-text-5 yahei" style='font-size: 20px'> 信息发布系统： </p>
-                  <p class="u-align-left u-text u-text-default u-text-6 yahei" style='font-size: 16px'> 把商品监测数据彩采集汇总至智能农贸管理平台，然后对商品监测数据进行查询，统计，分析，挖掘，最终形成各种统计报表，分析报表和预测报表。数据分析的类型主要有商品合格率统计分析以及分类合格率统计分析。 </p>
+                  <p class="u-align-left u-text u-text-default u-text-6 yahei" style='font-size: 16px'> 把商品监测数据采集汇总至智能农贸管理平台，然后对商品监测数据进行查询，统计，分析，挖掘，最终形成各种统计报表，分析报表和预测报表。数据分析的类型主要有商品合格率统计分析以及分类合格率统计分析。 </p>
                 </div>
               </div>
             </div>
