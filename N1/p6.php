@@ -135,7 +135,7 @@ include('header.php');
               </tr>
               <tr style="height: 48px;">
                 <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5" style='border-left:none'>第三步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
-                <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守总体要求和目标，制定工作<br>措施，严禁对接商务部门，市场监管部门，城管部门，及时报告<br>工作进度及成果。&nbsp;&nbsp;
+                <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守总体要求和目标，制定工作<br>措施，严谨对接商务部门，市场监管部门，城管部门，及时报告<br>工作进度及成果。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 76px;">
@@ -167,7 +167,7 @@ include('header.php');
               </tr>
               <tr style="height: 121px;">
                 <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5">第三步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
-                <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守<br>总体要求和目标，制定工作措施，严禁<br>对接商务部门，市场监管部门，城管<br>部门，及时报告工作进度及成果。&nbsp;&nbsp;
+                <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守<br>总体要求和目标，制定工作措施，严谨<br>对接商务部门，市场监管部门，城管<br>部门，及时报告工作进度及成果。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 222px;">
@@ -197,7 +197,7 @@ include('header.php');
               </tr>
               <tr style="height: 48px;">
                 <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5">第三步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
-                <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守总体要求和目标，制定工作措施，严禁对接商务部门，市场监管部门，城管部门，及时报告工作进度及成果。&nbsp;&nbsp;</td>
+                <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守总体要求和目标，制定工作措施，严谨对接商务部门，市场监管部门，城管部门，及时报告工作进度及成果。&nbsp;&nbsp;</td>
               </tr>
               <tr style="height: 76px;">
                 <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7">第四步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
