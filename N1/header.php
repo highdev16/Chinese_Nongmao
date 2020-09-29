@@ -457,7 +457,7 @@ $oname = $oname[0];
               <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" data-href="/N4/p23.php">
                 <div class="u-container-layout u-container-layout-3">
                   <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
-                  <p class="u-align-center u-text u-text-3">城市智慧菜场</p>
+                  <p class="u-align-center u-text u-text-3">政府投资合作</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" data-href="/N4/p24.php">
