@@ -331,7 +331,7 @@ while (strlen($temp) > 0) {
                     </form>
                   </div>
                   <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
-                    <p style="text-align:center">已有<span style="color: red" id='applicant_number'></span>业主申请了此服务
+                    <p style="text-align:center"><span>已有</span><span style="color: red" class='applicant_number'></span><span>业主申请了此服务</span>
                     </p>
                     <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655
                     </p>
@@ -423,7 +423,7 @@ while (strlen($temp) > 0) {
               console.log(a, b)
               if (a['result'] == 'success') {
                 console.log("OK" + a.data)
-                $("#applicant_number").html("OK" + a.data + "");
+                $(".applicant_number").html("OK" + a.data + "");
               }
             } catch(e) {}
           }
