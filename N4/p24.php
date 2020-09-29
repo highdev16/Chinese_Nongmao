@@ -43,7 +43,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img src="images/41.png" alt="" class="u-image u-image-default u-image-1" data-image-width="562" data-image-height="713">
+                  <img src="images/p24img.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="562" data-image-height="713">
                 </div>
               </div>
             </div>
