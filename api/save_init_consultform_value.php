@@ -4,5 +4,6 @@ if ($_REQUEST['method'] == 'save') {
     echo 'success';
 } else if ($_REQUEST['method'] == 'load') {
     $initVal = file_get_contents("consult_initvalue.txt");
-    echo "success" . $initVal;
+    echo "success";
+    echo $initVal;
 }
