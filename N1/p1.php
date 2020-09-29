@@ -362,7 +362,7 @@ div.percentage-20 {
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
             <img src="images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
             <h4 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2" style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>市场入驻</h4>
-            <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费,提供现场指导培训,免50去花6个时间长期养一个团队打造<br>电商的高额成本</p>
+            <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费，提供现场指导培训，免去长达6个月时间培养一个团队打造电商的高额成本</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
