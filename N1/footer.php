@@ -47,9 +47,10 @@
         	<table style='width:100%'>
         <?php
           for ($i = 0; $i < sizeof($rows);) { ?>
-            <tr style="height: 33px;">
+            <!-- <tr style="height: 33px;"> -->
               <?php 
                 for ($k = 0; $k < 9 && $i < sizeof($rows); $k++, $i++) { ?>
+                
                 <a href="<?php echo $rows[$i]['url']; ?>" target='_blank' style='color: white;' class='friend_link'>
                   <?php echo htmlspecialchars($rows[$i]['title']); ?>
                 </a>
