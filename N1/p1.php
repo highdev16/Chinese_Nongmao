@@ -444,7 +444,7 @@ div.percentage-20 {
                   <div class="u-size-37">
                     <div class="u-layout-col">
                       <div class="u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-60 u-image-1">
-                        <img src='images/lADPGoxXcnQXxIjNCSLNDOs_3307_2338.jpg' style='width:100%; height: 100%'>
+                        <img src='images/gongchong.jpg' style='width:100%; height: 100%'>
                       </div>
                     </div>
                   </div>
@@ -482,7 +482,7 @@ div.percentage-20 {
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-palette-2-base u-text-4 yahei"  style='margin-left:0; line-height: 60px; font-size: 18px'> 不敢晒出自己资质的，都是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，都是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，都是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，都是虚假宣传电商的公司
+                          <p class="u-text u-text-palette-2-base u-text-4 yahei"  style='margin-left:0; line-height: 60px; font-size: 18px'> 不敢晒出自己资质的，大概率是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，大概率是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，大概率是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，大概率是虚假宣传电商的公司
                           </p>
                         </div>
                       </div>
