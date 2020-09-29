@@ -170,6 +170,7 @@ include ('config.php');
 			html: "<table class='mail_detail_table'><tr><td style='width: 150px'>姓名</td><td>" + $(ele).find("td:nth-child(2)").html() + "</td></tr>"
 					+ "<tr><td style='width: 150px'>电话(电子邮件)</td><td>" + $(ele).find("td:nth-child(3)").html() + "</td></tr>"
 					+ "<tr><td style='width: 150px'>题是</td><td>" + $(ele).find("td:nth-child(4)").html() + "</td></tr>"
+					+ "<tr><td style='width: 150px'>提交时间</td><td>" + $(ele).find("td:nth-child(5)").html() + "</td></tr>"
 					+ "<tr><td style='width: 150px'>需要</td><td>" + $(ele).attr("customdata") + "</td></tr></table>"
 		})
 	}
