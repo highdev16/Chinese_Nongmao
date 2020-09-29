@@ -116,7 +116,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-grey-10 u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-valign-middle u-container-layout-3">
-                  <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速形成品牌化：菜源佳佳拥有众多联合品牌商家，具有强大的品牌带动作用，有利于快速帮助市场方塑造品牌。已读</p>
+                  <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速形成品牌化：菜源佳佳拥有众多联合品牌商家，具有强大的品牌带动作用，有利于快速帮助市场方塑造品牌。</p>
                 </div>
               </div>
             </div>
