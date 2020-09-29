@@ -218,6 +218,7 @@ $oname = $oname[0];
         line-height: 80px;
         border-width: 0px;
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
       }
       li.u-nav-item a.titlemainmenu.active:after{
@@ -261,6 +262,7 @@ $oname = $oname[0];
         color: #000;
         opacity: 0.7;
         display: flex;
+        display: -webkit-flex;
       }
     </style>
   </head>
@@ -270,7 +272,7 @@ $oname = $oname[0];
         <a href="/N1/p1.php" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>
           <img src="images/logo.png" class="u-logo-image u-logo-image-1" data-image-width="242.1137">
         </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; flex-direction: column; justify-content: space-around'>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; display: -webkit-flex;flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around'>
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
             <a class="u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>

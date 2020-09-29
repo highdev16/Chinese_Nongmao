@@ -351,7 +351,7 @@ include('header.php');
                 });
                 $("#articleTitle").html(a.row.title);
                 $("#titleLabel").html(a.row.title);
-                $("#createTimeLabel").html(a.row.created_time);
+                $("#createdTimeLabel").html(a.row.created_time);
                 $("#writerLabel").html(a.row.writer);
                 
                 $("#currentCategoryButton").click(function() {
