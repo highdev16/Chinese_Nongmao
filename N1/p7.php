@@ -422,6 +422,7 @@ while (strlen($temp) > 0) {
               a = JSON.parse(a);
               console.log(a, b)
               if (a['result'] == 'success') {
+                console.log("OK")
                 $("#applicant_number").html(a.data);
               }
             } catch(e) {}
