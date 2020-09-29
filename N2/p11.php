@@ -23,13 +23,15 @@ include('../N1/header.php');
   p.detail-title {
     line-height: 50px;
   }
+  #sec-c41e {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
 </style>
-    <section class="u-clearfix u-section-3" id="sec-7cb0" style='margin-top: 50px'>
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1 yahei"> 农贸市场招商难题 </h1>
+    <section class="u-align-left u-clearfix u-section-4" id="sec-c41e" style='background-color: #ccc'>
+      <div class="u-clearfix u-sheet u-sheet-1" style='text-align: center'>
+        <h1 class="u-text u-text-default u-text-1 yahei" style='font-size: 30px; margin: 50px auto 0 auto;'> 农贸市场招商难题 </h1>
       </div>
-    </section>
-    <section class="u-align-left u-clearfix u-section-4" id="sec-c41e">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1" style='min-height: 180px'>
           <div class="u-gutter-0 u-layout">
