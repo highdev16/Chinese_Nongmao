@@ -116,8 +116,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-grey-10 u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-valign-middle u-container-layout-3">
-                  <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；
-快速形成品牌化&nbsp;&nbsp;</p>
+                  <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速形成品牌化：菜源佳佳拥有众多联合品牌商家，具有强大的品牌带动作用，有利于快速帮助市场方塑造品牌。已读</p>
                 </div>
               </div>
             </div>
@@ -133,8 +132,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-grey-50 u-layout-cell u-size-20 u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <p class="u-text u-text-default u-text-5">&nbsp; 2、快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；
-快速形成品牌化&nbsp;&nbsp;</p>
+                  <p class="u-text u-text-default u-text-5">&nbsp; 2、快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；</p>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
