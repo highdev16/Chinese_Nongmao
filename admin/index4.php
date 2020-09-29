@@ -189,10 +189,10 @@ include ('config.php');
 		let value = $("#initValue").val();
 		$.post('/api/save_init_consultform_value.php', {value, method: 'save'}, function(a,b) {
 			if (a == b && b == 'success')
-				alert("成功！")；
-			else alert("失败！")；
+				alert("成功！");
+			else alert("失败！");
 		}).fail(function() {
-			alert("失败！")；
+			alert("失败！");
 		})
 	}
 
