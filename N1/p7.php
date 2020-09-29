@@ -423,7 +423,7 @@ while (strlen($temp) > 0) {
               console.log(a, b)
               if (a['result'] == 'success') {
                 console.log("OK" + a.data)
-                $("#applicant_number").html(a.data + "");
+                $("#applicant_number").html("OK" + a.data + "");
               }
             } catch(e) {}
           }
