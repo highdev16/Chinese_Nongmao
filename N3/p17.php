@@ -78,7 +78,7 @@ include('../N1/header.php');
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-3">
                   <img src="images/20190121162918701.png" alt="" class="u-image u-image-default u-image-3" data-image-width="420" data-image-height="420">
-                  <p class="u-align-center u-text u-text-4">看能触摸屏</p>
+                  <p class="u-align-center u-text u-text-4">智能触摸屏</p>
                 </div>
               </div>
             </div>
@@ -90,13 +90,13 @@ include('../N1/header.php');
               <div class="u-container-style u-layout-cell u-left-cellu-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <img src="images/20190121163018479.png" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
-                  <p class="u-align-center u-text u-text-default u-text-5">农产品暂能检测设备</p>
+                  <p class="u-align-center u-text u-text-default u-text-5">农产品智能检测设备</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
                   <img src="images/20190121163044474.png" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
-                  <p class="u-align-center u-text u-text-default u-text-6">看能水表</p>
+                  <p class="u-align-center u-text u-text-default u-text-6">智能水表</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-6">
