@@ -43,7 +43,7 @@
     <footer class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-clearfix u-footer u-grey-80 u-footer" id="sec-dc14">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 20px'>
         <h3 class="u-text u-text-default u-text-1"  style='margin-bottom: 20px; '>友情链接:</h3>
-        <div class='friendly_links' style='margin-bottom: 20px'>
+        <div class='friendly_links' style='margin-bottom: 40px'>
         	<table style='width:100%'>
         <?php
           for ($i = 0; $i < sizeof($rows);) { ?>
