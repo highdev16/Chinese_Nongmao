@@ -189,7 +189,7 @@ include('header.php');
                           <td>
                             <input type="checkbox" id="s111112">
                           </td>
-                          <td> 远营 </td>
+                          <td> 运营 </td>
                         </tr>
                         <tr>
                           <td>
@@ -233,7 +233,7 @@ include('header.php');
                     </form>
                   </div>
                   <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
-                    <p style="text-align:center">已有<big style="color: red">21517</big>业主申请了此服务
+                    <p style="text-align:center">已有<big style="color: red" id='applicant_number'>21517</big>业主申请了此服务
                     </p>
                     <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655 
                     </p>
@@ -326,6 +326,16 @@ include('header.php');
           r = parseInt(href.substr(r + 2));
         }
 
+        $.post('/api/get_applicants_number.php', function(a,b) {
+          if (b == 'success') {
+            try {
+              a = JSON.parse(a);
+              if (a['result'] == 'success') {
+                $("#applicant_number").html(a.data);
+              }
+            } catch(e) {}
+          }
+        });
         let categoryArr = ['', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件'];
         $.post('/api/getarticle.php', {r}, function(a,b) {
           if (b == 'success') {
@@ -386,22 +396,22 @@ include('header.php');
         }
         let type = [];
         if ($("#s111111")[0].checked) type.push('设计');
-        if ($("#s111112")[0].checked) type.push('远营');
+        if ($("#s111112")[0].checked) type.push('运营');
         if ($("#s111113")[0].checked) type.push('投资');
         if ($("#s111114")[0].checked) type.push('融资');
         $.post('/N1/save_consult.php', { data: {
-                    name: $("#namefield").val().trim(), 
-                    email: $("#emailfield").val().trim(), 
-                    message: $("#messagefield").val().trim(), 
-                    type
-              }}, function(a,b) {
-                if (a == 'success') {
-                  $("div.u-form-send-success").show(0).delay(3000).hide(0);
-                } else 
-                  $("div.u-form-send-error").show(0).delay(3000).hide(0);
-              }).fail(function() {
-                alert("失败！网络错误。");
-              })
+              name: $("#namefield").val().trim(), 
+              email: $("#emailfield").val().trim(), 
+              message: $("#messagefield").val().trim(), 
+              type
+        }}, function(a,b) {
+          if (a == 'success') {
+            $("div.u-form-send-success").show(0).delay(3000).hide(0);
+          } else 
+            $("div.u-form-send-error").show(0).delay(3000).hide(0);
+        }).fail(function() {
+          alert("失败！网络错误。");
+        });
       }
 
 
