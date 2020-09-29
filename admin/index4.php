@@ -197,7 +197,7 @@ include ('config.php');
 	}
 
 	$(document).ready(function() {
-		$.post('/api/save_init_consultform_value.php', {value, method: 'load'}, function(a,b) {
+		$.post('/api/save_init_consultform_value.php', {method: 'load'}, function(a,b) {
 			if (a.substr(0, 7) == b && b == 'success') {
 				let val = a.substr(7);
 				if (val.length == 0) val = "0";
