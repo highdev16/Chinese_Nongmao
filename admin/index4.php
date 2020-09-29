@@ -198,9 +198,11 @@ include ('config.php');
 
 	$(document).ready(function() {
 		$.post('/api/save_init_consultform_value.php', {value, method: 'load'}, function(a,b) {
-			if (a.substr(0, 7) == b && b == 'success')
-				$("#initValue").val(a.substr(7));
-			else $("#initValue").val("0");
+			if (a.substr(0, 7) == b && b == 'success') {
+				let val = a.substr(7);
+				if (val.length == 0) val = "0";
+				$("#initValue").val(val);
+			} else $("#initValue").val("0");
 		}).fail(function() {
 			$("#initValue").val("0");
 		})
