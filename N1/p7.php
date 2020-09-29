@@ -287,7 +287,7 @@ while (strlen($temp) > 0) {
                           <td>
                             <input type="checkbox" id="s111112">
                           </td>
-                          <td> 远营 </td>
+                          <td> 运营 </td>
                         </tr>
                         <tr>
                           <td>
@@ -331,7 +331,7 @@ while (strlen($temp) > 0) {
                     </form>
                   </div>
                   <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
-                    <p style="text-align:center">已有<big style="color: red">21517</big>业主申请了此服务
+                    <p style="text-align:center">已有<big style="color: red" id='applicant_number'></big>业主申请了此服务
                     </p>
                     <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655
                     </p>
@@ -412,6 +412,19 @@ while (strlen($temp) > 0) {
             }
           }
         })
+
+
+
+        $.post('/api/get_applicants_number.php', function(a,b) {
+          if (b == 'success') {
+            try {
+              a = JSON.parse(a);
+              if (a['result'] == 'success') {
+                $("#applicant_number").html(a.data);
+              }
+            } catch(e) {}
+          }
+        });
       })
 
       function submitForm() {
@@ -431,7 +444,7 @@ while (strlen($temp) > 0) {
         }
         let type = [];
         if ($("#s111111")[0].checked) type.push('设计');
-        if ($("#s111112")[0].checked) type.push('远营');
+        if ($("#s111112")[0].checked) type.push('运营');
         if ($("#s111113")[0].checked) type.push('投资');
         if ($("#s111114")[0].checked) type.push('融资');
         $.post('/N1/save_consult.php', { data: {

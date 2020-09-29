@@ -140,12 +140,12 @@ include('header.php');
             <div class="u-layout-row">
                 <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">                
                   <div class="u-container-layout u-container-layout-1" id='maincontent_area' style='padding: 30px 30px 30px 30px'>
-                    <div class='yahei' style='font-size: 24px; font-weight: bold; text-align: center' id='titleLabel'><?php echo htmlspecialchars($row['title']); ?> </div>
+                    <div class='yahei' style='font-size: 24px; font-weight: bold; text-align: center' id='titleLabel'></div>
                     <div style='font-size: 14px; font-weight: 100; color: #999; margin-top: 10px'>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-clock'></i></div>
-                        <div style='float:left; margin-right: 50px' id='createdTimeLabel'><?php echo date('Y-m-d H:i:s', $row['created_time']); ?></div>
+                        <div style='float:left; margin-right: 50px' id='createdTimeLabel'></div>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-user'></i></div>
-                        <div style='float:left;margin-right: 50px' id='writerLabel'><?php echo htmlspecialchars($row['writer']); ?></div>
+                        <div style='float:left;margin-right: 50px' id='writerLabel'></div>
                         <div style='float:left;margin-right: 10px'><i class='fa fa-eye'></i></div>
                         <div style='float:left;' id='browsecount'></div>
                         <div style='width: 100%; height: 30px'></div>
@@ -233,7 +233,7 @@ include('header.php');
                     </form>
                   </div>
                   <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-2">
-                    <p style="text-align:center">已有<big style="color: red" id='applicant_number'>21517</big>业主申请了此服务
+                    <p style="text-align:center">已有<big style="color: red" id='applicant_number'></big>业主申请了此服务
                     </p>
                     <p style="text-align:center; background: lightgray">7×24免费装修咨询<br> 0571-88776655 
                     </p>
