@@ -12,15 +12,15 @@ $oname = $oname[0];
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-  <meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
-  <meta name="description" content="abc">
+    <meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
+    <meta name="description" content="abc">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title><?php echo $bigTitle; ?></title>
     <?php
         echo '<link rel="stylesheet" href="../N1/p2.css" media="screen">';
     ?>
     <link rel="stylesheet" href="../N1/nicepage.css" media="screen">
-    <link rel="stylesheet" href="../N1/images/fontawesome.min.css" media="screen">
+    <link rel="stylesheet" href="../N1/images/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="..<?php echo $oname; ?>.css" media="screen">
     <script src="../js/jquery1.js"></script>
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -272,7 +272,7 @@ $oname = $oname[0];
         <a href="/N1/p1.php" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>
           <img src="images/logo.png" class="u-logo-image u-logo-image-1" data-image-width="242.1137">
         </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; display: -webkit-flex;flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around'>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; display: -webkit-flex; flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around'>
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
             <a class="u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>

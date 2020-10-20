@@ -74,7 +74,7 @@ $rows = $db->rawQuery($query);
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>" >最新发布</a>
+        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>">最新发布</a>
         <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
         <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">星级排序</a>
       </div>
@@ -93,13 +93,13 @@ $rows = $db->rawQuery($query);
               $alt = "Image";
             } else $r = '';
             if ($i % 3 == 0) {
-              echo "<div style='display: flex; justify-content: space-between'>";
+              echo "<div style='display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between'>";
             }
             ?>            
           <div class=" u-white u-repeater-item-3 image-cell">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
               <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
-              display: flex;justify-content: center;align-items: center; background:black;'>
+              display: flex; display: -webkit-flex; justify-content: center; -webkit-justify-content: center; align-items: center; background:black;'>
                 <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
                     src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
               </div>
@@ -117,7 +117,7 @@ $rows = $db->rawQuery($query);
                   <?php echo substr_count($row['content'], '<img'); ?>
                 </div>              
                 <div style='float:left; min-width:20px; min-height: 30px;'></div>
-                <div style='float:left;font-size: 12px;line-height: 24px'>
+                <div style='float:left; font-size: 12px;line-height: 24px'>
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>              
