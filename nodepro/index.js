@@ -91,23 +91,37 @@ function processFiles(domain) {
     urlList.push(["/N1/p2.php?category=4", "/nmyy/index.html"]);
 
     urlIndex = 0;
-    processTimer = setInterval(function() {
-        if (!isProgressing) return;
-        scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
-        if (++urlIndex == urlList.length) {
-            clearInterval(processTimer);
-            setTimeout(function() {
-                writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
-                processingText = "Ended...";
-            });            
-            clearInterval(checkTimer);
-            checkTimer = 0;      
-            isProgressing = 0;
-            processTimer = 0;
-            isForcedToQuit = 0;
-            processingText = "Ending...";
-        }        
-    }, 1000);    
+    let processAsyncCount = 0;
+    pool.query("SELECT * FROM cases ORDER BY id", function(err, result) {        
+        processAsyncCount++;
+        if (err) return;
+        let categoryLabel = ['', 'zxsj', 'jzsj', 'znsj', 'nmyy'];
+        for (let i in result)
+            urlList.push(["/N1/p7.php?r=" + result[i].id, "/" + categoryLabel[result[i].category] + "/" + result[i]['id'] + ".html"]);
+    })
+
+    let localTimer = setInterval(function() {
+        if (processAsyncCount == 1) {
+            clearInterval(localTimer);
+            processTimer = setInterval(function() {
+                if (!isProgressing) return;
+                scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
+                if (++urlIndex == urlList.length) {
+                    clearInterval(processTimer);
+                    setTimeout(function() {
+                        writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+                        processingText = "Ended...";
+                    });            
+                    clearInterval(checkTimer);
+                    checkTimer = 0;      
+                    isProgressing = 0;
+                    processTimer = 0;
+                    isForcedToQuit = 0;
+                    processingText = "Ending...";
+                }        
+            }, 1000);
+        }
+    }, 5000);    
 }
 
 app.set('port', 8080);
