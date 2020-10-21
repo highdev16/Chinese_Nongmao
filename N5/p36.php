@@ -24,7 +24,7 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images2019011711285412.png" data-image-width="200" data-image-height="200">
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/2019011711285412.png" data-image-width="200" data-image-height="200">
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>客服专线</b><b></b>
                   </p>
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 服务时间：7*24H专家必接&nbsp;&nbsp;<br>全国统一客服热线：0571-28120373 
@@ -33,7 +33,7 @@ include('../N1/header.php');
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img class="u-expand-resize u-image u-image-2" SRC="/N5/images20190117112911729.png" data-image-width="200" data-image-height="200">
+                  <img class="u-expand-resize u-image u-image-2" SRC="/N5/images/20190117112911729.png" data-image-width="200" data-image-height="200">
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-3 yahei"><b class='yahei'>合作联系</b><b></b>
                     <br>
                   </p>
@@ -43,7 +43,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img class="u-expand-resize u-image u-image-3" SRC="/N5/images20190117112925987.png" data-image-width="200" data-image-height="200">
+                  <img class="u-expand-resize u-image u-image-3" SRC="/N5/images/20190117112925987.png" data-image-width="200" data-image-height="200">
                   <p class="u-custom-font u-heading-font u-text u-text-5"><b class='yahei'>杭州总部地址</b><b></b>
                     <br>
                   </p>
@@ -63,7 +63,7 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images2019011711285412.png" data-image-width="200" data-image-height="200">
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/2019011711285412.png" data-image-width="200" data-image-height="200">
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>在线客服</b><b></b>
                     <br>
                   </p>
@@ -72,7 +72,7 @@ include('../N1/header.php');
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img class="u-expand-resize u-image u-image-2" SRC="/N5/images20190117112000767.png" data-image-width="200" data-image-height="200">
+                  <img class="u-expand-resize u-image u-image-2" SRC="/N5/images/20190117112000767.png" data-image-width="200" data-image-height="200">
                   <p class="u-custom-font u-heading-font u-text u-text-default u-text-3" style='width:100px'><b class='yahei'>产品咨询</b><b></b>
                     <br>
                   </p>
@@ -81,7 +81,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img class="u-expand-resize u-image u-image-3" SRC="/N5/images20190117130841629.png" data-image-width="200" data-image-height="200">
+                  <img class="u-expand-resize u-image u-image-3" SRC="/N5/images/20190117130841629.png" data-image-width="200" data-image-height="200">
                   <p class="u-custom-font u-heading-font u-text u-text-5"><b class='yahei'>友情链接/广告合作</b>
                     <br>
                   </p>

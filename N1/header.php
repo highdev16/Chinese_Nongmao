@@ -16,9 +16,7 @@ $oname = $oname[0];
     <meta name="description" content="abc">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title><?php echo $bigTitle; ?></title>
-    <?php
-        echo '<link rel="stylesheet" href="/N1/p2.css" media="screen">';
-    ?>
+    <link rel="stylesheet" href="/N1/p2.css" media="screen">
     <link rel="stylesheet" href="/N1/nicepage.css" media="screen">
     <link rel="stylesheet" href="/N1/images/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="<?php echo $oname; ?>.css" media="screen">
