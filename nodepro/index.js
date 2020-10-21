@@ -12,7 +12,7 @@ var pool = createPool({
     database: 'nongmao'
 });
 
-var filesInProgress, checkTimer, logFile, isProgressing;
+var filesInProgress, checkTimer, logFile, isProgressing, isForcedToQuit;
 var processTimer, processingText;
 
 function CheckLocalhost(callback) {
@@ -26,7 +26,7 @@ function CheckLocalhost(callback) {
 function scrapeFile(domain, url, filename) {
     filesInProgress++;
     rp("http://" + domain + url).then(function(html){ 
-        if (!isProgressing) return;
+        if (isForcedToQuit) return;
         writeFile("/var/www/html" + filename, html, ()=>{});
         writeFile(logFile, "[Success] " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});
         filesInProgress--;
@@ -48,11 +48,12 @@ function callDaemon() {
     clearInterval(processTimer);  
 
     filesInProgress = 0;
-    isProgressing = 1;    
+    isProgressing = 1;
+    isForcedToQuit = 0;    
     CheckLocalhost(function(domain) {
         processingText = "Starting in 10 seconds...";
         setTimeout(() => {
-            if (!isProgressing) return;
+            if (isForcedToQuit) return;
             processingText = "Just started. Processing now...";
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
                 + make2(new Date().getMinutes()) + "-" + make2(new Date().getSeconds()) + ".txt";
@@ -103,6 +104,7 @@ function processFiles(domain) {
             checkTimer = 0;      
             isProgressing = 0;
             processTimer = 0;
+            isForcedToQuit = 0;
             processingText = "Ending...";
         }        
     }, 1000);    
@@ -114,6 +116,7 @@ app.use(json({limit: '10mb', extended: true}));
 app.use(urlencoded({limit: '10mb', extended: true}));
 app.all('/workon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
+    isForcedToQuit = 0;
     setTimeout(() => { callDaemon(); }, 10);
     setTimeout(() => {res.send("success");}, 10000);
 });
@@ -136,6 +139,7 @@ app.all('/cancelworkon', (req, res) => {
     clearInterval(checkTimer);
     isProgressing = 0;
     checkTimer = 0;
+    isForcedToQuit = 1;
     processTimer = 0;
     urlIndex = 0;
     urlList = [];
