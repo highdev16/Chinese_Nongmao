@@ -2,3 +2,4 @@ img/customs/*.jpg
 banners/*.jpg
 allimages/*
 nodepro/node_modules/*
+nodepro/package-lock.json
