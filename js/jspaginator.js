@@ -1,6 +1,4 @@
 (function ($) {
-    'use strict';
-
     $.jqPaginator = function (el, options) {
         if(!(this instanceof $.jqPaginator)){
             return new $.jqPaginator(el, options);
