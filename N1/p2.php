@@ -108,7 +108,7 @@ include('header.php');
     $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
       if (b != 'success') return;
       if (!data || data.result != 'success') return;
-      $.jqPaginator('#pagination1', {
+      jQuery.jqPaginator('#pagination1', {
         totalPages: Math.ceil(data.length / 15),
         visiblePages: 10,
         edges: 3,
