@@ -89,7 +89,6 @@ function processFiles(domain) {
     urlList.push(["/N1/p2.php?category=3", "/znsj/index.html"]);
     urlList.push(["/N1/p20.php?category=4", "/nmyy/index.html"]);
 
-
     urlIndex = 0;
     processTimer = setInterval(function() {
         if (!isProgressing) return;
