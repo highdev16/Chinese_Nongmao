@@ -239,6 +239,8 @@ li.u-nav-item a.titlemainmenu {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    width: 110px;
+    text-align: center;
 }
 
 li.u-nav-item a.titlemainmenu.active:after {
