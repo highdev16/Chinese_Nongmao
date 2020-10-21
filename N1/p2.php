@@ -195,7 +195,7 @@ $rows = $db->rawQuery($query);
     else if (window.location.href.includes("/znsj")) currentCategory = 3;
     else if (window.location.href.includes("/nmyy")) currentCategory = 4;
     else {
-      let cIndex = (window.location.href.indexOf("category=");
+      let cIndex = window.location.href.indexOf("category=");
       if (cIndex == -1) { window.location.href = '/'; return; }
       currentCategory = parseInt(window.location.href.substr(cIndex+9));
     }
