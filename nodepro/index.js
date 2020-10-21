@@ -12,7 +12,7 @@ var pool = createPool({
     database: 'nongmao'
 });
 
-var filesInProgress, checkTimer, logFile;
+var filesInProgress, checkTimer, logFile, isProgressing;
 function CheckLocalhost(callback) {
     rp("http://localhost/mymymymymy.html").then(function(html){ 
         if (html == 'gggyyy') callback ("localhost");
@@ -42,6 +42,7 @@ function callDaemon() {
         checkTimer = 0;      
     }   
     filesInProgress = 0;
+    isProgressing = 1;
     CheckLocalhost(function(domain) {            
         setTimeout(() => {
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
@@ -49,12 +50,11 @@ function callDaemon() {
             writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",{flag: 'a'}, ()=>{});    
 
             checkTimer = setInterval(function() {
-                if (checkTimer) {
-                    if (filesInProgress == 0) {
-                        writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
-                        clearInterval(checkTimer);
-                        checkTimer = 0;      
-                    }
+                if (checkTimer && isProgressing && filesInProgress == 0) {
+                    writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+                    clearInterval(checkTimer);
+                    checkTimer = 0;      
+                    isProgressing = 0;
                 }
             }, 5000);
             processFiles(domain);
@@ -64,6 +64,10 @@ function callDaemon() {
 
 function processFiles(domain) {
     scrapeFile(domain, "/N1/p1.php", "/index.html");  //should start path with '/'
+    scrapeFile(domain, "/N1/p5.php", "/sj/sjhz.html"); 
+    scrapeFile(domain, "/N1/p6.php", "/sj/zfhz.html");
+    scrapeFile(domain, "/N5/p37.php", "/sj/nmscdw.html");
+
 }
 
 app.set('port', 8080);

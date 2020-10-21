@@ -74,9 +74,9 @@ $rows = $db->rawQuery($query);
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
-        <a href="/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>">最新发布</a>
-        <a href="/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
-        <a href="/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">星级排序</a>
+        <a href="/sj/c<?php echo $_REQUEST['category']; ?>_1.html" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>">最新发布</a>
+        <a href="/sj/c<?php echo $_REQUEST['category']; ?>_2.html" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
+        <a href="/sj/c<?php echo $_REQUEST['category']; ?>_3.html" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">星级排序</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 30px'>
@@ -145,7 +145,7 @@ $rows = $db->rawQuery($query);
               currentPage: <?php echo $pageIndex; ?> + 1,
               onPageChange: function (num, type) {
                 if (num - 1 == <?php echo $pageIndex; ?>) return;
-                  window.location.href = '/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
+                  window.location.href = '/sj/c<?php echo $_REQUEST['category']; ?>_<?php echo $mode; ?>_' + num + ".html";
               }
           });
       };    

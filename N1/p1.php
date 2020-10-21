@@ -219,7 +219,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/7.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="/N1/p2.php?category=1";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="/sj/c1.html";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text" style="">室内设计</p>
             </div>
@@ -228,7 +228,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/c2.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="/N1/p2.php?category=2";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="/sj/c2.html";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">建筑设计</p>
             </div>
@@ -237,7 +237,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/e624cbc5-e96f-6700-5942-f978bb060ac3.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="/N1/p2.php?category=3";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="/sj/c3.html";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">5G智能</p>
             </div>
@@ -246,7 +246,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/5td.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="/N1/p2.php?category=4";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="/sj/c4.html";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">设计流程</p>
             </div>
