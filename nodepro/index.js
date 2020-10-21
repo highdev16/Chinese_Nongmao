@@ -77,7 +77,7 @@ app.use(urlencoded({limit: '10mb', extended: true}));
 app.all('/workon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     setTimeout(() => { callDaemon(); }, 10);
-    res.send("success");
+    setTimeout(() => {res.send("success");}, 10000);
 });
 app.all('/isprocessworkon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
