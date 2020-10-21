@@ -605,7 +605,7 @@ while (strlen($temp) > 0) {
                     display: flex;justify-content: center;align-items: center; background:black;'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                           src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' 
-                          onclick='window.location.href="goToOtherPiece(<?php echo $row["category"]; ?>, <?php echo $row["id"]; ?>)";'>
+                          onclick='goToOtherPiece(<?php echo $row["category"]; ?>, <?php echo $row["id"]; ?>)'>
                     </div>
                     <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                       <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
