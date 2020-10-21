@@ -128,7 +128,7 @@ include('header.php');
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置<span style='font-family: "Helvetica Neue" !important;'>／</span>
-        <span style="cursor:pointer" onclick="window.location.href='/N1/p1.php';">首页</span><span style='font-family: "Helvetica Neue" !important;'>／</span>
+        <span style="cursor:pointer" onclick="window.location.href='/';">首页</span><span style='font-family: "Helvetica Neue" !important;'>／</span>
         <span style="cursor:pointer" onclick="" id='categoryLabel'></span><span style='font-family: "Helvetica Neue" !important;'>／</span>
         <span id='articleTitle'></span></p>
       </div>

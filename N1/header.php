@@ -542,7 +542,7 @@ $oname = $oname[0];
             let mousemove = false;
             $(".titlemainmenu").each(function(ind, ele) {
                 if (ind == 0) {
-                    $(this).attr('href','/N1/p1.php');
+                    $(this).attr('href','/');
                 } else {
                     $(this).attr('href','javascript:void(0)');
                 }

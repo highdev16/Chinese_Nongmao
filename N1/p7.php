@@ -4,14 +4,14 @@ include('header.php');
 include('../N1/dbconfig.php');
 $db = getDbInstance();
 if (!isset($_REQUEST['r'])) {
-  header('location: /N1/p1.php');
+  header('location: /');
   exit;
 }
 $caseIndex = intval($_REQUEST['r']);
 $info = $db->rawQuery("select * from cases where id = $caseIndex");
 $db->rawQuery("update cases set browse = browse + 1 where id = $caseIndex");
 if (sizeof($info) == 0) {
-  header('location: /N1/p1.php');
+  header('location: /');
   exit;
 }
 $categoryArr = array('', '室内设计', '建筑设计', '5G智能设计', '运营案例');
@@ -136,7 +136,7 @@ while (strlen($temp) > 0) {
 </style>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='/N1/p1.php';">首页</span>／
+        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='/';">首页</span>／
         <span style="cursor:pointer" onclick="window.location.href='/N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';">
         <?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
       </div>
