@@ -75,7 +75,6 @@ function processFiles(domain) {
     urlList.push(["/N4/p22.php", "/rz.html"]);
     urlList.push(["/N4/p23.php", "/zhengfu.html"]);
     urlList.push(["/N4/p24.php", "/gyzy.html"]);
-    urlList.push(["/N4/p24.php", "/gyzy.html"]);
     urlList.push(["/N5/p34.php", "/about/certify.html"]);
     urlList.push(["/N5/p35.php", "/about/contact.html"]);
     urlList.push(["/N5/p36.php", "/about/index.html"]);
