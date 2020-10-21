@@ -13,7 +13,7 @@ var pool = createPool({
 });
 
 var filesInProgress, checkTimer, logFile, isProgressing;
-var processTimer;
+var processTimer, processingText;
 
 function CheckLocalhost(callback) {
     rp("http://localhost/mymymymymy.html").then(function(html){ 
@@ -38,6 +38,7 @@ function scrapeFile(domain, url, filename) {
 function make2(s) { return s < 10 ? "0" + s : s; }
 
 function callDaemon() {
+    processingText = "Getting domain...";
     if (checkTimer) {
         writeFile(logFile,"-------- Daemon restarted " + new Date().toLocaleString() + "--------\n", {flag: 'a'}, ()=>{});          
         clearInterval(checkTimer);
@@ -46,9 +47,11 @@ function callDaemon() {
     clearInterval(processTimer);  
 
     filesInProgress = 0;
-    isProgressing = 1;
-    CheckLocalhost(function(domain) {            
+    isProgressing = 1;    
+    CheckLocalhost(function(domain) {
+        processingText = "Starting in 10 seconds...";
         setTimeout(() => {
+            processingText = "Just started. Processing now...";
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
                 + make2(new Date().getMinutes()) + "-" + make2(new Date().getSeconds()) + ".txt";
             writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",{flag: 'a'}, ()=>{});    
@@ -88,11 +91,13 @@ function processFiles(domain) {
             clearInterval(processTimer);
             setTimeout(function() {
                 writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+                processingText = "Ended...";
             });            
             clearInterval(checkTimer);
             checkTimer = 0;      
             isProgressing = 0;
             processTimer = 0;
+            processingText = "Ending...";
         }        
     }, 1000);    
 }
@@ -108,6 +113,13 @@ app.all('/workon', (req, res) => {
 });
 app.all('/isprocessworkon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    if (checkTimer || isProgressing) res.send(JSON.stringify({ result: 'success', totalCount: urlList.length, currentIndex: urlIndex, filesInProgress: filesInProgress}));
+    if (checkTimer || isProgressing) 
+        res.send(JSON.stringify({ 
+            result: 'success', 
+            totalCount: urlList.length, 
+            currentIndex: urlIndex, 
+            filesInProgress, 
+            processingText
+        }));
     else res.send("done");
 });
