@@ -125,7 +125,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/1501639864100y8wrzy.jpeg">
+              <img class="u-back-image u-expanded" SRC="/N4/images/1501639864100y8wrzy.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-5">
               <h3 class="u-gallery-heading"></h3>
