@@ -319,7 +319,7 @@ $oname = $oname[0];
                 mousemove = 0;
                 for (let i = 1; i <= 7; i++) {
                     if ($(this).hasClass('mainmenu' + i)) {
-                        $(this).css('color','#ff6500');
+                        // $(this).css('color','#ff6500');
                         $('section.mainmenu' + i).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('z-index', '9999').slideDown();
                         // mousemove = i;
                     }
