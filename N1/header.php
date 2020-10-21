@@ -602,7 +602,7 @@ $oname = $oname[0];
                 $(this).find('p').css('color','');
             });
             $('section.titlesubmenu div[data-href]').click(function() {
-                window.open($(this).attr('data-href'), '_blank');
+                //window.open($(this).attr('data-href'), '_blank');
             });
 
             $("section.titlesubmenu div.u-layout-row > div").each(function() {
