@@ -47,13 +47,13 @@ $oname = $oname[0];
           </div>
           <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: row; justify-content: space-around'>
             <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" style='height:100%'>
-                <li class="u-nav-item">     <a class="titlemainmenu mainmenu1  u-button-style u-nav-link " href="/" style="padding: 0px 0;">首页</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2  u-button-style u-nav-link " style="padding: 0px 0;">农贸市场设计</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu3  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">农贸市场运营</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu4  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">智能菜场</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu5  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">农贸市场投资</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
+                <li class="u-nav-item">     <a class="titlemainmenu mainmenu1  u-button-style u-nav-link u-text-active-custom-color-1 " href="/" style="padding: 0px 0;">首页</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0;">农贸市场设计</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu3  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0; cursor:pointer">农贸市场运营</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu4  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0; cursor:pointer">智能菜场</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu5  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0; cursor:pointer">农贸市场投资</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
             </ul>
             <div class='free-consultation'>
               <img src='/N1/images/phonering.png' style='margin:auto 5px auto 0; height: 20px'><span style='font-style: italic'>19957895916</span>
