@@ -56,9 +56,10 @@ function callDaemon() {
         }, 10000);    
     })  
 }
-
+var urlIndex = 0;
+var urlList = [];
 function processFiles(domain) {
-    var urlList = [];
+    urlList = [];
     urlList.push(["/N1/p1.php", "/index.html"]); //should start path with '/'
     urlList.push(["/N1/p5.php", "/sj/sjhz.html"]);
     urlList.push(["/N1/p6.php", "/sj/zfhz.html"]);
@@ -80,7 +81,7 @@ function processFiles(domain) {
     urlList.push(["/N5/p36.php", "/about/index.html"]);
 
 
-    var urlIndex = 0;
+    urlIndex = 0;
     processTimer = setInterval(function() {
         scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
         if (++urlIndex == urlList.length) {
@@ -107,6 +108,6 @@ app.all('/workon', (req, res) => {
 });
 app.all('/isprocessworkon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    if (checkTimer || isProgressing) res.send("success");
+    if (checkTimer || isProgressing) res.send("success " + urlIndex + "/" + urlList.length);
     else res.send("done");
 });
