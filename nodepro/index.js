@@ -108,6 +108,6 @@ app.all('/workon', (req, res) => {
 });
 app.all('/isprocessworkon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    if (checkTimer || isProgressing) res.send("success " + urlIndex + "/" + urlList.length);
+    if (checkTimer || isProgressing) res.send(JSON.stringify({ result: 'success', totalCount: urlList.length, currentIndex: urlIndex, filesInProgress: filesInProgress}));
     else res.send("done");
 });
