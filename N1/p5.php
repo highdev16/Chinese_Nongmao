@@ -22,7 +22,7 @@ include('header.php');
     left: -20px;
   }
 </style>
-<link rel="stylesheet" href="p5.css" media="screen">
+<link rel="stylesheet" href="/N1/p5.css" media="screen">
     <section class="u-align-center u-clearfix u-grey-5 u-section-2" id="carousel_e1e7" style='background: #ddd'>
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-custom-font u-font-montserrat u-text u-text-1" style='font-size: 28px; font-family: "Microsoft Yahei" !important'>设计服务内容</h2>
@@ -32,7 +32,7 @@ include('header.php');
         <div class="u-expanded-width u-list u-repeater u-list-1">
           <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-1">
             <div class="u-container-layout u-similar-container u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-1">
-              <img src="images/20190123103842875.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
+              <img SRC="/N1/images/20190123103842875.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
               <h3 class="u-align-center u-custom-font u-font-pt-sans u-text u-text-3 ticket-title">市场调研</h3>
               <p class="u-align-left u-text u-text-4 ticket-detail">1.前期市场调查&nbsp; &nbsp;<br>2.农贸市场平面功能分布<br>3.农贸市场数据报告<br>4. 农贸市场现场测量
               </p>
@@ -40,7 +40,7 @@ include('header.php');
           </div>
           <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
             <div class="u-container-layout u-similar-container u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
-              <img src="images/20190123103955410.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
+              <img SRC="/N1/images/20190123103955410.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
               <h3 class="u-align-center u-custom-font u-font-pt-sans u-text u-text-5 ticket-title">平面图设计</h3>
               <p class="u-align-left u-text u-text-6 ticket-detail">1. 核对尺寸<br>2. 拍照视频人流<br>3. 确定平面审核表<br>4. 开始平面设计
               </p>
@@ -48,7 +48,7 @@ include('header.php');
           </div>
           <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
             <div class="u-container-layout u-similar-container u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-3">
-              <img src="images/2019012310491242.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
+              <img SRC="/N1/images/2019012310491242.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
               <h3 class="u-align-center u-custom-font u-font-pt-sans u-text u-text-7 ticket-title">效果图设计<br>
               </h3>
               <p class="u-align-left u-text u-text-8 ticket-detail"> 1. 农贸市场通道、包间、柜台摊位设计<br>2. 面、墙面、吊顶、楼梯、厕所、服务室、办公室、检测室等一系列公共设计<br>3. 农贸市场材料型号与规格以及色调设计</p>
@@ -56,7 +56,7 @@ include('header.php');
           </div>
           <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
             <div class="u-container-layout u-similar-container u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-3">
-              <img src="images/20190123104924788.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
+              <img SRC="/N1/images/20190123104924788.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
               <h3 class="u-align-center u-custom-font u-font-pt-sans u-text u-text-7 ticket-title">施工图设计</h3>
               <p class="u-align-left u-text u-text-8 ticket-detail">1. 农贸市场室内土建筑装修施工图&nbsp;&nbsp;<br>2. 农贸市场室内装修给排水施工图&nbsp;&nbsp;<br>3. 提供成果、平面彩图、数据报告PPT&nbsp;&nbsp;<br>4. 方案效果图、正式文本&nbsp;&nbsp;<br>5. 施工图盖章蓝图
               </p>
@@ -64,7 +64,7 @@ include('header.php');
           </div>
           <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
             <div class="u-container-layout u-similar-container u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-3">
-              <img src="images/20190123104932210.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
+              <img SRC="/N1/images/20190123104932210.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
               <h3 class="u-align-center u-custom-font u-font-pt-sans u-text u-text-7 ticket-title">施工指导</h3>
               <p class="u-align-left u-text u-text-8 ticket-detail">1. 所有图纸现场讲解&nbsp;<br>2. 提供现场施工指导服务&nbsp;&nbsp;<br>3. 提供电话、邮箱、网络改图<br>跟踪服务
               </p>
@@ -79,9 +79,9 @@ include('header.php');
         <div class="u-border-1 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
         <p class="u-align-center u-text u-text-2">Cooperation process<br>
         </p>
-        <img src="images/20190128162919873.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="787" data-image-height="1546" style='left: -40px'>
+        <img SRC="/N1/images/20190128162919873.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="787" data-image-height="1546" style='left: -40px'>
         <p class="u-align-center u-text u-text-default u-text-3"> 光影21道专业设计流程/主案设计师全程跟踪负责/设计总监层层审核/用专业的技术提高效率/用严谨的态度保障效果 </p>
-        <img src="images/20190128162919873 copy.png" alt="" class="u-expanded-width-xs u-image u-image-default vsimage u-image-2" data-image-width="1364" data-image-height="677" style='height:auto; width: 1292px'>
+        <img SRC="/N1/images/20190128162919873 copy.png" alt="" class="u-expanded-width-xs u-image u-image-default vsimage u-image-2" data-image-width="1364" data-image-height="677" style='height:auto; width: 1292px'>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-section-4" id="sec-5feb" data-image-width="2400" data-image-height="1500">

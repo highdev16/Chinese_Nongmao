@@ -57,14 +57,26 @@
 			<script>
 				function confirmRegeneratePages() {
 					if (!confirm("您确定要重新生成所有页面和静态URL吗? (这需要一段时间。)")) return;
-					$.post("//gggyyy.cn:8090/workon", function(a,b) {
+					$.post("//gggyyy.cn:8090/isprocessworkon", function(a,b) {
 						if (a == 'success' && b == 'success') {
-							alert("成功！ 请等待一段时间（最多一个小时）。");
-						} else {
-							alert("失败！ 无法继续您的请求。 与开发人员联系以解决此问题。");
+							if (!confirm("当前正在构建静态网页。\n您要取消并重新开始处理吗？")) return;
+						} else if (a == 'done') {} 
+						else {
+							alert("失败！ 意外的错误。\n与开发人员联系以解决此问题。");
+							return;
 						}
+
+						$.post("//gggyyy.cn:8090/workon", function(a,b) {
+							if (a == 'success' && b == 'success') {
+								alert("成功！ 请等待一段时间（最多一个小时）。");
+							} else {
+								alert("失败！ 无法继续您的请求。 与开发人员联系以解决此问题。");
+							}
+						}).fail(function() {
+							alert("失败！ 服务器功能失败。\n与开发人员联系以解决此问题。");
+						})
 					}).fail(function() {
-						alert("失败！ 无法继续您的请求。");
+						alert("失败！!! 服务器功能失败。\n与开发人员联系以解决此问题。");
 					})
 				}
 			</script>			

@@ -22,17 +22,17 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <img src="images/ScreenShot2020-08-17at6.55.18AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-1" data-image-width="350" data-image-height="620">
+                  <img SRC="/N4/imagesScreenShot2020-08-17at6.55.18AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-1" data-image-width="350" data-image-height="620">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img src="images/3.jpg" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-2" data-image-width="352" data-image-height="621">
+                  <img SRC="/N4/images3.jpg" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-2" data-image-width="352" data-image-height="621">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/4.jpg" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-3" data-image-width="351" data-image-height="621">
+                  <img SRC="/N4/images4.jpg" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-3" data-image-width="351" data-image-height="621">
                 </div>
               </div>
             </div>
@@ -43,17 +43,17 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
                 <div class="u-container-layout u-container-layout-4">
-                  <img src="images/ScreenShot2020-08-17at6.55.51AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-4" data-image-width="351" data-image-height="621">
+                  <img SRC="/N4/imagesScreenShot2020-08-17at6.55.51AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-4" data-image-width="351" data-image-height="621">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <img src="images/ScreenShot2020-08-17at6.55.58AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-5" data-image-width="351" data-image-height="623">
+                  <img SRC="/N4/imagesScreenShot2020-08-17at6.55.58AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-5" data-image-width="351" data-image-height="623">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
-                  <img src="images/ScreenShot2020-08-17at6.55.40AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-6" data-image-width="351" data-image-height="619">
+                  <img SRC="/N4/imagesScreenShot2020-08-17at6.55.40AM.png" alt="" class="u-absolute-hcenter u-expanded-height u-image u-image-default u-image-6" data-image-width="351" data-image-height="619">
                 </div>
               </div>
             </div>

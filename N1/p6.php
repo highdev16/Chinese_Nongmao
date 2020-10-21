@@ -41,7 +41,7 @@ include('header.php');
     font-family: "Microsoft YaHei" !important;
   }
 </style>
-<link rel="stylesheet" href="p6.css" media="screen">
+<link rel="stylesheet" href="/N1/p6.css" media="screen">
     <section class="u-clearfix u-image u-section-2" id="sec-cdc3">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>
@@ -70,16 +70,16 @@ include('header.php');
                         </colgroup>
                         <tbody class="u-table-body u-table-body-1" style='font-size:16px'>
                           <tr style="height: 49px;">
-                            <td class="u-table-cell"><img src='images/a1.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>创新农贸市场分类改革</div></td>
-                            <td class="u-table-cell"><img src='images/a2.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>建设市场运行信息化监管体系</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a1.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>创新农贸市场分类改革</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a2.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>建设市场运行信息化监管体系</div></td>
                           </tr>
                           <tr style="height: 49px;">
-                            <td class="u-table-cell"><img src='images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>提升农贸市场建设水平</div></td>
-                            <td class="u-table-cell"><img src='images/a4.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>推进农贸市场“智慧化”建设</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>提升农贸市场建设水平</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a4.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>推进农贸市场“智慧化”建设</div></td>
                           </tr>
                           <tr style="height: 49px;">
-                            <td class="u-table-cell"><img src='images/a5.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>制定农贸市场建设标准</div></td>
-                            <td class="u-table-cell"><img src='images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left; color: #888'>实现市场所有制与标准化建设“双改造”</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a5.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>制定农贸市场建设标准</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left; color: #888'>实现市场所有制与标准化建设“双改造”</div></td>
                           </tr>
                         </tbody>
                       </table>
@@ -123,23 +123,23 @@ include('header.php');
           <table class="u-table-entity">            
             <tbody class="u-align-left u-table-body u-table-valign-top four-steps">
               <tr style="height: 81px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-1">第一步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-1">第一步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 组班子，建队伍，加强工作组织领导。第一时间成立对接政府<br>工作标准的农贸市场规划建设领导小组, 负责按照《国家卫生<br>城市标准》要求统筹推进农贸市场的规划建设、改造提升等相<br>关工作。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 76px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-3" style='border-left:none'>第二步<img src='images/greenplus.png' class='plus-icon' style='width:20px'><br>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-3" style='border-left:none'>第二步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'><br>
                 </td>
                 <td class="u-table-cell">&nbsp; 强布局，画蓝图，科学布局农贸市场城市网点。积极对接城市总<br>规和土地利用规划，对标创建国家卫生城市有关要求，结合城市实<br>际以及积累的多年的经，提出专业的建议供政府单位参考，对引领<br>城市区域农贸市场与城市建设同步发展起到促进作用。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 48px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5" style='border-left:none'>第三步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5" style='border-left:none'>第三步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守总体要求和目标，制定工作<br>措施，严谨对接商务部门，市场监管部门，城管部门，及时报告<br>工作进度及成果。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 76px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7" style='border-left:none'>第四步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7" style='border-left:none'>第四步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 盯目标，攻难点，对照标准升级改造。针对农贸市场的活禽销<br>售区、水产区、排水等市场创卫的老大难问题，坚持对标整改<br>原则，光影农贸市场研究院参与过多省市农贸市场星级市场<br>设计管理标准的制定，强化难点区域整治，隔离活禽区、规范<br>水产区、畅通下水道。&nbsp;&nbsp;
                 </td>
               </tr>
@@ -155,23 +155,23 @@ include('header.php');
             
             <tbody class="u-align-left u-table-body u-table-valign-top four-steps">
               <tr style="height: 172px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-1">第一步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-1">第一步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 组班子，建队伍，加强工作组织领导。<br>第一时间成立对接政府工作标准的农贸<br>市场规划建设领导小组, 负责按照<br>《国家卫生城市标准》要求统筹推进<br>农贸市场的规划建设、改造提升等相<br>关工作。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 197px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-3">第二步<img src='images/greenplus.png' class='plus-icon' style='width:20px'><br>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-3">第二步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'><br>
                 </td>
                 <td class="u-table-cell">&nbsp; 强布局，画蓝图，科学布局农贸市场<br>城市网点。积极对接城市总规和土地利<br>用规划，对标创建国家卫生城市有关<br>要求，结合城市实际以及积累的多年的<br>经，提出专业的建议供政府单位参考，<br>对引领城市区域农贸市场与城市建设<br>同步发展起到促进作用。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 121px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5">第三步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5">第三步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守<br>总体要求和目标，制定工作措施，严谨<br>对接商务部门，市场监管部门，城管<br>部门，及时报告工作进度及成果。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 222px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7">第四步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7">第四步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 盯目标，攻难点，对照标准升级改造。<br>针对农贸市场的活禽销售区、水产区<br>、排水等市场创卫的老大难问题，<br>坚持对标整改原则，光影农贸市场研<br>究院参与过多省市农贸市场星级市场<br>设计管理标准的制定，强化难点区域<br>整治，隔离活禽区、规范水产区、畅通<br>下水道。&nbsp;&nbsp;
                 </td>
               </tr>
@@ -186,21 +186,21 @@ include('header.php');
           <table class="u-table-entity">            
             <tbody class="u-align-left u-table-body u-table-valign-top four-steps">
               <tr style="height: 81px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-1">第一步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-1">第一步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 组班子，建队伍，加强工作组织领导。第一时间成立对接政府工作标准的农贸市场规划建设领导小组, 负责按照《国家卫生城市标准》要求统筹推进<br>农贸市场的规划建设、改造提升等相关工作。&nbsp;&nbsp;
                 </td>
               </tr>
               <tr style="height: 76px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-3">第二步<img src='images/greenplus.png' class='plus-icon' style='width:20px'><br>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-3">第二步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'><br>
                 </td>
                 <td class="u-table-cell">&nbsp; 强布局，画蓝图，科学布局农贸市场城市网点。积极对接城市总规和土地利用规划，对标创建国家卫生城市有关要求，结合城市实际以及积累的多年的经，提出专业的建议供政府单位参考，对引领城市区域农贸市场与城市建设同步发展起到促进作用。&nbsp;&nbsp;</td>
               </tr>
               <tr style="height: 48px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5">第三步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-first-column u-table-cell u-table-cell-5">第三步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 定方案，强措施，重对接。严格遵守总体要求和目标，制定工作措施，严谨对接商务部门，市场监管部门，城管部门，及时报告工作进度及成果。&nbsp;&nbsp;</td>
               </tr>
               <tr style="height: 76px;">
-                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7">第四步<img src='images/greenplus.png' class='plus-icon' style='width:20px'></td>
+                <td class="u-align-center u-border-4 u-border-grey-dark-1 u-border-no-bottom u-border-no-top u-table-cell u-table-cell-7">第四步<img SRC='/N1/images/greenplus.png' class='plus-icon' style='width:20px'></td>
                 <td class="u-table-cell">&nbsp; 盯目标，攻难点，对照标准升级改造。针对农贸市场的活禽销售区、水产区、排水等市场创卫的老大难问题，坚持对标整改原则，光影农贸市场研究院参与过多省市农贸市场星级市场设计管理标准的制定，强化难点区域整治，隔离活禽区、规范水产区、畅通下水道。&nbsp;&nbsp;</td>
               </tr>
             </tbody>
@@ -215,9 +215,9 @@ include('header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 
             </h2>
-            <p class="u-align-left u-custom-font u-text u-text-2"><img src='images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>400-000-3840</div></p>
+            <p class="u-align-left u-custom-font u-text u-text-2"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>400-000-3840</div></p>
             <div style='clear: both'></div>
-            <p class="u-align-left u-custom-font u-text u-text-5"><img src='images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></p>
+            <p class="u-align-left u-custom-font u-text u-text-5"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></p>
           </div>
         </div>
       </div>

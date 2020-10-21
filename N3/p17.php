@@ -43,7 +43,7 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-3" id="sec-a679">
-      <img src='images/13.jpg' style='width: 100%; height: 650px; object-fit: cover'>
+      <img SRC='/N3/images/13.jpg' style='width: 100%; height: 650px; object-fit: cover'>
     </section>
     <section class="u-clearfix u-section-4" id="sec-fb1d">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 50px'>
@@ -54,7 +54,7 @@ include('../N1/header.php');
         智慧农贸市场信息管理平台采用物联网、互联网、云计算、大数据分析技术打造了一个集“信息公示、产品溯源、价格检测、联网监督、智能监控”功能于一身的智慧农贸市场综合信息化管理平台，使传统农贸市场在运营管理、市场服务和智能监管、信息追溯方面实现信息网络化、工作规范化、管理现代化从而升级成为智慧菜市场。
 
         </p>
-        <img src="images/cloud_detail.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="1344" data-image-height="829">
+        <img SRC="/N3/imagescloud_detail.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="1344" data-image-height="829">
       </div>
     </section>
     <section class="u-align-left u-clearfix u-section-5" id="sec-600a">
@@ -65,19 +65,19 @@ include('../N1/header.php');
             <div class="u-layout-row grid-3">
               <div class="u-container-style u-layout-cell u-left-cell u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img src="images/20190121162949780.png" alt="" class="u-image u-image-default u-image-1" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/images20190121162949780.png" alt="" class="u-image u-image-default u-image-1" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-2">智能电子秤</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-left-cell u-layout-cell-1 ">
                 <div class="u-container-layout u-container-layout-2">
-                  <img src="images/11.png" alt="" class="u-image u-image-default u-image-2" data-image-width="320" data-image-height="309">
+                  <img SRC="/N3/images11.png" alt="" class="u-image u-image-default u-image-2" data-image-width="320" data-image-height="309">
                   <p class="u-align-center u-text u-text-default u-text-3">信息展示屏</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/20190121162918701.png" alt="" class="u-image u-image-default u-image-3" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/images20190121162918701.png" alt="" class="u-image u-image-default u-image-3" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-4">智能触摸屏</p>
                 </div>
               </div>
@@ -89,19 +89,19 @@ include('../N1/header.php');
             <div class="u-layout-row grid-3">
               <div class="u-container-style u-layout-cell u-left-cellu-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
-                  <img src="images/20190121163018479.png" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/images20190121163018479.png" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-5">农产品智能检测设备</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <img src="images/20190121163044474.png" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/images20190121163044474.png" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-6">智能水表</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
-                  <img src="images/20190121162857646.png" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/images20190121162857646.png" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-7">中继器</p>
                 </div>
               </div>
@@ -113,19 +113,19 @@ include('../N1/header.php');
             <div class="u-layout-row grid-3">
               <div class="u-container-style u-layout-cell u-left-cellu-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
-                  <img src="images/t1.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/imagest1.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-5">新型智能电子结算秤</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <img src="images/t2.jpg" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/imagest2.jpg" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-6">新型智慧展示屏</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
-                  <img src="images/t3.jpg" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/imagest3.jpg" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-7">智能巡查仪器</p>
                 </div>
               </div>
@@ -137,19 +137,19 @@ include('../N1/header.php');
             <div class="u-layout-row grid-3">
               <div class="u-container-style u-layout-cell u-left-cellu-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
-                  <img src="images/t4.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/imagest4.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-5">多功能信息查询机</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <img src="images/t5.jpg" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/imagest5.jpg" alt="" class="u-image u-image-default u-image-5" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-6">多功能扫码器</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
-                  <img src="images/t6.jpg" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
+                  <img SRC="/N3/imagest6.jpg" alt="" class="u-image u-image-default u-image-6" data-image-width="420" data-image-height="420">
                   <p class="u-align-center u-text u-text-default u-text-7">全方位监控探头</p>
                 </div>
               </div>

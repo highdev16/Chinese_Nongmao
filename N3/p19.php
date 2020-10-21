@@ -8,7 +8,7 @@ include('../N1/header.php');
     font-size: 22px;
   }
 </style>
-    <img src="images/bkg.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1001" data-image-height="439" style='width: 100%'>
+    <img SRC="/N3/imagesbkg.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1001" data-image-height="439" style='width: 100%'>
     <section class="u-clearfix u-section-2" id="sec-3314">
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px'>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='margin-bottom: 0px'>

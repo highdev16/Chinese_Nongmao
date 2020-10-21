@@ -99,8 +99,8 @@
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
             <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:300px; width:100%; overflow:hidden;margin-bottom: 0px'>
               <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 300px; width:100%;' onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'>
-              <div onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 300px; width:100%;' onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'>
+              <div onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'
                     style='margin-top: -30px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer; 
                             width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
                 <?php echo htmlspecialchars($row['title']); ?>
@@ -130,7 +130,7 @@
     });
     $(document).ready(function() {
 
-    })
+    });
     </script>
 <?php
 include('../N1/footer.php');

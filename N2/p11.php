@@ -86,7 +86,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-2" id="sec-f0db">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-expand-resize u-image u-image-1" src="images/afccb8e4-01ca-fa31-9e5b-fdbed9b132d4.jpg">
+        <img class="u-expand-resize u-image u-image-1" SRC="/N2/imagesafccb8e4-01ca-fa31-9e5b-fdbed9b132d4.jpg">
         <div class="u-container-style u-group u-group-1">
           <div class="u-container-layout u-container-layout-1"></div>
         </div>
@@ -151,7 +151,7 @@ include('../N1/header.php');
         <p class="u-text u-text-default u-text-1 yahei" style='font-size: 20px'>1、对接全国优质的招商资源：基地、批发、农产品厂家：联合康康、知味观、雨润。农产品有机菜、台州无公害蔬菜、浙江放心菜、 
         </p>
         <div class="u-gallery u-no-transition u-show-text-on-hover u-gallery-1">
-          <img src='images/p11com.jpg' style='width: 100%'>
+          <img SRC='/N2/images/p11com.jpg' style='width: 100%'>
         </div>
         <p class="u-text u-text-default u-text-2 yahei" style='font-size: 20px'> 2、招商对象：夫妻店、基地、品牌商家、&nbsp;<br>3、招商方法：系统化定向招商，确保招商效果，使招商入驻率高达90%以上&nbsp;<br>4、招商政策制定：根据当地情况进行调研并制定前期招商策略 
         </p>
