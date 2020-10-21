@@ -14,6 +14,7 @@
       }
       div.friendly_links div  {
         float: left;
+        padding-top: 5px; padding-bottom: 5px;
         font-size: 14px;
       }
       @media(max-width: 1000px) {
