@@ -67,7 +67,7 @@ function processFiles(domain) {
 }
 
 app.set('port', 8080);
-app.listen(app.get('port'));
+app.listen(app.get('port'), '0.0.0.0');
 app.use(json({limit: '10mb', extended: true}));
 app.use(urlencoded({limit: '10mb', extended: true}));
 app.post('/workon', (req, res) => {
