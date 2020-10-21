@@ -3,3 +3,4 @@ banners/*.jpg
 allimages/*
 nodepro/node_modules/*
 nodepro/package-lock.json
+nodepro/package.json
