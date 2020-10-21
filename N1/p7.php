@@ -503,7 +503,11 @@ while (strlen($temp) > 0) {
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
               <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
-              <button class='btn btn-black' onclick="window.location.href='/N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  id='gita_area'>更多</button></div>
+              <button class='btn btn-black' 
+                onclick="goToOtherPage(<?php echo $row['category']; ?>)" 
+                style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  
+                id='gita_area'>更多</button>
+            </div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <div class="u-layout-row"  style='padding: 0; justify-content: space-between'>
@@ -526,7 +530,7 @@ while (strlen($temp) > 0) {
                     <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
                     display: flex;justify-content: center;align-items: center; background:black;'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/N1/p7.php?r=<?php echo $row["id"]; ?>";'>
+                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='goToOtherPiece(<?php echo $row['category']; ?>, <?php echo $row["id"]; ?>)'>
                     </div>
                     <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                       <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -570,7 +574,13 @@ while (strlen($temp) > 0) {
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;' id='gita_area1'>其他精彩案例</div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='/N1/p2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
+              <button class='btn btn-black' 
+                  onclick="goToOtherPage(<?php echo $row['category'] % 4 + 1; ?>)" 
+                  style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>
+                    更多
+                </button>
+              </div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <?php
@@ -594,7 +604,8 @@ while (strlen($temp) > 0) {
                     <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
                     display: flex;justify-content: center;align-items: center; background:black;'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/N1/p7.php?r=<?php echo $row["id"]; ?>";'>
+                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' 
+                          onclick='window.location.href="goToOtherPiece(<?php echo $row["category"]; ?>, <?php echo $row["id"]; ?>)";'>
                     </div>
                     <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                       <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -645,6 +656,19 @@ while (strlen($temp) > 0) {
 
         else
         $("#scrollContent").animate({'margin-left' : pos + 'px'}, 100);
+      }
+
+      function goToOtherPage(category) {
+        if (category == 1) window.location.href='/zxsj/';
+        if (category == 2) window.location.href='/jzsj/';
+        if (category == 3) window.location.href='/znsj/';
+        if (category == 4) window.location.href='/nmyy/';
+      }
+      function goToOtherPiece(category, id) {
+        if (category == 1) window.location.href='/zxsj/' + id + ".html";
+        if (category == 2) window.location.href='/jzsj/' + id + ".html";
+        if (category == 3) window.location.href='/znsj/' + id + ".html";
+        if (category == 4) window.location.href='/nmyy/' + id + ".html";
       }
     </script>
 
