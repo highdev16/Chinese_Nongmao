@@ -2,10 +2,10 @@
 $bigTitle = "智能菜场";
 $label = $query = '';
 switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸设计案例'; break;
-  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸建筑设计'; break;
-  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／5G智能设计'; break;
-  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
+  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸设计案例'; break;
+  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸建筑设计'; break;
+  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／5G智能设计'; break;
+  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
   default: exit;
 }
 
@@ -36,7 +36,7 @@ $pageTotal = $pageTotal[0]['co'];
 $rows = $db->rawQuery($query);
 
 ?>
- <link href='../css/paginaitor.css' rel="stylesheet" />
+ <link href='/css/paginaitor.css' rel="stylesheet" />
 <style>
   img.article-image {
     transition: transform .2s;
@@ -79,7 +79,7 @@ $rows = $db->rawQuery($query);
     min-width: 300px;
   }
 </style>
-<script src='../js/js/all.js'></script>
+<script src='/js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
@@ -130,7 +130,7 @@ $rows = $db->rawQuery($query);
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>              
-                <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
               
               
@@ -144,7 +144,7 @@ $rows = $db->rawQuery($query);
     <ul class="pagination" id="pagination1"></ul>
     </div>
     </section>
-    <script src='../js/jspaginator.js'></script>
+    <script src='/js/jspaginator.js'></script>
     <script>
      if (<?php echo $pageTotal; ?> > 0)
       $.jqPaginator('#pagination1', {

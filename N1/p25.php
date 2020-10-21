@@ -2,10 +2,10 @@
   $bigTitle = "农贸新闻资讯";
   $label = $query = '';
   switch (intval($_REQUEST['category'])) {
-    case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸设计百科'; break;
-    case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸新闻资讯'; break;
-    case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／光影新闻动态'; break;
-    case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／政府政策文件'; break;
+    case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸设计百科'; break;
+    case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸新闻资讯'; break;
+    case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／光影新闻动态'; break;
+    case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／政府政策文件'; break;
     default: exit;
   }
 
@@ -28,7 +28,7 @@
   $rows = $db->rawQuery($query);
 
 ?>
- <link href='../css/paginaitor.css' rel="stylesheet" />
+ <link href='/css/paginaitor.css' rel="stylesheet" />
 <style>
   img.article-image:hover {
     transition: transform .2s;
@@ -73,7 +73,7 @@
     margin-bottom: 0px !important;
   }
 </style>
-<script src='../js/js/all.js'></script>
+<script src='/js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px; min-height:0px;'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
@@ -116,7 +116,7 @@
     <ul class="pagination" id="pagination1"></ul>
     </div>
     </section>
-    <script src='../js/jspaginator.js'></script>
+    <script src='/js/jspaginator.js'></script>
     <script>
       $.jqPaginator('#pagination1', {
         totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),

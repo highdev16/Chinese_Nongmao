@@ -219,7 +219,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/7.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="p2.php?category=1";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="/N1/p2.php?category=1";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text" style="">室内设计</p>
             </div>
@@ -228,7 +228,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/c2.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="p2.php?category=2";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="/N1/p2.php?category=2";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">建筑设计</p>
             </div>
@@ -237,7 +237,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/e624cbc5-e96f-6700-5942-f978bb060ac3.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="p2.php?category=3";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="/N1/p2.php?category=3";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">5G智能</p>
             </div>
@@ -246,7 +246,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/5td.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="p2.php?category=4";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="/N1/p2.php?category=4";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">设计流程</p>
             </div>
@@ -526,8 +526,9 @@ div.percentage-20 {
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; '>
             <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:331px; overflow:hidden;margin-bottom: 0px; display:flex'>
               <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 331px; min-width:100%' onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'>
-              <div onclick='window.location.href="p26.php?r=<?php echo $row["id"]; ?>";'
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 331px; min-width:100%' 
+                    onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'>
+              <div onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'
                     style='bottom: 0px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer;
                             width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
                 <?php echo htmlspecialchars($row['title']); ?>

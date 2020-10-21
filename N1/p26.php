@@ -37,7 +37,7 @@ include('header.php');
         min-width: 300px;
       }
     </style>
-<link href='../css/paginaitor.css' rel="stylesheet" />
+<link href='/css/paginaitor.css' rel="stylesheet" />
 <style>
   .u-section-3 {
     background: #f0f0f0 !important;
@@ -124,11 +124,11 @@ include('header.php');
     font-weight: bold !Important;
   }
   </style>
-  <script src='../js/js/all.js'></script>
+  <script src='/js/js/all.js'></script>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置<span style='font-family: "Helvetica Neue" !important;'>／</span>
-        <span style="cursor:pointer" onclick="window.location.href='../N1/p1.php';">首页</span><span style='font-family: "Helvetica Neue" !important;'>／</span>
+        <span style="cursor:pointer" onclick="window.location.href='/N1/p1.php';">首页</span><span style='font-family: "Helvetica Neue" !important;'>／</span>
         <span style="cursor:pointer" onclick="" id='categoryLabel'></span><span style='font-family: "Helvetica Neue" !important;'>／</span>
         <span id='articleTitle'></span></p>
       </div>
@@ -354,7 +354,7 @@ include('header.php');
                 $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu');
                 $("#browsecount").html(a.row.browse + "");
                 $("#categoryLabel").html(categoryArr[a.row['category']]).click(function() {
-                  window.location.href='../N1/p25.php?category=' + a.row.category;
+                  window.location.href='/N1/p25.php?category=' + a.row.category;
                 });
                 $("#articleTitle").html(a.row.title);
                 $("#titleLabel").html(a.row.title);
@@ -362,13 +362,13 @@ include('header.php');
                 $("#writerLabel").html(a.row.writer);
                 
                 $("#currentCategoryButton").click(function() {
-                    window.location.href='../N1/p25.php?category=' + a.row.category;
+                    window.location.href='/N1/p25.php?category=' + a.row.category;
                   });
                 $("#currentCategoryLabel").html(categoryArr[a.row.category]);
                 if (a.next) {
                   $("#nextLinkLabel").html(a.next.title);
                   $("#nextLinkButton").click(function() {
-                    window.location.href='../N1/p26.php?r=' + a.next.id;
+                    window.location.href='/N1/p26.php?r=' + a.next.id;
                   });
                 } else {
                   $("#nextLinkButton, #nextLinkLabel").css('opacity', 0);
@@ -377,7 +377,7 @@ include('header.php');
                 if (a.prev) {
                   $("#prevLinkLabel").html(a.prev.title);
                   $("#prevLinkButton").click(function() {
-                    window.location.href='../N1/p26.php?r=' + a.prev.id;
+                    window.location.href='/N1/p26.php?r=' + a.prev.id;
                   });
                 } else {
                   $("#prevLinkButton, #prevLinkLabel").css('opacity', 0);

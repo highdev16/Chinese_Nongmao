@@ -2,10 +2,10 @@
 $bigTitle = "农贸市场设计";
 $label = $query = '';
 switch (intval($_REQUEST['category'])) {
-  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸设计案例'; break;
-  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸建筑设计'; break;
-  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／5G智能设计'; break;
-  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'../N1/p1.php\';">首页</span>／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
+  case 1: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸设计案例'; break;
+  case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸建筑设计'; break;
+  case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／5G智能设计'; break;
+  case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/N1/p1.php\';">首页</span>／农贸运营案例'; $bigTitle = "农贸市场运营";  break;
   default: exit;
 }
 
@@ -36,7 +36,7 @@ $pageTotal = $pageTotal[0]['co'];
 $rows = $db->rawQuery($query);
 
 ?>
- <link href='../css/paginaitor.css' rel="stylesheet" />
+ <link href='/css/paginaitor.css' rel="stylesheet" />
 <style>
   img.article-image {
     transition: transform .2s;
@@ -70,13 +70,13 @@ $rows = $db->rawQuery($query);
     margin: 13px 13px 0;
 }
 </style>
-<script src='../js/js/all.js'></script>
+<script src='/js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>">最新发布</a>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
-        <a href="p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">星级排序</a>
+        <a href="/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=1" class="<?php echo $mode == 1 ? $selectedMode : $unselectedMode; ?>">最新发布</a>
+        <a href="/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=2" class="<?php echo $mode == 2 ? $selectedMode : $unselectedMode; ?>">热点案例</a>
+        <a href="/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=3" class="<?php echo $mode == 3 ? $selectedMode : $unselectedMode; ?>">星级排序</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 30px'>
@@ -101,7 +101,7 @@ $rows = $db->rawQuery($query);
               <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
               display: flex; display: -webkit-flex; justify-content: center; -webkit-justify-content: center; align-items: center; background:black;'>
                 <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/N1/p7.php?r=<?php echo $row["id"]; ?>";'>
               </div>
               <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                 <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -121,7 +121,7 @@ $rows = $db->rawQuery($query);
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>              
-                <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
               
               
@@ -135,7 +135,7 @@ $rows = $db->rawQuery($query);
     <ul class="pagination" id="pagination1"></ul>
     </div>
     </section>
-    <script src='../js/jspaginator.js'></script>
+    <script src='/js/jspaginator.js'></script>
     <script>
       if (<?php echo $pageTotal; ?> > 0) {
             $.jqPaginator('#pagination1', {
@@ -145,7 +145,7 @@ $rows = $db->rawQuery($query);
               currentPage: <?php echo $pageIndex; ?> + 1,
               onPageChange: function (num, type) {
                 if (num - 1 == <?php echo $pageIndex; ?>) return;
-                  window.location.href = 'p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
+                  window.location.href = '/N1/p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
               }
           });
       };    

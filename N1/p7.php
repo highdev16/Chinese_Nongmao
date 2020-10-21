@@ -70,7 +70,7 @@ while (strlen($temp) > 0) {
         width: 100% !important; max-width: 100% !important; flex: auto !important; margin-right: 3px !important;
       }
     </style>
-<link href='../css/paginaitor.css' rel="stylesheet" />
+<link href='/css/paginaitor.css' rel="stylesheet" />
 <style>
   .u-section-3 {
     background: #f0f0f0 !important;
@@ -136,8 +136,8 @@ while (strlen($temp) > 0) {
 </style>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='../N1/p1.php';">首页</span>／
-        <span style="cursor:pointer" onclick="window.location.href='../N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';">
+        <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='/N1/p1.php';">首页</span>／
+        <span style="cursor:pointer" onclick="window.location.href='/N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';">
         <?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
       </div>
     </section>
@@ -274,7 +274,7 @@ while (strlen($temp) > 0) {
 
 
   } </style>
-                  <script src='../js/js/all.js'></script>
+                  <script src='/js/js/all.js'></script>
                     <table class="class_specified">
                       <tbody>
                         <tr>
@@ -483,14 +483,14 @@ while (strlen($temp) > 0) {
     </section>
     <section class="u-clearfix u-white u-section-5" id="sec-3302">
 
-      <script src='../js/jspaginator.js'></script>
+      <script src='/js/jspaginator.js'></script>
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
               <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
-              <button class='btn btn-black' onclick="window.location.href='../N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  id='gita_area'>更多</button></div>
+              <button class='btn btn-black' onclick="window.location.href='/N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'  id='gita_area'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <div class="u-layout-row"  style='padding: 0; justify-content: space-between'>
@@ -513,7 +513,7 @@ while (strlen($temp) > 0) {
                     <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
                     display: flex;justify-content: center;align-items: center; background:black;'>
                       <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="p7.php?r=<?php echo $row["id"]; ?>";'>
+                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/N1/p7.php?r=<?php echo $row["id"]; ?>";'>
                     </div>
                     <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                       <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -533,7 +533,7 @@ while (strlen($temp) > 0) {
                         <i class="far fa-user"></i>&nbsp;
                         <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                       </div>
-                      <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                      <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                     </div>
 
 
@@ -551,13 +551,13 @@ while (strlen($temp) > 0) {
     </section>
     <section class="u-clearfix u-white u-section-5" id="sec-3302">
 
-      <script src='../js/jspaginator.js'></script>
+      <script src='/js/jspaginator.js'></script>
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
               <div style='float: left;    min-width: 190px;    width: 260px;    max-width: 200px;' id='gita_area1'>其他精彩案例</div>
-              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='../N1/p2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
+              <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'><button class='btn btn-black' onclick="window.location.href='/N1/p2<?php echo $row['category'] == 3 ? 0 : ''; ?>.php?category=<?php echo $row['category'] % 4 + 1; ?>';" style='padding-left: 20px; padding-right: 20px; font-weight: 100 !important; background: black; color: white; font-size: 16px'>更多</button></div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
             <?php
@@ -601,7 +601,7 @@ while (strlen($temp) > 0) {
                         <i class="far fa-user"></i>&nbsp;
                         <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                       </div>
-                      <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                      <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                     </div>
 
 

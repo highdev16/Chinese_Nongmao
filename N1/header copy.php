@@ -21,7 +21,7 @@ $oname = $oname[0];
     ?>
     <link rel="stylesheet" href="../N1/nicepage.css" media="screen">
     <link rel="stylesheet" href="..<?php echo $oname; ?>.css" media="screen">
-    <script src="../js/jquery1.js"></script>
+    <script src="/js/jquery1.js"></script>
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="../css/googleapifont.css">
