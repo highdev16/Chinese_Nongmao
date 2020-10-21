@@ -16,7 +16,7 @@ var filesInProgress, checkTimer, logFile, isProgressing;
 var processTimer, processingText;
 
 function CheckLocalhost(callback) {
-    rp("http://localhost/mymymymymy.html").then(function(html){ 
+    rp("http://localhost/mymymymymy.html").then(function(html){         
         if (html == 'gggyyy') callback ("localhost");
         else callback("gggyyy.cn");
     }).catch(function(err){
@@ -26,6 +26,7 @@ function CheckLocalhost(callback) {
 function scrapeFile(domain, url, filename) {
     filesInProgress++;
     rp("http://" + domain + url).then(function(html){ 
+        if (!isProgressing) return;
         writeFile("/var/www/html" + filename, html, ()=>{});
         writeFile(logFile, "[Success] " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});
         filesInProgress--;
@@ -51,6 +52,7 @@ function callDaemon() {
     CheckLocalhost(function(domain) {
         processingText = "Starting in 10 seconds...";
         setTimeout(() => {
+            if (!isProgressing) return;
             processingText = "Just started. Processing now...";
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
                 + make2(new Date().getMinutes()) + "-" + make2(new Date().getSeconds()) + ".txt";
@@ -86,6 +88,7 @@ function processFiles(domain) {
 
     urlIndex = 0;
     processTimer = setInterval(function() {
+        if (!isProgressing) return;
         scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
         if (++urlIndex == urlList.length) {
             clearInterval(processTimer);
@@ -122,4 +125,19 @@ app.all('/isprocessworkon', (req, res) => {
             processingText
         }));
     else res.send("done");
+});
+
+app.all('/cancelworkon', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    clearInterval(processTimer);
+    clearInterval(checkTimer);
+    isProgressing = 0;
+    checkTimer = 0;
+    processTimer = 0;
+    urlIndex = 0;
+    urlList = [];
+    filesInProgress = 0;
+    processingText = "";
+    writeFile(logFile,"\n\n-------- Daemon escaped by admin --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+    res.send("OK");    
 });
