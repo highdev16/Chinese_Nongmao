@@ -52,25 +52,25 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.30.51AM.png" alt="" class="u-image u-image-default u-image-1" data-image-width="88" data-image-height="67">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.30.51AM.png" alt="" class="u-image u-image-default u-image-1" data-image-width="88" data-image-height="67">
                   <p class="u-align-center u-text u-text-3">农贸市场管理员培训</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.30.59AM.png" alt="" class="u-image u-image-contain u-image-default u-image-2" data-image-width="79" data-image-height="59">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.30.59AM.png" alt="" class="u-image u-image-contain u-image-default u-image-2" data-image-width="79" data-image-height="59">
                   <p class="u-align-center u-text u-text-4">农贸市场经营户培训</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.31.04AM.png" alt="" class="u-image u-image-contain u-image-default u-image-3" data-image-width="88" data-image-height="75">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.31.04AM.png" alt="" class="u-image u-image-contain u-image-default u-image-3" data-image-width="88" data-image-height="75">
                   <p class="u-align-center u-text u-text-5">市场规章制度的建立</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-4">
                 <div class="u-container-layout u-container-layout-4">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.31.07AM.png" alt="" class="u-image u-image-contain u-image-default u-image-4" data-image-width="75" data-image-height="78">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.31.07AM.png" alt="" class="u-image u-image-contain u-image-default u-image-4" data-image-width="75" data-image-height="78">
                   <p class="u-align-center u-text u-text-6">管理教材手册全套</p>
                 </div>
               </div>
@@ -82,25 +82,25 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.31.10AM.png" alt="" class="u-image u-image-contain u-image-default u-image-5" data-image-width="87" data-image-height="70">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.31.10AM.png" alt="" class="u-image u-image-contain u-image-default u-image-5" data-image-width="87" data-image-height="70">
                   <p class="u-align-center u-text u-text-7">农贸市场招商指导</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.31.14AM.png" alt="" class="u-image u-image-contain u-image-default u-image-6" data-image-width="68" data-image-height="66">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.31.14AM.png" alt="" class="u-image u-image-contain u-image-default u-image-6" data-image-width="68" data-image-height="66">
                   <p class="u-align-center u-text u-text-8">落地指导结束后免费咨询</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-7">
                 <div class="u-container-layout u-container-layout-7">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.31.17AM.png" alt="" class="u-image u-image-contain u-image-default u-image-7" data-image-width="74" data-image-height="78">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.31.17AM.png" alt="" class="u-image u-image-contain u-image-default u-image-7" data-image-width="74" data-image-height="78">
                   <p class="u-align-center u-text u-text-9">提供农贸市场管理员编制</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-size-30-md u-layout-cell-8">
                 <div class="u-container-layout u-container-layout-8">
-                  <img SRC="/N3/imagesScreenShot2020-08-17at4.31.21AM.png" alt="" class="u-image u-image-contain u-image-default u-image-8" data-image-width="85" data-image-height="67">
+                  <img SRC="/N3/images/ScreenShot2020-08-17at4.31.21AM.png" alt="" class="u-image u-image-contain u-image-default u-image-8" data-image-width="85" data-image-height="67">
                   <p class="u-align-center u-text u-text-10">农贸市场管理员团队建设</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ include('../N1/header.php');
     </section>
     <section class="u-align-left u-clearfix u-section-5" id="sec-600a">
       <div class='row'>
-        <img SRC='/N3/images/ScreenShot2020-08-17at4.41.36AM.png' style='width: 1500px; margin: 0 auto 0 auto'>
+        <img SRC='/N3/images//ScreenShot2020-08-17at4.41.36AM.png' style='width: 1500px; margin: 0 auto 0 auto'>
       </div>
     </section>
     

@@ -23,7 +23,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20-xl u-size-7-lg u-size-7-md u-size-7-sm u-size-7-xs u-layout-cell-2" src="">
                 <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images5c9a7b7037d67.jpg" data-image-width="991" data-image-height="560">
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images/5c9a7b7037d67.jpg" data-image-width="991" data-image-height="560">
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20-xl u-size-7-lg u-size-7-md u-size-7-sm u-size-7-xs u-layout-cell-2" src="">
                 <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/imagesScreenShot2020-08-17at6.44.34AM.png" data-image-width="991" data-image-height="560">
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images/ScreenShot2020-08-17at6.44.34AM.png" data-image-width="991" data-image-height="560">
                 </div>
               </div>
             </div>

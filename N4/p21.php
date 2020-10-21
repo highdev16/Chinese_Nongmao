@@ -23,7 +23,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20-xl u-size-7-lg u-size-7-md u-size-7-sm u-size-7-xs u-layout-cell-2" src="">
                 <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images14.jpg" data-image-width="991" data-image-height="560">
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images/14.jpg" data-image-width="991" data-image-height="560">
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20-xl u-size-7-lg u-size-7-md u-size-7-sm u-size-7-xs u-layout-cell-2" src="">
                 <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images24.jpg" data-image-width="991" data-image-height="560">
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N3/images/24.jpg" data-image-width="991" data-image-height="560">
                 </div>
               </div>
             </div>
