@@ -18,17 +18,17 @@ function CheckLocalhost(callback) {
         if (html == 'gggyyy') callback ("localhost");
         else callback("gggyyy.cn");
     }).catch(function(err){
-        writeFile(logFile, "[Error] " + new Date().toLocaleString() + " ----  Get local domain failed\n", 'a');    
+        writeFile(logFile, "[Error] " + new Date().toLocaleString() + " ----  Get local domain failed\n", 'a', ()=>{});    
     });
 }
 function scrapeFile(domain, url, filename) {
     filesInProgress++;
     rp("http://" + domain + url).then(function(html){ 
-        writeFile("/var/www/html" + filename, html);
-        writeFile(logFile, "[Success] " + url + " " + filename + "\n", 'a');
+        writeFile("/var/www/html" + filename, html, ()=>{});
+        writeFile(logFile, "[Success] " + url + " " + filename + "\n", 'a', ()=>{});
         filesInProgress--;
     }).catch(function(err){
-        writeFile(logFile, "[Error, " + new Date().toLocaleString(), "]: " + url + " " + filename + "\n", 'a');    
+        writeFile(logFile, "[Error, " + new Date().toLocaleString(), "]: " + url + " " + filename + "\n", 'a', ()=>{});    
         filesInProgress--;
     });
 }
@@ -37,7 +37,7 @@ function make2(s) { return s < 10 ? "0" + s : s; }
 
 function callDaemon() {
     if (checkTimer) {
-        writeFile(logFile,"-------- Daemon restarted " + new Date().toLocaleString() + "--------\n", 'a');          
+        writeFile(logFile,"-------- Daemon restarted " + new Date().toLocaleString() + "--------\n", 'a', ()=>{});          
         clearInterval(checkTimer);
         checkTimer = 0;      
     }   
@@ -46,12 +46,12 @@ function callDaemon() {
         setTimeout(() => {
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
                 + make2(new Date().getMinutes()) + "-" + make2(new Date().getSeconds()) + ".txt";
-            writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",'a');    
+            writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",'a', ()=>{});    
 
             checkTimer = setInterval(function() {
                 if (checkTimer) {
                     if (filesInProgress == 0) {
-                        writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",'a');        
+                        writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",'a', ()=>{});        
                         clearInterval(checkTimer);
                         checkTimer = 0;      
                     }
