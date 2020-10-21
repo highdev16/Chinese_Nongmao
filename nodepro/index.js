@@ -69,7 +69,9 @@ function processFiles(domain) {
         scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
         if (++urlIndex == urlList.length) {
             clearInterval(processTimer);
-            writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+            setTimeout(function() {
+                writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+            });            
             clearInterval(checkTimer);
             checkTimer = 0;      
             isProgressing = 0;
