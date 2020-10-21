@@ -38,7 +38,7 @@ $oname = $oname[0];
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; display: -webkit-flex; flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around'>
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
-            <a class="u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#">
+            <a class="u-border-4  u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
                 </symbol>
@@ -47,13 +47,13 @@ $oname = $oname[0];
           </div>
           <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: row; justify-content: space-around'>
             <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" style='height:100%'>
-                <li class="u-nav-item">     <a class="titlemainmenu mainmenu1 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" href="/" style="padding: 0px 0;">首页</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0;">农贸市场设计</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu3 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸市场运营</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu4 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">智能菜场</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu5 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸市场投资</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
-                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7 u-border-4 u-border-active-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-90 u-text-hover-custom-color-1" style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
+                <li class="u-nav-item">     <a class="titlemainmenu mainmenu1  u-button-style u-nav-link " href="/" style="padding: 0px 0;">首页</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu2  u-button-style u-nav-link " style="padding: 0px 0;">农贸市场设计</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu3  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">农贸市场运营</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu4  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">智能菜场</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu5  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">农贸市场投资</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu6  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer">农贸新闻资讯</a>
+                </li><li class="u-nav-item"><a class="titlemainmenu mainmenu7  u-button-style u-nav-link " style="padding: 0px 0; cursor:pointer;">光影集团</a></li>
             </ul>
             <div class='free-consultation'>
               <img src='/N1/images/phonering.png' style='margin:auto 5px auto 0; height: 20px'><span style='font-style: italic'>19957895916</span>
@@ -319,7 +319,7 @@ $oname = $oname[0];
                 mousemove = 0;
                 for (let i = 1; i <= 7; i++) {
                     if ($(this).hasClass('mainmenu' + i)) {
-                        $(this).css('color','#ff6500 !important');
+                        $(this).css('color','#ff6500');
                         $('section.mainmenu' + i).css('box-shadow', ' 0 10px 15px rgba(0,0,0,.1)').css('z-index', '9999').slideDown();
                         // mousemove = i;
                     }
