@@ -141,8 +141,9 @@ $rows = $db->rawQuery($query);
         }
       });
       let htmlString = "";
-      for (let i = 0; i < data.items.length; i++) {             
-        let row = data.items[i];
+      let rows = data.items;
+      for (let i = 0; i < rows.length; i++) {             
+        let row = rows[i];
         let r = row['content'].indexOf('<img');
         let alt = "No Image";
         if (r != -1) {
