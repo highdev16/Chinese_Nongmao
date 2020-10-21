@@ -50,10 +50,24 @@
 	            </a>
 			</li>
 			<li class="sidebar-item">
-				<a class="sidebar-link" href="index5.php">
-	              <i class="align-middle" data-feather="refresh-ccw"></i> <span class="align-middle" style='color: yellow; font-weight: bold'>重新生成页面</span>
+				<a class="sidebar-link" href="javascript:void(0)" onclick='confirmRegeneratePages()'>
+	              <i class="align-middle" data-feather="refresh-ccw" style='color: yellow;'></i> <span class="align-middle" style='color: yellow; font-weight: bold'>重新生成页面</span>
 	            </a>
 			</li>
+			<script>
+				function confirmRegeneratePages() {
+					if (!confirm("您确定要重新生成所有页面和静态URL吗?")) return;
+					$.post("//gggyyy.cn:8090", function(a,b) {
+						if (a == 'success' && b == 'success') {
+							alert("成功！ 这需要一段时间。");
+						} else {
+							alert("失败！ 无法继续您的请求。 与开发人员联系以解决此问题。");
+						}
+					}).fail(function() {
+						alert("失败！ 无法继续您的请求。");
+					})
+				}
+			</script>
 			<!-- <li class="sidebar-item">
 				<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
               		<i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
