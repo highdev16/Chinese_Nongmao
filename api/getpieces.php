@@ -4,7 +4,7 @@ include('../N1/dbconfig.php');
 $db = getDbInstance();
 $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
 $pageTotal = $pageTotal[0]['co'];
-$rows = $db->rawQuery($query);
+
 $pageNum = 15;
 $pageIndex = $_REQUEST['pageNumber'];
 $mode = $_REQUEST['sort'] ;
