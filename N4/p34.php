@@ -36,7 +36,7 @@ include('../N1/header.php');
             <div class="u-layout-row boss-profile">
               <div class="u-container-style u-layout-cell u-left-cell u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <img SRC="/N4/imagesbosspicture.png" alt="" class="u-image u-image-default u-image-1" data-image-width="438" data-image-height="440">
+                  <img SRC="/N4/images/bosspicture.png" alt="" class="u-image u-image-default u-image-1" data-image-width="438" data-image-height="440">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-2 board-content" style='margin-bottom: 50px'>
@@ -60,7 +60,7 @@ include('../N1/header.php');
         <p class="u-align-center u-text u-text-2 yahei" style='width: 300px; margin-top: 20px; margin-bottom: 30px'>COMPANY PROFILE</p>
         <p class="u-align-center u-text u-text-default u-text-3 yahei" style='margin-bottom: 20px; text-align: left; line-height: 40px'> &nbsp;&nbsp;&nbsp;杭州光影建筑设计有限公司，光影农贸市场设计研究院专注农贸市场设计18年，成功案例遍及全中国32个省市县镇，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究、农贸市场定位、农贸市场室内设计、建筑设计，农贸市场营运管理、农贸市场招商、
 农贸市场电商o2o，农贸市场培训指导，农贸市场智能升级、智能菜场运营管理等。专业提供农贸市场设计、菜市场设计、生鲜超市设计、农贸市场建筑设计、农贸市场效果图、农贸市场改造、菜市场效果图、菜市场改造等一整套农贸市场解决方案服务。&nbsp;&nbsp;</p>
-        <img SRC="/N4/images20190119173051760.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1399" data-image-height="300" style='margin-top: 30px'>
+        <img SRC="/N4/images/20190119173051760.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1399" data-image-height="300" style='margin-top: 30px'>
         <p class="u-align-center u-text u-text-default u-text-4 yahei" style='text-align:left; line-height: 40px'>&nbsp;&nbsp;&nbsp;企业顶尖团队技术成员100多人在17年时间对全国32省市的农贸市场进行了大量调研，高水准设计出符合全国本土化的星级农贸市场，科学设计摊位大小，合理分布蔬菜水果鲜肉家禽水产干货粮油业态，设计风格亲民有档次，摊位美观适用，树立多个城市五星四星三星农贸市场样板，赢得了政府，消费者，经营户一致的好评。 光影农贸市场研究院申请国家农贸市场设计专利八类，出版农贸市场管理教材八册，申请农贸市场电商系统知识产权，全国知名农贸市场尖端设计.管理.电商服务的专业服务性企业。</p>
         <p class="u-align-left u-text u-text-default u-text-5 yahei" style='margin-top: 50px; line-height: 40px; margin-bottom:'> <span style='font-weight:bold; font-size: 130%;' class='yahei'>发展历程</span><br><br>
         阶段一：扎根农贸行业 探索成长<br>2001：杭州光影图文设计工作室,创始人开始从事农贸行业。<br>2007：注册杭州光影投资咨询有限公司，公司业务范围扩大至：农贸市场建筑设计，农贸市场策划定位，农贸市场管理培训和顾问。 　　
@@ -89,7 +89,7 @@ include('../N1/header.php');
         <div class="u-expanded-width u-gallery u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/N4/images15016398117777rzgjt.jpeg">
+              <img class="u-back-image u-expanded" SRC="/N4/images/15016398117777rzgjt.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-1">
               <h3 class="u-gallery-heading"></h3>
@@ -98,7 +98,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/N4/images15016397777508vnnig.jpeg">
+              <img class="u-back-image u-expanded" SRC="/N4/images/15016397777508vnnig.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-2">
               <h3 class="u-gallery-heading"></h3>
@@ -107,7 +107,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/N4/images15016397985219k3ne5.jpeg">
+              <img class="u-back-image u-expanded" SRC="/N4/images/15016397985219k3ne5.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-3">
               <h3 class="u-gallery-heading"></h3>
@@ -116,7 +116,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/N4/images1501639833666ic82ym.jpeg">
+              <img class="u-back-image u-expanded" SRC="/N4/images/1501639833666ic82ym.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-4">
               <h3 class="u-gallery-heading"></h3>
@@ -125,7 +125,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/N4/images1501639864100y8wrzy.jpeg">
+              <img class="u-back-image u-expanded" SRC="/1501639864100y8wrzy.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-5">
               <h3 class="u-gallery-heading"></h3>
@@ -134,7 +134,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item">
             <div class="u-back-slide" data-image-width="520" data-image-height="420">
-              <img class="u-back-image u-expanded" SRC="/N4/images1501639848143n6kemd.jpeg">
+              <img class="u-back-image u-expanded" SRC="/N4/images/1501639848143n6kemd.jpeg">
             </div>
             <div class="u-over-slide u-shading u-over-slide-6">
               <h3 class="u-gallery-heading"></h3>
@@ -143,7 +143,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item" data-image-width="733" data-image-height="671">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" SRC="/N4/images20190115110714348.png">
+              <img class="u-back-image u-expanded" SRC="/N4/images/20190115110714348.png">
             </div>
             <div class="u-over-slide u-shading u-over-slide-7">
               <h3 class=" u-gallery-heading"></h3>
@@ -152,7 +152,7 @@ include('../N1/header.php');
           </div>
           <div class="u-effect-fade u-gallery-item" data-image-width="1032" data-image-height="888">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" SRC="/N4/images20190115110714974.png">
+              <img class="u-back-image u-expanded" SRC="/N4/images/20190115110714974.png">
             </div>
             <div class="u-over-slide u-shading u-over-slide-8">
               <h3 class=" u-gallery-heading"></h3>

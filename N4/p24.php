@@ -43,7 +43,7 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img SRC="/N4/imagesp24img.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="562" data-image-height="713">
+                  <img SRC="/N4/images/p24img.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="562" data-image-height="713">
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-4" id="sec-0929">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <img SRC="/N4/images51.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1339" data-image-height="442">
+        <img SRC="/N4/images/51.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1339" data-image-height="442">
       </div>
     </section>
     <section class="u-clearfix u-section-5" id="sec-0f1f">
@@ -73,19 +73,19 @@ include('../N1/header.php');
             <div class="u-layout-row  grid-3">
               <div class="u-align-center u-container-style u-layout-cell u-left-cell u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img SRC="/N4/imageslADPD2eDMzJwVyzNDbTNE2E_4961_3508.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="4961" data-image-height="3508">
+                  <img SRC="/N4/images/lADPD2eDMzJwVyzNDbTNE2E_4961_3508.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="4961" data-image-height="3508">
                   <p class="u-align-center u-text u-text-default u-text-1 yahei" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <img SRC="/N4/images7.png" alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="638" data-image-height="302">
+                  <img SRC="/N4/images/7.png" alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="638" data-image-height="302">
                   <p class="u-align-center u-text u-text-default u-text-2 yahei" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img SRC="/N4/imageslADPD3lGrGpWrZvNDbTNE2E_4961_35081.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="1600" data-image-height="1131">
+                  <img SRC="/N4/images/lADPD3lGrGpWrZvNDbTNE2E_4961_35081.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="1600" data-image-height="1131">
                   <p class="u-align-center u-text u-text-default u-text-3 yahei" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
@@ -97,19 +97,19 @@ include('../N1/header.php');
             <div class="u-layout-row grid-3">
               <div class="u-align-center u-container-style u-layout-cell u-left-cell  u-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
-                  <img SRC="/N4/images9.png" alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="342" data-image-height="206">
+                  <img SRC="/N4/images/9.png" alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="342" data-image-height="206">
                   <p class="u-align-center u-text u-text-default u-text-4 yahei" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell  u-layout-cell-5">
                 <div class="u-container-layout u-container-layout-5">
-                  <img SRC="/N4/images10.png" alt="" class="u-expanded-width u-image u-image-default u-image-5" data-image-width="287" data-image-height="196">
+                  <img SRC="/N4/images/10.png" alt="" class="u-expanded-width u-image u-image-default u-image-5" data-image-width="287" data-image-height="196">
                   <p class="u-align-center u-text u-text-default u-text-5 yahei" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell  u-layout-cell-6">
                 <div class="u-container-layout u-container-layout-6">
-                  <img SRC="/N4/images111.png" alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="636" data-image-height="295">
+                  <img SRC="/N4/images/111.png" alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="636" data-image-height="295">
                   <p class="u-align-center u-text u-text-default u-text-6 yahei" style='width:100%'> 案例名称 </p>
                 </div>
               </div>
