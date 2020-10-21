@@ -501,7 +501,7 @@ while (strlen($temp) > 0) {
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row" style='padding-left: 0px; font-weight:bold; font-size:22px;'>
-              <div style='float: left;    min-width: 100px;    width: 100px;    max-width: 100px;'><?php echo $categoryArr[$row['category']]; ?></div>
+              <div style='float: left;    min-width: 300px;    width: 300px;    max-width: 300px;'><?php echo $categoryArr[$row['category']]; ?></div>
               <div style='margin:0px 0px 0px auto;float:right;display: inline-block;'>
               <button class='btn btn-black' 
                 onclick="goToOtherPage(<?php echo $row['category']; ?>)" 
