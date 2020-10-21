@@ -70,12 +70,12 @@ app.set('port', 8080);
 app.listen(app.get('port'), '0.0.0.0');
 app.use(json({limit: '10mb', extended: true}));
 app.use(urlencoded({limit: '10mb', extended: true}));
-app.post('/workon', (req, res) => {
+app.all('/workon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     setTimeout(() => { callDaemon(); }, 10);
     res.send("success");
 });
-app.post('/isprocessworkon', (req, res) => {
+app.all('/isprocessworkon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     if (checkTimer) res.send("success");
     else res.send("done");
