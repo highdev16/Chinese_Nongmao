@@ -12,8 +12,8 @@
       table.footertable tr td {
         padding-top: 0px !Important; padding-bottom: 0px !Important;
       }
-      div.friendly_links a {
-        width: 11%; 
+      div.friendly_links div  {
+        float: left;
         font-size: 14px;
       }
       @media(max-width: 1000px) {
@@ -47,16 +47,14 @@
         <div class='friendly_links' style='margin-bottom: 40px'>
         	<table style='width:100%'>
           <?php
-              for ($i = 0; $i < sizeof($rows);) { 
-                echo "<tr>";
+              for ($i = 0; $i < sizeof($rows);) {                 
                 for ($k = 0; $k < 9 && $i < sizeof($rows); $k++, $i++) { ?>
-                  <td style='width: 11.1%'>
+                  <div style='width: 11.1%; min-width: 165px'>
                     <a href="<?php echo $rows[$i]['url']; ?>" target='_blank' style='color: white;' class='friend_link'>
                       <?php echo htmlspecialchars($rows[$i]['title']); ?>
                     </a>
-                  </td>
+                  </div>
                 <?php } ?>
-                </tr>
               <?php } ?>
           </table>
         </div>
