@@ -81,9 +81,9 @@ $rows = $db->rawQuery($query);
 <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
   <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px'>
     <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
-    <a href="javascript:void(0)" class="selected-a-button">最新发布</a>
-    <a href="javascript:void(0)" class="unselected-a-button">热点案例</a>
-    <a href="javascript:void(0)" class="unselected-a-button">星级排序</a>
+    <a href="javascript:void(0)" class="selected-a-button" onclick='refreshSorting(1)'>最新发布</a>
+    <a href="javascript:void(0)" class="unselected-a-button" onclick='refreshSorting(2)'>热点案例</a>
+    <a href="javascript:void(0)" class="unselected-a-button" onclick='refreshSorting(3)'>星级排序</a>
   </div>
 </section>
 <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 30px'>
@@ -122,6 +122,9 @@ $rows = $db->rawQuery($query);
     else if (currentCategory == 2)  window.location.href="/jzsj/" + id + ".html";
     else if (currentCategory == 3)  window.location.href="/znsj/" + id + ".html";
     else if (currentCategory == 4)  window.location.href="/nmyy/" + id + ".html";
+  }
+  function refreshSorting(mode) {
+    loadPages(currentCategory, mode, 0);
   }
   function loadPages(category, sort, pageNumber) {
     $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
