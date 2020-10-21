@@ -217,7 +217,7 @@ div.percentage-20 {
         <div class="circles-area u-expanded-width u-gallery u-show-text-always u-gallery-1">
           <div class="u-gallery-item">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/7.jpg">
+              <img class="u-back-image u-expanded" SRC="/N1/images/7.jpg">
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="/N1/p2.php?category=1";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
@@ -226,7 +226,7 @@ div.percentage-20 {
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/c2.jpg">
+              <img class="u-back-image u-expanded" SRC="/N1/images/c2.jpg">
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="/N1/p2.php?category=2";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
@@ -235,7 +235,7 @@ div.percentage-20 {
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/e624cbc5-e96f-6700-5942-f978bb060ac3.jpg">
+              <img class="u-back-image u-expanded" SRC="/N1/images/e624cbc5-e96f-6700-5942-f978bb060ac3.jpg">
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="/N1/p2.php?category=3";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
@@ -244,7 +244,7 @@ div.percentage-20 {
           </div>
           <div class="u-gallery-item">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/5td.jpg">
+              <img class="u-back-image u-expanded" SRC="/N1/images/5td.jpg">
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="/N1/p2.php?category=4";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
@@ -253,7 +253,7 @@ div.percentage-20 {
           </div>
           <div class="u-gallery-item u-gallery-item-5" data-image-width="2000" data-image-height="1333">
             <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/4.jpg">
+              <img class="u-back-image u-expanded" SRC="/N1/images/4.jpg">
             </div>
             <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="/N4/p23.php";'>
               <p class="u-gallery-text circle-text">政府合作</p>
@@ -360,28 +360,28 @@ div.percentage-20 {
 ">
         <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-list-item u-repeater-item u-list-item-1">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
-            <img src="images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
+            <img SRC="/N1/images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
             <h4 class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2" style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>市场入驻</h4>
             <p class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-3">市场入驻免费，提供现场指导培训，免去长达6个月时间培养一个团队打造电商的高额成本</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-2">
-            <img src="images/2_2.png" alt="" class="u-image u-image-default u-image-2" data-image-width="200" data-image-height="200">
+            <img SRC="/N1/images/2_2.png" alt="" class="u-image u-image-default u-image-2" data-image-width="200" data-image-height="200">
             <h4 class="u-text u-text-default u-text-4"style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>商户免费入驻</h4>
             <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-5" >不抽取任何佣金 提供现场指导培训，保证商家会使用互联网销售。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-3">
-            <img src="images/2_3.png" alt="" class="u-image u-image-default u-image-3" data-image-width="200" data-image-height="200">
+            <img SRC="/N1/images/2_3.png" alt="" class="u-image u-image-default u-image-3" data-image-width="200" data-image-height="200">
             <h4 class="u-text u-text-default u-text-6"style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>互联网农贸市场</h4>
             <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-7">线上线下新零售是领导未来农贸市场<br>发展趋势。</p>
           </div>
         </div>
         <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-4">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-4">
-            <img src="images/2_4.png" alt="" class="u-image u-image-default u-image-4" data-image-width="200" data-image-height="200">
+            <img SRC="/N1/images/2_4.png" alt="" class="u-image u-image-default u-image-4" data-image-width="200" data-image-height="200">
             <h4 class="u-text u-text-default u-text-8" style='font-family: "Microsoft Yahei" !important; font-size: 20px; text-decoration: none !important'>先进管理高收益</h4>
             <p class="u-align-center-lg u-align-center-xl u-text u-text-default u-text-9" >智能高效管理系统，让你省时省力高收益。</p>
           </div>
@@ -422,7 +422,7 @@ div.percentage-20 {
                       <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
                       <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
                       <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
-                      <img src="images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 0 1 auto; -webkit-flex: 0 1 auto; display:block'>
+                      <img SRC="/N1/images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 0 1 auto; -webkit-flex: 0 1 auto; display:block'>
                     </div>
                   </div>
                 </div>
@@ -541,7 +541,7 @@ div.percentage-20 {
     </section>
     <section class="u-align-center u-clearfix u-section-10" id="sec-4b7e">
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px'>
-        <!-- <img src="images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
+        <!-- <img SRC="/N1/images/parnter-background.png" alt="" class="u-image u-image-default u-image-1" data-image-width="393" data-image-height="77"> -->
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>PARTNER</h1>
         <h2 class="u-text u-text-2 yahei" style='font-size: 36px; line-height: 50px'>合作伙伴</h2>
         <div class="u-expanded-width u-gallery u-lightbox u-show-text-on-hover u-gallery-1 partner-area" style=' height: auto; padding-bottom: 60px; margin-top: 50px'>
