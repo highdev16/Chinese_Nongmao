@@ -104,9 +104,9 @@ include('header.php');
   function refreshSorting(mode) {
     loadPages(currentCategory, mode, 0);
   }
-  console.log($.jqPaginator);
+  var pageFunc = ($.jqPaginator);
   function refreshPaginator(totalCount, pageNumber, sort) {
-    $.jqPaginator('#pagination1', {
+    pageFunc('#pagination1', {
       totalPages: Math.ceil(totalCount / 15),
       visiblePages: 10,
       edges: 3,
@@ -174,7 +174,18 @@ include('header.php');
       alert("失败！");
     })
   }    
-  
+  $(document).ready(function() {
+    if (window.location.href.includes("/zxsj")) currentCategory = 1;
+    else if (window.location.href.includes("/jzsj")) currentCategory = 2;
+    else if (window.location.href.includes("/znsj")) currentCategory = 3;
+    else if (window.location.href.includes("/nmyy")) currentCategory = 4;
+    else {
+      let cIndex = window.location.href.indexOf("category=");
+      if (cIndex == -1) { window.location.href = '/'; return; }
+      currentCategory = parseInt(window.location.href.substr(cIndex+9));
+    }
+    loadPages(currentCategory, 1, 0);
+  });    
 </script>
 <?php
 include('../N1/footer.php');
