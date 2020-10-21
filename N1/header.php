@@ -165,6 +165,7 @@ $oname = $oname[0];
       .active1 {
           border-width: 0px !important;
           border-color: #ff6500 !important;
+          color: #ff6500 !important;
       }
       .active-submenu {
           color: #ff6500 !important;
