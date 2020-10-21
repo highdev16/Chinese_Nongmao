@@ -65,7 +65,6 @@ function callDaemon() {
 
 function processFiles(domain) {
     scrapeFile(domain, "/N1/p1.php", "/index.html");  //should start path with '/'
-    scrapeFile(domain, "/N1/")
 }
 
 app.set('port', 8090);
