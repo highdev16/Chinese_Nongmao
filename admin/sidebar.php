@@ -49,6 +49,11 @@
 	              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">关键词管理</span>
 	            </a>
 			</li>
+			<li class="sidebar-item <?php if ($ACTIVE == 6) echo 'active'; ?>">
+				<a class="sidebar-link" href="index5.php">
+	              <i class="align-middle" data-feather="refresh-ccw"></i> <span class="align-middle" style='color: yellow; font-weight: bold'>重新生成页面</span>
+	            </a>
+			</li>
 			<!-- <li class="sidebar-item">
 				<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
               		<i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>

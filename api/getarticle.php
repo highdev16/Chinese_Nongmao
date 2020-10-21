@@ -1,8 +1,7 @@
 <?php
 include('../N1/dbconfig.php');
 $db = getDbInstance();
-if (!isset($_REQUEST['r'])) {
-  header('location: /N1/p1.php');
+if (!isset($_REQUEST['r'])) {  
   exit;
 }
 $caseIndex = intval($_REQUEST['r']);
