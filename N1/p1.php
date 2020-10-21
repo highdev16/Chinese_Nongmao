@@ -21,7 +21,7 @@ div.percentage-20 {
             $flag++;
         ?>
         <div class="<?php echo $flag !== 1? "" : "u-active"; ?> u-align-left u-carousel-item u-clearfix u-image u-section-1-<?php echo $flag; ?>">
-          <img src='/banners/<?php echo $image['image']; ?>' style='height: 100%; width: 100%;'>
+          <img src='/banners/<?php echo $image['image']; ?>' style='height: 500px; width: 100%;'>
           <div class="u-clearfix u-sheet u-sheet-1"></div>
         </div>
         <?php } ?>
