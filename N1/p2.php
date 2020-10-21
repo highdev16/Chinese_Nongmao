@@ -105,7 +105,7 @@ include('header.php');
     loadPages(currentCategory, mode, 0);
   }
   var pageControl = $.jqPaginator('#pagination1', {
-    totalPages: 10
+    totalPages: 10,
     visiblePages: 10,
     edges: 3,
     currentPage: 1,
