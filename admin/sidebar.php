@@ -56,10 +56,10 @@
 			</li>
 			<script>
 				function confirmRegeneratePages() {
-					if (!confirm("您确定要重新生成所有页面和静态URL吗?")) return;
-					$.post("//gggyyy.cn:8090", function(a,b) {
+					if (!confirm("您确定要重新生成所有页面和静态URL吗? (这需要一段时间。)")) return;
+					$.post("//gggyyy.cn:8090/workon", function(a,b) {
 						if (a == 'success' && b == 'success') {
-							alert("成功！ 这需要一段时间。");
+							alert("成功！ 请等待一段时间（最多一个小时）。");
 						} else {
 							alert("失败！ 无法继续您的请求。 与开发人员联系以解决此问题。");
 						}
@@ -67,21 +67,7 @@
 						alert("失败！ 无法继续您的请求。");
 					})
 				}
-			</script>
-			<!-- <li class="sidebar-item">
-				<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
-              		<i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
-            	</a>
-				<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-alerts.html">Alerts</a></li>
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-buttons.html">Buttons</a></li>
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>
-					<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>
-				</ul>
-			</li> -->
+			</script>			
 		</ul>
 	</div>
 </nav>

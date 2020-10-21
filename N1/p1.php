@@ -40,7 +40,7 @@ div.percentage-20 {
         <span class="sr-only">Next</span>
       </a>
     </section>
-    <script src='../js/js/all.js'></script>
+    <script src='/js/js/all.js'></script>
     <section class="u-clearfix u-section-2" id="sec-4fe7">
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="features-area u-expanded-width u-list u-repeater u-list-1">
@@ -203,7 +203,7 @@ div.percentage-20 {
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>
-                <a href="../N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
 
 
@@ -255,7 +255,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" src="images/4.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="../N4/p23.php";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="/N4/p23.php";'>
               <p class="u-gallery-text circle-text">政府合作</p>
             </div>
           </div>

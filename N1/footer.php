@@ -60,7 +60,7 @@
       </table>
           </div>
           
-        <img src="../N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
+        <img src="/N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
         <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2">
           <table class="u-table-entity footertable">
             <colgroup>

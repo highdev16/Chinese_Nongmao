@@ -17,15 +17,15 @@ $oname = $oname[0];
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title><?php echo $bigTitle; ?></title>
     <?php
-        echo '<link rel="stylesheet" href="../N1/p2.css" media="screen">';
+        echo '<link rel="stylesheet" href="/N1/p2.css" media="screen">';
     ?>
-    <link rel="stylesheet" href="../N1/nicepage.css" media="screen">
-    <link rel="stylesheet" href="../N1/images/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" href="/N1/nicepage.css" media="screen">
+    <link rel="stylesheet" href="/N1/images/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="..<?php echo $oname; ?>.css" media="screen">
-    <script src="../js/jquery1.js"></script>
+    <script src="/js/jquery1.js"></script>
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <link id="u-theme-google-font" rel="stylesheet" href="../css/googleapifont.css">
+    <link id="u-theme-google-font" rel="stylesheet" href="/css/googleapifont.css">
     <meta property="og:title" content="<?php echo $bigTitle; ?>">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
