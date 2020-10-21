@@ -66,8 +66,8 @@ function processFiles(domain) {
     urlList.push(["/N2/p10.php", "/yyms.html"]);
     urlList.push(["/N2/p11.php", "/nmyy/nmzs.html"]);
     urlList.push(["/N2/p12.php", "/nmyy/nmds.html"]);
-    urlList.push(["/N2/p13.php", "/nmyy/nmzht.html"]);
-    urlList.push(["/N2/p14.php", "/nmyy/cyjj.html"]);
+    urlList.push(["/N3/p13.php", "/nmyy/nmzht.html"]);
+    urlList.push(["/N3/p14.php", "/nmyy/cyjj.html"]);
     urlList.push(["/N3/p17.php", "/zn/znsb.html"]);
     urlList.push(["/N3/p18.php", "/zn/znrj.html"]);
     urlList.push(["/N3/p19.php", "/zn/csyy.html"]);

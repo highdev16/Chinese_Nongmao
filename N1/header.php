@@ -362,31 +362,31 @@ $oname = $oname[0];
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:800px">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-10 u-size-20-md u-layout-cell-1" my-href="/N2/p10.php">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-10 u-size-20-md u-layout-cell-1" my-href="/yyms.html">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">农贸运营模式</p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-2" my-href="/N2/p11.php">
+              <div class="u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-2" my-href="/nmyy/nmzs.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">农贸市场招商</p>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-3" my-href="/N2/p12.php">
+              <div class="u-align-left u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-3" my-href="/nmyy/nmds.html">
                 <div class="u-container-layout u-container-layout-3">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">农贸市场电商</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-4" my-href="/N3/p13.php">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-4" my-href="/nmyy/nmzht.html">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">农贸综合体</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" my-href="/N3/p14.php">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" my-href="/nmyy/cyjj.html">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-5">
                   <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 菜原佳佳加盟 </p>
@@ -408,19 +408,19 @@ $oname = $oname[0];
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" my-href="/N3/p17.php">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" my-href="/zn/znsb.html">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">5G智能设备</p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" my-href="/N3/p18.php">
+              <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" my-href="/zn/znrj.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">智能软件</p>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" my-href="/N3/p19.php">
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" my-href="/zn/csyy.html">
                 <div class="u-container-layout u-container-layout-3">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">智能城市应用</p>
@@ -442,25 +442,25 @@ $oname = $oname[0];
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" my-href="/N4/p21.php">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" my-href="/tz.html">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">我要投资农贸</p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" my-href="/N4/p22.php">
+              <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" my-href="/rz.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">我有农贸项目</p>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" my-href="/N4/p23.php">
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" my-href="/zhengfu.html">
                 <div class="u-container-layout u-container-layout-3">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">政府投资合作</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" my-href="/N4/p24.php">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" my-href="/gyzy.html">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">建设光影置业</p>
@@ -510,19 +510,19 @@ $oname = $oname[0];
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1" my-href="/N4/p34.php">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1" my-href="/about/certify.html">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">公司简介</p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2" my-href="/N5/p35.php">
+              <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2" my-href="/about/contact.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">团队</p>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-3" my-href="/N5/p36.php">
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-3" my-href="/about/index.html">
                 <div class="u-container-layout u-container-layout-3">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">联系我们</p>

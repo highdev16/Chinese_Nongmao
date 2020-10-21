@@ -255,7 +255,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/4.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="/N4/p23.php";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="/zhengfu.html";'>
               <p class="u-gallery-text circle-text">政府合作</p>
             </div>
           </div>
