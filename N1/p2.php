@@ -104,15 +104,18 @@ include('header.php');
   function refreshSorting(mode) {
     loadPages(currentCategory, mode, 0);
   }
-  var pageControl = $.jqPaginator('#pagination1', {
-    totalPages: 10,
-    visiblePages: 10,
-    edges: 3,
-    currentPage: 1,
-    onPageChange: function (num, type) {
-      
-    }
-  });
+  function refreshPaginator(totalCount, pageNumber, sort) {
+    $.jqPaginator('#pagination1', {
+      totalPages: Math.ceil(totalCount / 15),
+      visiblePages: 10,
+      edges: 3,
+      currentPage: pageNumber + 1,
+      onPageChange: function (num, type) {
+        if (num - 1 == pageNumber) return;
+        loadPages(category, sort, num - 1);
+      }
+    });
+  }  
   function loadPages(category, sort, pageNumber) {
     $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
       if (b != 'success') return;
@@ -121,6 +124,7 @@ include('header.php');
       
       let htmlString = "";
       let rows = data.items;
+      refreshPaginator(rows.length, pageNumber, sort);
       for (let i = 0; i < rows.length; i++) {             
         let row = rows[i];
         let r = row['content'].indexOf('<img');
