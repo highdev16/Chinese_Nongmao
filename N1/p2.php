@@ -104,20 +104,20 @@ include('header.php');
   function refreshSorting(mode) {
     loadPages(currentCategory, mode, 0);
   }
-  $.jqPaginator('#pagination1', {
-        totalPages: 10,
-        visiblePages: 10,
-        edges: 3,
-        currentPage: 1,
-        onPageChange: function (num, type) {
-          
-        }
-      });
   function loadPages(category, sort, pageNumber) {
     $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
       if (b != 'success') return;
       if (!data || data.result != 'success') return;
-      
+      $.jqPaginator('#pagination1', {
+        totalPages: Math.ceil(data.length / 15),
+        visiblePages: 10,
+        edges: 3,
+        currentPage: pageNumber + 1,
+        onPageChange: function (num, type) {
+          if (num - 1 == pageNumber) return;
+          loadPages(category, sort, num - 1);
+        }
+      });
       let htmlString = "";
       let rows = data.items;
       for (let i = 0; i < rows.length; i++) {             
@@ -144,7 +144,7 @@ include('header.php');
             <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;` + row['name'] + `</div>
           <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>`;
 
-        for (let j = 0; j < Number($row['stars']); j++) 
+        for (let j = 0; j < Number(row['stars']); j++) 
           htmlString += "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
         
         htmlString += `<div style='float:left; min-width:20px; min-height: 30px;'></div>
