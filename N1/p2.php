@@ -108,16 +108,19 @@ include('header.php');
     $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
       if (b != 'success') return;
       if (!data || data.result != 'success') return;
-      global.$.jqPaginator('#pagination1', {
-        totalPages: Math.ceil(data.length / 15),
-        visiblePages: 10,
-        edges: 3,
-        currentPage: pageNumber + 1,
-        onPageChange: function (num, type) {
-          if (num - 1 == pageNumber) return;
-          loadPages(category, sort, num - 1);
-        }
-      });
+      (function($) {
+        $.jqPaginator('#pagination1', {
+          totalPages: Math.ceil(data.length / 15),
+          visiblePages: 10,
+          edges: 3,
+          currentPage: pageNumber + 1,
+          onPageChange: function (num, type) {
+            if (num - 1 == pageNumber) return;
+            loadPages(category, sort, num - 1);
+          }
+        });
+      })(jQuery);
+      
       let htmlString = "";
       let rows = data.items;
       for (let i = 0; i < rows.length; i++) {             
