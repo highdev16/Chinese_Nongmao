@@ -134,10 +134,23 @@ while (strlen($temp) > 0) {
     margin: 13px 13px 0;
 }
 </style>
+    <script>
+      function getCategoryPath(category) {
+        if (category == 4) {
+          return '/nmyy/';
+        } else if (category == 3) {
+          return '/znsj';
+        } else if (category == 2) {
+          return '/jzsj';
+        } else if (category == 1) {
+          return '/zxsj';
+        }
+      }
+    </script>
     <section class="u-clearfix u-section-2" id="sec-9ff4">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-custom-font u-text u-text-default u-text-1"> 所在位置／<span style="cursor:pointer" onclick="window.location.href='/';">首页</span>／
-        <span style="cursor:pointer" onclick="window.location.href='/N1/p2<?php echo $row['category'] == 4 ? 0 : ''; ?>.php?category=<?php echo $row['category']; ?>';">
+        <span style="cursor:pointer" onclick="window.location.href=getCategoryPath(<?php echo $row['category']; ?>);">
         <?php echo $categoryArr[$row['category']]; ?></span>／<?php echo htmlspecialchars($row['name']); ?> </p>
       </div>
     </section>
