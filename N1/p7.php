@@ -173,7 +173,7 @@ while (strlen($temp) > 0) {
                               ?>
                             </div>
                           </td>
-                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell arrowcell"><div class="next preNext" onclick='moveLeft(1);'></div><img onclick='moveLeft(1);' src='../images/angle-right-solid.svg'></td>
+                          <td class="u-border-1 u-border-grey-dark-1 u-table-cell arrowcell"><div class="next preNext" onclick='moveLeft(1);'></div><img onclick='moveLeft(1);' src='/images/angle-right-solid.svg'></td>
                         </tr>
                       </tbody>
                     </table>
@@ -183,7 +183,7 @@ while (strlen($temp) > 0) {
                     <table class="u-table-entity" style='width:100%;'>
                       <thead class="u-table-header">
                         <tr style="height: 46px;">
-                          <th class="u-table-cell" colspan='3'><img src='../img/1.svg' style='width: 25px; height: 25px; float:left; margin-right: 10px'> <div style='float:left'>案例信息</div></th>
+                          <th class="u-table-cell" colspan='3'><img src='/img/1.svg' style='width: 25px; height: 25px; float:left; margin-right: 10px'> <div style='float:left'>案例信息</div></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -226,7 +226,7 @@ while (strlen($temp) > 0) {
                       </colgroup>
                       <thead class="u-table-header">
                         <tr style="height: 47px;">
-                          <th class="u-table-cell" colspan='3'><img src='../img/1.svg' style='width: 25px; height: 25px; float:left; margin-right: 10px'> <div style='float:left'>案例信息</div></th>
+                          <th class="u-table-cell" colspan='3'><img src='/img/1.svg' style='width: 25px; height: 25px; float:left; margin-right: 10px'> <div style='float:left'>案例信息</div></th>
                           <th class="u-table-cell"></th>
                           <th class="u-table-cell"></th>
                           <th class="u-table-cell"></th>
