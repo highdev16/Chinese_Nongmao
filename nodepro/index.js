@@ -1,10 +1,9 @@
-import express from 'express';
+var express = require('express');
 const app = express();
-import { writeFile } from 'fs';
-import { json, urlencoded } from 'body-parser';
-import rp from 'request-promise';
-import { createPool } from 'mysql';
-import { domain } from 'process';
+var { writeFile } = require('fs');
+var { json, urlencoded } = require('body-parser');
+var rp = require('request-promise');
+var { createPool } = require('mysql');
 var pool = createPool({
     connectionLimit : 100,
     host     : '127.0.0.1',
