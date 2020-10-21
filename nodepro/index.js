@@ -13,6 +13,8 @@ var pool = createPool({
 });
 
 var filesInProgress, checkTimer, logFile, isProgressing;
+var processTimer;
+
 function CheckLocalhost(callback) {
     rp("http://localhost/mymymymymy.html").then(function(html){ 
         if (html == 'gggyyy') callback ("localhost");
@@ -39,8 +41,10 @@ function callDaemon() {
     if (checkTimer) {
         writeFile(logFile,"-------- Daemon restarted " + new Date().toLocaleString() + "--------\n", {flag: 'a'}, ()=>{});          
         clearInterval(checkTimer);
-        checkTimer = 0;      
+        checkTimer = 0;            
     }   
+    clearInterval(processTimer);  
+
     filesInProgress = 0;
     isProgressing = 1;
     CheckLocalhost(function(domain) {            
@@ -48,26 +52,30 @@ function callDaemon() {
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
                 + make2(new Date().getMinutes()) + "-" + make2(new Date().getSeconds()) + ".txt";
             writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",{flag: 'a'}, ()=>{});    
-
-            checkTimer = setInterval(function() {
-                if (checkTimer && isProgressing && filesInProgress == 0) {
-                    writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
-                    clearInterval(checkTimer);
-                    checkTimer = 0;      
-                    isProgressing = 0;
-                }
-            }, 5000);
             processFiles(domain);
         }, 10000);    
     })  
 }
 
 function processFiles(domain) {
-    scrapeFile(domain, "/N1/p1.php", "/index.html");  //should start path with '/'
-    scrapeFile(domain, "/N1/p5.php", "/sj/sjhz.html"); 
-    scrapeFile(domain, "/N1/p6.php", "/sj/zfhz.html");
-    scrapeFile(domain, "/N5/p37.php", "/sj/nmscdw.html");
+    var urlList = [];
+    urlList.push(["/N1/p1.php", "/index.html"]); //should start path with '/'
+    urlList.push(["/N1/p5.php", "/sj/sjhz.html"]);
+    urlList.push(["/N1/p6.php", "/sj/zfhz.html"]);
+    urlList.push(["/N5/p37.php", "/sj/nmscdw.html"]);
 
+    var urlIndex = 0;
+    processTimer = setInterval(function() {
+        scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
+        if (++urlIndex == urlList.length) {
+            clearInterval(processTimer);
+            writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+            clearInterval(checkTimer);
+            checkTimer = 0;      
+            isProgressing = 0;
+            processTimer = 0;
+        }        
+    }, 1000);    
 }
 
 app.set('port', 8080);
