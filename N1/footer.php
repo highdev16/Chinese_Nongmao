@@ -49,10 +49,11 @@
           <?php
               for ($i = 0; $i < sizeof($rows);) { echo "<tr>";
                 for ($k = 0; $k < 9 && $i < sizeof($rows); $k++, $i++) { ?>
-                  <td>
-                  <a href="<?php echo $rows[$i]['url']; ?>" target='_blank' style='color: white;' class='friend_link'>
-                    <?php echo htmlspecialchars($rows[$i]['title']); ?>
-                  </a></td>
+                  <td style='width: 11.1%'>
+                    <a href="<?php echo $rows[$i]['url']; ?>" target='_blank' style='color: white;' class='friend_link'>
+                      <?php echo htmlspecialchars($rows[$i]['title']); ?>
+                    </a>
+                  </td>
                 <?php } ?>
                 </tr>
               <?php } ?>
