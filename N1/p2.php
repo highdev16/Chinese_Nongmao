@@ -104,12 +104,8 @@ include('header.php');
   function refreshSorting(mode) {
     loadPages(currentCategory, mode, 0);
   }
-  function loadPages(category, sort, pageNumber) {
-    $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
-      if (b != 'success') return;
-      if (!data || data.result != 'success') return;
-      $.jqPaginator('#pagination1', {
-        totalPages: Math.ceil(data.length / 15),
+  $.jqPaginator('#pagination1', {
+        totalPages: 10,
         visiblePages: 10,
         edges: 3,
         currentPage: pageNumber + 1,
@@ -118,6 +114,11 @@ include('header.php');
           loadPages(category, sort, num - 1);
         }
       });
+  function loadPages(category, sort, pageNumber) {
+    $.post('/api/getpieces.php', {category, sort, pageNumber}, function(data,b) {
+      if (b != 'success') return;
+      if (!data || data.result != 'success') return;
+      
       let htmlString = "";
       let rows = data.items;
       for (let i = 0; i < rows.length; i++) {             
