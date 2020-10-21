@@ -16,5 +16,5 @@ switch ($mode) {
 }
 $rows = $db->rawQuery($query);
 
-echo json_encode(array('result' => 'success', 'length' => $pageTotal, 'items' => $rows'))
+echo json_encode(array('result' => 'success', 'length' => $pageTotal, 'items' => $rows));
   
