@@ -14,6 +14,7 @@
       }
       div.friendly_links a {
         width: 11%; float:left;
+        font-size:
       }
       @media(max-width: 1000px) {
         div.friendly_links a {
@@ -45,20 +46,18 @@
         <h3 class="u-text u-text-default u-text-1"  style='margin-bottom: 20px; '>友情链接:</h3>
         <div class='friendly_links' style='margin-bottom: 40px'>
         	<table style='width:100%'>
-        <?php
-          for ($i = 0; $i < sizeof($rows);) { ?>
-            <!-- <tr style="height: 33px;"> -->
-              <?php 
+          <?php
+              for ($i = 0; $i < sizeof($rows);) { echo "<tr>";
                 for ($k = 0; $k < 9 && $i < sizeof($rows); $k++, $i++) { ?>
-                
-                <a href="<?php echo $rows[$i]['url']; ?>" target='_blank' style='color: white;' class='friend_link'>
-                  <?php echo htmlspecialchars($rows[$i]['title']); ?>
-                </a>
+                  <td>
+                  <a href="<?php echo $rows[$i]['url']; ?>" target='_blank' style='color: white;' class='friend_link'>
+                    <?php echo htmlspecialchars($rows[$i]['title']); ?>
+                  </a></td>
                 <?php } ?>
-            </tr>
-          <?php } ?>
-      </table>
-          </div>
+                </tr>
+              <?php } ?>
+          </table>
+        </div>
           
         <img src="/N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
         <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2">
