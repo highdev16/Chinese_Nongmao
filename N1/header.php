@@ -320,37 +320,37 @@ $oname = $oname[0];
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-10 u-size-20-md u-layout-cell-1" data-href="/N1/p2.php?category=1">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-1" src="images/books.png">
+                  <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">农贸市场设计案例</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-2" data-href="/N1/p2.php?category=2">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
-                  <img src="images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                  <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">农贸建筑设计</p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-3" data-href="/N1/p2.php?category=3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">5G智能设计</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-4" data-href="/N1/p5.php">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
-                  <img src="images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                  <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">设计合作流程</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" data-href="/N1/p6.php">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-5">
-                  <img src="images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
+                  <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5">城市智慧菜场建设</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" data-href="/N5/p37.php">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-5">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5">农贸市场定位策划</p>
                 </div>
               </div>
@@ -366,37 +366,37 @@ $oname = $oname[0];
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-10 u-size-20-md u-layout-cell-1" data-href="/N2/p10.php">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-1" src="images/books.png">
+                  <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">农贸运营模式</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-2" data-href="/N2/p11.php">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
-                  <img src="images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                  <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">农贸市场招商</p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-10 u-size-20-md u-layout-cell-3" data-href="/N2/p12.php">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">农贸市场电商</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-4" data-href="/N3/p13.php">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
-                  <img src="images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                  <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">农贸综合体</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" data-href="/N3/p14.php">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-5">
-                  <img src="images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
+                  <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 菜原佳佳加盟 </p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-6" data-href="/N1/p2.php?category=4">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-5">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 农贸运营案例 </p>
                 </div>
               </div>
@@ -412,25 +412,25 @@ $oname = $oname[0];
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" data-href="/N3/p17.php">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-1" src="images/books.png">
+                  <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">5G智能设备</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" data-href="/N3/p18.php">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
-                  <img src="images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                  <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">智能软件</p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" data-href="/N3/p19.php">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">智能城市应用</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" data-href="/N1/p20.php?category=3">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
-                  <img src="images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                  <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">5G智能设计</p>
                 </div>
               </div>
@@ -446,25 +446,25 @@ $oname = $oname[0];
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" data-href="/N4/p21.php">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-1" src="images/books.png">
+                  <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">我要投资农贸</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" data-href="/N4/p22.php">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
-                  <img src="images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                  <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">我有农贸项目</p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" data-href="/N4/p23.php">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">政府投资合作</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" data-href="/N4/p24.php">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
-                  <img src="images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                  <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">建设光影置业</p>
                 </div>
               </div>
@@ -480,25 +480,25 @@ $oname = $oname[0];
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-size-20-md u-layout-cell-1" data-href="/N1/p25.php?category=1">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-1" src="images/books.png">
+                  <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">农贸设计百科</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" data-href="/N1/p25.php?category=2">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
-                  <img src="images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                  <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">农贸新闻资讯</p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-3" data-href="/N1/p25.php?category=3">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">光影新闻动态</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" data-href="/N1/p25.php?category=4">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
-                  <img src="images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
+                  <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">政府政策文件</p>
                 </div>
               </div>
@@ -514,19 +514,19 @@ $oname = $oname[0];
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1" data-href="/N4/p34.php">
                 <div class="u-container-layout u-valign-middle-lg u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-1" src="images/books.png">
+                  <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">公司简介</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2" data-href="/N5/p35.php">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
-                  <img src="images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
+                  <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">团队</p>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-3" data-href="/N5/p36.php">
                 <div class="u-container-layout u-container-layout-3">
-                  <img src="images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">联系我们</p>
                 </div>
               </div>
