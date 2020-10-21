@@ -87,7 +87,9 @@
 
 @media (max-width: 1199px){ .u-section-3 .u-text-2 {width: 180px; height: 52px} }
 
-@media (max-width: 575px){ .u-section-3 .u-text-1 {width: 340px} }.u-section-4 .u-sheet-1 {min-height: 400px}.u-section-5 .u-image-1 {min-height: 500px; background-image: url("images/ScreenShot2020-08-17at8.11.35AM.png"); background-position: 50% 50%}.u-section-6 .u-sheet-1 {min-height: 6366px}
+@media (max-width: 575px){ .u-section-3 .u-text-1 {width: 340px} }.u-section-4 .u-sheet-1 {min-height: 400px}
+.u-section-5 .u-image-1 {min-height: 500px; background-position: 50% 50%}
+.u-section-6 .u-sheet-1 {min-height: 6366px}
 .u-section-6 .u-image-1 {width: 751px; height: 6290px; object-position: 50% 0%; margin: 16px auto 60px} 
 
 @media (max-width: 991px){ .u-section-6 .u-sheet-1 {min-height: 6106px}
