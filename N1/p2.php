@@ -199,7 +199,7 @@ $rows = $db->rawQuery($query);
       if (cIndex == -1) { window.location.href = '/'; return; }
       currentCategory = parseInt(window.location.href.substr(cIndex+9));
     }
-    loadPages(currentCategory, 0, 0);
+    loadPages(currentCategory, 1, 0);
   });
   
   if (<?php echo $pageTotal; ?> > 0) {
