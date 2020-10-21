@@ -192,7 +192,7 @@ $oname = $oname[0];
                   <p class="u-align-center u-text u-text-3">智能城市应用</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" my-href="/nmyy/">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" my-href="/znsj/">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">5G智能设计</p>
@@ -288,7 +288,7 @@ $oname = $oname[0];
                   <p class="u-align-center u-text u-text-2">团队</p>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-3" my-href="/about/index.html">
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-3" my-href="/about/">
                 <div class="u-container-layout u-container-layout-3">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">联系我们</p>

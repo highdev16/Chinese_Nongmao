@@ -6,6 +6,9 @@
       } else $rows = $db->rawQuery("select * from links");
     ?>
     <style>
+      .friend_link, table.footertable tr:not(:first-child) td{
+        color: #999999 !important;
+      }
       table.footertable tr{
         height: 30px !Important;
       }
