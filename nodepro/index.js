@@ -84,6 +84,10 @@ function processFiles(domain) {
     urlList.push(["/N4/p34.php", "/about/certify.html"]);
     urlList.push(["/N5/p35.php", "/about/contact.html"]);
     urlList.push(["/N5/p36.php", "/about/index.html"]);
+    urlList.push(["/N1/p2.php?category=1", "/zxsj/index.html"]);
+    urlList.push(["/N1/p2.php?category=2", "/jzsj/index.html"]);
+    urlList.push(["/N1/p2.php?category=3", "/znsj/index.html"]);
+    urlList.push(["/N1/p20.php?category=4", "/nmyy/index.html"]);
 
 
     urlIndex = 0;

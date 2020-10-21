@@ -131,35 +131,31 @@ $rows = $db->rawQuery($query);
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>              
                 <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
-              </div>
-              
-              
+              </div>              
             </div>
           </div> 
           <?php if ($i % 3 == 2) echo "</div>"; } if (sizeof($rows) % 3 == 2) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  ?>
       </div>
     </section>
     <section class='class="u-align-center u-clearfix u-section-3'>
-    <div class="u-clearfix u-sheet u-sheet-1" style="min-height: 10px; margin-bottom: 100px; text-align:center">
-    <ul class="pagination" id="pagination1"></ul>
+      <div class="u-clearfix u-sheet u-sheet-1" style="min-height: 10px; margin-bottom: 100px; text-align:center">
+      <ul class="pagination" id="pagination1"></ul>
     </div>
     </section>
     <script src='/js/jspaginator.js'></script>
     <script>
-     if (<?php echo $pageTotal; ?> > 0)
-      $.jqPaginator('#pagination1', {
-        totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
-        visiblePages: 10,
-        edges: 3,
-        currentPage: <?php echo $pageIndex; ?> + 1,
-        onPageChange: function (num, type) {
-          if (num - 1 == <?php echo $pageIndex; ?>) return;
-            window.location.href = 'p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
-        }
-    });
-    $(document).ready(function() {
-      
-    })
+      if (<?php echo $pageTotal; ?> > 0) {
+        $.jqPaginator('#pagination1', {
+          totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
+          visiblePages: 10,
+          edges: 3,
+          currentPage: <?php echo $pageIndex; ?> + 1,
+          onPageChange: function (num, type) {
+            if (num - 1 == <?php echo $pageIndex; ?>) return;
+              window.location.href = 'p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
+          }
+        });
+      }
     </script>
 <?php
 include('../N1/footer.php');

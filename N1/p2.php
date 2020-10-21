@@ -69,6 +69,15 @@ $rows = $db->rawQuery($query);
   .u-section-3 .u-text-6 {
     margin: 13px 13px 0;
 }
+  .image-cell {
+    float:left;
+    width: 30%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 20px;
+    overflow:hidden;
+    min-width: 300px;
+  }
 </style>
 <script src='/js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
@@ -123,32 +132,30 @@ $rows = $db->rawQuery($query);
                 </div>              
                 <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
-              
-              
             </div>
           </div> 
           <?php if ($i % 3 == 2) echo "</div>"; } if (sizeof($rows) % 3 == 2) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  ?>
       </div>
     </section>
     <section class='class="u-align-center u-clearfix u-section-3'>
-    <div class="u-clearfix u-sheet u-sheet-1" style="min-height: 10px; margin-bottom: 100px; text-align:center">
-    <ul class="pagination" id="pagination1"></ul>
+      <div class="u-clearfix u-sheet u-sheet-1" style="min-height: 10px; margin-bottom: 100px; text-align:center">
+      <ul class="pagination" id="pagination1"></ul>
     </div>
     </section>
     <script src='/js/jspaginator.js'></script>
     <script>
       if (<?php echo $pageTotal; ?> > 0) {
-            $.jqPaginator('#pagination1', {
-              totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
-              visiblePages: 10,
-              edges: 3,
-              currentPage: <?php echo $pageIndex; ?> + 1,
-              onPageChange: function (num, type) {
-                if (num - 1 == <?php echo $pageIndex; ?>) return;
-                  window.location.href = '/sj/c<?php echo $_REQUEST['category']; ?>_<?php echo $mode; ?>_' + num + ".html";
-              }
-          });
-      };    
+        $.jqPaginator('#pagination1', {
+          totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
+          visiblePages: 10,
+          edges: 3,
+          currentPage: <?php echo $pageIndex; ?> + 1,
+          onPageChange: function (num, type) {
+            if (num - 1 == <?php echo $pageIndex; ?>) return;
+              window.location.href = '/sj/c<?php echo $_REQUEST['category']; ?>_<?php echo $mode; ?>_' + num + ".html";
+          }
+        });
+      }      
     </script>
 <?php
 include('../N1/footer.php');
