@@ -110,8 +110,7 @@ include('header.php');
     edges: 3,
     currentPage: 1,
     onPageChange: function (num, type) {
-      if (num - 1 == pageNumber) return;
-      loadPages(category, sort, num - 1);
+      
     }
   });
   function loadPages(category, sort, pageNumber) {
