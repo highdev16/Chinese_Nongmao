@@ -66,7 +66,7 @@ function processFiles(domain) {
     scrapeFile(domain, "/N1/p1.php", "/index.html");  //should start path with '/'
 }
 
-app.set('port', 8090);
+app.set('port', 8080);
 app.listen(app.get('port'));
 app.use(json({limit: '10mb', extended: true}));
 app.use(urlencoded({limit: '10mb', extended: true}));
