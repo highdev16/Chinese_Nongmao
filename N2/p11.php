@@ -86,7 +86,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-2" id="sec-f0db">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-expand-resize u-image u-image-1" SRC="/N2/imagesafccb8e4-01ca-fa31-9e5b-fdbed9b132d4.jpg">
+        <img class="u-expand-resize u-image u-image-1" SRC="/N2/images/afccb8e4-01ca-fa31-9e5b-fdbed9b132d4.jpg">
         <div class="u-container-style u-group u-group-1">
           <div class="u-container-layout u-container-layout-1"></div>
         </div>

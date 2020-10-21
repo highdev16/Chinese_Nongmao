@@ -63,6 +63,19 @@ function processFiles(domain) {
     urlList.push(["/N1/p5.php", "/sj/sjhz.html"]);
     urlList.push(["/N1/p6.php", "/sj/zfhz.html"]);
     urlList.push(["/N5/p37.php", "/sj/nmscdw.html"]);
+    urlList.push(["/N2/p10.php", "/yyms.html"]);
+    urlList.push(["/N2/p11.php", "/nmyy/nmzs.html"]);
+    urlList.push(["/N2/p12.php", "/nmyy/nmds.html"]);
+    urlList.push(["/N2/p13.php", "/nmyy/nmzht.html"]);
+    urlList.push(["/N2/p14.php", "/nmyy/cyjj.html"]);
+    urlList.push(["/N3/p17.php", "/zn/znsb.html"]);
+    urlList.push(["/N3/p18.php", "/zn/znrj.html"]);
+    urlList.push(["/N3/p19.php", "/zn/csyy.html"]);
+    urlList.push(["/N4/p21.php", "/tz.html"]);
+    urlList.push(["/N4/p22.php", "/rz.html"]);
+    urlList.push(["/N4/p23.php", "/zhengfu.html"]);
+    urlList.push(["/N4/p24.php", "/gyzy.html"]);
+
 
     var urlIndex = 0;
     processTimer = setInterval(function() {
@@ -91,6 +104,6 @@ app.all('/workon', (req, res) => {
 });
 app.all('/isprocessworkon', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    if (checkTimer) res.send("success");
+    if (checkTimer || isProgressing) res.send("success");
     else res.send("done");
 });
