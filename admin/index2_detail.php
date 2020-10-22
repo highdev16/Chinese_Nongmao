@@ -120,11 +120,7 @@ include ('config.php');
 							<div style='height: 10px'></div>
 							<div style='float: left; width: 180px;line-height: 35px;'>最好的案例(1个在首页)</div>
 							<div><input type='checkbox' id='goodone' style='width: 25px; height:25px'></div>
-							<div style='height: 20px'></div>
-							<div>内容</div>
-							<div id='editor'>
-								  <?php echo isset($row['content']) ? $row['content'] : ""; ?>
-							</div>
+							<div style='height: 20px'></div>							
 					    </div>
 						<div style='float:left; width: 420px'>
 							<div>
@@ -135,6 +131,12 @@ include ('config.php');
 								<label for='description' style='width: 100px; float:left;'>描述</label>
 								<textarea id='description' style='width: 300px'><?php if ($row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
 							</div>
+						</div>
+					</div>
+					<div class='row'>
+						<div>内容</div>
+						<div id='editor'>
+								<?php echo isset($row['content']) ? $row['content'] : ""; ?>
 						</div>
 					</div>
 					<div class='row'>
