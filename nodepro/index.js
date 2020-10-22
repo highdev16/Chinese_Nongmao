@@ -90,18 +90,37 @@ function processFiles(domain) {
     urlList.push(["/N1/p2.php?category=3", "/znsj/index.html"]);
     urlList.push(["/N1/p2.php?category=4", "/nmyy/index.html"]);
 
+    urlList.push(["/N1/p25.php?category=1", "/sjbk/index.html"]);
+    urlList.push(["/N1/p25.php?category=2", "/news/index.html"]);
+    urlList.push(["/N1/p25.php?category=3", "/gyxw/index.html"]);
+    urlList.push(["/N1/p25.php?category=4", "/gov/index.html"]);
+
     urlIndex = 0;
     let processAsyncCount = 0;
-    pool.query("SELECT * FROM cases ORDER BY id", function(err, result) {        
-        processAsyncCount++;
-        if (err) return;
+    pool.query("SELECT * FROM cases ORDER BY id DESC", function(err, result) {                
+        if (err) {
+            processAsyncCount++;
+            return;
+        }
         let categoryLabel = ['', 'zxsj', 'jzsj', 'znsj', 'nmyy'];
         for (let i in result)
             urlList.push(["/N1/p7.php?r=" + result[i].id, "/" + categoryLabel[result[i].category] + "/" + result[i]['id'] + ".html"]);
+        processAsyncCount++;
+    })
+
+    pool.query("SELECT * FROM news ORDER BY id DESC", function(err, result) {        
+        if (err) {
+            processAsyncCount++;
+            return;
+        }
+        let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov'];
+        for (let i in result)
+            urlList.push(["/N1/p26.php?r=" + result[i].id, "/" + categoryLabel[result[i].category] + "/" + result[i]['id'] + ".html"]);
+        processAsyncCount++;
     })
 
     let localTimer = setInterval(function() {
-        if (processAsyncCount == 1) {
+        if (processAsyncCount == 2) {
             clearInterval(localTimer);
             processTimer = setInterval(function() {
                 if (!isProgressing) return;

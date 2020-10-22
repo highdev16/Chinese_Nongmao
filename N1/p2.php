@@ -165,10 +165,11 @@ include('header.php');
                 </div>
               </div>
             </div>`;
-      if (i % 3 == 2) 
-        htmlString += "</div>"; 
+        if (i % 3 == 2) 
+          htmlString += "</div>"; 
       } 
-      if (rows.length % 3 == 2) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  
+      if (rows.length % 3 == 2) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div></div>";  
+      if (rows.length % 3 == 2) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div><div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div></div>";  
       $("#piece_content").html(htmlString);
     }).fail(function() {
       alert("失败！");

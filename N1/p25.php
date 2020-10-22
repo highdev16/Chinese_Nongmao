@@ -9,24 +9,7 @@
     default: exit;
   }
 
-  include('header.php');
-  if (!isset($_REQUEST['s'])) $_REQUEST['s'] = 1;
-  $mode = intval($_REQUEST['s']);
-  $selectedMode = 'selected-a-button';
-  $unselectedMode = 'unselected-a-button';
-
-  $pageIndex = isset($_REQUEST['pageIndex']) ? intval($_REQUEST['pageIndex']) - 1 : 0;
-  $pageNum = 15;
-
-  $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
-  include('../N1/dbconfig.php');
-  $db = getDbInstance();
-  $pageTotal = $db->rawQuery("SELECT count(id) as co FROM news where category = " . intval($_REQUEST['category']));
-
-  $pageTotal = $pageTotal[0]['co'];
-
-  $rows = $db->rawQuery($query);
-
+  include('header.php');  
 ?>
  <link href='/css/paginaitor.css' rel="stylesheet" />
 <style>
@@ -73,7 +56,7 @@
     margin-bottom: 0px !important;
   }
 </style>
-<script src='/js/js/all.js'></script>
+    <script src='/js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
       <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px; min-height:0px;'>
         <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
@@ -81,34 +64,8 @@
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 0px'>
-      <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 10px; margin-bottom: 100px'>
-          <?php 
-          for ($i = 0; $i < sizeof($rows); $i++) {             
-            $row = $rows[$i];
-            $r = strpos($row['content'], '<img');
-            $alt = "No Image";
-            if ($r !== FALSE) {
-              $d = strpos(substr($row['content'], $r + 4), 'src=') + $r + 9;
-              $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
-              $r = substr($row['content'], $d, $r - $d);
-              $alt = "Image";
-            } else $r = '';
-            
-            ?>            
-          <div class=" u-white u-repeater-item-3 image-cell">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
-            <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:300px; width:100%; overflow:hidden;margin-bottom: 0px'>
-              <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
-                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 300px; width:100%;' onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'>
-              <div onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'
-                    style='margin-top: -30px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer; 
-                            width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
-                <?php echo htmlspecialchars($row['title']); ?>
-                </div>
-            </div>              
-            </div>
-          </div> 
-          <?php } ?>
+      <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 10px; margin-bottom: 100px' id='content_area'>
+          
       </div>
     </section>
     <section class='class="u-align-center u-clearfix u-section-3'>
@@ -118,20 +75,101 @@
     </section>
     <script src='/js/jspaginator.js'></script>
     <script>
-      $.jqPaginator('#pagination1', {
-        totalPages: Math.ceil(<?php echo $pageTotal; ?> / <?php echo $pageNum; ?>),
-        visiblePages: 10,
-        edges: 3,
-        currentPage: <?php echo $pageIndex; ?> + 1,
-        onPageChange: function (num, type) {
-          if (num - 1 == <?php echo $pageIndex; ?>) return;
-            window.location.href = 'p2.php?category=<?php echo $_REQUEST['category']; ?>&s=<?php echo $mode; ?>&pageIndex=' + num;
-        }
-    });
-    $(document).ready(function() {
+      let currentCategory;
+      function goDetail(id) {
+        if (currentCategory == 1)  window.location.href="/sjbk/" + id + ".html";
+        else if (currentCategory == 2)  window.location.href="/news/" + id + ".html";
+        else if (currentCategory == 3)  window.location.href="/gyxw/" + id + ".html";
+        else if (currentCategory == 4)  window.location.href="/gov/" + id + ".html";
+      }
+      var pageFunc = ($.jqPaginator);
+      function refreshPaginator(totalCount, pageNumber) {
+        pageFunc('#pagination1', {
+          totalPages: Math.ceil(totalCount / 15),
+          visiblePages: 10,
+          edges: 3,
+          currentPage: pageNumber + 1,
+          onPageChange: function (num, type) {
+            if (num - 1 == pageNumber) return;
+            loadPages(category, num - 1);
+          }
+        });
+      }  
+      function escapeHtml(text) {
+        return text
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+      }
+      function loadPages(category, pageNumber) {
+        $.post('/api/getnews.php', {category, pageNumber}, function(data,b) {
+          if (b != 'success') return;
+          if (!data || data.result != 'success') return;          
+          
+          let htmlString = "";
+          let rows = data.items;
+          refreshPaginator(rows.length, pageNumber);
+          
+          for (let i = 0; i < rows.length; i++) {
+            row = rows[i];
+            let r = row['content'].indexOf('<img');
+            let alt = "No Image";
+            let d;
+            if (r != -1) {
+              d = row.content.substr(r + 4).indexOf('src=') + r + 9; //strpos(substr($row['content'], $r + 4), 'src=') + $r + 9;
+              r = row.content.substr(d+10).indexOf('"') + d + 10; //strpos(substr($row['content'], $d + 10), '"') + $d + 10;
+              r = row.content.substr(d, r - d); //substr($row['content'], $d, $r - $d);
+              alt = "Image";
+            } else r = '';
+            htmlString += `<div class=" u-white u-repeater-item-3 image-cell">
+                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
+                <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:300px; width:100%; overflow:hidden;margin-bottom: 0px'>
+                  <img alt="` + alt + `" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
+                        src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 300px; width:100%;' 
+                        onclick='goDetail(<?php echo $row["id"]; ?>)'>
+                  <div onclick='goDetail(<?php echo $row["id"]; ?>)'
+                        style='margin-top: -30px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer; 
+                                width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>` 
+                                + escapeHtml(row['title']) +`</div>
+                </div>              
+                </div>
+              </div>`; 
+          }
+          if (rows.length % 3 == 2) 
+            htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'>";  
+          else if (rows.length % 3 == 1) 
+            htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div><div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  
+          $("#piece_content").html(htmlString);
+        }).fail(function() {
+          alert("失败！");
+        })
+      }
 
-    });
+      $(document).ready(function() {        
+        if (window.location.href.includes("/sjbk")) currentCategory = 1;
+        else if (window.location.href.includes("/news")) currentCategory = 2;
+        else if (window.location.href.includes("/gyxw")) currentCategory = 3;
+        else if (window.location.href.includes("/gov")) currentCategory = 4;
+        else {
+          let cIndex = window.location.href.indexOf("category=");
+          if (cIndex == -1) { window.location.href = '/'; return; }
+          currentCategory = parseInt(window.location.href.substr(cIndex+9));
+        }
+        loadPages(currentCategory, 0);        
+      });
     </script>
 <?php
 include('../N1/footer.php');
 ?>
+
+
+
+
+
+
+
+
+
+
