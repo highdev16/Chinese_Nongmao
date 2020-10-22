@@ -1,8 +1,10 @@
 <?php
 $bigTitle = "农贸市场设计";
 include('header.php');
-include('../N1/dbconfig.php');
-$db = getDbInstance();
+if (!isset($db)) {
+  include('../N1/dbconfig.php');
+  $db = getDbInstance();
+}
 if (!isset($_REQUEST['r'])) {
   header('location: /');
   exit;
@@ -572,8 +574,6 @@ while (strlen($temp) > 0) {
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>
     <section class="u-clearfix u-white u-section-5" id="sec-3302">
-
-      <script src='/js/jspaginator.js'></script>
       <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 0px; padding-bottom: 30px'>
         <div class="u-clearfix u-expanded-width u-gutter-54 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">

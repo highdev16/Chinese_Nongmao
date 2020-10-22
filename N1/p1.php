@@ -1,7 +1,9 @@
 <?php
 $bigTitle = "首页";
 include('header.php');
+if (!isset($db))
 include('../N1/dbconfig.php');
+$db = getDbInstance();
 ?>
 <style>
 div.percentage-20 {
@@ -14,7 +16,7 @@ div.percentage-20 {
       </ol>
       <div class="u-carousel-inner" role="listbox">
         <?php
-          $db = getDbInstance();
+          
           $images = $db->query("SELECT * FROM banners ORDER BY morder");
           $flag = 0;
           foreach ($images as $image) {
