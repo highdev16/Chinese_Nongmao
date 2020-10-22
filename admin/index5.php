@@ -94,7 +94,7 @@ include ('config.php');
 		<div class="main">
 			<?php include('nav.php'); ?>			
             <?php
-				$keywords = trim(file_get_contents('../keyword.txt'));
+				$keywords = trim(file_get_contents('../keywords.txt'));
 				$description = trim(file_get_contents('../description.txt'));
             ?>
 			<main class="content">				

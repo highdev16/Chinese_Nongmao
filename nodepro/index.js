@@ -194,4 +194,60 @@ app.all("/generatenews/:id/:category", (req, res) => {
         scrapeFile(domain, "/N1/p26.php?r=" + id, "/" + categoryLabel[category] + "/" + id + ".html", true);        
     });
     res.send("success");
-})
+});
+
+app.all("/generatecase/:id/:category", (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    let id = req.params.id;
+    let category = req.params.category;
+    let categoryLabel = ['', 'zxsj', 'jzsj', 'znsj', 'nmyy'];
+    CheckLocalhost(function( domain ) {
+        scrapeFile(domain, "/N1/p7.php?r=" + id, "/" + categoryLabel[category] + "/" + id + ".html", true);        
+    });
+    res.send("success");
+});
+
+app.all("/generatestaticpages", (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    CheckLocalhost(function( domain ) {
+        let urlList = [];
+        urlList.push(["/N1/p1.php", "/index.html"]); //should start path with '/'        
+        urlList.push(["/N1/p5.php", "/sj/sjhz.html"]);
+        urlList.push(["/N1/p6.php", "/sj/zfhz.html"]);
+        urlList.push(["/N5/p37.php", "/sj/nmscdw.html"]);
+        urlList.push(["/N2/p10.php", "/yyms.html"]);
+        urlList.push(["/N2/p11.php", "/nmyy/nmzs.html"]);
+        urlList.push(["/N2/p12.php", "/nmyy/nmds.html"]);
+        urlList.push(["/N3/p13.php", "/nmyy/nmzht.html"]);
+        urlList.push(["/N3/p14.php", "/nmyy/cyjj.html"]);
+        urlList.push(["/N3/p17.php", "/zn/znsb.html"]);
+        urlList.push(["/N3/p18.php", "/zn/znrj.html"]);
+        urlList.push(["/N3/p19.php", "/zn/csyy.html"]);
+        urlList.push(["/N4/p21.php", "/tz.html"]);
+        urlList.push(["/N4/p22.php", "/rz.html"]);
+        urlList.push(["/N4/p23.php", "/zhengfu.html"]);
+        urlList.push(["/N4/p24.php", "/gyzy.html"]);
+        urlList.push(["/N4/p34.php", "/about/certify.html"]);
+        urlList.push(["/N5/p35.php", "/about/contact.html"]);
+        urlList.push(["/N5/p36.php", "/about/index.html"]);
+
+        urlList.push(["/N1/p2.php?category=1", "/zxsj/index.html"]);
+        urlList.push(["/N1/p2.php?category=2", "/jzsj/index.html"]);
+        urlList.push(["/N1/p2.php?category=3", "/znsj/index.html"]);
+        urlList.push(["/N1/p2.php?category=4", "/nmyy/index.html"]);
+
+        urlList.push(["/N1/p25.php?category=1", "/sjbk/index.html"]);
+        urlList.push(["/N1/p25.php?category=2", "/news/index.html"]);
+        urlList.push(["/N1/p25.php?category=3", "/gyxw/index.html"]);
+        urlList.push(["/N1/p25.php?category=4", "/gov/index.html"]);
+
+        let urlIndex = 0;
+        let tTimer = setInterval(function() {
+            scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1], true);
+            if (++urlIndex == urlList.length) {
+                clearInterval(tTimer);
+            }
+        }, 500);
+    });
+    res.send("success");
+});

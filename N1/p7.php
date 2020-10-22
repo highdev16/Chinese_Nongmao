@@ -9,7 +9,6 @@ if (!isset($_REQUEST['r'])) {
 }
 $caseIndex = intval($_REQUEST['r']);
 $info = $db->rawQuery("select * from cases where id = $caseIndex");
-$db->rawQuery("update cases set browse = browse + 1 where id = $caseIndex");
 if (sizeof($info) == 0) {
   header('location: /');
   exit;
@@ -510,54 +509,62 @@ while (strlen($temp) > 0) {
             </div>
             </div>
             <hr style='border-top: 1px solid #ccc'>
-            <div class="u-layout-row"  style='padding: 0; justify-content: space-between'>
-              <?php
-              $data = $db->rawQuery("select * from cases where category=" . intval($info[0]['category']) . " and id != $caseIndex order by created_date desc limit 0, 3");
-
-              for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) {
-                $row = $data[$k - 1];
-                $r = strpos($row['content'], '<img');
-                $alt = "No Image";
-                if ($r !== FALSE) {
-                  $d = strpos(substr($row['content'], $r + 4), 'src=') + $r + 9;
-                  $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
-                  $r = substr($row['content'], $d, $r - $d);
-                  $alt = "Image";
-                } else $r = '';
-                ?>
-              <div class=" u-white u-repeater-item-3 image-cell">
-                  <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
-                    <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
-                    display: flex;justify-content: center;align-items: center; background:black;'>
-                      <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='goToOtherPiece(<?php echo $row['category']; ?>, <?php echo $row["id"]; ?>)'>
-                    </div>
-                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
-                      <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
-                    </div>
-                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>
-                      <?php
-                        for ($j = 0; $j < floatval($row['stars']); $j++)
-                          echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                      ?>
-                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
-                      <div style='float:left; font-size: 12px;line-height: 24px'>
-                        <i class="far fa-images"></i>&nbsp;
-                        <?php echo substr_count($row['content'], '<img'); ?>
-                      </div>
-                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
-                      <div style='float:left;font-size: 12px;line-height: 24px'>
-                        <i class="far fa-user"></i>&nbsp;
-                        <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                      </div>
-                      <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
-                    </div>
-
-
-                  </div>
-                </div>
-              <?php } if (sizeof($data) < 3) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>"; ?>
-
+            <div class="u-layout-row"  style='padding: 0; justify-content: space-between' id='mycategory_best'>
+              <script>
+                $(document).ready(function() {
+                  $.post("/api/getp7part1.php", {category: <?php echo $info[0]['category']; ?>, caseIndex: <?php echo $caseIndex; ?>}, function(a,b) {
+                    if (b != 'success') {
+                      alert("失败！"); return;
+                    }
+                    try {
+                      a = JSON.parse(a);
+                      if (a.result != 'success') {
+                        alert("失败！内容正确！"); return;
+                      }
+                    } catch (e) {alert("失败！内容不好！"); return;}
+                    let data = a.data;
+                    let htmlString = "";
+                    for (let k = 1; k <= 3 && k <= data.length; k++) {
+                      let row = data[k-1];
+                      let r = row.content.indexOf("<img");                      
+                      let alt = "No Image";
+                      if (r != -1) {
+                        let d = row.content.substr(r + 4).indexOf('src=') + r + 9;
+                        r = row.content.substr(d + 10).indexOf('"') + d + 10;
+                        r = row['content'].substr(d, r - d); 
+                        alt = "Image";
+                      } else r = '';
+                      htmlString += `<div class=" u-white u-repeater-item-3 image-cell">
+                        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
+                          <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
+                          display: flex;justify-content: center;align-items: center; background:black;'>
+                            <img alt="` + alt + `" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
+                                src="` + r + `" style='background: black; object-fit: cover;  cursor:pointer;' 
+                                onclick='goToOtherPiece(` + row['category'] + `, ` + row['id'] + `)'>
+                          </div>
+                          <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
+                            <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;` + escapeHtml(row['name']) + `</div>
+                          <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>`;
+                      for (let j = 0; j < Number(row['stars']); j++) 
+                        htmlString += "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
+                      htmlString += `<div style='float:left; min-width:20px; min-height: 30px;'></div>
+                            <div style='float:left; font-size: 12px;line-height: 24px'>
+                            <i class="far fa-images"></i>&nbsp;` + occurrences(row['content'], '<img') + `
+                            </div>
+                            <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                            <div style='float:left;font-size: 12px;line-height: 24px'>
+                              <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
+                            </div>
+                            <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                          </div>
+                        </div>
+                      </div>`;
+                    } 
+                    if (data.length < 3) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";
+                    $("#mycategory_best").html(htmlString);
+                  })
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -586,53 +593,62 @@ while (strlen($temp) > 0) {
             <?php
             $data = $db->rawQuery("select * from cases where id in (select max(id) from cases where category != " . intval($info[0]['category']) . " group by category) order by category");
             ?>
-            <div class="u-layout-row" style='padding: 0; justify-content: space-between'>
-            <?php
-              for ($k = 1; $k <= 3 && $k <= sizeof($data); $k++) {
-                $row = $data[$k - 1];
-                $r = strpos($row['content'], '<img');
-                $alt = "No Image";
-                if ($r !== FALSE) {
-                  $d = strpos(substr($row['content'], $r + 4), 'src=') + $r + 9;
-                  $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
-                  $r = substr($row['content'], $d, $r - $d);
-                  $alt = "Image";
-                } else $r = '';
-                ?>
-                <div class=" u-white u-repeater-item-3 image-cell">
-                  <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
-                    <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
-                    display: flex;justify-content: center;align-items: center; background:black;'>
-                      <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                          src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' 
-                          onclick='goToOtherPiece(<?php echo $row["category"]; ?>, <?php echo $row["id"]; ?>)'>
-                    </div>
-                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
-                      <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
-                    </div>
-                    <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>
-                      <?php
-                        for ($j = 0; $j < floatval($row['stars']); $j++)
-                          echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
-                      ?>
-                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
-                      <div style='float:left; font-size: 12px;line-height: 24px'>
-                        <i class="far fa-images"></i>&nbsp;
-                        <?php echo substr_count($row['content'], '<img'); ?>
-                      </div>
-                      <div style='float:left; min-width:20px; min-height: 30px;'></div>
-                      <div style='float:left;font-size: 12px;line-height: 24px'>
-                        <i class="far fa-user"></i>&nbsp;
-                        <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
-                      </div>
-                      <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
-                    </div>
-
-
-                  </div>
-                </div>
-              <?php } if (sizeof($data) < 3) echo "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>"; ?>
-
+            <div class="u-layout-row" style='padding: 0; justify-content: space-between' ID='othercategory_best'>
+            <script>
+                $(document).ready(function() {                  
+                  $.post("/api/getp7part2.php", {category: <?php echo $info[0]['category']; ?>, increase: 1, caseIndex: <?php echo $caseIndex; ?>}, function(a,b) {
+                    if (b != 'success') {
+                      alert("失败！"); return;
+                    }
+                    try {
+                      a = JSON.parse(a);
+                      if (a.result != 'success') {
+                        alert("失败！内容正确！"); return;
+                      }
+                    } catch (e) {alert("失败！内容不好！"); return;}
+                    let data = a.data;
+                    let htmlString = "";
+                    for (let k = 1; k <= 3 && k <= data.length; k++) {
+                      let row = data[k-1];
+                      let r = row.content.indexOf("<img");                      
+                      let alt = "No Image";
+                      if (r != -1) {
+                        let d = row.content.substr(r + 4).indexOf('src=') + r + 9;
+                        r = row.content.substr(d + 10).indexOf('"') + d + 10;
+                        r = row['content'].substr(d, r - d); 
+                        alt = "Image";
+                      } else r = '';
+                      htmlString += `<div class=" u-white u-repeater-item-3 image-cell">
+                        <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
+                          <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
+                          display: flex;justify-content: center;align-items: center; background:black;'>
+                            <img alt="` + alt + `" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
+                                src="` + r + `" style='background: black; object-fit: cover;  cursor:pointer;' 
+                                onclick='goToOtherPiece(` + row['category'] + `, ` + row['id'] + `)'>
+                          </div>
+                          <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
+                            <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;` + escapeHtml(row['name']) + `</div>
+                          <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style=' margin-left: 13px;'>`;
+                      for (let j = 0; j < Number(row['stars']); j++) 
+                        htmlString += "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
+                      htmlString += `<div style='float:left; min-width:20px; min-height: 30px;'></div>
+                            <div style='float:left; font-size: 12px;line-height: 24px'>
+                            <i class="far fa-images"></i>&nbsp;` + occurrences(row['content'], '<img') + `
+                            </div>
+                            <div style='float:left; min-width:20px; min-height: 30px;'></div>
+                            <div style='float:left;font-size: 12px;line-height: 24px'>
+                              <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
+                            </div>
+                            <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                          </div>
+                        </div>
+                      </div>`;
+                    } 
+                    if (data.length < 3) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";
+                    $("#othercategory_best").html(htmlString);
+                  })
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -669,6 +685,14 @@ while (strlen($temp) > 0) {
         if (category == 2) window.location.href='/jzsj/' + id + ".html";
         if (category == 3) window.location.href='/znsj/' + id + ".html";
         if (category == 4) window.location.href='/nmyy/' + id + ".html";
+      }
+      function escapeHtml(text) {
+        return text
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
       }
     </script>
 
