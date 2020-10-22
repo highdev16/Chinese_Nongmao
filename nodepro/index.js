@@ -124,7 +124,9 @@ function processFiles(domain) {
         if (processAsyncCount == 2) {
             clearInterval(localTimer);
             processTimer = setInterval(function() {
-                if (!isProgressing) return;
+                if (!isProgressing) return;   
+                if (filesInProgress > 10) return;
+                             
                 scrapeFile(domain, urlList[urlIndex][0], urlList[urlIndex][1]);
                 if (++urlIndex == urlList.length) {
                     clearInterval(processTimer);
@@ -139,7 +141,7 @@ function processFiles(domain) {
                     isForcedToQuit = 0;
                     processingText = "Ending...";
                 }        
-            }, 1000);
+            }, 200);
         }
     }, 5000);    
 }

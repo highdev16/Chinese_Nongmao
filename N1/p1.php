@@ -467,8 +467,8 @@ div.percentage-20 {
                   <div class="u-size-37">
                     <div class="u-layout-row" style='position: relative'>
                       <div style='height: 300px; padding-left: 8px;padding-right: 8px; width: 100%; flex-direction: row; display: flex; justify-content: space-between;'>
-                        <img SRC='/N1/images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.png' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available;'>
-                        <img SRC='/N1/images/lALPD26eMHDuBeLNA-zNAsc_711_1004.png' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
+                        <img SRC='/N1/images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available;'>
+                        <img SRC='/N1/images/lALPD26eMHDuBeLNA-zNAsc_711_1004.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
                         <img SRC='/N1/images/lADPD26eMHDpLQPNCSLNBnU_1653_2338.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
                         <img SRC='/N1/images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%; height: min-intrinsic;height: -webkit-fill-available'>
                       </div>
