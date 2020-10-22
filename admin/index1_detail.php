@@ -130,6 +130,12 @@ include ('config.php');
 							<div style='float: left; width: 180px'>最好的案例(1个在首页)</div>
 							<div><input type='checkbox' id='goodone' style='width: 25px; height:25px'></div>
 							<div style='height: 20px'></div>
+							<div style='float: left; width: 100px'>关键词</div>
+							<div style='float: left; width: 650px'><textarea id='keywords'></textarea></div>
+							<div style='height: 20px'></div>
+							<div style='float: left; width: 100px'>描述</div>
+							<div style='float: left; width: 650px'><textarea id='description'></textarea></div>
+							<div style='height: 20px'></div>
 							<div>内容</div>
 							<div id='editor'>
 								  <?php echo isset($row['content']) ? $row['content'] : ""; ?>
@@ -155,6 +161,8 @@ include ('config.php');
 		$("#stars").val(data['stars'] || "");
 		$("#areas").val(data['areas'] || "");
 		$("#project_style").val(data['project_style'] || "");
+		$("#description").val(data['description'] || "");
+		$("#keywords").val(data['keywords'] || "");
 		$("#service_time").val(data['service_time'] || "");
 		$("#location").val(data['location'] || "");
 		$("#category").val(data['category'] || "");
@@ -249,6 +257,8 @@ include ('config.php');
 				text: $("#editor").html(),
 				stars: $("#stars").val(),
 				areas: $("#areas").val(),
+				keywords: $("#keywords").val(),
+				description: $("#description").val(),
 				project_style: $("#project_style").val(),
 				service_time: $("#service_time").val(),
 				location: $("#location").val(),

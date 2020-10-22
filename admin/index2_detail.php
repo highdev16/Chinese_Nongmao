@@ -127,8 +127,14 @@ include ('config.php');
 							</div>
 					    </div>
 						<div style='float:left; width: 45%'>
-							<label for='keywords'>关键词</label>
-							<textarea id='keywords'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
+							<div>
+								<label for='keywords'>关键词</label>
+								<textarea id='keywords'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
+							</div>
+							<div style='margin-top: 40px;'>
+								<label for='description'>描述</label>
+								<textarea id='description'><?php if ($row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
+							</div>
 						</div>
 					</div>
 					<div class='row'>
@@ -222,7 +228,8 @@ include ('config.php');
                 writer: $("#writer").val(),
 				text: $("#editor").html(),
 				category: $("#category").val(),
-				keyword: $("$keywords").val(),
+				keyword: $("#keywords").val(),
+				description: $("#description").val(),
 				goodone: $("#goodone")[0].checked ? 1 : 0,				
 			}, function(a,b) {
 			try {
