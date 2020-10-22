@@ -154,15 +154,15 @@ include('header.php');
                     </div>
                     <div style='width: 100%; display: flex; justify-content: space-between; margin-top: 30px'>
                       <div style='display: flex'>
-                        <button class='gotootherpage' style='margin-right: 10px' id='prevLinkButton'>上一页</button>
-                        <div style='max-width: 100px; text-overflow: ellipsis;' id='prevLinkLabel'>OKsadfsadfsafsa</div>
+                        <button class='gotootherpage' style='margin-right: 10px;' id='prevLinkButton'>上一页</button>
+                        <div style='max-width: 200px; text-overflow: ellipsis;; white-space:nowrap' id='prevLinkLabel'>OKsadfsadfsafsa</div>
                       </div>
                       <div style='display: flex'>
                         <button class='gotootherpage' style='margin-right: 10px' id='currentCategoryButton'>返回</button>
-                        <div style='max-width: 100px; text-overflow: ellipsis;' id='currentCategoryLabel'>OKsadfsadfsafsa</div>
+                        <div style='max-width: 200px; text-overflow: ellipsis;; white-space:nowrap' id='currentCategoryLabel'>OKsadfsadfsafsa</div>
                       </div>
                       <div style='display: flex'>
-                        <div style='max-width: 100px; text-overflow: ellipsis;' id='nextLinkLabel'>OKsadfsadfsafsa</div>
+                        <div style='max-width: 200px; text-overflow: ellipsis; white-space:nowrap' id='nextLinkLabel'>OKsadfsadfsafsa</div>
                         <button class='gotootherpage' style='margin-left: 10px' id='nextLinkButton'>下一页</button>                        
                       </div>
                     </div>
