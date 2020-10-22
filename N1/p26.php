@@ -323,16 +323,9 @@ include('header.php');
           }
         })
 ///------------------ content fill ------------------////
-        let href = window.location.href;
-        let r;
-        if (href.includes(".php")) {
-          r = href.indexOf("r=");
-          r = Number(href.substr(r + 2));
-        } else {
-          r = href.indexOf("__");
-          r = parseInt(href.substr(r + 2));
-        }
-
+        let href = window.location.href.split('/');
+        let r = href[href.length - 1].split('.');
+        r = r[0];
         $.post('/api/get_applicants_number.php', function(a,b) {
           if (b == 'success') {
             try {
@@ -354,21 +347,22 @@ include('header.php');
                 $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu');
                 $("#browsecount").html(a.row.browse + "");
                 $("#categoryLabel").html(categoryArr[a.row['category']]).click(function() {
-                  window.location.href='/N1/p25.php?category=' + a.row.category;
+                  window.location.href="/" + categoryLabelStrings[a.row.category] + "/"; //'/N1/p25.php?category=' + a.row.category;
                 });
                 $("#articleTitle").html(a.row.title);
                 $("#titleLabel").html(a.row.title);
                 $("#createdTimeLabel").html(GetDateStringOf(new Date(a.row.created_time * 1000)));
                 $("#writerLabel").html(a.row.writer);
                 
+                let categoryLabelStrings = ['', 'zxsj', 'jzsj', 'znsj', 'nmyy'];
                 $("#currentCategoryButton").click(function() {
-                    window.location.href='/N1/p25.php?category=' + a.row.category;
+                    window.location.href="/" + categoryLabelStrings[a.row.category] + "/"; //'/N1/p25.php?category=' + a.row.category;
                   });
                 $("#currentCategoryLabel").html(categoryArr[a.row.category]);
                 if (a.next) {
                   $("#nextLinkLabel").html(a.next.title);
                   $("#nextLinkButton").click(function() {
-                    window.location.href='/N1/p26.php?r=' + a.next.id;
+                    window.location.href="/" + categoryLabelStrings[a.next.category] + "/" + a.next.id + ".html";
                   });
                 } else {
                   $("#nextLinkButton, #nextLinkLabel").css('opacity', 0);
@@ -377,7 +371,7 @@ include('header.php');
                 if (a.prev) {
                   $("#prevLinkLabel").html(a.prev.title);
                   $("#prevLinkButton").click(function() {
-                    window.location.href='/N1/p26.php?r=' + a.prev.id;
+                    window.location.href="/" + categoryLabelStrings[a.prev.category] + "/" + a.prev.id + ".html";
                   });
                 } else {
                   $("#prevLinkButton, #prevLinkLabel").css('opacity', 0);
@@ -420,7 +414,5 @@ include('header.php');
           alert("失败！网络错误。");
         });
       }
-
-
     </script>
     <?php include('../N1/footer.php'); ?>
