@@ -99,7 +99,7 @@ include ('config.php');
 			<main class="content">				
 				<div class="container-fluid p-0">
 					<div class="row">
-						<div style='float: left; width: 50%;'>					        
+						<div style='float: left; width: 400px;'>					        
 							<?php
 								$db = getDbInstance();
 								$banners = $db->query("select * from news where id = " . intval($_REQUEST["id"]));
@@ -126,14 +126,14 @@ include ('config.php');
 								  <?php echo isset($row['content']) ? $row['content'] : ""; ?>
 							</div>
 					    </div>
-						<div style='float:left; width: 45%'>
+						<div style='float:left; width: 420px'>
 							<div>
-								<label for='keywords'>关键词</label>
-								<textarea id='keywords'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
+								<label for='keywords' style='width: 100px'>关键词</label>
+								<textarea id='keywords' style='float:left; width: 300px'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
 							</div>
 							<div style='margin-top: 40px;'>
-								<label for='description'>描述</label>
-								<textarea id='description'><?php if ($row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
+								<label for='description' style='width: 100px'>描述</label>
+								<textarea id='description' style='float:left;width: 300px'><?php if ($row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
 							</div>
 						</div>
 					</div>
