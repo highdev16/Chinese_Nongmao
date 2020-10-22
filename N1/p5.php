@@ -48,7 +48,7 @@ include('header.php');
           </div>
           <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
             <div class="u-container-layout u-similar-container u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-3">
-              <img SRC="/N1/images/2019012310491242.png" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
+              <img SRC="/N1/images/2019012310491242.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="594" data-image-height="427">
               <h3 class="u-align-center u-custom-font u-font-pt-sans u-text u-text-7 ticket-title">效果图设计<br>
               </h3>
               <p class="u-align-left u-text u-text-8 ticket-detail"> 1. 农贸市场通道、包间、柜台摊位设计<br>2. 面、墙面、吊顶、楼梯、厕所、服务室、办公室、检测室等一系列公共设计<br>3. 农贸市场材料型号与规格以及色调设计</p>
