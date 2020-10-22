@@ -99,7 +99,7 @@ include ('config.php');
 			<main class="content">				
 				<div class="container-fluid p-0">
 					<div class="row">
-						<div style='float: left; width: 100%;'>					        
+						<div style='float: left; width: 50%;'>					        
 							<?php
 								$db = getDbInstance();
 								$banners = $db->query("select * from news where id = " . intval($_REQUEST["id"]));
