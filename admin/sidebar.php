@@ -58,9 +58,20 @@
 				function confirmRegeneratePages() {
 					if (!confirm("您确定要重新生成所有页面和静态URL吗? (这需要一段时间。)")) return;
 					$.post("//gggyyy.cn:8090/isprocessworkon", function(a,b) {
-						if (a == 'success' && b == 'success') {
-							if (!confirm("当前正在构建静态网页。\n您要取消并重新开始处理吗？")) return;
-						} else if (a == 'done') {} 
+						if (b != 'success') {
+							alert("失败！ 意外的错误。\n与开发人员联系以解决此问题。");
+							return;
+						}
+						try {
+							a = JSON.parse(a);
+						} catch(e) {
+							alert("失败！ 意外的错误。\n与开发人员联系以解决此问题。");
+							return;
+						}
+						if (a.result == 'success') {
+							if (!confirm("当前正在构建静态网页。\n\n总页数：" + a.totalCount + "\n完成的页面：" + a.currentIndex + "\n进行中的页面：" + a.filesInProgress + "\n\n您要取消并重新开始处理吗？")) return;
+						}
+						else if (a.result == 'done') {}
 						else {
 							alert("失败！ 意外的错误。\n与开发人员联系以解决此问题。");
 							return;

@@ -163,7 +163,9 @@ app.all('/isprocessworkon', (req, res) => {
             filesInProgress, 
             processingText
         }));
-    else res.send("done");
+    else res.send(JSON.stringify({ 
+        result: 'done'
+    }));
 });
 
 app.all('/cancelworkon', (req, res) => {

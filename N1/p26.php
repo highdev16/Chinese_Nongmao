@@ -354,7 +354,7 @@ include('header.php');
                 $("#createdTimeLabel").html(GetDateStringOf(new Date(a.row.created_time * 1000)));
                 $("#writerLabel").html(a.row.writer);
                 
-                let categoryLabelStrings = ['', 'zxsj', 'jzsj', 'znsj', 'nmyy'];
+                let categoryLabelStrings = ['', 'sjbk', 'news', 'gyxw', 'gov'];
                 $("#currentCategoryButton").click(function() {
                     window.location.href="/" + categoryLabelStrings[a.row.category] + "/"; //'/N1/p25.php?category=' + a.row.category;
                   });
@@ -362,7 +362,7 @@ include('header.php');
                 if (a.next) {
                   $("#nextLinkLabel").html(a.next.title);
                   $("#nextLinkButton").click(function() {
-                    window.location.href="/" + categoryLabelStrings[a.next.category] + "/" + a.next.id + ".html";
+                    window.location.href = "/" + categoryLabelStrings[a.next.category] + "/" + a.next.id + ".html";
                   });
                 } else {
                   $("#nextLinkButton, #nextLinkLabel").css('opacity', 0);
