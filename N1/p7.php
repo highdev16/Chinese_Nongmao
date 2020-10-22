@@ -425,8 +425,6 @@ while (strlen($temp) > 0) {
           }
         })
 
-
-
         $.post('/api/get_applicants_number.php', function(a,b) {
           if (b == 'success') {
             console.log(a, b)
@@ -589,12 +587,9 @@ while (strlen($temp) > 0) {
                 </button>
               </div>
             </div>
-            <hr style='border-top: 1px solid #ccc'>
-            <?php
-            $data = $db->rawQuery("select * from cases where id in (select max(id) from cases where category != " . intval($info[0]['category']) . " group by category) order by category");
-            ?>
+            <hr style='border-top: 1px solid #ccc'>            
             <div class="u-layout-row" style='padding: 0; justify-content: space-between' ID='othercategory_best'>
-            <script>
+              <script>
                 $(document).ready(function() {                  
                   $.post("/api/getp7part2.php", {category: <?php echo $info[0]['category']; ?>, increase: 1, caseIndex: <?php echo $caseIndex; ?>}, function(a,b) {
                     if (b != 'success') {
