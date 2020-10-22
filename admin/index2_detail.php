@@ -230,7 +230,7 @@ include ('config.php');
                 writer: $("#writer").val(),
 				text: $("#editor").html(),
 				category: $("#category").val(),
-				keyword: $("#keywords").val(),
+				keywords: $("#keywords").val(),
 				description: $("#description").val(),
 				goodone: $("#goodone")[0].checked ? 1 : 0,				
 			}, function(a,b) {
