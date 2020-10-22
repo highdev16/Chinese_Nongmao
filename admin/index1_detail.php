@@ -131,10 +131,9 @@ include ('config.php');
 							<div><input type='checkbox' id='goodone' style='width: 25px; height:25px'></div>
 							<div style='height: 20px'></div>
 							<div style='float: left; width: 100px'>关键词</div>
-							<div style='float: left; width: 650px'><textarea id='keywords'></textarea></div>
-							<div style='height: 20px'></div>
+							<div style='float: left; width: 350px'><textarea id='keywords'></textarea></div>							
 							<div style='float: left; width: 100px'>描述</div>
-							<div style='float: left; width: 650px'><textarea id='description'></textarea></div>
+							<div style='float: left; width: 350px'><textarea id='description'></textarea></div>
 							<div style='height: 20px'></div>
 							<div>内容</div>
 							<div id='editor'>
