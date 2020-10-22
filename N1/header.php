@@ -7,15 +7,10 @@ $dirname = ($t[0]);
 $filename = strtolower($url[0]);
 $oname = explode('.', $dirname . "/" . $filename);
 $oname = $oname[0];
-?><!DOCTYPE html>
-<html style="font-size: 16px;" lang='cn'>
-  <head>
+?><!DOCTYPE html><html style="font-size: 16px;" lang='cn'><head><title><?php echo $bigTitle; ?></title>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="菜源佳佳营运合作, 智能菜场大数据应用, 电商免费入驻-新零售, 光影集团专注农贸行业 19年, 不是任何设计公司都叫专业农贸市场设计, Design, 装修设计百科2">
-    <meta name="description" content="abc">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title><?php echo $bigTitle; ?></title>
+    <meta charset="utf-8">        
+    <meta name="page_type" content="np-template-header-footer-from-plugin">    
     <link rel="stylesheet" href="/N1/p2.css" media="screen">
     <link rel="stylesheet" href="/N1/nicepage.css" media="screen">
     <link rel="stylesheet" href="/N1/images/font-awesome.min.css" media="screen">

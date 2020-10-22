@@ -1,6 +1,10 @@
 <?php
 $bigTitle = "农贸新闻资讯";
-include('header.php');
+include ('header.php');
+include ("../N1/dbconfig.php");
+$db = getDbInstance();
+$rows = $db->query("SELECT keywords FROM news WHERE id=" . $_REQUEST['r']);
+$data = $rows[0]['keywords'];
 ?>
 <style>
       img.article-image {

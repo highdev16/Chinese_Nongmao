@@ -94,11 +94,8 @@ include ('config.php');
 		<div class="main">
 			<?php include('nav.php'); ?>			
             <?php
-                $data = explode(PHP_EOL, file_get_contents('../N1/header.php'));
-                $keywords = substr(trim($data[14]),31);
-                $keywords = substr($keywords, 0, strlen($keywords) - 2);
-                $description = substr(trim($data[15]),34);
-                $description = substr($description, 0, strlen($description) - 2);
+				$keywords = trim(file_get_contents('../keyword.txt'));
+				$description = trim(file_get_contents('../description.txt'));
             ?>
 			<main class="content">				
 				<div class="container-fluid p-0">

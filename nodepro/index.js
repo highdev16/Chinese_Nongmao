@@ -23,16 +23,17 @@ function CheckLocalhost(callback) {
         writeFile(logFile, "[Error] " + new Date().toLocaleString() + " ----  Get local domain failed\n", {flag: 'a'}, ()=>{});    
     });
 }
-function scrapeFile(domain, url, filename) {
-    filesInProgress++;
+function scrapeFile(domain, url, filename, forceScrape) {
+    forceScrape = forceScrape || 0;
+    if (!forceScrape) filesInProgress++;
     rp("http://" + domain + url).then(function(html){ 
-        if (isForcedToQuit) return;
+        if (!forceScrape && isForcedToQuit) return;
         writeFile("/var/www/html" + filename, html, ()=>{});
         writeFile(logFile, "[Success] " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});
-        filesInProgress--;
+        if (!forceScrape) filesInProgress--;
     }).catch(function(err){
         writeFile(logFile, "[Error, " + new Date().toLocaleString(), "]: " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});    
-        filesInProgress--;
+        if (!forceScrape) filesInProgress--;
     });
 }
 
@@ -183,3 +184,14 @@ app.all('/cancelworkon', (req, res) => {
     writeFile(logFile,"\n\n-------- Daemon escaped by admin --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
     res.send("OK");    
 });
+
+app.all("/generatenews/:id/:category", (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    let id = req.params.id;
+    let category = req.params.category;
+    let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov'];
+    CheckLocalhost(function( domain ) {
+        scrapeFile(domain, "/N1/p26.php?r=" + id, "/" + categoryLabel[category] + "/" + id + ".html", true);        
+    });
+    res.send("success");
+})

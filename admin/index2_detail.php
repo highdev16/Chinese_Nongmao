@@ -126,9 +126,15 @@ include ('config.php');
 								  <?php echo isset($row['content']) ? $row['content'] : ""; ?>
 							</div>
 					    </div>
-					    <div style="clear: both; margin-top: 20px;">
+						<div style='float:left; width: 45%'>
+							<label for='keywords'>关键词</label>
+							<textarea id='keywords'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
+						</div>
+					</div>
+					<div class='row'>
+						<div style="clear: both; margin-top: 20px;">
 					        <button type='button' onclick='submitForm()' id='submitButton' class='btn btn-primary'>修改</button>
-					    </div>
+						</div>
 					</div>
 				</div>
 			</main>
@@ -216,6 +222,7 @@ include ('config.php');
                 writer: $("#writer").val(),
 				text: $("#editor").html(),
 				category: $("#category").val(),
+				keyword: $("$keywords").val(),
 				goodone: $("#goodone")[0].checked ? 1 : 0,				
 			}, function(a,b) {
 			try {
