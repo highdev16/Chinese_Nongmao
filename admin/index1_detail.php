@@ -135,7 +135,7 @@ include ('config.php');
 							<div style='float: left; width: 100px'>描述</div>
 							<div style='float: left; width: 350px'><textarea id='description'></textarea></div>
 							<div style='height: 20px'></div>
-							<div>内容</div>
+							<div style='clear:both; margin-top: 20px'>内容</div>
 							<div id='editor'>
 								  <?php echo isset($row['content']) ? $row['content'] : ""; ?>
 							</div>
