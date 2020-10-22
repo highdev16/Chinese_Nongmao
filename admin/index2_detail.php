@@ -128,11 +128,11 @@ include ('config.php');
 					    </div>
 						<div style='float:left; width: 420px'>
 							<div>
-								<label for='keywords' style='width: 100px'>关键词</label>
+								<label for='keywords' style='width: 100px; float:left'>关键词</label>
 								<textarea id='keywords' style='float:left; width: 300px'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
 							</div>
 							<div style='margin-top: 40px;'>
-								<label for='description' style='width: 100px'>描述</label>
+								<label for='description' style='width: 100px; float:left'>描述</label>
 								<textarea id='description' style='float:left;width: 300px'><?php if ($row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
 							</div>
 						</div>
