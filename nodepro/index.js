@@ -96,6 +96,7 @@ function processFiles(domain) {
     urlList.push(["/N1/p25.php?category=3", "/gyxw/index.html"]);
     urlList.push(["/N1/p25.php?category=4", "/gov/index.html"]);
 
+    writeFile("/var/www/html/sj/index.html", "<script>window.location.href='/zxsj/';</script>", () => {});
     urlIndex = 0;
     let processAsyncCount = 0;
     pool.query("SELECT * FROM cases ORDER BY id DESC", function(err, result) {                

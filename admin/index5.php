@@ -120,46 +120,51 @@ include ('config.php');
 				$title_description_keywords = json_decode(trim(file_get_contents('../title_description_keywords.txt')), true);
 				// pageID => {title, keywords, description}
 				$arr = array(
-							"1" => "/",
-							"2.1" => "/zxsj",
-							"2.2" => '/jzsj',
-							"2.3" => '/znsj',
-							"2.4" => '/nmyy',
-							"5" => '/sj/sjhz.html',
-							"6" => "/sj/zfhz.html",
-							"10" => "/yyms.html",
-							"11" => "/nmyy/nmzs.html",
-							"12" => "/nmyy/nmds.html",
-							"13" => "/nmyy/nmzht.html",
-							"14" => "/nmyy/cyjj.html",
-							"17" => "/zn/znsb.html",
-							"18" => "/zn/znrj.html",
-							"19" => "/zn/csyy.html",
-							"21" => "/tz.html",
-							"22" => "/rz.html",
-							"23" => "/zhengfu.html",
-							"24" => "/gyzy.html",
-							"25.1" => "/sjbk",
-							"25.2" => "/news",
-							"25.3" => "/gyxw",
-							"25.4" => "/gov",														
-							"36" => "/about",
-							"35" => "/about/contact.html",
-							"34" => "/about/certify.html",
-							"37" => "/sj/nmscdw.html");
+					array(	"1" , "/", "主页" ),
+					array(	"2.1" , "/zxsj", "农贸设计案例" ),
+					array(	"2.2" , '/jzsj', "农贸建筑设计"),
+					array(	"2.3" , '/znsj', "5G智能设计"),
+					array(	"2.4" , '/nmyy', "农贸市场运营案例"),
+					array(	"5" , '/sj/sjhz.html', "设计合作流程"),
+					array(	"6" , "/sj/zfhz.html", "城市智慧菜场建设"),
+					array(	"37" , "/sj/nmscdw.html", "农贸市场定位"),
+					array(	"10" , "/yyms.html", "农贸市场运营模式"),
+					array(	"11" , "/nmyy/nmzs.html", "农贸市场招商"),
+					array(	"12" , "/nmyy/nmds.html", "农贸电商"),
+					array(	"13" , "/nmyy/nmzht.html", "农贸综合体"),
+					array(	"14" , "/nmyy/cyjj.html", "菜源佳佳加盟"),
+					array(	"17" , "/zn/znsb.html", "5G智能设备"),
+					array(	"18" , "/zn/znrj.html", "智能软件"),
+					array(	"19" , "/zn/csyy.html", "智能城市应用"),
+					array(	"21" , "/tz.html", "我要投资农贸"),
+					array(	"22" , "/rz.html", "我有农贸项目"),
+					array(	"23" , "/zhengfu.html", "政府合作"),
+					array(	"24" , "/gyzy.html", "光影置业"),
+					array(	"25.1" , "/sjbk", "装修设计百科"),
+					array(	"25.2" , "/news", "农贸新闻资讯"),
+					array(	"25.3" , "/gyxw", "光影新闻动态"),
+					array(	"25.4" , "/gov", "政府政策文件"),														
+					array(	"36" , "/about", "联系我们"),
+					array(	"35" , "/about/contact.html", "团队"),
+					array(	"34" , "/about/certify.html", "公司简介")
+					);
 				$no = 1;
 				$htmlString = "";
-				foreach ($arr as $row => $v) {
+				foreach ($arr as $i => $v) {
+					$row = $v[0];
+					$url = $v[1];
+					$text = $v[2];
 					if (array_key_exists($row, $title_description_keywords))
 						$value = $title_description_keywords[$row];
 					else $value = array();
 					if (isset($value) && sizeof($value) == 3) {}
 					else $value = array('keywords' => '', 'title' => '', 'description' => '');
 
-					$htmlString .= "<tr id='r_$row'><td>$no</td><td>" . htmlspecialchars($v) . "</td><td><textarea placeholder='无内容' class='title'>"
+					$htmlString .= "<tr id='r_$row'><td>$no</td><td>" . $text . "<br>" . htmlspecialchars($url) . "</td><td><textarea placeholder='无内容' class='title'>"
 									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea placeholder='无内容' class='keywords'>"
 									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea placeholder='无内容' class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
 									. "<button class='btn btn-danger' type='button'>X</button></td></tr>";
+					$no++;
 				}
             ?>
 			<main class="content">				
