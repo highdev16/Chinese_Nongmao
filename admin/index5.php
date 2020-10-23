@@ -160,7 +160,7 @@ include ('config.php');
 					if (isset($value) && sizeof($value) == 3) {}
 					else $value = array('keywords' => '', 'title' => '', 'description' => '');
 
-					$htmlString .= "<tr id='r_$row'><td style='background-color:#ddd'>$no</td><td style='background-color:#ddd'><span style='color:#999'>" . $text . "</span><br><b>" . htmlspecialchars($url) . "</b></td><td><textarea placeholder='无内容' class='title'>"
+					$htmlString .= "<tr id='r_$row'><td style='background-color:#eee'>$no</td><td style='background-color:#eee'><span style='color:#999'>" . $text . "</span><br><b>" . htmlspecialchars($url) . "</b></td><td><textarea placeholder='无内容' class='title'>"
 									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea placeholder='无内容' class='keywords'>"
 									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea placeholder='无内容' class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
 									. "<button class='btn btn-danger' type='button' onclick='resetThisRow(this)'>重启</button></td></tr>";
