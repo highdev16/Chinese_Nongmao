@@ -84,7 +84,7 @@ include ('config.php');
 			max-width: 100%; max-height: 100%;
 			border: 0px solid white;
 		}  
-		table td { border: 1px solid #bbb; }
+		table td { border: 1px solid #bbb; padding: 2px 2px 2px 2px; text-align: center;}
 	  </style>
 	  <script src="js/app.js"></script>
 	  <!-- <script src="js/jquery.1.12.4.js"></script> -->
