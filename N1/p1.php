@@ -161,6 +161,8 @@ div.percentage-20 {
     <section class="u-align-center u-clearfix u-section-3" id="carousel_78ab">
       <div class="u-clearfix u-sheet u-sheet-1 bigcontainer" style='min-height: 10px; margin-bottom: 100px'>
           <?php
+          $categoryLabel = array('', 'zxsj', 'jzsj', 'znsj', 'nmyy');
+          $categoryLabel1 = array('', 'sjbk', 'news', 'gyxw', 'gov');
           $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
           $pageTotal = $pageTotal[0]['co'];
           $query = "SELECT * FROM cases WHERE goodone=1 limit 6";
@@ -185,7 +187,7 @@ div.percentage-20 {
               <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
               display: flex;justify-content: center;align-items: center; background:black;'>
                 <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
-                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/N1/p7.php?r=<?php echo $row["id"]; ?>";'>
+                    src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/<?php echo $categoryLabel[$row["category"]]; ?>/<?php echo $row["id"]; ?>.html";'>
               </div>
               <div class="u-blog-control u-post-content u-text u-text-default u-text-6" style='text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis; margin-left: 13px;'>
                 <span style='color:#ff6500'>【案例】</span>&nbsp;&nbsp;<?php echo $row['name']; ?>
@@ -529,8 +531,8 @@ div.percentage-20 {
             <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:331px; overflow:hidden;margin-bottom: 0px; display:flex'>
               <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                     src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer; height: 331px; min-width:100%' 
-                    onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'>
-              <div onclick='window.location.href="/N1/p26.php?r=<?php echo $row["id"]; ?>";'
+                    onclick='window.location.href="/<?php echo $categoryLabel1[$row["category"]]; ?>/<?php echo $row["id"]; ?>.html";'>
+              <div onclick='window.location.href="/<?php echo $categoryLabel1[$row["category"]]; ?>/<?php echo $row["id"]; ?>.html";'
                     style='bottom: 0px; position: absolute; padding-left: 10px; font-weight: 100 !Important; cursor:pointer;
                             width: 100%; height: 30px; background:#0005; color: white; text-align: left; white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;'>
                 <?php echo htmlspecialchars($row['title']); ?>
