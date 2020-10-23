@@ -166,7 +166,7 @@ include ('config.php');
 								<col width="3%">
 							</colgroup>
 							<thead>
-								<tr style='background-color: #ccc'> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> </tr>
+								<tr style='background-color: #ccc'> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> <td>删除</td></tr>
 							</thead>
 							<tbody><?php echo $htmlString; ?></tbody>
 						</table>
