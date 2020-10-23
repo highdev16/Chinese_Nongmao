@@ -77,7 +77,13 @@ include ('config.php');
 		    line-height: 100px;
 		    color: #e1e1e7;
 		    border: 1px solid #dbdbdb;
-	  	}
+		}
+		table textarea {
+			width: 100%; height: 100%;
+			min-width: 100%; min-height: 100%;
+			max-width: 100%; max-height: 100%;
+			border: 0px solid white;
+		}  
 	  </style>
 	  <script src="js/app.js"></script>
 	  <!-- <script src="js/jquery.1.12.4.js"></script> -->
@@ -94,33 +100,67 @@ include ('config.php');
 		<div class="main">
 			<?php include('nav.php'); ?>			
             <?php
-				$keywords = trim(file_get_contents('../keywords.txt'));
-				$description = trim(file_get_contents('../description.txt'));
+				$title_description_keywords = json_decode(trim(file_get_contents('../title_description_keywords.txt')), true);
+				// pageID => {title, keywords, description}
+				$arr = array(
+							"1" => "/",
+							"2.1" => "/zxsj",
+							"2.2" => '/jzsj',
+							"2.3" => '/znsj',
+							"2.4" => '/nmyy',
+							"5" => '/sj/sjhz.html',
+							"6" => "/sj/zfhz.html",
+							"10" => "/yyms.html",
+							"11" => "/nmyy/nmzs.html",
+							"12" => "/nmyy/nmds.html",
+							"13" => "/nmyy/nmzht.html",
+							"14" => "/nmyy/cyjj.html",
+							"17" => "/zn/znsb.html",
+							"18" => "/zn/znrj.html",
+							"19" => "/zn/csyy.html",
+							"21" => "/tz.html",
+							"22" => "/rz.html",
+							"23" => "/zhengfu.html",
+							"24" => "/gyzy.html",
+							"25.1" => "/sjbk",
+							"25.2" => "/news",
+							"25.3" => "/gyxw",
+							"25.4" => "/gov",														
+							"36" => "/about",
+							"35" => "/about/contact.html",
+							"34" => "/about/certify.html",
+							"37" => "/sj/nmscdw.html");
+				$arr = array(); $no = 1;
+				$htmlString = "";
+				foreach ($arr as $row => $v) {
+					$value = $title_description_keywords[$row];
+					if (isset($value) && sizeof($value) == 3) {}
+					else $value = array('keywords' => '', 'title' => '', 'description' => '');
+					
+					$htmlString .= "<tr id='r_$row'><td>$no</td><td>" . htmlspecialchars($v) . "</td><td><textarea class='title'>"
+									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea class='keywords'>"
+									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
+									. "<button class='btn btn-danger' type='button'>X</button></td></tr>";
+				}
             ?>
 			<main class="content">				
-				<div class="container-fluid p-0">
-					<div class="row">
-						<div>
-                            <table>
-                                <tr>
-                                    <td style='width: 120px; font-weight: bold'>关键词</td>
-                                    <td>
-                                    <textarea id='keywords' style='width: 500px; height: 100px'><?php echo htmlspecialchars($keywords); ?></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style='width: 120px; font-weight: bold'>描述</td>
-                                    <td>
-                                        <textarea id='description' style='width: 500px; height: 100px'><?php echo htmlspecialchars($description); ?></textarea>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+				<div class="container-fluid p-0">					
                     <div class='row'>
-					    <div style="margin-top: 50px;">
-					        <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton'>保存</button>
-					    </div>
+					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton'>保存</button>					    
+					</div>
+					<div class='row'>
+					    <table id='maintable'>
+							<colgroup>
+								<col width="7%">
+								<col width="30%">
+								<col width="30%">
+								<col width="30%">
+								<col width="3%">
+							</colgroup>
+							<tbody>
+								<?php echo $htmlString; ?>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</main>
@@ -131,7 +171,16 @@ include ('config.php');
 </body>
 <script>
     function SaveData() {
-        $.post('save_keyword.php', {keywords: $("#keywords").val(), description: $("#description").val()}, function(a,b) {
+		let arrData = {};
+		$("#maintable tr").each(function() {
+			let id = this.id.substr(2);
+			arrData[id] = {
+				title: $(this).find("textarea.title").val(),
+				keywords: $(this).find("textarea.keywords").val(),
+				description: $(this).find("textarea.description").val()
+			};
+		})
+        $.post('save_keyword.php', {data: arrData}, function(a,b) {
             if (a == 'success') alert("成功！");
             else alert("失败！");
         })
