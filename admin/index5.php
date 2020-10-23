@@ -161,7 +161,7 @@ include ('config.php');
 								<col width="3%">
 							</colgroup>
 							<thead>
-								<tr> <td> </td> <td>标题</td> <td>关键字</td> <td>说明</td> </tr>
+								<tr> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> </tr>
 							</thead>
 							<tbody><?php echo $htmlString; ?></tbody>
 						</table>
