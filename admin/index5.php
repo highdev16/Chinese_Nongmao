@@ -178,7 +178,7 @@ include ('config.php');
 <script>
     function SaveData() {
 		let arrData = {};
-		$("#maintable tr").each(function() {
+		$("#maintable tbody tr").each(function() {
 			let id = this.id.substr(2);
 			arrData[id] = {
 				title: $(this).find("textarea.title").val(),
