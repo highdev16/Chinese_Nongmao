@@ -49,16 +49,16 @@ include ('config.php');
 			font-size: 130%;
 		}
 		::-webkit-input-placeholder {
-		color: #eee;
+		color: #ddd;
 		}
 		:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
-		color: #eee;  
+		color: #ddd;  
 		}
 		::-moz-placeholder {  /* Firefox 19+ */
-		color: #eee;  
+		color: #ddd;  
 		}
 		:-ms-input-placeholder {  
-		color: #eee;  
+		color: #ddd;  
 		}
 		#sortable { 
 		    list-style-type: none; 
