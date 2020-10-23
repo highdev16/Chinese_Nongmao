@@ -7,7 +7,7 @@ $dirname = ($t[0]);
 $filename = strtolower($url[0]);
 $oname = explode('.', $dirname . "/" . $filename);
 $oname = $oname[0];
-?><!DOCTYPE html><html style="font-size: 16px;" lang='cn'><head><title><?php echo $bigTitle; ?></title>    
+?><!DOCTYPE html><html style="font-size: 16px;" lang='cn'><head>
 <?php
 $arr = array(1,2,5,6,37,10,11,12,13,14,17,18,19,21,22,23,24,25,34,35,36);
 $origin_url = ($_SERVER['REQUEST_URI']);
@@ -19,6 +19,7 @@ foreach ($arr as $urlNumber) {
     $description = file_get_contents("../description.txt");
     echo "<meta name='keywords' content='" . htmlspecialchars($keywords) . "'>";
     echo "<meta name='description' content='" . htmlspecialchars($description) . "'>";
+    echo "<title>$bigTitle</title>";
     break;
   }
 }
@@ -31,6 +32,7 @@ if (!$flag) {
     $data = $rows[0];
     echo "<meta name='keywords' content='" . htmlspecialchars($data['keywords']) . "'>";
     echo "<meta name='description' content='" . htmlspecialchars($data['description']) . "'>";
+    echo "<title>htmlspecialchars($data['name'])</title>";
   } else if (strpos($origin_url, "p26.php") !== FALSE) {
     include ('../N1/dbconfig.php');
     $db = getDbInstance();
@@ -38,6 +40,7 @@ if (!$flag) {
     $data = $rows[0];
     echo "<meta name='keywords' content='" . htmlspecialchars($data['keywords']) . "'>";
     echo "<meta name='description' content='" . htmlspecialchars($data['description']) . "'>";
+    echo "<title>htmlspecialchars($data['name'])</title>";
   }
 }
 ?>
