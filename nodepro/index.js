@@ -20,7 +20,7 @@ function CheckLocalhost(callback) {
         if (html == 'gggyyy') callback ("localhost");
         else callback("gggyyy.cn");
     }).catch(function(err){
-        writeFile(logFile, "[Error] " + new Date().toLocaleString() + " ----  Get local domain failed\n", {flag: 'a'}, ()=>{});    
+        //writeFile(logFile, "[Error] " + new Date().toLocaleString() + " ----  Get local domain failed\n", {flag: 'a'}, ()=>{});    
     });
 }
 function scrapeFile(domain, url, filename, forceScrape) {
@@ -29,10 +29,10 @@ function scrapeFile(domain, url, filename, forceScrape) {
     rp("http://" + domain + url).then(function(html){ 
         if (!forceScrape && isForcedToQuit) return;
         writeFile("/var/www/html" + filename, html, ()=>{});
-        writeFile(logFile, "[Success] " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});
+        //writeFile(logFile, "[Success] " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});
         if (!forceScrape) filesInProgress--;
     }).catch(function(err){
-        writeFile(logFile, "[Error, " + new Date().toLocaleString(), "]: " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});    
+        //writeFile(logFile, "[Error, " + new Date().toLocaleString(), "]: " + url + " " + filename + "\n", {flag: 'a'}, ()=>{});    
         if (!forceScrape) filesInProgress--;
     });
 }
@@ -42,7 +42,7 @@ function make2(s) { return s < 10 ? "0" + s : s; }
 function callDaemon() {
     processingText = "Getting domain...";
     if (checkTimer) {
-        writeFile(logFile,"-------- Daemon restarted " + new Date().toLocaleString() + "--------\n", {flag: 'a'}, ()=>{});          
+        //writeFile(logFile,"-------- Daemon restarted " + new Date().toLocaleString() + "--------\n", {flag: 'a'}, ()=>{});          
         clearInterval(checkTimer);
         checkTimer = 0;            
     }   
@@ -58,7 +58,7 @@ function callDaemon() {
             processingText = "Just started. Processing now...";
             logFile = "Log_" + new Date().getFullYear() + "-" + make2(new Date().getMonth() + 1) + "-" + make2(new Date().getDate()) + "-" + make2(new Date().getHours()) + "-"
                 + make2(new Date().getMinutes()) + "-" + make2(new Date().getSeconds()) + ".txt";
-            writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",{flag: 'a'}, ()=>{});    
+            //writeFile(logFile,"-------- Daemon started --------\n--- " + new Date().toLocaleString() + " ---\n",{flag: 'a'}, ()=>{});    
             processFiles(domain);
         }, 10000);    
     })  
@@ -131,7 +131,7 @@ function processFiles(domain) {
                 if (++urlIndex == urlList.length) {
                     clearInterval(processTimer);
                     setTimeout(function() {
-                        writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+                        //writeFile(logFile,"\n\n-------- Daemon ended --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
                         processingText = "Ended...";
                     });            
                     clearInterval(checkTimer);
@@ -183,7 +183,7 @@ app.all('/cancelworkon', (req, res) => {
     urlList = [];
     filesInProgress = 0;
     processingText = "";
-    writeFile(logFile,"\n\n-------- Daemon escaped by admin --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
+    //writeFile(logFile,"\n\n-------- Daemon escaped by admin --------\n--- " + new Date().toLocaleString() + " ---\n\n\n\n",{flag: 'a'}, ()=>{});        
     res.send("OK");    
 });
 
@@ -197,7 +197,6 @@ app.all("/generatenews/:id/:category", (req, res) => {
     });
     res.send("success");
 });
-
 app.all("/generatecase/:id/:category", (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     let id = req.params.id;
@@ -253,3 +252,7 @@ app.all("/generatestaticpages", (req, res) => {
     });
     res.send("success");
 });
+
+setInterval(function() {
+
+})
