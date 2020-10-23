@@ -48,6 +48,18 @@ include ('config.php');
 		ul.sidebar-nav li a.sidebar-link {
 			font-size: 130%;
 		}
+		::-webkit-input-placeholder {
+		color: #eee;
+		}
+		:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+		color: #eee;  
+		}
+		::-moz-placeholder {  /* Firefox 19+ */
+		color: #eee;  
+		}
+		:-ms-input-placeholder {  
+		color: #eee;  
+		}
 		#sortable { 
 		    list-style-type: none; 
 		    margin: 0; 
