@@ -24,11 +24,14 @@ foreach ($arr as $urlNumber) {
         }
       } 
       if ($k > 4) exit;
+    }    
+    if (array_key_exists("$urlNumber", $tdkFile) && sizeof(array_keys($tdkFile["$urlNumber"])) == 3) {
+      $metaData = $tdkFile["$urlNumber"];
     }
-
-    echo "<meta name='keywords' content='" . htmlspecialchars($tdkFile[$urlNumber]['keywords']) . "'>";
-    echo "<meta name='description' content='" . htmlspecialchars($tdkFile[$urlNumber]['description']) . "'>";    
-    echo "<title>" .  htmlspecialchars($tdkFile[$urlNumber]['title']) . "</title>";
+    else $metaData = array("keywords" => "", "title" => "", "description" => "");
+    echo "<meta name='keywords' content='" . htmlspecialchars($metaData['keywords']) . "'>";
+    echo "<meta name='description' content='" . htmlspecialchars($metaData['description']) . "'>";    
+    echo "<title>" .  htmlspecialchars($metaData['title']) . "</title>";
     break;
   }
 }
