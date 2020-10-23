@@ -252,7 +252,3 @@ app.all("/generatestaticpages", (req, res) => {
     });
     res.send("success");
 });
-
-setInterval(function() {
-
-})
