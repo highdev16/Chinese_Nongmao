@@ -152,7 +152,7 @@ include ('config.php');
 					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton'>保存</button>					    
 					</div>
 					<div class='row'>
-					    <table id='maintable'>
+					    <table id='maintable' style='width:100%'>
 							<colgroup>
 								<col width="7%">
 								<col width="30%">
