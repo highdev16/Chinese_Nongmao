@@ -86,50 +86,50 @@
                 <td class="u-table-cell">关于我们</td>
               </tr>
               <tr style="height: 51px;">
-                <td class="u-table-cell u-table-cell-52">&gt; 农贸市场设计</td>
-                <td class="u-table-cell u-table-cell-53">&gt; 农贸装修设计</td>
-                <td class="u-table-cell u-table-cell-54">&gt; 农贸运营模式</td>
-                <td class="u-table-cell u-table-cell-55">&gt; 5G智能设备</td>
-                <td class="u-table-cell u-table-cell-56">&gt; 我要投资农贸</td>
-                <td class="u-table-cell u-table-cell-57">&gt; 农贸设计百科</td>
-                <td class="u-table-cell u-table-cell-57">&gt; 公司简介</td>
+                <td class="u-table-cell u-table-cell-52" style='cursor:pointer' title="http://gggyyy.cn/zxsj/">&gt; 农贸市场设计</td>
+                <td class="u-table-cell u-table-cell-53" style='cursor:pointer' title="http://gggyyy.cn/zxsj/">&gt; 农贸装修设计</td>
+                <td class="u-table-cell u-table-cell-54" style='cursor:pointer' title="http://gggyyy.cn/yyms.html">&gt; 农贸运营模式</td>
+                <td class="u-table-cell u-table-cell-55" style='cursor:pointer' title="http://gggyyy.cn/zn/znsb.html">&gt; 5G智能设备</td>
+                <td class="u-table-cell u-table-cell-56" style='cursor:pointer' title="http://gggyyy.cn/tz.html">&gt; 我要投资农贸</td>
+                <td class="u-table-cell u-table-cell-57" style='cursor:pointer' title="http://gggyyy.cn/sjbk/">&gt; 农贸设计百科</td>
+                <td class="u-table-cell u-table-cell-57" style='cursor:pointer' title="http://gggyyy.cn/about/certify.html">&gt; 公司简介</td>
               </tr>
               <tr style="height: 56px;">
-                <td class="u-table-cell u-table-cell-58">&gt; 农贸建筑设计</td>
-                <td class="u-table-cell u-table-cell-59">&gt; 5G智能设计</td>
-                <td class="u-table-cell u-table-cell-60">&gt; 农贸市场招商</td>
-                <td class="u-table-cell u-table-cell-61">&gt; 智能软件系统</td>
-                <td class="u-table-cell u-table-cell-62">&gt; 我有农贸项目</td>
-                <td class="u-table-cell u-table-cell-63">&gt; 农贸新闻资讯</td>
-                <td class="u-table-cell u-table-cell-63">&gt; 团队</td>
+                <td class="u-table-cell u-table-cell-58" style='cursor:pointer' title="http://gggyyy.cn/jzsj/">&gt; 农贸建筑设计</td>
+                <td class="u-table-cell u-table-cell-59" style='cursor:pointer' title="http://gggyyy.cn/znsj/">&gt; 5G智能设计</td>
+                <td class="u-table-cell u-table-cell-60" style='cursor:pointer' title="http://gggyyy.cn/nmyy/nmzs.html">&gt; 农贸市场招商</td>
+                <td class="u-table-cell u-table-cell-61" style='cursor:pointer' title="http://gggyyy.cn/zn/znrj.html">&gt; 智能软件系统</td>
+                <td class="u-table-cell u-table-cell-62" style='cursor:pointer' title="http://gggyyy.cn/rz.html">&gt; 我有农贸项目</td>
+                <td class="u-table-cell u-table-cell-63" style='cursor:pointer' title="http://gggyyy.cn/news/">&gt; 农贸新闻资讯</td>
+                <td class="u-table-cell u-table-cell-63" style='cursor:pointer' title="http://gggyyy.cn/about/contact.html">&gt; 团队</td>
               </tr>
               <tr style="height: 56px;">
-                <td class="u-table-cell u-table-cell-64">&gt; 5G 智能设计</td>
-                <td class="u-table-cell u-table-cell-65">&gt; 农贸建筑设计</td>
-                <td class="u-table-cell u-table-cell-66">&gt; 农贸市场电商</td>
-                <td class="u-table-cell u-table-cell-67">&gt; 智能城市应用</td>
-                <td class="u-table-cell u-table-cell-68">&gt; 政府合作</td>
-                <td class="u-table-cell u-table-cell-69">&gt; 光影新闻动态</td>
-                <td class="u-table-cell u-table-cell-69">&gt; 联系我们</td>
+                <td class="u-table-cell u-table-cell-64" style='cursor:pointer' title="http://gggyyy.cn/znsj/">&gt; 5G 智能设计</td>
+                <td class="u-table-cell u-table-cell-65" style='cursor:pointer' title="http://gggyyy.cn/jzsj/">&gt; 农贸建筑设计</td>
+                <td class="u-table-cell u-table-cell-66" style='cursor:pointer' title="http://gggyyy.cn/nmyy/nmds.html">&gt; 农贸市场电商</td>
+                <td class="u-table-cell u-table-cell-67" style='cursor:pointer' title="http://gggyyy.cn/zn/csyy.html">&gt; 智能城市应用</td>
+                <td class="u-table-cell u-table-cell-68" style='cursor:pointer' title="http://gggyyy.cn/zhengfu.html">&gt; 政府合作</td>
+                <td class="u-table-cell u-table-cell-69" style='cursor:pointer' title="http://gggyyy.cn/gyxw/" >&gt; 光影新闻动态</td>
+                <td class="u-table-cell u-table-cell-69" style='cursor:pointer' title="http://gggyyy.cn/about/">&gt; 联系我们</td>
               </tr>
               <tr style="height: 56px;">
-                <td class="u-table-cell u-table-cell-70">&gt; 农贸市场运营</td>
-                <td class="u-table-cell u-table-cell-71">&gt; 设计合作流程</td>
-                <td class="u-table-cell u-table-cell-72">&gt; 农贸商业综合体</td>
-                <td class="u-table-cell u-table-cell-73">&gt; 智能菜场案例</td>
-                <td class="u-table-cell u-table-cell-74">&gt; 光影置业</td>
-                <td class="u-table-cell u-table-cell-75">&gt; 政府政策文件</td>
+                <td class="u-table-cell u-table-cell-70" style='cursor:pointer' title="http://gggyyy.cn/yyms.html">&gt; 农贸市场运营</td>
+                <td class="u-table-cell u-table-cell-71" style='cursor:pointer' title="http://gggyyy.cn/sj/sjhz.html">&gt; 设计合作流程</td>
+                <td class="u-table-cell u-table-cell-72" style='cursor:pointer' title="http://gggyyy.cn/nmyy/nmzht.html">&gt; 农贸商业综合体</td>
+                <td class="u-table-cell u-table-cell-73" style='cursor:pointer' title="http://gggyyy.cn/znsj/">&gt; 智能菜场案例</td>
+                <td class="u-table-cell u-table-cell-74" style='cursor:pointer' title="http://gggyyy.cn/gyzy.html">&gt; 光影置业</td>
+                <td class="u-table-cell u-table-cell-75" style='cursor:pointer' title="http://gggyyy.cn/gov/">&gt; 政府政策文件</td>
               </tr>
               <tr style="height: 27px;">
-                <td class="u-table-cell u-table-cell-76">&gt; 农贸项目投资</td>
-                <td class="u-table-cell u-table-cell-77">&gt; 政府合作</td>
-                <td class="u-table-cell">&gt; 加盟菜源佳佳</td>
+                <td class="u-table-cell u-table-cell-76" style='cursor:pointer' title="http://gggyyy.cn/tz.html">&gt; 农贸项目投资</td>
+                <td class="u-table-cell u-table-cell-77"style='cursor:pointer' title="http://gggyyy.cn/zhengfu.html">&gt; 政府合作</td>
+                <td class="u-table-cell" style='cursor:pointer' title="http://gggyyy.cn/nmyy/cyjj.html">&gt; 加盟菜源佳佳</td>
                 <td class="u-table-cell"></td>
                 <td class="u-table-cell"></td>
                 <td class="u-table-cell"></td>
               </tr>
               <tr style="height: 50px;">
-                <td class="u-table-cell u-table-cell-82">&gt;农贸市场电商</td>
+                <td class="u-table-cell u-table-cell-82" style='cursor:pointer' title="http://gggyyy.cn/nmyy/nmds.html">&gt; 农贸市场电商</td>
                 <td class="u-table-cell"></td>
                 <td class="u-table-cell"></td>
                 <td class="u-table-cell"></td>
@@ -145,5 +145,12 @@
           <br>
         </p>
       </div></footer>
+      <script>
+        $(document).ready(function() {
+          $("#sec-dc14 table.footertable td[title]").each(function() {
+            $(this).attr('onclick', 'window.location.href="' + $(this).attr('title') . '"');
+          })
+        })
+      </script>
   </body>
 </html>
