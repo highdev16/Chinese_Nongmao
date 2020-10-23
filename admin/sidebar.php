@@ -55,7 +55,11 @@
 	            </a>
 			</li>
 			<script>
+				let processingPages = false;
 				function confirmRegeneratePages() {
+					if (processingPages) {
+						alert("仍在处理中...等待响应最多10秒钟。"); return;
+					}
 					if (!confirm("您确定要重新生成所有页面和静态URL吗? (这需要一段时间。)")) return;
 					$.post("//gggyyy.cn:8080/isprocessworkon", function(a,b) {
 						if (b != 'success') {
@@ -77,13 +81,16 @@
 							return;
 						}
 
+						processingPages = true;
 						$.post("//gggyyy.cn:8080/workon", function(a,b) {
+							processingPages = false;
 							if (a == 'success' && b == 'success') {
 								alert("成功！ 请等待一段时间（最多一个小时）。");
 							} else {
 								alert("失败！ 无法继续您的请求。 与开发人员联系以解决此问题。");
-							}
+							}							
 						}).fail(function() {
+							processingPages = false;
 							alert("失败！ 服务器功能失败。\n与开发人员联系以解决此问题。");
 						})
 					}).fail(function() {
