@@ -159,9 +159,10 @@ include ('config.php');
 					    <table id='maintable' style='width:100%; border: 1px solid #bbb'>
 							<colgroup>
 								<col width="7%">
-								<col width="30%">
-								<col width="30%">
-								<col width="30%">
+								<col width="15%">
+								<col width="20%">
+								<col width="20%">
+								<col width="20%">
 								<col width="3%">
 							</colgroup>
 							<thead>
