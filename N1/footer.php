@@ -148,7 +148,10 @@
       <script>
         $(document).ready(function() {
           $("#sec-dc14 table.footertable td[title]").each(function() {
-            $(this).attr('onclick', 'window.location.href="' + $(this).attr('title') . '"');
+            let link = $(this).attr('title');
+            $(this).click(() => {
+              window.location.href = link;
+            });
           })
         })
       </script>
