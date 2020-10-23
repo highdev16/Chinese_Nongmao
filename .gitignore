@@ -19,3 +19,4 @@ about/*
 *.html
 keywords.txt
 description.txt
+!404.html
