@@ -32,7 +32,7 @@ if (!$flag) {
     $data = $rows[0];
     echo "<meta name='keywords' content='" . htmlspecialchars($data['keywords']) . "'>";
     echo "<meta name='description' content='" . htmlspecialchars($data['description']) . "'>";
-    echo "<title>htmlspecialchars($data['name'])</title>";
+    echo "<title>" . htmlspecialchars($data['name']) . "</title>";
   } else if (strpos($origin_url, "p26.php") !== FALSE) {
     include ('../N1/dbconfig.php');
     $db = getDbInstance();
@@ -40,7 +40,7 @@ if (!$flag) {
     $data = $rows[0];
     echo "<meta name='keywords' content='" . htmlspecialchars($data['keywords']) . "'>";
     echo "<meta name='description' content='" . htmlspecialchars($data['description']) . "'>";
-    echo "<title>htmlspecialchars($data['name'])</title>";
+    echo "<title>" . htmlspecialchars($data['name']) . "</title>";
   }
 }
 ?>
