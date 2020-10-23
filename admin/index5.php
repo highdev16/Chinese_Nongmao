@@ -163,7 +163,7 @@ include ('config.php');
 					$htmlString .= "<tr id='r_$row'><td>$no</td><td><span style='color:#999'>" . $text . "</span><br><b>" . htmlspecialchars($url) . "</b></td><td><textarea placeholder='无内容' class='title'>"
 									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea placeholder='无内容' class='keywords'>"
 									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea placeholder='无内容' class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
-									. "<button class='btn btn-danger' type='button'>X</button></td></tr>";
+									. "<button class='btn btn-danger' type='button' onclick='resetThisRow(this)'>重启</button></td></tr>";
 					$no++;
 				}
             ?>
@@ -183,7 +183,7 @@ include ('config.php');
 								<col width="3%">
 							</colgroup>
 							<thead>
-								<tr style='background-color: #ccc'> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> <td>删除</td></tr>
+								<tr style='background-color: #ccc'> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> <td></td></tr>
 							</thead>
 							<tbody><?php echo $htmlString; ?></tbody>
 						</table>
@@ -210,6 +210,11 @@ include ('config.php');
             if (a == 'success') alert("成功！");
             else alert("失败！");
         })
-    }
+	}
+	
+	function resetThisRow(obj) {
+		$(obj).parent().parent().find('textarea').val("");
+		
+	}
 </script>
 </html>
