@@ -84,6 +84,7 @@ include ('config.php');
 			max-width: 100%; max-height: 100%;
 			border: 0px solid white;
 		}  
+		table td { border: 1px solid #bbb; }
 	  </style>
 	  <script src="js/app.js"></script>
 	  <!-- <script src="js/jquery.1.12.4.js"></script> -->
@@ -152,7 +153,7 @@ include ('config.php');
 					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton'>保存</button>					    
 					</div>
 					<div class='row'>
-					    <table id='maintable' style='width:100%'>
+					    <table id='maintable' style='width:100%; border: 1px solid #bbb'>
 							<colgroup>
 								<col width="7%">
 								<col width="30%">
@@ -161,7 +162,7 @@ include ('config.php');
 								<col width="3%">
 							</colgroup>
 							<thead>
-								<tr> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> </tr>
+								<tr style='background-color: #ccc'> <td>No.</td> <td>URL</td><td>标题</td> <td>关键字</td> <td>说明</td> </tr>
 							</thead>
 							<tbody><?php echo $htmlString; ?></tbody>
 						</table>
