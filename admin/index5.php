@@ -170,10 +170,10 @@ include ('config.php');
 			<main class="content">				
 				<div class="container-fluid p-0">					
                     <div class='row'>
-					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton'>保存</button>					    
+					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton' style='width: 100px; height: 30px'>保存</button>					    
 					</div>
 					<div class='row'>
-					    <table id='maintable' style='width:100%; border: 1px solid #bbb'>
+					    <table id='maintable' style='width:100%; border: 1px solid #bbb; margin-top: 30px'>
 							<colgroup>
 								<col width="7%">
 								<col width="15%">
