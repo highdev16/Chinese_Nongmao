@@ -137,7 +137,9 @@ include ('config.php');
 				$no = 1;
 				$htmlString = "";
 				foreach ($arr as $row => $v) {
-					$value = $title_description_keywords[$row];
+					if (array_key_exists($row, $title_description_keywords))
+						$value = $title_description_keywords[$row];
+					else $value = array();
 					if (isset($value) && sizeof($value) == 3) {}
 					else $value = array('keywords' => '', 'title' => '', 'description' => '');
 
