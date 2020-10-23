@@ -66,8 +66,8 @@ if (!$flag) {
     <link rel="stylesheet" href="/N1/nicepage.css" media="screen">
     <link rel="stylesheet" href="/N1/images/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="<?php echo $oname; ?>.css" media="screen">    
-    <script class="u-script" type="text/javascript" src="/N1/jquery.js" defer=""></script>
-    <!-- <script src="/js/jquery1.js"></script> -->
+    <!-- <script class="u-script" type="text/javascript" src="/N1/jquery.js" defer=""></script> -->
+    <script src="/js/jquery1.js"></script>
     <script class="u-script" type="text/javascript" src="/N1/nicepage.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="/css/googleapifont.css">
     <meta property="og:title" content="<?php echo $bigTitle; ?>">
