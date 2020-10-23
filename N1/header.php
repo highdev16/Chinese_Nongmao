@@ -23,7 +23,7 @@ foreach ($arr as $urlNumber) {
     if ($urlNumber == 2 || $urlNumber == 25) {
       for ($k = 1; $k <= 4; $k++) {
         if (strpos($origin_url, "category=" . $k) !== FALSE) {
-          $urlNumber .= ".$k";
+          $urlNumber .= ".$k"; break;
         }
       } 
       if ($k > 4) exit;
