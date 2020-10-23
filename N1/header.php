@@ -15,6 +15,9 @@ $flag = false;
 foreach ($arr as $urlNumber) {
   if (strpos($origin_url, "p$urlNumber.php") !== FALSE) {
     $flag = true;
+    if (!file_exists("../title_description_keywords.txt")) {
+      file_put_contents("../title_description_keywords.txt", "{}");
+    }
     $tdkFile = json_decode(file_get_contents("../title_description_keywords.txt"), true);
     $key = $urlNumber;
     if ($urlNumber == 2 || $urlNumber == 25) {

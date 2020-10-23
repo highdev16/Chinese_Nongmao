@@ -99,7 +99,10 @@ include ('config.php');
 
 		<div class="main">
 			<?php include('nav.php'); ?>			
-            <?php
+			<?php
+				if (!file_exists("../title_description_keywords.txt")) {
+					file_put_contents("../title_description_keywords.txt", "{}");
+				}
 				$title_description_keywords = json_decode(trim(file_get_contents('../title_description_keywords.txt')), true);
 				// pageID => {title, keywords, description}
 				$arr = array(
@@ -136,7 +139,7 @@ include ('config.php');
 					$value = $title_description_keywords[$row];
 					if (isset($value) && sizeof($value) == 3) {}
 					else $value = array('keywords' => '', 'title' => '', 'description' => '');
-					
+
 					$htmlString .= "<tr id='r_$row'><td>$no</td><td>" . htmlspecialchars($v) . "</td><td><textarea class='title'>"
 									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea class='keywords'>"
 									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
