@@ -144,9 +144,9 @@ include ('config.php');
 					if (isset($value) && sizeof($value) == 3) {}
 					else $value = array('keywords' => '', 'title' => '', 'description' => '');
 
-					$htmlString .= "<tr id='r_$row'><td>$no</td><td>" . htmlspecialchars($v) . "</td><td><textarea class='title'>"
-									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea class='keywords'>"
-									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
+					$htmlString .= "<tr id='r_$row'><td>$no</td><td>" . htmlspecialchars($v) . "</td><td><textarea placeholder='无内容' class='title'>"
+									. htmlspecialchars($value['title']) . "</textarea></td><td><textarea placeholder='无内容' class='keywords'>"
+									. htmlspecialchars($value['keywords']) . "</textarea></td><td><textarea placeholder='无内容' class='description'>". htmlspecialchars($value['description']) . "</textarea></td><td>"
 									. "<button class='btn btn-danger' type='button'>X</button></td></tr>";
 				}
             ?>
