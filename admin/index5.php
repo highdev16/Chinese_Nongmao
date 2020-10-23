@@ -134,7 +134,7 @@ include ('config.php');
 							"35" => "/about/contact.html",
 							"34" => "/about/certify.html",
 							"37" => "/sj/nmscdw.html");
-				$arr = array(); $no = 1;
+				$no = 1;
 				$htmlString = "";
 				foreach ($arr as $row => $v) {
 					$value = $title_description_keywords[$row];
