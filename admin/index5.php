@@ -121,7 +121,7 @@ include ('config.php');
 				// pageID => {title, keywords, description}
 				$arr = array(
 					array(	"1" , "/", "主页" ),
-					array(	"2.1" , "/zxsj", "农贸设计案例" ),
+					array(	"2.1" , "/sj", "农贸设计案例" ),
 					array(	"2.2" , '/jzsj', "农贸建筑设计"),
 					array(	"2.3" , '/znsj', "5G智能设计"),
 					array(	"2.4" , '/nmyy', "农贸市场运营案例"),
