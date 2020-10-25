@@ -82,7 +82,7 @@ if (!$flag) {
         <a href="/" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>
           <img src="/N1/images/logo.png" class="u-logo-image u-logo-image-1" data-image-width="242.1137">
         </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='display: flex; display: -webkit-flex; flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around'>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style='opacity: 1; display: flex; display: -webkit-flex; flex-direction: column; justify-content: space-around; -webkit-justify-content: space-around'>
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
             <a class="u-border-4  u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
