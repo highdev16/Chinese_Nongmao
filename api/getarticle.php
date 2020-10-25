@@ -43,8 +43,8 @@ if ($row == null) {
 // }
 
 echo json_encode(array('result' => 'success', 'data' => array(
-    'prev' => $prev == null ? null : array('id' => $prev['id'], 'title' => $prev['title']),
-    'next' => $next == null ? null : array('id' => $next['id'], 'title' => $next['title']),
+    'prev' => $prev == null ? null : array('id' => $prev['id'], 'title' => $prev['title'], 'category' => $prev['category']),
+    'next' => $next == null ? null : array('id' => $next['id'], 'title' => $next['title'], 'category' => $next['category']),
     'category' => array('id' => $row['category'], 'title' => $categoryArr[$row['category']]),
     'row' => $row
 )));
