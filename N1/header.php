@@ -350,7 +350,7 @@ if (!$flag) {
           if ($(window).scrollTop() >= 40) $("header, .titlesubmenu").addClass('narrow');
           else if ($(window).scrollTop() <= 0) $("header, .titlesubmenu").removeClass('narrow');
         })
-        $(document).ready(function() {
+        $(document).ready(function() {            
             let mousemove = false;
             $(".titlemainmenu").each(function(ind, ele) {
                 if (ind == 0) {
@@ -422,9 +422,18 @@ if (!$flag) {
                   || window.location.href.toLowerCase().indexOf(($(this).attr('my-href') + "index.html").toLowerCase()) != -1
                   || window.location.href.toLowerCase().indexOf(($(this).attr('my-href') + "/index.html").toLowerCase()) != -1) {
                     $(this).find("p").addClass('active-submenu');
+                    let parentObj = $(this).parent();
+                    while (parentObj != null && !parentObj.hasClass('titlesubmenu')) {
+                      parentObj = parentObj.parent();
+                    }
+                    if (parentObj == null) return;
+                    for (let i = 2; i <= 7; i++) {
+                      if (parentObj.hasClass('mainmenu' + i)) {
+                        $("a.titlemainmenu.mainmenu" + i).addClass('active'); return;
+                      }
+                    }
                 }
-            })
-
+            });
         })
 
     </script>

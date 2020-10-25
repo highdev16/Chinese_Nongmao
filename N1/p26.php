@@ -352,6 +352,7 @@ $data = $rows[0]['keywords'];
                 console.log(a);
                 let myCategory = a['row']['category'];
                 $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu');
+                $("a.titlemainmenu.mainmenu6").addClass('active');
                 $("#browsecount").html(a.row.browse + "");
                 $("#categoryLabel").html(categoryArr[a.row['category']]).click(function() {
                   window.location.href="/" + categoryLabelStrings[a.row.category] + "/"; //'/N1/p25.php?category=' + a.row.category;
