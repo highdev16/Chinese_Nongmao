@@ -349,6 +349,7 @@ $data = $rows[0]['keywords'];
               a = JSON.parse(a);
               if (a['result'] == 'success') {
                 a = a.data;
+                console.log(a);
                 let myCategory = a['row']['category'];
                 $("section.mainmenu6 div.u-layout-row > div:nth-child(" + myCategory + ") p").addClass('active-submenu');
                 $("#browsecount").html(a.row.browse + "");
