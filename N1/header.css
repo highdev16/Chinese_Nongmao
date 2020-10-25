@@ -175,7 +175,7 @@ body {
 
 .active-submenu {
     color: #ff6500 !important;
-    filter: drop-shadow(2px 2px 2px #ff6500);
+    filter: drop-shadow(1px 1px 1px #ff6500);
 }
 
 .titlesubmenu {
