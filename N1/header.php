@@ -80,6 +80,7 @@ if (!$flag) {
     <meta name="theme-color" content="#478ac9">
     <meta property="og:url" content="index.html">
     <link rel="stylesheet" href="/N1/header.css" media="screen">            
+    <link rel="stylesheet" href="/N1/mobile.css" media="screen">            
   </head>
   <body class="u-body">
       <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style=' z-index:9999999'>
