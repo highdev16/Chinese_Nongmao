@@ -1,3 +1,8 @@
+<script>
+if (window.location.href.includes("//gggyyy.cn")) {
+  window.location.href=window.location.href.replace("gggyyy.cn", "www.gggyyy.cn");
+}
+</script>
 <?php
 error_reporting(0);
 $url = basename($_SERVER['REQUEST_URI']);
