@@ -223,7 +223,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/7.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="/sj/c1.html";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-1" onclick='window.location.href="/zxsj/";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text" style="">室内设计</p>
             </div>
@@ -232,7 +232,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/c2.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="/sj/c2.html";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-2" onclick='window.location.href="/jzsj/";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">建筑设计</p>
             </div>
@@ -241,7 +241,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/e624cbc5-e96f-6700-5942-f978bb060ac3.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="/sj/c3.html";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-3" onclick='window.location.href="/znsj/";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">5G智能</p>
             </div>
@@ -250,7 +250,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/5td.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="/sj/c4.html";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-4" onclick='window.location.href="/sj/sjhz.html";'>
               <h3 class="u-gallery-heading" style="font-size: 1.25rem;"></h3>
               <p class="u-gallery-text circle-text">设计流程</p>
             </div>
@@ -259,7 +259,7 @@ div.percentage-20 {
             <div class="u-back-slide">
               <img class="u-back-image u-expanded" SRC="/N1/images/4.jpg">
             </div>
-            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="/zhengfu.html";'>
+            <div class="u-over-slide u-shading u-valign-middle u-over-slide-5" onclick='window.location.href="/sj/zfhz.html";'>
               <p class="u-gallery-text circle-text">政府合作</p>
             </div>
           </div>
