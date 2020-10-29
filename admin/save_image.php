@@ -5,6 +5,7 @@ function make_thumb($src, $dest, $desired_height) {
 
     /* read the source image */
     $filetype = exif_imagetype($src);
+    echo "filetype : $filetype";
     if ($filetype == 2)
         $source_image=imagecreatefromjpeg($src);
     else if ($filetype == 3)
@@ -15,7 +16,7 @@ function make_thumb($src, $dest, $desired_height) {
         $source_image=imagecreatefrombmp($src);
     else {
         unlink($src); echo 1;
-        return 0;
+        exit;
     }
     
     $width = imagesx($source_image);
@@ -54,7 +55,6 @@ if (isset($_REQUEST['del_id'])) {
 } else if (!isset($_REQUEST['id'])) exit;
 
 $id = intval($_REQUEST['id']);
-echo 'ok';
 if ($id < 0) {
     $url = $_REQUEST['path'];
     if (substr("../" . $_REQUEST['path'], 0, 13) == '../allimages/' || $_REQUEST['path'] == 'allimages') {
