@@ -4,18 +4,24 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 session_start();
+function get_image_type ( $filename ) {
+    $img = getimagesize( $filename );
+    if ( !empty( $img[2] ) )
+        return image_type_to_mime_type( $img[2] );
+    return false;
+}
 function make_thumb($src, $dest, $desired_height) {
 
     /* read the source image */
-    $filetype = exif_imagetype($src);
-    echo "filetype : $filetype";
-    if ($filetype == 2)
+    $filetype = get_image_type($src);
+    
+    if (strpos($filetype, "jpeg") !== FALSE || strpos($filetype, "jpg") !== FALSE)
         $source_image=imagecreatefromjpeg($src);
-    else if ($filetype == 3)
+    else if (strpos($filetype, "png") !== FALSE)
         $source_image=imagecreatefrompng($src);
-    else if ($filetype == 1)
+    else if (strpos($filetype, "gif") !== FALSE)
         $source_image=imagecreatefromgif($src);
-    else if ($filetype == 6)
+    else if (strpos($filetype, "bmp") !== FALSE)
         $source_image=imagecreatefrombmp($src);
     else {
         unlink($src); echo 1;
