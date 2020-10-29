@@ -5,11 +5,6 @@ if (!isset($db))
 include('../N1/dbconfig.php');
 $db = getDbInstance();
 ?>
-<style>
-div.percentage-20 {
-  width: 20% !important;
-}
-</style>
     <section id="carousel_8f27" class="u-carousel u-carousel-duration-2250 u-slide u-block-29ef-1" data-u-ride="carousel" data-interval="5000">
       <ol class="u-absolute-hcenter u-carousel-indicators u-opacity u-opacity-55 u-block-29ef-2">
         <li data-u-target="#carousel_8f27" class="u-white" data-u-slide-to="0"></li>
@@ -23,7 +18,7 @@ div.percentage-20 {
             $flag++;
         ?>
         <div class="<?php echo $flag !== 1? "" : "u-active"; ?> u-align-left u-carousel-item u-clearfix u-image u-section-1-<?php echo $flag; ?>">
-          <img src='/banners/<?php echo $image['image']; ?>' style='height: 500px; width: 100%;'>
+          <img src='/banners/<?php echo $image['image']; ?>' style='width: 100%; object-fit: cover'>
         </div>
         <?php } ?>
       </div>
@@ -159,7 +154,8 @@ div.percentage-20 {
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="carousel_78ab">
-      <div class="u-clearfix u-sheet u-sheet-1 bigcontainer" style='min-height: 10px; margin-bottom: 100px'>
+      <div class="u-clearfix u-sheet u-sheet-1 bigcontainer" style='min-height: 10px; margin-bottom: 40px'>
+        <div class='grid-cell-container'>
           <?php
           $categoryLabel = array('', 'zxsj', 'jzsj', 'znsj', 'nmyy');
           $categoryLabel1 = array('', 'sjbk', 'news', 'gyxw', 'gov');
@@ -177,15 +173,12 @@ div.percentage-20 {
               $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
               $r = substr($row['content'], $d, $r - $d);
               $alt = "Image";
-            } else $r = '';
-            if ($i % 3 == 0) {
-              echo "<div style='display: flex; justify-content: space-between'>";
-            }
+            } else $r = '';            
             ?>
-          <div class=" u-white u-repeater-item-3 image-cell">
+          
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
               <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
-              display: flex;justify-content: center;align-items: center; background:black;'>
+                      display: flex;justify-content: center;align-items: center; background:black;'>
                 <img alt="<?php echo addslashes($alt); ?>" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3"
                     src="<?php echo $r; ?>" style='background: black; object-fit: cover;  cursor:pointer;' onclick='window.location.href="/<?php echo $categoryLabel[$row["category"]]; ?>/<?php echo $row["id"]; ?>.html";'>
               </div>
@@ -198,7 +191,7 @@ div.percentage-20 {
                     echo "<div style='float:left; margin-right: 3px; padding: 0px 2px 0px 2px; border-radius:2px; background-color:#ff6500'><i class=\"fas fa-star\" style='color:white'></i></div>";
                 ?>
                 <div style='float:left; min-width:20px; min-height: 30px;'></div>
-                <div style='float:left; font-size: 12px;line-height: 24px'>
+                <div style='float:left; font-size: 12px;line-height: 24px' class='user-icon'>
                   <i class="far fa-images"></i>&nbsp;
                   <?php echo substr_count($row['content'], '<img'); ?>
                 </div>
@@ -209,11 +202,9 @@ div.percentage-20 {
                 </div>
                 <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
-
-
             </div>
-          </div>
-          <?php if ($i % 3 == 2) echo "</div>"; } ?>
+          <?php } ?> 
+        </div>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-4" id="sec-dc3e">
@@ -267,9 +258,9 @@ div.percentage-20 {
       </div>
     </section>
     <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-section-5" id="sec-ff71" style='margin-bottom: 30px'>
-      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='width: 1500px !important; margin-left: calc(50% - 750px) !important; margin-bottom: 50px'>
+      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
         <div class="u-layout">
-          <div class="u-layout-col">
+          <div class="u-layout-col" id='four-area'>
             <div class="u-size-30">
               <div class="u-layout-row">
                 <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1 gridimage21" src="">
@@ -314,30 +305,30 @@ div.percentage-20 {
                     </p>
                   </div>
                   <div style="display: flex; flex-direction: row; margin-left: 30px">
-                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7 greencircle" data-image-width="152" data-image-height="152">
                       <div class="u-background-effect u-expanded"  style='overflow:visible'>
                         <div class="u-background-effect-image u-expanded u-image u-image-4" data-image-width="152" data-image-height="152"></div>
                       </div>
                       <div class="u-container-layout u-container-layout-7"></div>
                     </div>
-                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-30-md u-layout-cell-8" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-30-md u-layout-cell-8 greencircle" data-image-width="152" data-image-height="152">
                       <div class="u-background-effect u-expanded" style='overflow:visible'>
                         <div class="u-background-effect-image u-expanded u-image u-image-5" data-image-width="152" data-image-height="152"></div>
                       </div>
                       <div class="u-container-layout u-container-layout-8"></div>
                     </div>
-                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-right-cell u-size-12 u-size-30-md u-layout-cell-9" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                    <div class="u-container-style u-effect-hover-zoom u-layout-cell u-right-cell u-size-12 u-size-30-md u-layout-cell-9 greencircle" data-image-width="152" data-image-height="152">
                       <div class="u-background-effect u-expanded" style='overflow:visible'>
                         <div class="u-background-effect-image u-expanded u-image u-image-6" data-image-width="152" data-image-height="152"></div>
                       </div>
                       <div class="u-container-layout u-container-layout-9"></div>
                     </div>
-                  <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                  <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7 greencircle" data-image-width="152" data-image-height="152">
                       <div class="u-background-effect u-expanded" style='overflow:visible'>
                         <div class="u-background-effect-image u-expanded u-image u-image-7" data-image-width="152" data-image-height="152"></div>
                       </div>
                   <div class="u-container-layout u-container-layout-7"></div>
-                    </div><div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7" data-image-width="152" data-image-height="152" style='width:140px; height: 140px'>
+                    </div><div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7 greencircle" data-image-width="152" data-image-height="152">
                       <div class="u-background-effect u-expanded" style='overflow:visible'>
                         <div class="u-background-effect-image u-expanded u-image u-image-8" data-image-width="152" data-image-height="152"></div>
                       </div>
@@ -358,10 +349,7 @@ div.percentage-20 {
     </section>
     <section class="block7 u-align-center u-clearfix u-grey-5 u-section-6" id="sec-30b7">
       <h2 class="u-text u-text-1" style="font-family: 'Microsoft YaHei' !important;">电商免费入驻-新零售</h2>
-      <div class="u-expanded-width u-list u-repeater u-list-1" style="
-    width: 1500px !important;
-    margin-left: calc(50% - 750px) !important;
-">
+      <div class="u-expanded-width u-list u-repeater u-list-1 " >
         <div class="u-align-center-lg u-align-center-md u-align-center-xl u-container-style u-list-item u-repeater-item u-list-item-1">
           <div class="u-container-layout u-similar-container u-valign-bottom-sm u-valign-bottom-xs u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
             <img SRC="/N1/images/2_1.png" alt="" class="u-image u-image-default u-image-1" data-image-width="76" data-image-height="70">
@@ -421,11 +409,12 @@ div.percentage-20 {
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
                     <div class="u-container-layout u-valign-middle u-container-layout-4" style='padding-right: 0px; justify-content: space-between !important; display: flex; -webkit-justify-content: space-between !important; display: -webkit-flex;'>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
-                      <p class="u-text u-text-default u-text-3" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
+                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计</p>
+                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场</p>
+                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
+                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
+                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
+                      <p class="u-text u-text-default u-text-3 not-wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
                       <img SRC="/N1/images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 0 1 auto; -webkit-flex: 0 1 auto; display:block'>
                     </div>
                   </div>
@@ -438,7 +427,7 @@ div.percentage-20 {
     </section>
     <section class="u-align-center u-clearfix u-section-8" id="sec-993c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-1 yahei"> 不是任何设计公司都叫专业农贸市场设计 </h2>
+        <h2 class="u-text u-text-1 yahei" style='width: 100%; margin-left: 0px'> 不是任何设计公司都叫专业农贸市场设计 </h2>
         <p class="u-text u-text-2"> 掌握核心技术才是有实力的公司 </p>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -468,13 +457,13 @@ div.percentage-20 {
                 <div class="u-layout-row">
                   <div class="u-size-37">
                     <div class="u-layout-row" style='position: relative'>
-                      <div style='height: 300px; padding-left: 8px;padding-right: 8px; width: 100%; flex-direction: row; display: flex; justify-content: space-between;'>
+                      <div id='four-pictures' style='height: 300px; padding-left: 8px;padding-right: 8px; width: 100%; flex-direction: row; display: flex; justify-content: space-between;'>
                         <img SRC='/N1/images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available;'>
                         <img SRC='/N1/images/lALPD26eMHDuBeLNA-zNAsc_711_1004.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
                         <img SRC='/N1/images/lADPD26eMHDpLQPNCSLNBnU_1653_2338.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
                         <img SRC='/N1/images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%; height: min-intrinsic;height: -webkit-fill-available'>
                       </div>
-                      <div class="u-layout-row"  style='height: 50px; min-height: 0; display: flex; justify-content: space-between'>                  
+                      <div class="u-layout-row"  style='height: 50px; min-height: 0; display: flex; justify-content: space-between; padding-left: 8px; padding-right: 8px'>                  
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(知识产权)</div>
@@ -496,7 +485,7 @@ div.percentage-20 {
               </div>
               <div class='u-size-60-md'>
                 <div class="u-layout-row">
-                  <div class='u-size-34 yahei' style=' min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px'>
+                  <div class='u-size-34 yahei' style=' min-height: 0; color: #d00; flex-direction: column; text-align: center; font-size: 23px' id='red-label'>
                     打假办法通过企查查查出这个公司的注册时间
                   </div>
                 </div>
@@ -509,8 +498,9 @@ div.percentage-20 {
     <section class="u-align-center u-clearfix u-section-9" id="sec-03ad">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-heading-font u-text u-text-default u-text-grey-10 u-title u-text-1" style='font-weight: 1000 !Important; font-size: 80px'>DESIGN</h1>
-        <h2 class="u-text u-text-2"> 装修设计百科 </h2>
+        <h2 class="u-text u-text-2" style='font-size: 36px'> 装修设计百科 </h2>
         <div style='height: 40px; width:100%'></div>
+        <div id='design-area' style="display: grid;">
         <?php
           $query = "SELECT * FROM news WHERE goodone = 1 limit 6";
           $rows = $db->rawQuery($query);
@@ -523,8 +513,7 @@ div.percentage-20 {
               $r = strpos(substr($row['content'], $d + 10), '"') + $d + 10;
               $r = substr($row['content'], $d, $r - $d);
               $alt = "Image";
-            } else $r = '';
-            if ($i % 3 == 0) echo '<div style="justify-content: space-between;display: flex;">';
+            } else $r = '';            
             ?>
           <div class=" u-white u-repeater-item-3 image-cell" style='box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.15)'>
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden; '>
