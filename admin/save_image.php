@@ -55,11 +55,15 @@ if (isset($_REQUEST['del_id'])) {
 } else if (!isset($_REQUEST['id'])) exit;
 
 $id = intval($_REQUEST['id']);
+echo 0;
 if ($id < 0) {
     $url = $_REQUEST['path'];
+    echo 1;
     if (substr("../" . $_REQUEST['path'], 0, 13) == '../allimages/' || $_REQUEST['path'] == 'allimages') {
+        echo 2;
         $t = time();
         if (move_uploaded_file($_FILES['image']['tmp_name'], '../' . $url . "/"  . $t . ".jpg")) {
+            echo 3;
             make_thumb('../' . $url . "/"  . $t . ".jpg", '../' . $url . "/"  . $t . ".jpgthumb.jpg", 80);
             echo 'success'; exit;
         }
