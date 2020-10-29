@@ -54,7 +54,7 @@ if (isset($_REQUEST['del_id'])) {
 } else if (!isset($_REQUEST['id'])) exit;
 
 $id = intval($_REQUEST['id']);
-
+echo 'ok';
 if ($id < 0) {
     $url = $_REQUEST['path'];
     if (substr("../" . $_REQUEST['path'], 0, 13) == '../allimages/' || $_REQUEST['path'] == 'allimages') {

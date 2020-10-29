@@ -44,6 +44,9 @@
       .u-footer .u-sheet-1 {
         min-height: auto;
       }
+      span#cnzz_stat_icon_1279380584 {
+        display:none
+      }
     </style>
     <footer class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-clearfix u-footer u-grey-80 u-footer" id="sec-dc14">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 20px'>
