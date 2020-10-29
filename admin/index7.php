@@ -132,20 +132,6 @@ include ('config.php');
 									</tr>
 								</thead>
 								<tbody>
-								<!-- < ?php
-									$categoryArr = array('', '室内设计', '建筑设计', '5G智能设计', '运营案例');
-									$db = getDbInstance();
-									$rows = $db->rawQuery("select * from images order by id desc");
-									for ($i = 0; $i < sizeof($rows); $i++) {									
-								?> <tr id='row_< ?php echo $rows[$i]['id']; ?>'>
-									<td style='width: 5%; cursor:pointer'>< ?php echo $i + 1; ?></td>
-									<td style='width: 20%; cursor:pointer'><img src='< ?php echo $rows[$i]['url']; ?>' style='max-width: 80%; margin: 3px 10% 3px 10%; height: 50px' onclick='window.open(this.src, "_blank")'></td>
-									<td style='width: 50%; cursor:pointer'>< ? php echo $rows[$i]['filename']; ?></td>
-									<td style='width: 20%; cursor:pointer; display:none'>< ?php echo $rows[$i]['url']; ?></td> 
-									<td style='width: 20%; cursor:pointer'>< ?php echo htmlspecialchars($rows[$i]['description']); ?></td> 
-									<td style='width: 5%; cursor:pointer'><button type='button' onclick='deleteThis(< ?php echo $rows[$i]["id"]; ?>)' class='btn btn-danger'>删除</button></td>
-									</tr>
-								< ?php } ?> -->
 								</tbody>
 							</table>
 
@@ -179,8 +165,10 @@ var foldertree, selectedItem = {id: "allimages"};
 		$.post('save_image.php', {del_id: id}, function(a,b) {
 			if (a == 'success') {
 				phoneTable.ajax.reload(null, false);
+			} else if (a == '1') {
+				alert ("失败! 仅允许使用BMP, PNG, JPG, JPEG, GIF文件类型");
 			} else {
-				alert ("失败");
+				alert ("失败!");
 			}
 		})
 	}
@@ -201,12 +189,14 @@ var foldertree, selectedItem = {id: "allimages"};
 				data: formData,
 				processData: false,
 				contentType: false,
-				success: function(data) {
-					if (data == 'success') {
+				success: function(a) {
+					if (a == 'success') {
 						alert("成功！");
 						phoneTable.ajax.reload(null, false);
+					} else if (a == '1') {
+						alert ("失败! 仅允许使用BMP, PNG, JPG, JPEG, GIF文件类型");
 					} else {
-						alert("失败！");
+						alert ("失败!");
 					}
 				},
 				error: function(error) {
