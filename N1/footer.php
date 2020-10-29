@@ -48,11 +48,10 @@
         display:none
       }
     </style>
-    <footer class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-clearfix u-footer u-grey-80 u-footer" id="sec-dc14">
+    <footer class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-clearfix u-footer u-grey-80 u-footer" id="sec-dc14">
       <div class="u-clearfix u-sheet u-sheet-1" style='margin-top: 20px'>
-        <h3 class="u-text u-text-default u-text-1"  style='margin-bottom: 20px; '>友情链接:</h3>
-        <div class='friendly_links' style='margin-bottom: 40px'>
-        	<table style='width:100%'>
+        <h3 class="u-text u-text-default u-text-1"  style='margin-bottom: 0px; margin-left:0px !Important;'>友情链接:</h3>
+        <div class='friendly_links' style='margin-bottom: 40px'>        	
           <?php
               for ($i = 0; $i < sizeof($rows);) {                 
                 for ($k = 0; $k < 9 && $i < sizeof($rows); $k++, $i++) { ?>
@@ -62,13 +61,11 @@
                     </a>
                   </div>
                 <?php } ?>
-              <?php } ?>
-          </table>
+              <?php } ?>          
         </div>
           
-        <img src="/N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
         <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2">
-          <table class="u-table-entity footertable">
+          <table class="u-table-entity footertable" style='margin-top: 30px'>
             <colgroup>
               <col width="14%">
               <col width="14%">
@@ -142,8 +139,12 @@
             </tbody>
           </table>
         </div>
-        <p class="u-text u-text-default u-text-2">官方微信</p>
-        <p class="u-text u-text-3" style='font-weight: 200 !important; margin-top: 180px; margin-bottom: 10px !important'>
+        <table><tr><td>
+          <img src="/N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
+          </td></tr><tr><td><p class="u-text u-text-default u-text-2">官方微信</p></td></tr>
+        </table>
+        <div style='clear:both; display: block'></div>
+        <p class="u-text u-text-3" style='font-weight: 200 !important; margin-top: 30px; margin-bottom: 10px !important'>
         联系电话: 0571-88776655           0571-28120373           19957895916<br>地址:杭州市拱墅区通益路861号録景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br><SPAN STYLE='cursor:pointer;' onclick='window.open("https://beian.miit.gov.cn/", "_blank");'>浙ICP备1049450号-1</span><br>
           <br>
         </p>
