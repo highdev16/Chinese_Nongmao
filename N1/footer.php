@@ -63,8 +63,8 @@
                 <?php } ?>
               <?php } ?>          
         </div>
-          
-        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2">
+        <div style='clear:both; display: block'></div>
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2" style='display:block'>
           <table class="u-table-entity footertable" style='margin-top: 30px'>
             <colgroup>
               <col width="14%">

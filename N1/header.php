@@ -77,7 +77,7 @@ if (!$flag) {
     <link rel="stylesheet" href="/N1/header.css" media="screen">   
     <link rel="stylesheet" href="<?php echo $oname; ?>_mobile.css" media="screen">                 
   </head>
-  <body class="u-body">
+  <body class="u-body" style='overflow-x: hidden'>
       <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style=' z-index:9999999'>
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 titlebar">
         <a href="/" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>

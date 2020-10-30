@@ -256,3 +256,14 @@ div.bigcontainer {
         grid-column-gap: calc((100% - 320px) / 1)  !important;
     }
 }
+@media (max-width: 400px) {
+    #four-area div.u-container-layout.u-container-layout-1 * {margin-left: 20px  !important; margin-right: 20px !important;}
+    #four-area div.u-container-layout.u-container-layout-1 table tr td:nth-child(2n) { font-size: 16px !Important; }
+    #four-area div.u-container-layout.u-container-layout-1 table tr td:nth-child(2n + 1) img { margin-left: 20px !Important; }
+    div.friendly_links > div {
+        min-width: 100% !important;
+    }
+    .u-section-5 .u-container-layout-4 {
+        padding-left: 30px; padding-right: 30px;
+    }
+}
