@@ -38,3 +38,8 @@ a.unselected-a-button {
     overflow:hidden;
     min-width: 300px;
 }
+
+#design-area {grid-template-columns: 30% 30% 30%; grid-column-gap: 5%;}
+@media (max-width: 850px) { #design-area {grid-template-columns: 46% 46%; grid-column-gap: 8%;} }
+@media (max-width: 575px) { #design-area {grid-template-columns: 100%;} }
+@media (max-width: 950px) { #design-area { margin-bottom: 20px !important;} }

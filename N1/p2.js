@@ -58,10 +58,11 @@
           r = row['content'].substr(d, r - d); 
           alt = "Image";
         } else r = '';
-        if (i % 3 == 0) {
-          htmlString += "<div style='display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between'>";
+        if (i == 0) {
+        //   htmlString += "<div style='display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between'>";
+            htmlString += `<div id='design-area' style="display: grid;">`;
         }
-        htmlString += `<div class=" u-white u-repeater-item-3 image-cell">
+        htmlString += `<div class=" u-white u-repeater-item-3 image-cell"  style='box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.15)'>
         <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>
           <div class='image_cell_area' style='margin-top: 1px; margin-right: 1px; margin-left: 1px; width: calc(100% - 2px); overflow:hidden;
           display: flex; display: -webkit-flex; justify-content: center; -webkit-justify-content: center; align-items: center; background:black;'>
@@ -87,12 +88,10 @@
                 </div>
               </div>
             </div>`;
-        if (i % 3 == 2) 
-          htmlString += "</div>"; 
       } 
       if (rows.length % 3 == 2) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div></div>";  
       if (rows.length % 3 == 2) htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div><div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div></div>";  
-      $("#piece_content").html(htmlString);
+      $("#piece_content").html(htmlString + (rows.length > 0 && "</div>"));
     }).fail(function() {
       alert("失败！");
     })
