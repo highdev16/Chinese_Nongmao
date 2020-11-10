@@ -76,7 +76,8 @@ include('../N1/header.php');
         <p class="u-align-center u-text u-text-default u-text-2 center-align yahei" style='margin-top: 20px; line-height: 10px; margin-bottom: 0px'>——</p>
         <p class="u-align-center u-text u-text-2 yahei" style='width: 300px'>ENTERPRISE CULTURE<br>
         </p>
-        <p class="u-align-center u-text u-text-3 yahei">创新：扎根实干，积极创新；&nbsp; &nbsp; &nbsp; &nbsp;责任：项目到人，尽职尽责；&nbsp;<br>工艺：精雕细刻，炉火纯青；&nbsp; &nbsp; &nbsp; &nbsp;情怀：积极探寻，永不放弃；&nbsp;<br>细节：认真严谨，注重细节；&nbsp; &nbsp; &nbsp; &nbsp;和谐：以人为本，和谐发展；<br>共享：价值共创，财富共享；&nbsp; &nbsp; &nbsp; &nbsp;包含：海纳百川，有容乃大；
+        <p class="u-align-center u-text u-text-3 yahei wide-title">创新：扎根实干，积极创新；&nbsp; &nbsp; &nbsp; &nbsp;责任：项目到人，尽职尽责；&nbsp;<br>工艺：精雕细刻，炉火纯青；&nbsp; &nbsp; &nbsp; &nbsp;情怀：积极探寻，永不放弃；&nbsp;<br>细节：认真严谨，注重细节；&nbsp; &nbsp; &nbsp; &nbsp;和谐：以人为本，和谐发展；<br>共享：价值共创，财富共享；&nbsp; &nbsp; &nbsp; &nbsp;包含：海纳百川，有容乃大；
+        <p class="u-align-center u-text u-text-3 yahei narrow-title">创新：扎根实干，积极创新；<br>责任：项目到人，尽职尽责；&nbsp;<br>工艺：精雕细刻，炉火纯青；<br>情怀：积极探寻，永不放弃；&nbsp;<br>细节：认真严谨，注重细节；<br>和谐：以人为本，和谐发展；<br>共享：价值共创，财富共享；<br>包含：海纳百川，有容乃大；
         </p>
       </div>
     </section>

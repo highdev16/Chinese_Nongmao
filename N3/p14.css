@@ -191,3 +191,20 @@
 @media (max-width: 575px){ .u-section-5 .u-image-1 {min-height: 325px} }.imgtmp {
 background-color: #dfd;
 }
+
+#sec-600a, #sec-600a * {
+    width: 100% !important; max-width: 1500px !Important;
+}
+.u-section-2 .u-sheet-1 {
+    min-height: 0px !important;
+}
+.u-sheet-1 {
+    width: calc(100% - 60px) !important; max-width: 1500px !Important;   
+}
+.u-section-2 .u-text-1 {width: 100%;}
+@media(max-width: 991px) {
+.u-section-2 .u-text-1 {width: 100%; margin-top: 0px !Important;}
+}
+@media(max-width: 768px) {
+.u-section-2 .u-layout-wrap-1 { margin-top: 0px}
+}

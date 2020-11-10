@@ -92,7 +92,7 @@
 
 @media (max-width: 575px){ .u-section-3 .u-sheet-1 {min-height: 93px}
 .u-section-3 .u-text-1 {margin-bottom: 18px} }.u-section-4 .u-sheet-1 {min-height: 500px}
-.u-section-4 .u-layout-wrap-1 {margin-top: 60px; margin-bottom: 0}
+.u-section-4 .u-layout-wrap-1 {margin-top: 20px; margin-bottom: 0}
 .u-section-4 .u-layout-cell-1 {min-height: 449px}
 .u-section-4 .u-container-layout-1 {padding: 30px}
 .u-section-4 .u-image-1 {width: 249px}
@@ -102,7 +102,7 @@
 .u-section-4 .u-layout-cell-3 {min-height: 449px}
 .u-section-4 .u-container-layout-3 {padding: 30px}
 .u-section-4 .u-image-3 {width: 249px; left: 66px; right: auto}
-.u-section-4 .u-layout-wrap-2 {margin: 60px 0 0}
+.u-section-4 .u-layout-wrap-2 {margin: 20px 0 0}
 .u-section-4 .u-layout-cell-4 {min-height: 449px}
 .u-section-4 .u-container-layout-4 {padding: 30px}
 .u-section-4 .u-image-4 {width: 249px}
@@ -149,21 +149,21 @@
 .u-section-6 .u-text-4 {font-size: 1.5rem; margin: 54px auto 60px auto} 
 
 @media (max-width: 1199px){ .u-section-6 .u-sheet-1 {min-height: 412px}
-.u-section-6 .u-text-3 {width: auto; margin-top: 33px; margin-left: 222px}
-.u-section-6 .u-text-4 {width: auto; margin-top: 102px; margin-left: 222px} }
+.u-section-6 .u-text-3 {width: auto; margin-top: 33px; margin-left: 152px}
+.u-section-6 .u-text-4 {width: auto; margin-top: 52px; margin-left: 152px} }
 
 @media (max-width: 991px){ .u-section-6 .u-sheet-1 {min-height: 316px}
 .u-section-6 .u-text-2 {margin-top: 8px; margin-left: 0; margin-right: 0}
-.u-section-6 .u-text-3 {margin-top: 26px; margin-left: 102px}
-.u-section-6 .u-text-4 {margin-top: 83px; margin-left: 102px} }
+.u-section-6 .u-text-3 {margin-top: 16px; margin-left: 52px; font-size: 20px !Important;}
+.u-section-6 .u-text-4 {margin-top: 23px; margin-left: 52px; font-size: 20px !Important;} }
 
 @media (max-width: 767px){ .u-section-6 .u-sheet-1 {min-height: 237px}
 .u-section-6 .u-text-3 {margin-right: 55px; margin-left: auto}
 .u-section-6 .u-text-4 {margin-right: 55px; margin-left: auto} }
 
 @media (max-width: 575px){ .u-section-6 .u-sheet-1 {min-height: 149px}
-.u-section-6 .u-text-3 {margin-top: 35px; margin-right: auto; margin-left: 18px}
-.u-section-6 .u-text-4 {margin-top: 74px; margin-right: auto; margin-left: 0} }.u-section-7 .u-sheet-1 {min-height: 790px}
+.u-section-6 .u-text-3 {margin-top: 15px; margin-right: auto; margin-left: 0px}
+.u-section-6 .u-text-4 {margin-top: 20px; margin-right: auto; margin-left: 0} }.u-section-7 .u-sheet-1 {min-height: 790px}
 .u-section-7 .u-layout-wrap-1 {margin: 60px auto 60px 0}
 .u-section-7 .u-image-1 {min-height: 391px; background-image: url("images/lADPGp4a6xe7tFbNBDjNBaA_1440_1080.jpg"); background-position: 50% 0%}
 .u-section-7 .u-container-layout-1 {padding: 30px}
@@ -203,4 +203,58 @@
 .u-section-7 .u-image-3 {min-height: 177px}
 .u-section-7 .u-image-4 {min-height: 353px} }.imgtmp {
 background-color: #dfd;
+}
+.u-section-3 .u-sheet-1 {min-height: 0px}
+@media (max-width: 1199px) {
+.u-section-2 {height: 450px !important; }
+}
+@media (max-width: 991px) {
+.u-section-2 {height: 400px !important;}
+}
+@media (max-width: 870px) {
+    .u-section-2 {height: 300px !important;}
+}
+@media (max-width: 675px) {
+    .u-section-2 {height: 250px !important;}
+}
+@media (max-width: 525px) {
+    .u-section-2 {height: 200px !important;}
+}
+.u-section-14 {display: none;}
+@media (max-width: 991px) {
+    .u-section-4 {display: none !important;}
+    .u-section-14 {display: block !important;}    
+    .u-section-4 .u-image {
+        height: auto !important;
+        position: relative !important;
+        left: 0 !important; transform: none !important;
+        width: 100% !important;
+    }
+    .gridtable {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-top: 20px;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 5%;
+        display: grid;
+        grid-row-gap: 20px;
+    }
+    #sec-ee4e {
+        margin-bottom: 0px !important;
+    }
+}
+.u-section-6 .u-text-1 {width: 100% !Important}
+@media (max-width: 621px) {
+    .gridtable {
+        grid-template-columns: 47.5% 47.5%;
+    }
+}
+@media (max-width: 720px) {
+    .u-section-6 .u-text {width: 100% !important;}
+}
+@media (max-width: 620px) {
+    .u-section-6 .u-text-3, .u-section-6 .u-text-4 {font-size: 17px !important; padding-left: 40px;}
+}
+@media (max-width: 767px) {
+    #sec-9ca0 .u-sheet-1{ width: calc(100% - 70px) !Important; }
 }

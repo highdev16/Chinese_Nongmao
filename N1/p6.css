@@ -1,3 +1,43 @@
+img.plus-icon {
+    width: 20px;
+    position: absolute;
+    right: -11px;
+  }
+  tbody.four-steps tr td:last-child {
+    padding-left: 30px !Important;
+  }
+  tbody.four-steps tr td:first-child {
+    border-left:none !important; border-style: solid !important;
+    border-left-width: 0px !important;
+    border-right-width: 2px !important;
+    width: 100px !Important;
+  }
+  section.u-clearfix.u-image.u-section-5 {
+    width: 1500px;
+    margin: auto auto auto auto;
+  }
+  body .u-table-body-1 td.u-table-cell div{
+    font-family: "Microsoft YaHei" !important;
+    font-size: 16px;
+    color: #555 !important;
+  }
+  div.policy-area {
+    width: 1500px;
+    max-width: 100%;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+  .u-gutter-10 .u-layout .u-layout-cell {
+    border-left: 0px !important;
+    border-right: 0px !Important;
+  }
+  .image-text-woman {
+    line-height: 50px !important;
+    font-size: 24px !important;
+    font-family: "Microsoft YaHei" !important;
+  }
+
+
 .u-section-1 {margin-top: 0; margin-bottom: 0}
 .u-section-1 .u-sheet-1 {min-height: 97px}
 .u-section-1 .u-layout-wrap-1 {width: 613px; margin: 13px auto 0}
@@ -217,4 +257,49 @@
 .u-section-9 .u-table-1 {margin-top: 9px; margin-bottom: 9px; margin-right: initial; margin-left: initial} }div.firstcolumn tr td:first-child{
 border-left: 0 solid white;
 	word-break: break-all;
+}
+.screen-1399 {
+	display: none;
+	width: fit-content !Important;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (max-width: 1399px) {
+	.u-sheet {
+		width: calc(100% - 40px);
+	}
+	.screen-1399 {display: block;}
+	.screen-1500 {display: none;}
+	#sec-291f .u-table-1 {margin: 20px auto 0 auto !important; width: auto !Important;}
+}
+#sec-490d {max-width: 100% !important; min-height: 300px !Important}
+#table-2 {
+	width: 100% !important;
+}
+
+@media (max-width: 1499px) {
+	#goodwoman_phone {margin-left: 0px !important;}
+}
+@media (max-width: 991px) {
+div.u-clearfix.u-sheet.u-valign-bottom.u-sheet-1 {width: 100%;}
+}
+@media (max-width: 971px) {
+#goodwoman_phone {
+	height: 400px !important;
+	min-height: 0;
+	width: 50%;
+}
+#goodwoman_phone h2{
+	margin-top: 50px !important;
+}
+}
+@media (max-width: 850px) {
+	#goodwoman_phone * {
+		font-size: 20px !important;
+	}
+}
+@media (max-width: 730px) {
+	#sec-490d { height: 300px !Important; margin-bottom: 10px !important;}
+	#goodwoman_phone {display: none;}
+	#goodwoman_phone_secondary {display: block !important;}
 }

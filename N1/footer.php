@@ -68,8 +68,8 @@
               <?php } ?>          
         </div>
         <div style='clear:both; display: block'></div>
-        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2" style='display:block'>
-          <table class="u-table-entity footertable" style='margin-top: 30px'>
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-2" style='display:block; overflow: auto'>
+          <table class="u-table-entity footertable" style='margin-top: 30px; min-width: 1000px'>
             <colgroup>
               <col width="14.1%">
               <col width="14.1%">
@@ -143,7 +143,7 @@
             </tbody>
           </table>
         </div>
-        <table><tr><td>
+        <table style='margin: 0 auto 0 auto;'><tr><td>
           <img src="/N1/images/2019012910555628.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="1280">
           </td></tr><tr><td><p class="u-text u-text-default u-text-2">官方微信</p></td></tr>
         </table>

@@ -37,39 +37,33 @@
     background: white;
     color: black;
   }
-  .image-cell:nth-child(3n + 1), .image-cell:nth-child(3n + 2) {
-    margin-right:2.5%;
-  }
-  .image-cell:nth-child(3n + 3), .image-cell:nth-child(3n + 2) {
-    margin-left:2.5%;
-  }
   .image-cell {
-    float:left;
-    width: 30%;
+    float: left;
+    width: 100%;
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 20px;
-    overflow:hidden;
-    min-width: 300px;
-  }
+    overflow: hidden;
+    min-width: 0px;
+}
   hr {
     margin-bottom: 0px !important;
   }
 </style>
     <script src='/js/js/all.js'></script>
     <section class="u-align-center u-clearfix u-section-2" id="sec-7fab">
-      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px; min-height:0px;'>
-        <p class="u-align-left u-text u-text-1"> <?php echo $label; ?> </p>
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1" style='padding-left: 0%; margin-top: 20px; min-height:0px; width: calc(100% - 40px); margin: 20px auto 0px auto; max-width: 1500px;'>
+        <p class="u-align-left u-text u-text-1" style='width: 100%'> <?php echo $label; ?> </p>
         <hr>        
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-3" id="sec-ec6c" style='margin-top: 0px'>
-      <div class="u-clearfix u-sheet u-sheet-1" style='min-height: 10px; margin-bottom: 100px' id='piece_content'>
+      <div class="grid-cell-container" style='min-height: 10px; margin-bottom: 30px; display: grid' id='piece_content'>
           
       </div>
     </section>
     <section class='class="u-align-center u-clearfix u-section-3'>
-    <div class="u-clearfix u-sheet u-sheet-1" style="min-height: 10px; margin-bottom: 100px; text-align:center">
+    <div class="u-clearfix u-sheet u-sheet-1" style="min-height: 10px; margin-bottom: 30px; text-align:center">
     <ul class="pagination" id="pagination1"></ul>
     </div>
     </section>
@@ -124,7 +118,7 @@
               alt = "Image";
             } else r = '';
             htmlString += `<div class=" u-white u-repeater-item-3 image-cell">
-                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
+                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='padding-left: 0px; padding-right: 0px; border:1px solid #ddd; overflow:hidden'><!--blog_post_image-->
                 <div style='margin-top: 0px; margin-right: 0px; margin-left: 0px; width: calc(100% - 0px); height:300px; width:100%; overflow:hidden;margin-bottom: 0px'>
                   <img alt="` + alt + `" class="article-image u-blog-control u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" 
                         src="` + r + `" style='background: black; object-fit: cover;  cursor:pointer; height: 300px; width:100%;' 
@@ -136,11 +130,7 @@
                 </div>              
                 </div>
               </div>`; 
-          }
-          if (rows.length % 3 == 2) 
-            htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'>";  
-          else if (rows.length % 3 == 1) 
-            htmlString += "<div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div><div class='u-white u-repeater-item-3 image-cell' style='height:0px'></div>";  
+          }          
           $("#piece_content").html(htmlString);
         }).fail(function() {
           alert("失败！");

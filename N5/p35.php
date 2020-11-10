@@ -4,7 +4,8 @@ include('../N1/header.php');
 ?>
 <style>
   .full-width {
-    width: 1500px !important;
+    max-width: 1500px !important;
+    width: 100% !important;
     margin: 0 auto 0 auto;
   }
   .u-section-5 {

@@ -93,13 +93,17 @@
 
 @media (max-width: 1199px){ .u-section-2 .u-sheet-1 {min-height: 430px}
 .u-section-2 .u-layout-wrap-1 {position: relative}
-.u-section-2 .u-layout-cell-1 {min-height: 402px}
-.u-section-2 .u-layout-cell-2 {min-height: 402px} }
+.u-section-2 .u-layout-cell-1 {min-height: 302px}
+.u-section-2 .u-layout-cell-2 {min-height: 2px} 
+.u-section-2 .u-image-1 { width: 350px !important; height: 350px !important;}
+div.boss-profile div.board-content { width: calc(100% - 400px) !important;}}
 
 @media (max-width: 991px){ .u-section-2 .u-sheet-1 {min-height: 353px}
-.u-section-2 .u-layout-cell-1 {min-height: 100px}
-.u-section-2 .u-image-1 {width: 300px; height: 301px; margin-right: 0}
-.u-section-2 .u-layout-cell-2 {min-height: 100px} }
+.u-section-2 .u-container-layout-1 { padding-right: 0px !Important;}
+.u-section-2 .u-layout-cell-1 {min-height: 100px; width: 100%;}
+.u-section-2 .u-image-1 {width: 300px; height: 301px; margin-right: auto; margin-left: auto;}
+.u-section-2 .u-container-layout-2 { padding-left: 0px !important;}
+div.boss-profile div.u-layout-cell-2 {min-height: 100px; width: 100% !Important;} }
 
 @media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 580px}
 .u-section-2 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
@@ -139,6 +143,8 @@
 .u-section-5 .u-gallery-1 {height: 1360px; grid-template-columns: repeat(2, auto); margin-right: initial; margin-left: initial} }
 
 @media (max-width: 767px){ .u-section-5 .u-sheet-1 {min-height: 2255px}
+.narrow-title { display: block !Important;}
+.wide-title { display: none !Important;}
 .u-section-5 .u-gallery-1 {height: 4080px; grid-template-columns: repeat(1, auto); margin-right: initial; margin-left: initial} }
 
 @media (max-width: 575px){ .u-section-5 .u-sheet-1 {min-height: 1466px}
@@ -146,3 +152,6 @@
 .u-section-5 .u-gallery-1 {height: 2569px; margin-right: initial; margin-left: initial} }.imgtmp {
 background-color: #dfd;
 }
+.u-section-2 .u-container-layout-2 { padding-right: 0px !Important;}
+.narrow-title { display: none}
+.wide-title { display: block}

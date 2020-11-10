@@ -22,7 +22,7 @@ include('../N1/header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-6" id="sec-47d1">
-      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1920" data-image-height="835"></div>
+      <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1920" data-image-height="835" style='margin-bottom: 30px'></div>
     </section>
     
     <?php include('../N1/footer.php'); ?>

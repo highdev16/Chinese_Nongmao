@@ -95,7 +95,9 @@
 .u-section-2 .u-layout-cell-1 {min-height: 100px}
 .u-section-2 .u-text-1 {width: 300px}
 .u-section-2 .u-layout-cell-2 {min-height: 100px}
-.u-section-2 .u-image-1 {width: 300px; height: 426px; margin-left: 0} }
+.u-section-2 .u-image-1 {width: 100%; object-fit: contain; height: 426px; margin-left: 0; margin-right: 0} 
+.cert-image { padding-left: 0px !important; padding-right: 0px !important; }
+}
 
 @media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 580px}
 .u-section-2 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
@@ -188,4 +190,19 @@
 .u-section-6 .u-image-5 {height: 231px; margin-right: initial; margin-left: initial}
 .u-section-6 .u-image-6 {height: 231px; margin-right: initial; margin-left: initial} }.imgtmp {
 background-color: #dfd;
+}
+
+@media (max-width: 1199px) {
+    .cert-text-area {padding-left: 0px !important}
+    .cert-text {margin-left: 0px !Important;}
+     
+}
+@media (max-width: 1199px) {
+    .u-section-2 .u-text-1 { width: 100% !important}
+}
+#sec-0f1f {
+    width: 100%;
+}
+.u-sheet-1 {
+    width: calc(100% - 60px) !Important; max-width: 1500px !important;
 }

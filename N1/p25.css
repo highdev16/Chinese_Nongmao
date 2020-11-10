@@ -368,3 +368,19 @@
 .u-section-3 .u-container-layout-3 {padding-left: 20px; padding-right: 20px}
 .u-section-3 .u-image-3 {height: 190px; width: auto; margin-right: initial; margin-left: initial}
 .u-section-3 .u-btn-6 {margin-left: 158px} }
+
+.grid-cell-container {
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 30px;
+    display: grid;
+    width: calc(100% - 40px);
+    margin: 0 auto 0 auto;
+    max-width: 1500px;
+}
+@media (max-width: 1499px) { section div.image_cell_area, section div.image_cell_area img { height: 250px !important;} }
+@media (max-width: 1299px) { section div.image_cell_area, section div.image_cell_area img { height: 230px !important;} }
+@media (max-width: 991px) { section div.image_cell_area, section div.image_cell_area img { height: 200px !important;} .grid-cell-container {grid-template-columns: 46% 46%; grid-column-gap: 8%;}}
+@media (max-width: 768px) {  section div.image_cell_area, section div.image_cell_area img { height: 200px !important;}}
+@media (max-width: 575px) { section div.image_cell_area, section div.image_cell_area img { height: 250px !important;} .grid-cell-container {grid-template-columns: 100%;} .u-sheet,.u-section-2 .u-text-1 {width: calc(100% - 40px);}}
+@media (max-width: 991px) { .grid-cell-container { margin-bottom: 20px !important;} }

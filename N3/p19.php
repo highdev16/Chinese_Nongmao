@@ -16,7 +16,7 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
                 <div class="u-container-layout u-valign-bottom u-container-layout-1">                  
-                  <p class="u-align-center u-text u-text-1 yahei">城市智能菜场应用
+                  <p class="u-align-center u-text u-text-1 yahei" style='margin: 10px 0 0 0; width: 100%;'>城市智能菜场应用
                   </p>
                   <p class="u-align-center u-text u-text-default u-text-2"> SMART MARKET APPLICATION</p>
                   <p class="u-align-left u-text u-text-3" style='line-height:40px'> 打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度;

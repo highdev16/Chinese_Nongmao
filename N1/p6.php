@@ -2,45 +2,6 @@
 $bigTitle = "农贸市场设计";
 include('header.php');
 ?>
-<style>
-  img.plus-icon {
-    width: 20px;
-    position: absolute;
-    right: -11px;
-  }
-  tbody.four-steps tr td:last-child {
-    padding-left: 30px !Important;
-  }
-  tbody.four-steps tr td:first-child {
-    border-left:none !important; border-style: solid !important;
-    border-left-width: 0px !important;
-    border-right-width: 2px !important;
-    width: 180px !Important;
-  }
-  section.u-clearfix.u-image.u-section-5 {
-    width: 1500px;
-    margin: auto auto auto auto;
-  }
-  body .u-table-body-1 td.u-table-cell div{
-    font-family: "Microsoft YaHei" !important;
-    font-size: 16px;
-    color: #555 !important;
-  }
-  div.policy-area {
-    width: 1500px;
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-  .u-gutter-10 .u-layout .u-layout-cell {
-    border-left: 0px !important;
-    border-right: 0px !Important;
-  }
-  .image-text-woman {
-    line-height: 50px !important;
-    font-size: 24px !important;
-    font-family: "Microsoft YaHei" !important;
-  }
-</style>
 <link rel="stylesheet" href="/N1/p6.css" media="screen">
     <section class="u-clearfix u-image u-section-2" id="sec-cdc3">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
@@ -54,8 +15,8 @@ include('header.php');
       </div>
     </section>
     <section class="u-clearfix u-section-4" id="sec-291f">
-      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout policy-area">
+      <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1" style='width: 100%'>
+        <div class="u-layout policy-area" style='width: 100%'>
           <div class="u-layout-col">
             <div class="u-size-30">
               <div class="u-layout-row">
@@ -63,7 +24,7 @@ include('header.php');
                   <div class="u-container-layout u-container-layout-1">
                     <h2 class="u-align-center-sm u-align-center-xs u-text u-text-1" style='font-size: 24px; font-family: "MIcrosoft Yahei" !important'> 政府部门为什么选择光影？ </h2>
                     <div class="u-table u-table-responsive u-table-1">
-                      <table class="u-table-entity">
+                      <table class="u-table-entity screen-1500">
                         <colgroup>
                           <col width="39.4%">
                           <col width="60.6%">
@@ -79,6 +40,31 @@ include('header.php');
                           </tr>
                           <tr style="height: 49px;">
                             <td class="u-table-cell"><img SRC='/N1/images/a5.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>制定农贸市场建设标准</div></td>
+                            <td class="u-table-cell"><img SRC='/N1/images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left; color: #888'>实现市场所有制与标准化建设“双改造”</div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="u-table-entity screen-1399">
+                        <colgroup>
+                          <col width="100%">
+                        </colgroup>
+                        <tbody class="u-table-body u-table-body-1" style='font-size:16px'>
+                          <tr style="height: 49px;">
+                            <td class="u-table-cell"><img SRC='/N1/images/a1.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>创新农贸市场分类改革</div></td>
+                          </tr>
+                          <tr style="height: 49px;">
+                            <td class="u-table-cell"><img SRC='/N1/images/a2.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>建设市场运行信息化监管体系</div></td>
+                          </tr>
+                          <tr style="height: 49px;">
+                            <td class="u-table-cell"><img SRC='/N1/images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>提升农贸市场建设水平</div></td>
+                          </tr>
+                          <tr style="height: 49px;">
+                            <td class="u-table-cell"><img SRC='/N1/images/a4.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>推进农贸市场“智慧化”建设</div></td>
+                          </tr>
+                          <tr style="height: 49px;">
+                            <td class="u-table-cell"><img SRC='/N1/images/a5.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left;'>制定农贸市场建设标准</div></td>
+                          </tr>
+                          <tr style="height: 49px;">
                             <td class="u-table-cell"><img SRC='/N1/images/a3.png' style='float:left;width: 50px; height: 50px;'><div style='margin-left: 10px; line-height: 50px; float:left; color: #888'>实现市场所有制与标准化建设“双改造”</div></td>
                           </tr>
                         </tbody>
@@ -150,7 +136,7 @@ include('header.php');
     </section>
     <section class="u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-8" id="carousel_8f64">
       <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <div class="ttttt u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-table u-table-responsive u-table-1">
+        <div id='table-2' class="ttttt u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-table u-table-responsive u-table-1">
           <table class="u-table-entity">
             
             <tbody class="u-align-left u-table-body u-table-valign-top four-steps">
@@ -211,7 +197,7 @@ include('header.php');
     <div style='height: 20px; width: 100%'></div>
     <section class="u-clearfix u-image u-section-5" id="sec-490d" data-image-width="1644" data-image-height="1096" style='margin-top: 30px'>
       <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
-        <div class="u-black u-border-3 u-border-grey-30 u-container-style u-group u-opacity u-opacity-50 u-group-1">
+        <div class="u-black u-border-3 u-border-grey-30 u-container-style u-group u-opacity u-opacity-50 u-group-1" id='goodwoman_phone'>
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 
             </h2>
@@ -220,6 +206,16 @@ include('header.php');
             <p class="u-align-left u-custom-font u-text u-text-5"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class='u-clearfix u-image u-section-6' id='goodwoman_phone_secondary' style='display: none'>
+      <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 </h2>
+      <div style='margin: 0 auto 30px auto; width: fit-content'>
+        <table><tr><td><img SRC='/N1/images/phonecall.png' style='margin-left: 0px; width: 50px; float: left; filter:invert(1)'></td>
+        <td><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>400-000-3840</div></td></tr>
+        <tr><td>
+        <img SRC='/N1/images/phonecall.png' style='margin-left: 0px; width: 50px; float: left;filter:invert(1)'></td>
+        <td><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></td></tr></table>
       </div>
     </section>
     <?php include('../N1/footer.php'); ?>

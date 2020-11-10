@@ -2,44 +2,6 @@
 $bigTitle = "农贸市场运营";
 include('../N1/header.php');
 ?>
-<style>
-  div.grid-3 {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px 20px;
-  }
-  .u-section-5 {
-    width: 1500px;
-    margin: 0 auto;
-  }
-  section.u-section-2 {
-    height: 500px;
-  }
-  p.boss-detail-text {
-    line-height: 70px;
-    margin-top: -383px !important;
-  }
-  .u-section-5 .u-image-1, .u-section-5 .u-layout-cell-2 {
-    height: 400px;
-    min-height: 400px;
-  }
-  .u-section-5 {
-    min-height: 400px;
-  }
-  @media (max-width: 1000px) {
-    .u-section-3 .u-sheet-1 {
-      min-height: 0px !important;
-    }
-    p.boss-detail-text {
-      line-height: 30px;    
-      margin-top: 50px !important;
-      margin-left: 0px !important;
-    }    
-  }
-  .u-section-5 .u-text-1 {
-    margin-top: 50px;
-  }
-</style>
     <section class="u-align-left u-clearfix u-image u-shading u-section-2" src="" id="sec-a760">
       <div class="u-clearfix u-sheet u-sheet-1"></div>
     </section>

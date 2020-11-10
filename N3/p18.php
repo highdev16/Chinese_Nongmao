@@ -84,6 +84,17 @@ include('../N1/header.php');
         <div class='nine-items'>大数据<br>分析系统</div>
         <div class='nine-items'>用户<br>查询系统</div>
       </div>
+      <div class='nine-items-line inline'>        
+        <div class='nine-items'>非现金<br>结算系统</div>
+        <div class='nine-items'>智能<br>追溯系统</div>
+        <div class='nine-items'>商户信息<br>管理系统</div>
+        <div class='nine-items'>智能<br>检测系统</div>        
+        <div class='nine-items'>智能手机<br>缴费系统</div>
+        <div class='nine-items'>智能积分<br>充值系统</div>
+        <div class='nine-items'>人流<br>监控系统</div>
+        <div class='nine-items'>大数据<br>分析系统</div>
+        <div class='nine-items'>用户<br>查询系统</div>
+      </div>
     </section>
     <div style='height: 30px; width: 100%'></div>
     <section class="u-align-left u-clearfix u-section-4" id="sec-600a">

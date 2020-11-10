@@ -95,7 +95,7 @@
 .u-section-4 .u-layout-wrap-1 {margin: 0 auto 0 0}
 .u-section-4 .u-layout-cell-1 {min-height: 520px}
 .u-section-4 .u-container-layout-1 {padding: 30px 30px 30px 0}
-.u-section-4 .u-group-1 {min-height: 540px; height: auto; width: 601px; margin: -30px auto -30px 0}
+.u-section-4 .u-group-1 {min-height: 40px; height: auto; width: 601px; margin: -30px auto -30px 0}
 .u-section-4 .u-container-layout-2 {padding: 30px}
 .u-section-4 .u-text-1 {font-size: 1.875rem; font-weight: 700; margin: 0 18px 0 21px}
 .u-section-4 .u-layout-cell-2 {min-height: 520px}
@@ -110,7 +110,7 @@
 
 @media (max-width: 991px){ .u-section-4 {min-height: 130px}
 .u-section-4 .u-layout-cell-1 {min-height: 100px}
-.u-section-4 .u-group-1 {min-height: 636px; margin-right: initial; margin-left: initial; width: auto}
+.u-section-4 .u-group-1 {min-height: 36px; margin-right: initial; margin-left: initial; width: auto}
 .u-section-4 .u-text-1 {margin-right: 0}
 .u-section-4 .u-layout-cell-2 {min-height: 329px} }
 
@@ -316,3 +316,77 @@
 .u-section-10 .u-layout-cell-4 {min-height: 119px} }.imgtmp {
 background-color: #dfd;
 }
+
+@media (max-width: 1199px) {
+    .u-section-4 p.label1.u-text-1{
+        font-size: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .u-section-4 .u-group-1 {
+        width: 400px;
+    }
+    .u-section-4 p.label1.u-text-1{
+        font-size: 25px;
+    }
+}
+section.u-section-4 {
+    min-height: 0px !important;
+    margin-bottom: 20px !important;
+}
+div.managementsystem-text {
+    margin: 0 auto 0 auto !important; width: 1500px !important
+  }
+  section.u-section-4 {
+    max-width: 1500px !important;
+    width: 100%;
+    margin: 0 auto 20px auto !important;
+  }
+  .u-section-5 {
+    margin-bottom: 0px !important;
+  }
+  div.agriculture-mode {
+    max-width: 1500px !important;
+    width: 100% !important;
+    margin: 0 auto 0 auto !important;
+  }
+  h1.bigtitle {
+    font-family: "Microsoft Yahei" !important; font-size: 34px !important;
+  }
+  h2.smalltitle {
+    font-family: "Microsoft Yahei" !important; font-size: 22px !important;
+  }
+  p.market-operation-detail-title, p.market-operation-detail-detail {
+    font-family: "Microsoft Yahei" !important;
+  }
+  .u-section-5 .u-sheet-1 {
+      min-height: 0px !important;
+  }
+
+  section.u-section-5 {
+      margin-bottom: 20px !important;
+  }
+  .smalltitle {
+      text-align: center;
+  }
+
+  #sec-c4d8 {
+      min-height: 0px !important;
+  }
+  .u-section-8 .u-sheet-1 {
+      min-height: 0px !important;
+  }
+
+  @media (max-width: 1199px) {
+    .u-size-30.div1 {
+        margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 578px) {
+    .green-area {
+        display: none;
+    }
+    .u-size-30.div1 > div > div:first-child {
+        margin-bottom: 30px;
+    }
+  }
