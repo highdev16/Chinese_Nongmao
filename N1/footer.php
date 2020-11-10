@@ -6,6 +6,10 @@
       } else $rows = $db->rawQuery("select * from links");
     ?>
     <style>
+    .u-footer .u-image-1 { margin: 0px 0px 0px 0px !important;}
+    .u-footer .u-table-2 { margin-top: 0px !important; float: left; }
+    .u-footer .u-image-1 { width: 96px; height: 96px; margin-top: 30px !important;}
+    .u-footer .u-text-2 { margin: 0 0 0 0; width: 100%; text-align: center}
       .friend_link, table.footertable tr:not(:first-child) td{
         color: #999999 !important;
       }
