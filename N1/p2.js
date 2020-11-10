@@ -60,7 +60,7 @@
         } else r = '';
         if (i == 0) {
         //   htmlString += "<div style='display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between'>";
-            htmlString += `<div id='design-area' style="display: grid;">`;
+            htmlString += `<div class='grid-cell-container' style="display: grid;">`;
         }
         htmlString += `<div class=" u-white u-repeater-item-3 image-cell"  style='box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.15)'>
         <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3" style='border:1px solid #ddd; overflow:hidden'>

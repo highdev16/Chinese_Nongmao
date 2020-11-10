@@ -39,7 +39,11 @@ a.unselected-a-button {
     min-width: 300px;
 }
 
-#design-area {grid-template-columns: 30% 30% 30%; grid-column-gap: 5%;}
-@media (max-width: 850px) { #design-area {grid-template-columns: 46% 46%; grid-column-gap: 8%;} }
-@media (max-width: 575px) { #design-area {grid-template-columns: 100%;} }
-@media (max-width: 950px) { #design-area { margin-bottom: 20px !important;} }
+.grid-cell-container {grid-template-columns: 30% 30% 30%; grid-column-gap: 5%;}
+
+@media (max-width: 1499px) { div.image_cell_area, div.image_cell_area img { height: 250px !important;} }
+@media (max-width: 1299px) { div.image_cell_area, div.image_cell_area img { height: 230px !important;} }
+@media (max-width: 991px) { div.image_cell_area, div.image_cell_area img { height: 200px !important;} }
+@media (max-width: 850px) { .grid-cell-container {grid-template-columns: 46% 46%; grid-column-gap: 8%;} }
+@media (max-width: 575px) { div.image_cell_area, div.image_cell_area img { height: 250px !important;} .grid-cell-container {grid-template-columns: 100%;} }
+@media (max-width: 991px) { .grid-cell-container { margin-bottom: 20px !important;} }
