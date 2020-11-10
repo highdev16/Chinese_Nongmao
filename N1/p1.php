@@ -529,7 +529,8 @@ $db = getDbInstance();
               </div>
             </div>
           </div>
-          <?php if ($i % 3 == 2) echo '</div>'; } ?>
+          <?php } ?>
+          </div>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-10" id="sec-4b7e">
