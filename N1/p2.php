@@ -33,7 +33,7 @@ include('header.php');
 </div>
 </section>
 <script src='/js/jspaginator.js'></script>
-<script src='/p2.js'></script>
+<script src='/N1/p2.js'></script>
 <?php
 include('../N1/footer.php');
 ?>
