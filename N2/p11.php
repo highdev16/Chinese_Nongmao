@@ -93,7 +93,7 @@ include('../N1/header.php');
       </div>
       <div class="u-clearfix u-sheet u-sheet-1 six-areas2">
         <div class='row1'>
-          <img src="images/20190129203952143.png" style='width: 100%; height: 100%; object-fit: cover'>
+          <img src="/N2/images/20190129203952143.png" style='width: 100%; height: 100%; object-fit: cover'>
         </div>
         <div class='row1'>
           <div class='d01-area d6-table-area'>
@@ -106,7 +106,7 @@ include('../N1/header.php');
           </div>
         </div>
         <div class='row1'>
-          <img src="images/20190129203959329.png" style='width: 100%; height: 100%; object-fit: cover'>
+          <img src="/N2/images/20190129203959329.png" style='width: 100%; height: 100%; object-fit: cover'>
         </div>
         <div class='row1'>
           <div class='d01-area d6-table-area'>
@@ -119,7 +119,7 @@ include('../N1/header.php');
           </div>
         </div>
         <div class='row1'>
-          <img src="images/20190129204007536.png" style='width: 100%; height: 100%; object-fit: cover'>
+          <img src="/N2/images/20190129204007536.png" style='width: 100%; height: 100%; object-fit: cover'>
         </div>
         <div class='row1'>
           <div class='d01-area d6-table-area'>
@@ -137,7 +137,7 @@ include('../N1/header.php');
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="new-machinery u-expand-resize u-image u-image-1" SRC="/N2/images/afccb8e4-01ca-fa31-9e5b-fdbed9b132d4.jpg">
         <div class='new-machinery'>        
-          <p class="u-text u-text-grey-40 u-text-1 yahei" style='width: 100%; text-align: center'>New Machinery Products</p>
+          <p class="u-text u-text-grey-40 u-text-1 yahei" style='width: 100% !important; text-align: center'>New Machinery Products</p>
           <p class="u-align-left u-text u-text-black u-text-2 yahei detail-title"  style='width: 100%; text-align: center'> 农贸市场招商 </p>
           <p class="u-align-left u-text u-text-grey-75 u-text-3 detail-text" > 成功的农贸市场招商不仅仅能为市场带来优质的商户，还能顺势快速塑造市场的品牌形象和影响力，从而在消费者心中树立良好形象，促进消费者转化为市场的客户，增加市场的人气，使市场进去商户精-品牌多-人气旺-商户更多的良性循环中。国内各行业的招商工作一片欣欣向荣之势发展，唯独农贸行业的招商工作发展缓慢，缺乏系统的招商经验，导致农贸项目招商工作效果不能保证。 </p>
         </div>
@@ -149,7 +149,7 @@ include('../N1/header.php');
         <h2 class="u-text u-text-default u-text-2 smalltitle" style='width: 100%; text-align: center; margin-top: 20px'>NEW MACHINERY PRODUCTS</h2>
       </div>
       <div class="u-clearfix u-sheet u-sheet-1" style='padding-bottom: 30px'>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1  morethan768">
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-grey-10 u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
@@ -170,7 +170,7 @@ include('../N1/header.php');
             </div>
           </div>
         </div>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2  morethan768">
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
@@ -190,12 +190,54 @@ include('../N1/header.php');
               </div>
             </div>
           </div>
-        </div>
+        </div>        
+          <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1  not-morethan768">
+            <div class="u-layout">
+              <div class="u-layout-row">
+                <div class="u-container-style u-grey-10 u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <p class="u-text u-text-default u-text-1">&nbsp; &nbsp;1、指快速回笼资金：高效专业的运营模式销快速吸引大量的优质商户入驻，可迅速招募大量资金；&nbsp;&nbsp;</p>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2">
+                    <p class="u-text u-text-default u-text-2"> 快速组建市场网络 </p>
+                  </div>
+                </div>
+                <div class="u-container-style u-grey-10 u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+                  <div class="u-container-layout u-valign-middle u-container-layout-3">
+                    <p class="u-text u-text-default u-text-5">&nbsp; 2、快速组建市场网络：充分利用网络推广和社群营销，大幅度减少招商费用及预算的同时利用互联网营销，达到他为己用、事半功倍的效果；</p>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2  not-morethan768">
+            <div class="u-layout">
+              <div class="u-layout-row">
+                <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
+                  <div class="u-container-layout u-valign-middle u-container-layout-4" style='background: white'>
+                    <p class="u-text u-text-default u-text-4" style='margin: 0 auto 0 auto; width: 100%; text-align: center'> 指快速回笼资金 </p>
+                  </div>
+                </div>
+                <div class="u-container-style u-grey-50 u-layout-cell u-size-20 u-layout-cell-5">
+                  <div class="u-container-layout u-container-layout-5">
+                    <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速形成品牌化：菜源佳佳拥有众多联合品牌商家，具有强大的品牌带动作用，有利于快速帮助市场方塑造品牌。</p>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
+                  <div class="u-container-layout u-valign-middle u-container-layout-6" style='background: white'>
+                    <div class="u-text u-text-default u-text-6" style='margin: 0 auto 0 auto; width: 100%'> 快速形成品牌化 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
     <section class="u-clearfix u-section-7" id="sec-d5d6">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-default u-text-1 yahei" style='font-size: 34px; margin: 50px auto 50px auto'> 菜源佳佳农贸市场招商</p>
+        <p class="u-text u-text-default u-text-1 yahei label1" style='font-size: 34px; margin: 50px auto 50px auto'> 菜源佳佳农贸市场招商</p>
         <p class="u-text u-text-default u-text-1 yahei" style='font-size: 20px'>1、对接全国优质的招商资源：基地、批发、农产品厂家：联合康康、知味观、雨润。农产品有机菜、台州无公害蔬菜、浙江放心菜、 
         </p>
         <div class="u-gallery u-no-transition u-show-text-on-hover u-gallery-1">

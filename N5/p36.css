@@ -215,3 +215,6 @@ background-color: #dfd;
     width: 100% !important; max-width: 1500px !important;
 }
 .u-section-4 .u-sheet-1, .u-section-4 .u-layout-cell-1 { min-height: 0px !Important;}
+@media (max-width: 767px) {.u-section-2 {height: 130px !Important}}
+@media (max-width: 480px) {.u-section-2 {height: 110px !Important}}
+@media (max-width: 350px) {.u-section-2 {height: 80px !Important}}

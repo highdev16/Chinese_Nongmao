@@ -47,13 +47,13 @@ include('../N1/header.php');
                 <div class="u-layout-row">
                   <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2">
                     <div class="u-container-layout u-valign-middle u-container-layout-2">
-                      <p class="u-text u-text-1 detail-text yahei"> 1. 城市智能菜场管理平台的建立&nbsp;&nbsp;<br>(1) 商户管理 
-(2) 监测管理 
-(3) 追溯管理 
-(4) 摊位管理 
-(5) 水电管理 
-(6) 消防管理
-(7) 巡查管理 
+                      <p class="u-text u-text-1 detail-text yahei"> 1. 城市智能菜场管理平台的建立&nbsp;&nbsp;<br>(1) 商户管理<br class='screen-575'>
+(2) 监测管理 <br class='screen-575'>
+(3) 追溯管理 <br class='screen-575'>
+(4) 摊位管理 <br class='screen-575'>
+(5) 水电管理 <br class='screen-575'>
+(6) 消防管理<br class='screen-575'>
+(7) 巡查管理 <br class='screen-575'>
 (8) 智能停车管理 
                       </p>
                     </div>
@@ -100,10 +100,10 @@ include('../N1/header.php');
                 <div class="u-layout-row">
                   <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-6">
                     <div class="u-container-layout u-valign-middle u-container-layout-6">
-                      <p class="u-text u-text-3 detail-text yahei">3. 城市智能监管平台的建立&nbsp;<br>(1) 市场规范化和标准化的建设;
-(2) 监测规范和监控资料自动上传;<br>
-(3) 建立全市农产品电子追溯系统;
-(4) 建立智能分析大数据分析系统; 
+                      <p class="u-text u-text-3 detail-text yahei">3. 城市智能监管平台的建立&nbsp;<br>(1) 市场规范化和标准化的建设;<br class='screen-575'>
+(2) 监测规范和监控资料自动上传;<br class='screen-575'>
+(3) 建立全市农产品电子追溯系统;<br class='screen-575'>
+(4) 建立智能分析大数据分析系统; <br class='screen-575'>
                       </p>
                     </div>
                   </div>

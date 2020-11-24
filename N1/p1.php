@@ -304,7 +304,7 @@ $db = getDbInstance();
                       <br>智能软件：非现金结算系统 、电子追溯系统、商户信息系统 、智能检测系统、缴费系统、查询系统 、大数据分析系统 、用户交互系统
                     </p>
                   </div>
-                  <div style="display: flex; flex-direction: row; margin-left: 30px">
+                  <div style="display: flex; flex-direction: row; margin-left: 30px" class='fivecircles'>
                     <div class="u-container-style u-effect-hover-zoom u-layout-cell u-size-12 u-size-20-md u-layout-cell-7 greencircle" data-image-width="152" data-image-height="152">
                       <div class="u-background-effect u-expanded"  style='overflow:visible'>
                         <div class="u-background-effect-image u-expanded u-image u-image-4" data-image-width="152" data-image-height="152"></div>
@@ -394,8 +394,7 @@ $db = getDbInstance();
               </div>
               <div class="u-size-13 u-size-30-md">
                 <div class="u-layout-col">
-                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-2" style='flex: 1 1 auto'>
-                    <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
+                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-2" style='flex: 1 1 auto'>                    
                   </div>
                   <div class="u-align-justify u-container-style u-layout-cell u-size-20 u-layout-cell-3"  style='    flex: 0 1 auto;'>
                     <div class="u-container-layout u-valign-middle u-container-layout-3" style='margin-top: 20px'>
@@ -445,7 +444,7 @@ $db = getDbInstance();
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
                         <div class="u-container-layout u-container-layout-2" style='padding-top: 0px; padding-left: 95px'>
-                          <p class="u-text u-text-3  yahei" style='font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
+                          <p class="u-text u-text-3  yahei certi_text" style='font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
                           </p>
                         </div>
                       </div>
@@ -475,7 +474,7 @@ $db = getDbInstance();
                     <div class="u-layout-row">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-8" src="">
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-palette-2-base u-text-4 yahei"  style='margin-left:0; line-height: 60px; font-size: 18px'> 不敢晒出自己资质的，大概率是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，大概率是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，大概率是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，大概率是虚假宣传电商的公司
+                          <p class="u-text u-text-palette-2-base u-text-4 yahei certi_text"  style='margin-left:0; line-height: 60px; font-size: 18px'> 不敢晒出自己资质的，大概率是挂靠公司；&nbsp;&nbsp;<br>不敢晒出营业执照的，大概率是虚假宣传年限；&nbsp;&nbsp;<br>不敢晒出设计专利的，大概率是非专业设计公司；&nbsp;&nbsp;<br>没有运营管理经验的，没有设计灵魂行业的公司；&nbsp;<br>没有电商知识产权的，大概率是虚假宣传电商的公司
                           </p>
                         </div>
                       </div>

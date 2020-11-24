@@ -80,7 +80,7 @@
       function refreshPaginator(totalCount, pageNumber) {
         pageFunc('#pagination1', {
           totalPages: Math.ceil(totalCount / 15),
-          visiblePages: 10,
+          visiblePages: ($(window).width() < 500 ? 3 : 10),
           edges: 3,
           currentPage: pageNumber + 1,
           onPageChange: function (num, type) {

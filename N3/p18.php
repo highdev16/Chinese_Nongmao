@@ -56,7 +56,7 @@ include('../N1/header.php');
                   <p class="u-align-center u-text u-text-1 yahei">智能农贸信息化管理平台
                   </p>
                   <!-- <p class="u-align-center u-text u-text-default u-text-2 yahei"> 互联网+农贸市场的信息化管理平台 </p> -->
-                  <p class="u-align-left u-text u-text-3">&nbsp; 智慧农贸市场信息管理平台采用物联网，互联网，云计算，大数据分析技术打造的一个集“信息公示、产品溯源、价格检测、联网监督、智能监控”功能于一身的智慧农贸市场综合信息化管理平台，使传统农贸市场在运营管理、市场服务和智能监管，信息追溯方面实现信息网络化、工作规范化、管理现代化从而升级成为智慧菜市场。打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；为政府部门提高食品安全监管提供食品溯源通道；为商户增加客源提高收入，同时简化销售流程更高效；为消费者提供诚信安全的消费环境，良好的购物体验。智能农贸信息化管理平台通过物联网的技术实时采集电子秤交易数据、客流检测仪数据、食品安全检测数据，为市场招商，商家采购货物以及蔬菜是实现市场的舆情分析和判断。&nbsp;&nbsp;</p>
+                  <p class="u-align-left u-text u-text-3" style='text-align: justify'>智慧农贸市场信息管理平台采用物联网，互联网，云计算，大数据分析技术打造的一个集“信息公示、产品溯源、价格检测、联网监督、智能监控”功能于一身的智慧农贸市场综合信息化管理平台，使传统农贸市场在运营管理、市场服务和智能监管，信息追溯方面实现信息网络化、工作规范化、管理现代化从而升级成为智慧菜市场。打造智能农贸市场对于市场方可以快速提高农贸市场的管理水平，增加市场营收，提升经营场所的舒适程度；为政府部门提高食品安全监管提供食品溯源通道；为商户增加客源提高收入，同时简化销售流程更高效；为消费者提供诚信安全的消费环境，良好的购物体验。智能农贸信息化管理平台通过物联网的技术实时采集电子秤交易数据、客流检测仪数据、食品安全检测数据，为市场招商，商家采购货物以及蔬菜是实现市场的舆情分析和判断。&nbsp;&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,6 @@ include('../N1/header.php');
     <div style='height: 30px; width: 100%'></div>
     <section class="u-clearfix u-section-3 full-width" id="sec-a679">
       <h1 class="u-align-center u-text u-text-1 u-text-default yahei bigtitle" style='width: 100%; font-size: 30px'>九大功能</h1>
-      <div style='height: 30px; width: 100%'></div>
       <!-- <img SRC='/N3/images//QQ20200710105429.png' class='full-width'> -->
       <div class='nine-items-line'>
         <div class='empty-item'></div>
@@ -122,17 +121,7 @@ include('../N1/header.php');
                   <p class="u-align-left u-text u-text-5 yahei" style='font-size: 20px'> 智能市场信息公示系统： </p>
                   <p class="u-align-left u-text u-text-default u-text-6 yahei" style='font-size: 16px'> 将农贸市场各种相关数据整合入云端，然后前端通过多媒体拼接屏将商户信息、优惠活动、每日特色、菜价信息、新闻资讯、农药残留监测、商品来源、市场招商、人员招聘信息公示出来，以此做到多元化信息公示 </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-left u-clearfix u-section-5" id="sec-09bf">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row grid-3">
+              </div>            
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
                   <img SRC="/N3/images/20190201123900332.png" alt="" class="u-image u-image-default u-image-1" data-image-width="477" data-image-height="393">
@@ -153,13 +142,7 @@ include('../N1/header.php');
                   <p class="u-align-left u-text u-text-5 yahei" style='font-size: 20px'> 信息发布系统： </p>
                   <p class="u-align-left u-text u-text-default u-text-6 yahei" style='font-size: 16px'> 把商品监测数据采集汇总至智能农贸管理平台，然后对商品监测数据进行查询，统计，分析，挖掘，最终形成各种统计报表，分析报表和预测报表。数据分析的类型主要有商品合格率统计分析以及分类合格率统计分析。 </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
-          <div class="u-layout">
-            <div class="u-layout-row grid-3">
+              </div>            
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <img SRC="/N3/images/20190201124249109.png" alt="" class="u-image u-image-default u-image-4" data-image-width="568" data-image-height="426">
@@ -180,13 +163,7 @@ include('../N1/header.php');
                   <p class="u-align-left u-text u-text-11 yahei" style='font-size: 20px'> 绩效考核管理系统： </p>
                   <p class="u-align-left u-text u-text-default u-text-12 yahei" style='font-size: 16px'> 系统自动记录巡查员的巡查时间以及巡查路线，由巡查员巡查摊位发现问题拍照上传，并登记详细情况。另外消费也可以对于商户以及进行点赞和投诉，由后台管理人员进行数据数据分析与评定。 </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-3">
-          <div class="u-layout">
-            <div class="u-layout-row grid-3">
+              </div>            
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-7">
                 <div class="u-container-layout u-valign-top u-container-layout-7">
                   <img SRC="/N3/images/20190201123956931.png" alt="" class="u-image u-image-default u-image-7" data-image-width="1843" data-image-height="873">

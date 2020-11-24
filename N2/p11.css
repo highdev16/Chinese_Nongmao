@@ -232,8 +232,11 @@
 .u-section-6 .u-layout-cell-5 {min-height: 100px}
 .u-section-6 .u-layout-cell-6 {min-height: 100px}
 .u-section-6 .u-text-6 {margin-left: 14px} }
-
+.not-morethan768 {display: none !important;}
+.morethan768 {display: block !important;}
 @media (max-width: 767px){ .u-section-6 {min-height: 1px}
+.morethan768 {display: none !important;}
+.not-morethan768 {display: block !important;}
 .u-section-6 .u-sheet-1 {min-height: 1px}
 .u-section-6 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
 .u-section-6 .u-container-layout-2 {padding-left: 10px; padding-right: 10px}
@@ -246,8 +249,10 @@
 .u-section-6 .u-text-6 {margin-left: 40px} }
 
 @media (max-width: 575px){ .u-section-6 {min-height: 588px}
+.label1 {font-size: 26px !important;}
 .u-section-6 .u-sheet-1 {min-height: 688px}
-.u-section-6 .u-text-2 {margin-left: 25px; margin-right: 25px}
+.u-section-6 .u-text-1 {font-size: 26px !important; padding-left: 20px !Important; padding-right: 20px !important;}
+.u-section-6 .u-text-2 {margin-left: 2px; margin-right: 2px}
 .u-section-6 .u-text-4 {margin-left: 25px}
 .u-section-6 .u-text-6 {margin-left: 25px} }.u-section-7 .u-sheet-1 {min-height: 500px}
 .u-section-7 .u-text-1 {margin: 18px 0 0}

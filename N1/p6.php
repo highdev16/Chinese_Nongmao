@@ -78,17 +78,17 @@ include('header.php');
               </div>
             </div>
             <div class="u-size-30">
-              <div class="u-layout-row">
-                <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-2">
-                  <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
-                </div>
+              <div class="u-layout-row">                
                 <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4" src="">
                   <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-4">
                     <h2 class="u-align-center u-text u-text-2" style='font-size: 24px; font-family: "MIcrosoft Yahei" !important'> 光影能做什么？ </h2>
-                    <p class="u-align-left u-text u-text-3" style='font-size: 16px; line-height: 40px;font-family: "Microsoft Yahei" !important'>1、统一城市市场形象<br>2、统一市场门头和风格<br>3、解决食品安全检测，产品溯源问题<br>4、保证农贸项目装修设计水准和专业度问题<br>5、把控农贸市场项目装修进度和专业度问题&nbsp; &nbsp;&nbsp;<!--[if !supportLists]-->
+                    <p class="u-align-left u-text u-text-3" style='font-size: 16px; line-height: 40px;font-family: "Microsoft Yahei" !important'>1、统一城市市场形象<br>2、统一市场门头和风格<br>3、解决食品安全检测，产品溯源问题<br>4、保证农贸项目装修设计水准和专业度问题<br>5、把控农贸市场项目装修进度和专业度问题<!--[if !supportLists]-->
                       <br>6、<!--[endif]-->避免因多家公司水平参差不齐问题影响项目质量
                     </p>
                   </div>
+                </div>
+                <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-2">
+                  <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
                 </div>
               </div>
             </div>

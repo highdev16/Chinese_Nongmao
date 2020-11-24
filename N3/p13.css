@@ -82,11 +82,11 @@
 
 @media (max-width: 1199px){ .u-section-2 .u-sheet-1 {min-height: 513px} }
 
-@media (max-width: 991px){ .u-section-2 .u-sheet-1 {min-height: 393px} }
+@media (max-width: 991px){ .u-section-2 .u-sheet-1 {min-height: 333px} }
 
-@media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 295px} }
+@media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 255px} }
 
-@media (max-width: 575px){ .u-section-2 .u-sheet-1 {min-height: 287px} }.u-section-3 {background-image: none}
+@media (max-width: 575px){ .u-section-2 .u-sheet-1 {min-height: 187px} }.u-section-3 {background-image: none}
 .u-section-3 .u-sheet-1 {min-height: 482px}
 .u-section-3 .u-group-1 {width: 354px; min-height: 354px; height: auto; margin: 69px auto 0 18px}
 .u-section-3 .u-container-layout-1 {padding: 30px}
@@ -182,12 +182,13 @@
 @media (max-width: 575px){ .u-section-5 {min-height: 316px}
 .u-section-5 .u-image-1 {min-height: 377px} }.imgtmp {
 background-color: #dfd;
-}
 
+}
+.u-section-3 .u-text-1, .u-section-4 .u-text-2 { font-size: 16px !Important; line-height: 25px !Important;}
 div.grid-3 {
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-gap: 2% 20px;
+    grid-gap: 2%;
   }
   .u-section-5 {
     width: 1500px;
@@ -233,14 +234,16 @@ div.grid-3 {
     .u-section-3 .u-image-1 {margin: 30px auto 0px auto !important; }
 }
 @media (max-width: 666px) {
-    div.grid-3 {
-        grid-template-columns: 100%;
-        grid-row-gap: 20px;
-    }
-    div.grid-3 > div > div {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-    }
+  div.grid-3 img  {height: 120px !important;}
+  div.grid-3 p  { font-size: 18px !important;}
+}
+@media (max-width: 575px) {
+  div.grid-3 img  {height: 100px !important;}
+  div.grid-3 p  { font-size: 14px !important;}
+}
+@media (max-width: 385px) {
+  div.grid-3 img  {height: 60px !important;}
+  div.grid-3 p  { font-size: 10px !important;}
 }
 @media (max-width: 768px) {
     .u-section-5 .u-text-1{
@@ -251,4 +254,9 @@ div.grid-3 {
         min-height: 0px !Important;
         height: auto;
     }
+    section.u-section-2 { height: auto; width: 100%;}
+}
+
+@media(max-width: 500px) {
+  .u-section-3 .u-image-1 {width: 300px; height: 300px; margin-left: 0}
 }

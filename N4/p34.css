@@ -142,16 +142,34 @@ div.boss-profile div.u-layout-cell-2 {min-height: 100px; width: 100% !Important;
 @media (max-width: 991px){ .u-section-5 .u-sheet-1 {min-height: 835px}
 .u-section-5 .u-gallery-1 {height: 1360px; grid-template-columns: repeat(2, auto); margin-right: initial; margin-left: initial} }
 
-@media (max-width: 767px){ .u-section-5 .u-sheet-1 {min-height: 2255px}
+@media (max-width: 767px){ .u-section-5 .u-sheet-1 {min-height: 55px}
 .narrow-title { display: block !Important;}
 .wide-title { display: none !Important;}
-.u-section-5 .u-gallery-1 {height: 4080px; grid-template-columns: repeat(1, auto); margin-right: initial; margin-left: initial} }
+.u-section-5 .u-gallery-1 {height: 1080px; grid-template-columns: repeat(2, auto); margin-right: initial; margin-left: initial} }
 
-@media (max-width: 575px){ .u-section-5 .u-sheet-1 {min-height: 1466px}
+@media (max-width: 575px){ .u-section-5 .u-sheet-1 {min-height: 1066px}
 .u-section-5 .u-text-2 {width: 340px}
-.u-section-5 .u-gallery-1 {height: 2569px; margin-right: initial; margin-left: initial} }.imgtmp {
+.u-section-4 .u-text-2, .u-section-3 .u-text-2 { width: 100% !important;}
+.u-section-2 .u-image-1 { width: 100%  !important;; height: 300px !important;}
+.u-section-2 .u-container-layout-1 { padding: 0px !Important;}
+.u-section-3 .u-text-3, .u-section-3 .u-text-5,.u-section-4 .u-text-3, .u-section-2 .u-text-3 {font-size: 14px !Important; line-height: 28px !Important; text-align: justify !Important;}
+.u-section-4 .u-text-3 {text-align: center !Important;}
+.u-section-4 .u-text-3 { margin-top: 30px !important;}
+.u-section-4 .u-text-2, .u-section-5 .u-text-2 {width: 100% !important; margin-top: 0px !important}
+.u-section-4 .u-text-1,  .u-section-5 .u-text-1 {font-size: 20px !important; margin-top: 30px !important}
+.u-section-5 .u-gallery-1 {height: 1066px; margin-right: initial; margin-left: initial} }.imgtmp {
 background-color: #dfd;
 }
 .u-section-2 .u-container-layout-2 { padding-right: 0px !Important;}
 .narrow-title { display: none}
 .wide-title { display: block}
+@media (max-width: 320px) {
+.u-section-2 .u-image-1 { width: 100%  !important;; height: 250px !important;}
+}
+@media (max-width: 425px){ .u-section-5 .u-sheet-1 {min-height: 666px}
+.u-section-5 .u-gallery-1 {height: 666px; margin-right: initial; margin-left: initial}
+}
+@media (max-width: 365px){ .u-section-5 .u-sheet-1 {min-height: 466px}
+.u-section-5 .u-gallery-1 {height: 466px; margin-right: initial; margin-left: initial}
+}
+section.u-section-5 { margin-bottom: 20px !Important;}

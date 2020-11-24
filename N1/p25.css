@@ -381,6 +381,15 @@
 @media (max-width: 1499px) { section div.image_cell_area, section div.image_cell_area img { height: 250px !important;} }
 @media (max-width: 1299px) { section div.image_cell_area, section div.image_cell_area img { height: 230px !important;} }
 @media (max-width: 991px) { section div.image_cell_area, section div.image_cell_area img { height: 200px !important;} .grid-cell-container {grid-template-columns: 46% 46%; grid-column-gap: 8%;}}
-@media (max-width: 768px) {  section div.image_cell_area, section div.image_cell_area img { height: 200px !important;}}
-@media (max-width: 575px) { section div.image_cell_area, section div.image_cell_area img { height: 250px !important;} .grid-cell-container {grid-template-columns: 100%;} .u-sheet,.u-section-2 .u-text-1 {width: calc(100% - 40px);}}
 @media (max-width: 991px) { .grid-cell-container { margin-bottom: 20px !important;} }
+@media (max-width: 768px) { section div.image_cell_area, section div.image_cell_area img { height: 200px !important;}}
+@media (max-width: 575px) { 
+    div.image-cell> div >div > div {display: none !Important; }
+    .pagination>li>a, .pagination>li>span {font-size: 14px !important; padding: 5px 4px !important;}
+    section div.image_cell_area, section div.image_cell_area img { height: 250px !important;} 
+    .grid-cell-container {grid-template-columns: 48% 48%; grid-column-gap: 4%;} .u-sheet,.u-section-2 .u-text-1 {width: calc(100% - 40px);}
+}
+@media (max-width: 820px) {.u-section-3 .u-image-3, div.image-cell> div >div {height: 250px !important}}
+@media (max-width: 630px) {.u-section-3 .u-image-3, div.image-cell> div >div {height: 200px !important}}
+@media (max-width: 480px) {.u-section-3 .u-image-3, div.image-cell> div >div {height: 140px !important}}
+@media (max-width: 380px) {.u-section-3 .u-image-3, div.image-cell> div >div {height: 100px !important}}

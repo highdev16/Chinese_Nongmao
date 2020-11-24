@@ -91,7 +91,7 @@
 .u-section-3 .u-text-1 {font-size: 2.25rem; margin: 48px auto 2px} 
 
 @media (max-width: 575px){ .u-section-3 .u-sheet-1 {min-height: 93px}
-.u-section-3 .u-text-1 {margin-bottom: 18px} }.u-section-4 .u-sheet-1 {min-height: 500px}
+.u-section-3 .u-text-1 {margin-bottom: 18px; font-size: 20px} }.u-section-4 .u-sheet-1 {min-height: 500px}
 .u-section-4 .u-layout-wrap-1 {margin-top: 20px; margin-bottom: 0}
 .u-section-4 .u-layout-cell-1 {min-height: 449px}
 .u-section-4 .u-container-layout-1 {padding: 30px}
@@ -201,9 +201,13 @@
 .u-section-7 .u-image-1 {min-height: 189px}
 .u-section-7 .u-image-2 {min-height: 140px}
 .u-section-7 .u-image-3 {min-height: 177px}
+.u-section-5 .u-text-1 {font-size: 16px}
+.u-section-6 .u-text-1 {font-size: 20px}
+.u-section-6 .u-text-2 {font-size: 12px}
 .u-section-7 .u-image-4 {min-height: 353px} }.imgtmp {
 background-color: #dfd;
 }
+
 .u-section-3 .u-sheet-1 {min-height: 0px}
 @media (max-width: 1199px) {
 .u-section-2 {height: 450px !important; }
@@ -219,6 +223,9 @@ background-color: #dfd;
 }
 @media (max-width: 525px) {
     .u-section-2 {height: 200px !important;}
+}
+@media (max-width: 425px) {
+    .u-section-2 {height: 120px !important;}
 }
 .u-section-14 {display: none;}
 @media (max-width: 991px) {
@@ -257,4 +264,12 @@ background-color: #dfd;
 }
 @media (max-width: 767px) {
     #sec-9ca0 .u-sheet-1{ width: calc(100% - 70px) !Important; }
+}
+@media (max-width: 480px) {
+    .u-section-6 .u-text-3, .u-section-6 .u-text-4 {font-size: 14px !important;}
+}
+@media (max-width: 420px) {
+    .u-section-6 .u-text-3, .u-section-6 .u-text-4 {background-image: url('/N4/images/itemlist1.png') !important; font-size: 12px !important; margin-left: -10px !Important;
+        width: calc(100% + 20px) !Important;
+        padding-left: 10px !important}
 }

@@ -88,13 +88,7 @@ include('../N1/header.php');
                   <img SRC="/N4/images/lADPD3lGrGpWrZvNDbTNE2E_4961_35081.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="1600" data-image-height="1131">
                   <p class="u-align-center u-text u-text-default u-text-3 yahei" style='width:100%'> 案例名称 </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
-          <div class="u-layout">
-            <div class="u-layout-row grid-3">
+              </div>            
               <div class="u-align-center u-container-style u-layout-cell u-left-cell  u-layout-cell-4">
                 <div class="u-container-layout u-valign-top u-container-layout-4">
                   <img SRC="/N4/images/9.png" alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="342" data-image-height="206">
