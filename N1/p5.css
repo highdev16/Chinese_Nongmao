@@ -156,8 +156,8 @@
 .u-section-2 .u-image-5 {height: 308px; margin-right: initial; margin-left: initial}
 .u-section-2 .u-text-8 {margin-left: 0; margin-right: 0} }
 
-@media (max-width: 575px){ .u-section-2 .u-text-1 {width: 340px}
-.u-section-2 .u-text-2 {width: 340px}
+@media (max-width: 575px){ .u-section-2 .u-text-1 {width: 100%; font-size: 22px !important;}
+.u-section-2 .u-text-2 {width: 100%}
 .u-section-2 .u-container-layout-1 {padding-left: 0; padding-right: 0}
 .u-section-2 .u-image-1 {height: 180px; margin-right: initial; margin-left: initial}
 .u-section-2 .u-text-4 {margin-left: 29px; margin-right: 29px}
@@ -286,4 +286,12 @@
 @media (max-width: 991px){
 	.design-services-cell {min-height: 0px  !important; max-height: 300px !important}
 	.design-detail {margin-top: 20px !important; width: fit-content !important}
+}
+.width-mobile {display: none !Important;}
+@media (max-width: 575px){ .width-mobile { display: block !Important; } 
+.width-notmobile { display: none !Important; }
+.u-section-4 .u-text-1 {font-size: 22px !important;}
+.p5-celltitle {font-size: 18px !important;}
+.design-services-cell li { font-size: 14px !important;}
+.u-section-4 .u-text-8 {left: 0px !Important}
 }

@@ -175,7 +175,7 @@ include('../N1/header.php');
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-3">
                         <div class="u-container-layout u-container-layout-6">
                           <p class="u-text u-text-5 market-operation-detail-title"> 新消费形态突起 </p>
-                          <p class="u-text u-text-grey-40 u-text-6 market-operation-detail-detail"> 线上线下消费渠道融合 </p>
+                          <p class="u-text u-text-grey-40 u-text-6 market-operation-detail-detail"> 线上线下消费渠道融合</p>
                         </div>
                       </div>
                     </div>

@@ -116,8 +116,11 @@
 @media (max-width: 991px){ .u-section-6 .u-image-1 {min-height: 348px} }
 
 @media (max-width: 767px){ .u-section-6 .u-image-1 {min-height: 261px} .u-section-3 .u-image-1 {width: 100%} }
-
-@media (max-width: 575px){ .u-section-6 .u-image-1 {min-height: 164px} }.imgtmp {
+.notmorethan575 {display: none !Important;}
+@media (max-width: 575px){ .u-section-6 .u-image-1 {min-height: 164px} 
+.morethan575 {display: none !Important;}
+.notmorethan575 {display: block !Important;}
+}.imgtmp {
 background-color: #dfd;
 }
 @media(max-width: 1299px) {
@@ -125,7 +128,7 @@ background-color: #dfd;
     .u-section-3 .u-image-2 { margin-right: 0px; }
 }
 .u-sheet {
-    width: calc(100% - 60px) !important; max-width: 1500px !important;
+    width: calc(100% - 40px) !important; max-width: 1500px !important;
 }
 @media(max-width: 920px) {
     .u-section-3 .u-image-1 {

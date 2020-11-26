@@ -110,9 +110,9 @@
 .u-section-4 .u-text-1 {margin: 50px 0 0}
 .u-section-4 .u-image-1 {width: 1065px; height: 17px; margin: 15px auto 0}
 .u-section-4 .u-text-2 {font-size: 1.25rem; margin: 30px 0px 0}
-.u-section-4 .u-layout-wrap-1 {margin-top: 0px; margin-bottom: 60px; position: relative}
+.u-section-4 .u-layout-wrap-1 {margin-top: 0px; margin-bottom: 20px; position: relative}
 .u-section-4 .u-layout-cell-1 {min-height: 400px}
-.u-section-4 .u-container-layout-1 {padding: 30px; padding-left: 0px; padding-right: 0px;}
+.u-section-4 .u-container-layout-1 {padding-top: 30px; padding-left: 0px; padding-right: 0px;}
 .u-section-4 .u-image-2 {width: 100%; height: 273px; margin: 0 0px 0 auto}
 .u-section-4 .u-text-3 {font-size: 1.25rem; width: 100%; height: 48px; margin: 0}
 .u-section-4 .u-layout-cell-2 {min-height: 400px}
@@ -138,7 +138,7 @@
 
 @media (max-width: 991px){ .u-section-4 .u-sheet-1 {min-height: 494px}
 .u-section-4 .u-image-1 {width: 720px; height: 11px}
-.u-section-4 .u-layout-cell-1 {min-height: 100px}
+.u-section-4 .u-layout-cell-1 {min-height: 10px}
 .u-section-4 .u-image-2 {width: 100%; height: 150px}
 .u-section-4 .u-layout-cell-2 {min-height: 100px}
 .u-section-4 .u-image-3 {width: 100%; height: 150px}
@@ -149,12 +149,13 @@
 
 @media (max-width: 767px){ .u-section-4 .u-sheet-1 {min-height: 491px}
 .u-section-4 .u-image-1 {width: 540px; height: 8px}
-.u-section-4 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
-.u-section-4 .u-container-layout-2 {padding-left: 10px; padding-right: 10px}
-.u-section-4 .u-container-layout-3 {padding-left: 10px; padding-right: 10px} }
+.u-section-4 .u-container-layout-1 {padding-left: 0px; padding-right: 0px}
+.u-section-4 .u-container-layout-2 {padding-left: 0px; padding-right: 0px}
+.u-section-4 .u-container-layout-3 {padding-left: 0px; padding-right: 0px} }
 
 @media (max-width: 575px){ .u-section-4 .u-sheet-1 {min-height: 488px}
-.u-section-4 .u-image-1 {width: 340px; height: 5px} }.u-section-5 {min-height: 632px}
+.u-section-4 .u-image-1 {width: 100%; height: 5px} }
+.u-section-5 {min-height: 32px}
 .u-section-5 .u-layout-wrap-1 {margin: 0 0 0 auto}
 .u-section-5 .u-image-1 {min-height: 400px; background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/6.jpg"); background-position: 50% 50%}
 .u-section-5 .u-container-layout-1 {padding: 30px 60px}
@@ -177,7 +178,7 @@
 @media (max-width: 767px){ .u-section-5 {min-height: 538px}
 .u-section-5 .u-image-1 {min-height: 599px}
 .u-section-5 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
-.u-section-5 .u-container-layout-2 {padding-left: 10px; padding-right: 10px} }
+.u-section-5 .u-container-layout-2 {padding-left: 20px; padding-right: 20px} }
 
 @media (max-width: 575px){ .u-section-5 {min-height: 316px}
 .u-section-5 .u-image-1 {min-height: 377px} }.imgtmp {
@@ -219,7 +220,7 @@ div.grid-3 {
     }    
   }
   .u-section-5 .u-text-1 {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
 
@@ -232,18 +233,24 @@ div.grid-3 {
 @media (max-width: 991px) {
     .u-section-3 > div > div { display: none; }
     .u-section-3 .u-image-1 {margin: 30px auto 0px auto !important; }
+    .u-section-5 .u-image-1 {height: 400px !Important;}
 }
 @media (max-width: 666px) {
   div.grid-3 img  {height: 120px !important;}
   div.grid-3 p  { font-size: 18px !important;}
+  .u-section-5 .u-image-1 {height: 220px !Important; min-height: 220px !Important;}
 }
 @media (max-width: 575px) {
   div.grid-3 img  {height: 100px !important;}
   div.grid-3 p  { font-size: 14px !important;}
+  .u-section-5 .u-image-1 {height: 200px !Important;min-height: 200px !Important;;}
+  .u-section-5 .u-text-1 {font-size: 22px !important}
+  .u-section-5 .u-text-2 {font-size: 16px !Important;}
 }
 @media (max-width: 385px) {
   div.grid-3 img  {height: 60px !important;}
   div.grid-3 p  { font-size: 10px !important;}
+  .u-section-5 .u-image-1 {height: 160px !Important;min-height: 160px !Important;}
 }
 @media (max-width: 768px) {
     .u-section-5 .u-text-1{
@@ -258,5 +265,6 @@ div.grid-3 {
 }
 
 @media(max-width: 500px) {
-  .u-section-3 .u-image-1 {width: 300px; height: 300px; margin-left: 0}
+  .u-section-3 .u-image-1 {width: 300px; height: 300px; margin-left: 0}  
 }
+.u-section-3 .u-text-1, .u-section-4 .u-text-2 {text-align: justify}

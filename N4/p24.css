@@ -206,7 +206,7 @@ background-color: #dfd;
     .cert-text {margin-left: 0px !Important;}
      
 }
-@media (max-width: 1199px) {
+@media (max-width: 1199px) {    
     .u-section-2 .u-text-1 { width: 100% !important}
 }
 #sec-0f1f {
@@ -215,3 +215,4 @@ background-color: #dfd;
 .u-sheet-1 {
     width: calc(100% - 60px) !Important; max-width: 1500px !important;
 }
+.u-section-2 .u-text-1, .u-section-3 .u-text-1 {text-align: justify;}

@@ -534,3 +534,7 @@ cursor:pointer;
 	  height: 292px;
   }
 }
+
+@media (max-width: 575px) {
+  .u-section-8 .u-text-1, .u-section-8 .u-text-3 { display: none !important}
+}

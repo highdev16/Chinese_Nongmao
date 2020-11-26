@@ -273,6 +273,9 @@ border-left: 0 solid white;
 	#sec-291f .u-table-1 {margin: 20px auto 0 auto !important; width: auto !Important;}
 }
 #sec-490d {max-width: 100% !important; min-height: 300px !Important}
+#table-2 br {display: none;}
+#table-2 table {table-layout: fixed;}
+#table-2 table tr td:last-child {white-space: pre-wrap;}
 #table-2 {
 	width: 100% !important;
 }
@@ -302,4 +305,7 @@ div.u-clearfix.u-sheet.u-valign-bottom.u-sheet-1 {width: 100%;}
 	#sec-490d { height: 300px !Important; margin-bottom: 10px !important;}
 	#goodwoman_phone {display: none;}
 	#goodwoman_phone_secondary {display: block !important;}
+}
+@media (max-width: 575px) {
+  .image-text-woman {font-size: 20px !important;}
 }

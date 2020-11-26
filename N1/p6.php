@@ -8,7 +8,7 @@ include('header.php');
     </section>
     <section class="u-clearfix u-grey-10 u-section-3" id="sec-d240">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-default u-text-1" style='font-size: 18px;'> 农贸市场是一个与人民的生活息息相关，其社会价值取向代表了政府在老百姓心中的形象，是名副其实的“民生工程”和“民心工程”。政府如何规划农贸市场网点，如何制定农贸市场行业标准将直接影响当地农贸市场的发展方向。&nbsp; &nbsp; &nbsp;<br>
+        <p class="u-text u-text-default u-text-1" style='font-size: 18px; text-align: justify'> 农贸市场是一个与人民的生活息息相关，其社会价值取向代表了政府在老百姓心中的形象，是名副其实的“民生工程”和“民心工程”。政府如何规划农贸市场网点，如何制定农贸市场行业标准将直接影响当地农贸市场的发展方向。&nbsp; &nbsp; &nbsp;<br>
           <br>光影农贸市场设计研究院专注农贸项目网点规划，定位调研，装修设计，招商运营时间长达19年，在全国32个省
 市，地区进行了大量的调研，成功打造3000多符合当地人文和风土民情的市场案例。与个地区的市场方和政府建立了良好的政府合作关系。 
         </p>
@@ -82,7 +82,7 @@ include('header.php');
                 <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4" src="">
                   <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-4">
                     <h2 class="u-align-center u-text u-text-2" style='font-size: 24px; font-family: "MIcrosoft Yahei" !important'> 光影能做什么？ </h2>
-                    <p class="u-align-left u-text u-text-3" style='font-size: 16px; line-height: 40px;font-family: "Microsoft Yahei" !important'>1、统一城市市场形象<br>2、统一市场门头和风格<br>3、解决食品安全检测，产品溯源问题<br>4、保证农贸项目装修设计水准和专业度问题<br>5、把控农贸市场项目装修进度和专业度问题<!--[if !supportLists]-->
+                    <p class="u-align-left u-text u-text-3" style='font-size: 16px; line-height: 40px;font-family: "Microsoft Yahei" !important'>1、统一城市市场形象<br>2、统一市场门头和风格<br>3、解决食品安全检测，产品溯源问题<br>4、保证农贸项目装修设计水准和专业度<br>5、把控农贸市场项目装修进度和专业度<!--[if !supportLists]-->
                       <br>6、<!--[endif]-->避免因多家公司水平参差不齐问题影响项目质量
                     </p>
                   </div>

@@ -81,7 +81,8 @@ include('header.php');
         </p>
         <img SRC="/N1/images/20190128162919873.jpg" alt="" class="u-image u-image-default u-image-1 flowdiagram" data-image-width="787" data-image-height="1546" >
         <p class="u-align-center u-text u-text-default u-text-3"> 光影21道专业设计流程/主案设计师全程跟踪负责/设计总监层层审核/用专业的技术提高效率/用严谨的态度保障效果 </p>
-        <img SRC="/N1/images/20190128162919873 copy.png" alt="" class="u-expanded-width-xs u-image u-image-default vsimage u-image-2" data-image-width="1364" data-image-height="677" style='height:auto; width: 1292px; max-width: 80%; margin-bottom: 30px'>
+        <img SRC="/N1/images/20190128162919873 copy.png" alt="" class="u-expanded-width-xs u-image u-image-default vsimage u-image-2 width-notmobile" data-image-width="1364" data-image-height="677" style='height:auto; width: 1292px; max-width: 80%; margin-bottom: 30px'>
+        <img SRC="/N1/images/vsmobile.png" alt="" class="u-expanded-width-xs u-image u-image-default vsimage u-image-2 width-mobile" data-image-width="1364" data-image-height="677" style='height:auto; width: 1292px; max-width: 80%; margin-bottom: 30px'>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-section-4" id="sec-5feb" data-image-width="2400" data-image-height="1500">
@@ -120,7 +121,7 @@ include('header.php');
                 <div class="u-container-layout u-container-layout-3">
                   <p class="p5-celltitle u-align-center u-text u-text-7">农贸市场专利</p>
                   <ul class="u-align-left u-text u-text-8 design-detail">
-                    <li style="">出版市场管理书籍八册</li>
+                    <li style="">市场管理书籍八册</li>
                     <li style="">水产区设计专利</li>
                     <li style="">蔬菜区设计专利</li>
                     <li style="">鲜肉区设计专利</li>

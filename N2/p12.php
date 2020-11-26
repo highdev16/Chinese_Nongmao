@@ -13,7 +13,8 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-4" id="sec-d460">
       <div class="u-clearfix u-image u-sheet u-valign-top u-image-1" data-image-width="1337" data-image-height="567">
-        <img SRC='/N2/images/ScreenShot2020-08-11at5.37.20AM.png' style='width: 100%'>
+        <img SRC='/N2/images/ScreenShot2020-08-11at5.37.20AM.png' class='morethan575' style='width: 100%'>
+        <img SRC='/N2/images/greenbig.png' class='notmorethan575'  style='width: 100%'>
       </div>
     </section>
     <section class="u-clearfix u-section-5" id="sec-9cef" style='margin-bottom: 0px !Important'>

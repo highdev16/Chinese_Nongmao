@@ -198,7 +198,7 @@ div.bigcontainer {
     .u-section-4 .u-gallery-1 {height: 200px !important;	grid-column-gap: 20px;}
     .circle-text { line-height: 200px;}   
     div.partner-area {
-        grid-template-columns: auto auto auto auto auto auto auto !important;
+        grid-template-columns: 160px 160px 160px 160px 160px 160px 160px !important;
         grid-column-gap: calc((100% - 1120px) / 6)  !important;
     } 
 }
@@ -208,7 +208,7 @@ div.bigcontainer {
     .u-section-4 .u-gallery-1 {height: 160px !important;}
     .circle-text { line-height: 160px;}    
     div.partner-area {
-        grid-template-columns: auto auto auto auto auto auto !important;
+        grid-template-columns: 160px 160px 160px 160px 160px 160px !important;
         grid-column-gap: calc((100% - 960px) / 5)  !important;
     }       
 }
@@ -230,9 +230,13 @@ div.bigcontainer {
     #design-area { margin-bottom: 20px !important;}
     .u-section-8 .u-text-1 { margin-top: 20px !important}
     div.partner-area {
-        grid-template-columns: 160px 160px 160px 160px 160px!important;
-        grid-column-gap: calc((100% - 800px) / 4)  !important;
+        grid-template-columns: 155px 155px 155px 155px 155px !important;
+        grid-column-gap: calc((100% - 775px) / 4)  !important;
     }   
+    div.partner-area img {
+        overflow: hidden;
+        width: 100% !important; 
+    }    
 }
 @media (max-width: 800px) {
     .u-section-4 .u-sheet-1 { min-height: 220px; }
@@ -241,9 +245,13 @@ div.bigcontainer {
     .u-section-4 .u-sheet-1 { min-height: 220px; }
     .circle-text { line-height: 120px;}    
     div.partner-area {
-        grid-template-columns:  auto auto auto auto !important;
-        grid-column-gap: calc((100% - 640px) / 3)  !important;
+        grid-template-columns:  15% 15% 15% 15% 15% 15% !important;
+        grid-column-gap: 2%  !important;
     }   
+    div.partner-area img {
+        overflow: hidden;
+        width: 100% !important;
+    }    
 }
 @media (max-width: 700px) {
     .u-section-4 .u-sheet-1 { min-height: 120px; }
@@ -255,21 +263,22 @@ div.bigcontainer {
 @media (max-width: 650px) {
     #four-area div.u-container-layout.u-container-layout-1 * {
         margin-left: 40px !important;
-    }
-    div.partner-area {
-        grid-template-columns: 32% 32% 32% !important;
-        grid-column-gap: 2%  !important;
-    }
+    }    
+    div.partner-area img {
+        overflow: hidden;
+        width: 100% !important; height: 50px !important;
+    }    
 }
 @media (max-width: 568px) {
     .u-section-4 .u-sheet-1 { min-height: 70px; }
     .u-section-4 .u-gallery-1 {height: 70px !important; margin-top: 30px; margin-bottom: 20px;}
     .u-section-4 .u-gallery-1 p {font-size: 15px !Important;}
+    div.partner-area img {
+        overflow: hidden;
+        width: 100% !important; height: 40px !important;
+    }    
     .circle-text { line-height: 70px;}      
-    div.partner-area {
-        grid-template-columns: 32% 32% 32% !important;
-        grid-column-gap: 2%  !important;
-    }  
+    
 }
 
 @media (max-width: 540px) {
@@ -282,14 +291,11 @@ div.bigcontainer {
     #four-area div.u-container-layout.u-container-layout-1 table {        
         margin-left: 0px !important;
     }
+    div.partner-area {margin-top: 40px !important;}
     div.partner-area img {
         overflow: hidden;
-        width: 100% !important; height: 80px !important;
-    }
-    div.partner-area {
-        grid-template-columns: 32% 32% 32% !important;
-        grid-column-gap: 2%  !important;
-    } 
+        width: 100% !important; height: 40px !important;
+    }    
     .fivecircles {display: none !important;}
 }
 @media (max-width: 400px) {
@@ -297,14 +303,11 @@ div.bigcontainer {
     .u-section-4 .u-gallery-1 {height: 60px !important; margin-top: 30px; margin-bottom: 20px;}
     .u-section-4 .u-gallery-1 p {font-size: 12px !Important;}
     .circle-text { line-height: 60px;}      
+    div.partner-area {margin-top: 20px !important;}
     div.partner-area img {
         overflow: hidden;
-        width: 100% !important; height: 80px !important;
-    }
-    div.partner-area {
-        grid-template-columns: 32% 32% 32% !important;
-        grid-column-gap: 2%  !important;
-    }  
+        width: 100% !important; height: 30px !important;
+    }    
 }
 
 @media (max-width: 400px) {
@@ -346,7 +349,7 @@ div.bigcontainer {
 }
 
 @media (max-width: 450px) {    
-    .certi_text { font-size: 12px !important; }
+    .certi_text { font-size: 14px !important; }
     #four-pictures {height: 100px !important;}
     .percentage-20 {font-size: 12px !important;}
     .u-section-6 img { transform: scale( 0.6)}

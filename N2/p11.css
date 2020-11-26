@@ -367,5 +367,14 @@ div.d6-table-area p {
     p.detail-text {line-height: 40px !important;}
     .new-machinery {width: 100% !important;}
     .new-machinery:last-child {margin-top: 40px; margin-left: 0px !important; padding-left: 0px; text-align: center;}
-
+}
+@media (max-width: 575px) {
+    .u-section-2 .u-text-3 {font-size: 16px !Important; text-align: justify;}
+    .u-section-2 .u-text-1, .u-section-2 .u-text-2, .u-section-6 .u-text-1, .u-section-6 .u-text-2 {font-size: 20px !Important;}
+    .u-section-2 .u-text-2  {margin-top: 0px !important;}
+    .u-section-6 p.u-text-1, .u-section-6 p.u-text-3, .u-section-6 p.u-text-5 {font-size: 16px !important}
+    .u-section-6 .u-text-4, .u-section-6 .u-text-2, .u-section-6 .u-text-6 {font-size: 18px !important}
+    .u-section-6 .u-text-4, .u-section-6 .u-text-6 {height: auto}
+    .u-section-4 .u-text-1, .u-section-8 .u-text-1, .label1 {font-size: 20px !Important}
+    .u-section-8 .u-text-2, .u-section-7 .u-text-1, .u-section-7 .u-text-2 , .u-section-7 .u-text-3 , .u-section-7 .u-text-4 {font-size: 18px !Important}
 }

@@ -28,7 +28,7 @@ include('../N1/header.php');
     margin: 0 auto 0 auto;
   }
 </style>
-    <section class="u-align-left u-clearfix u-section-4" id="sec-c41e" style='background-color: #ccc'>
+    <section class="u-align-left u-clearfix u-section-4" id="sec-c41e" style='background-color: #eee'>
       <div class="u-clearfix u-sheet u-sheet-1" style='text-align: center'>
         <h1 class="u-text u-text-default u-text-1 yahei" style='font-size: 30px; margin: 50px auto 0 auto;'> 农贸市场招商难题 </h1>
       </div>
@@ -143,7 +143,7 @@ include('../N1/header.php');
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-section-6" id="sec-d54b" style='background-color: #ccc'>
+    <section class="u-clearfix u-section-6" id="sec-d54b" style='background-color: #eee'>
       <div style='margin: 50px auto 50px auto;'>
         <h1 class="u-text u-text-default u-text-1 bigtitle" style='width: 100%; text-align: center'> 菜源佳佳招商的优势：“三快三省一系统”的优点 </h1>
         <h2 class="u-text u-text-default u-text-2 smalltitle" style='width: 100%; text-align: center; margin-top: 20px'>NEW MACHINERY PRODUCTS</h2>
@@ -220,7 +220,7 @@ include('../N1/header.php');
                     <p class="u-text u-text-default u-text-4" style='margin: 0 auto 0 auto; width: 100%; text-align: center'> 指快速回笼资金 </p>
                   </div>
                 </div>
-                <div class="u-container-style u-grey-50 u-layout-cell u-size-20 u-layout-cell-5">
+                <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5 u-grey-10">
                   <div class="u-container-layout u-container-layout-5">
                     <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速形成品牌化：菜源佳佳拥有众多联合品牌商家，具有强大的品牌带动作用，有利于快速帮助市场方塑造品牌。</p>
                   </div>
@@ -243,7 +243,7 @@ include('../N1/header.php');
         <div class="u-gallery u-no-transition u-show-text-on-hover u-gallery-1">
           <img SRC='/N2/images/p11com.jpg' style='width: 100%'>
         </div>
-        <p class="u-text u-text-default u-text-2 yahei" style='font-size: 20px'> 2、招商对象：夫妻店、基地、品牌商家、&nbsp;<br>3、招商方法：系统化定向招商，确保招商效果，使招商入驻率高达90%以上&nbsp;<br>4、招商政策制定：根据当地情况进行调研并制定前期招商策略 
+        <p class="u-text u-text-default u-text-2 yahei" style='font-size: 20px'> 2、招商对象：夫妻店、基地、品牌商家&nbsp;<br>3、招商方法：系统化定向招商，确保招商效果，使招商入驻率高达90%以上&nbsp;<br>4、招商政策制定：根据当地情况进行调研并制定前期招商策略 
         </p>
       </div>
     </section>

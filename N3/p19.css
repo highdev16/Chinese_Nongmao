@@ -150,6 +150,15 @@
 
 @media (max-width: 575px){ .u-section-3 .u-image-1 {min-height: 212px}
 .u-section-3 .u-image-2 {min-height: 212px}
-.u-section-3 .u-image-3 {min-height: 212px} }.imgtmp {
+.u-section-3 .u-image-3 {min-height: 212px} 
+.u-section-2 .u-text-1, .u-section-2 .u-text-2, .u-section-2 .u-text-4, .u-section-2 .u-text-5 {font-size: 22px !important;}
+.u-section-2 .u-text-3 {line-height: 28px !important;}
+.u-section-2 .u-text-2 {margin-top: 0px !Important;}
+.u-section-2 .u-text-4 {margin-top: 40px !Important; height: 20px !Important;}
+.u-section-3 .u-text-1, .u-section-3 .u-text-2, .u-section-3 .u-text-3 {font-size: 14px !important;}
+.u-section-3 .u-image-1, .u-section-3 .u-image-2, .u-section-3 .u-image-3 {height: 140px !Important; min-height: 140px !important;}
+}
+.imgtmp {
 background-color: #dfd;
 }
+.u-section-2 .u-text-3 {text-align: justify;}
