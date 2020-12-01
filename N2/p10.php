@@ -186,8 +186,8 @@ include('../N1/header.php');
                       <img SRC="/N2/images/aa4.jpg" alt="" class="u-image u-image-default u-image-4" data-image-width="600" data-image-height="456">
                       <div class="u-align-center u-border-1 u-border-grey-10 u-container-style u-group u-group-4" style='background-color: white'>
                         <div class="u-container-layout u-container-layout-8">
-                          <p class="u-text u-text-7 market-operation-detail-title"> 技术驱动全能变革 </p>
-                          <p class="u-text u-text-grey-40 u-text-8 market-operation-detail-detail"> 智能设备、智慧平台应用，大数据优化消费体验 </p>
+                          <p class="u-text u-text-7 market-operation-detail-title"> 技术驱动变革 </p>
+                          <p class="u-text u-text-grey-40 u-text-8 market-operation-detail-detail"> 智能设备、智慧平台，大数据优化消费体验 </p>
                         </div>
                       </div>
                     </div>

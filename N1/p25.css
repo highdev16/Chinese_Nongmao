@@ -384,7 +384,7 @@
 @media (max-width: 991px) { .grid-cell-container { margin-bottom: 20px !important;} }
 @media (max-width: 768px) { section div.image_cell_area, section div.image_cell_area img { height: 200px !important;}}
 @media (max-width: 575px) { 
-    div.image-cell> div >div > div {display: none !Important; }
+    /* div.image-cell> div >div > div {display: none !Important; } */
     .pagination>li>a, .pagination>li>span {font-size: 14px !important; padding: 5px 4px !important;}
     section div.image_cell_area, section div.image_cell_area img { height: 250px !important;} 
     .grid-cell-container {grid-template-columns: 48% 48%; grid-column-gap: 4%;} .u-sheet,.u-section-2 .u-text-1 {width: calc(100% - 40px);}

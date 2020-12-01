@@ -194,14 +194,19 @@ include('../N1/header.php');
           <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1  not-morethan768">
             <div class="u-layout">
               <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2">
+                    <p class="u-text u-text-default u-text-2"> 快速组建市场网络 </p>
+                  </div>
+                </div>
                 <div class="u-container-style u-grey-10 u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                   <div class="u-container-layout u-valign-middle u-container-layout-1">
                     <p class="u-text u-text-default u-text-1">&nbsp; &nbsp;1、指快速回笼资金：高效专业的运营模式销快速吸引大量的优质商户入驻，可迅速招募大量资金；&nbsp;&nbsp;</p>
                   </div>
                 </div>
-                <div class="u-align-center u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
-                  <div class="u-container-layout u-valign-middle u-container-layout-2">
-                    <p class="u-text u-text-default u-text-2"> 快速组建市场网络 </p>
+                <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
+                  <div class="u-container-layout u-valign-middle u-container-layout-4" style='background: white'>
+                    <p class="u-text u-text-default u-text-4" style='margin: 0 auto 0 auto; width: 100%; text-align: center'> 指快速回笼资金 </p>
                   </div>
                 </div>
                 <div class="u-container-style u-grey-10 u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
@@ -215,9 +220,9 @@ include('../N1/header.php');
           <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2  not-morethan768">
             <div class="u-layout">
               <div class="u-layout-row">
-                <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
-                  <div class="u-container-layout u-valign-middle u-container-layout-4" style='background: white'>
-                    <p class="u-text u-text-default u-text-4" style='margin: 0 auto 0 auto; width: 100%; text-align: center'> 指快速回笼资金 </p>
+              <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
+                  <div class="u-container-layout u-valign-middle u-container-layout-6" style='background: white'>
+                    <div class="u-text u-text-default u-text-6" style='margin: 0 auto 0 auto; width: 100%'> 快速形成品牌化 </div>
                   </div>
                 </div>
                 <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5 u-grey-10">
@@ -225,11 +230,7 @@ include('../N1/header.php');
                     <p class="u-text u-text-default u-text-3">&nbsp; &nbsp;3、快速形成品牌化：菜源佳佳拥有众多联合品牌商家，具有强大的品牌带动作用，有利于快速帮助市场方塑造品牌。</p>
                   </div>
                 </div>
-                <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
-                  <div class="u-container-layout u-valign-middle u-container-layout-6" style='background: white'>
-                    <div class="u-text u-text-default u-text-6" style='margin: 0 auto 0 auto; width: 100%'> 快速形成品牌化 </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>

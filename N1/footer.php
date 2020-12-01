@@ -112,7 +112,7 @@
                 <td class="u-table-cell u-table-cell-65" style='cursor:pointer' title="http://www.gggyyy.cn/jzsj/">&gt; 农贸建筑设计</td>
                 <td class="u-table-cell u-table-cell-66" style='cursor:pointer' title="http://www.gggyyy.cn/nmyy/nmds.html">&gt; 农贸市场电商</td>
                 <td class="u-table-cell u-table-cell-67" style='cursor:pointer' title="http://www.gggyyy.cn/zn/csyy.html">&gt; 智能城市应用</td>
-                <td class="u-table-cell u-table-cell-68" style='cursor:pointer' title="http://www.gggyyy.cn/zhengfu.html">&gt; 政府合作</td>
+                <td class="u-table-cell u-table-cell-68" style='cursor:pointer' title="http://www.gggyyy.cn/zfhz.html">&gt; 城市智慧菜场建设</td>
                 <td class="u-table-cell u-table-cell-69" style='cursor:pointer' title="http://www.gggyyy.cn/gyxw/" >&gt; 光影新闻动态</td>
                 <td class="u-table-cell u-table-cell-69" style='cursor:pointer' title="http://www.gggyyy.cn/about/">&gt; 联系我们</td>
               </tr>
