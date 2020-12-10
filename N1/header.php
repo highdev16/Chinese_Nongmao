@@ -436,7 +436,8 @@ if (!$flag) {
                     if (parentObj == null) return;
                     for (let i = 2; i <= 7; i++) {
                       if (parentObj.hasClass('mainmenu' + i)) {
-                        $("a.titlemainmenu.mainmenu" + i).addClass('active'); return;
+                        $("a.titlemainmenu.mainmenu" + i).addClass('active'); 
+                        $("a.titlemainmenu2.mainmenu" + i).addClass('active'); return;
                       }
                     }
                 }
