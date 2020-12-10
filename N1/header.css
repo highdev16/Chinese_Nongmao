@@ -298,10 +298,10 @@ div.free-consultation {
 }
 
 body {
-    padding-top: 62px;
+    padding-top: 80px;
 }
 body.narrowPadding{
-    padding-top: 80px;
+    padding-top: 62px;
 }
 li.u-nav-item a.titlemainmenu2, .submenuclicked li a {cursor: pointer; text-decoration: none; color: #ff6500;}
 li.u-nav-item a.titlemainmenu2 { color: white;}
