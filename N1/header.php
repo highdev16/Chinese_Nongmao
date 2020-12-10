@@ -444,6 +444,7 @@ if (!$flag) {
             });
 
             $(".titlemainmenu2").click(function() {
+              if ($(this).hasClass('mainmenu1')) return;
               $(".u-opacity.u-opacity-50").addClass('opacity-100').removeClass('u-opacity-50');
               for (let i = 2; i <= 7; i++) {
                 if ($(this).hasClass('mainmenu' + i)) {
