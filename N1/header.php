@@ -121,14 +121,7 @@ if (!$flag) {
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-50">
               <div id='submobilemenu' class='u-opacity u-opacity-50 submenuclicked' style='background: white; width: 100%; height: 100%; z-index: 1000000'>
-                <ul id='mainmenu2'>
-                  <li><a href=''>农贸市场设计案例</a></li>
-                  <li><a href=''>农贸建筑设计</a></li>
-                  <li><a href=''>5G智能设计</a></li>
-                  <li><a href=''>设计合作流程</a></li>
-                  <li><a href=''>城市智慧菜场建设</a></li>
-                  <li><a href=''>农贸市场定位策划</a></li>
-                </ul>
+                
               </div>
             </div>
           </div>
@@ -428,7 +421,9 @@ if (!$flag) {
             $('section.titlesubmenu div[my-href]').click(function() {
                 window.open($(this).attr('my-href'), '_blank');
             });
-
+            $("#hamburgermenu").click(function() {
+              $("#submobilemenu").html("");
+            })
             $("section.titlesubmenu div.u-layout-row > div").each(function() {
                 if (window.location.href.toLowerCase().indexOf(($(this).attr('my-href') || "nothinghref").toLowerCase()) != -1
                   || window.location.href.toLowerCase().indexOf(($(this).attr('my-href') + "index.html").toLowerCase()) != -1
