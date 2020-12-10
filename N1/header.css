@@ -1,4 +1,14 @@
-@media (max-width: 990px) {
+@media (max-width: 1360px) {
+    #bigheadermenu .free-consultation {display: none !important;}
+    .u-header .u-image-1 {
+        margin-left: 10px !Important;
+    }
+}
+@media (max-width: 1140px) {
+    li.u-nav-item a.titlemainmenu {width: auto !important;}
+    #bigheadermenu {margin-left: 20px !Important;}
+}
+@media (max-width: 991px) {
     nav.u-menu {
         right: 0px;
         margin-right: 0px !important;
@@ -203,7 +213,7 @@ div.u-custom-menu.u-nav-container {
     height: 100%;
 }
 
-li.u-nav-item a.titlemainmenu {
+li.u-nav-item a.titlemainmenu, li.u-nav-item a.titlemainmenu2 {
     height: 100%;
     line-height: 80px;
     border-width: 0px;
@@ -214,7 +224,7 @@ li.u-nav-item a.titlemainmenu {
     text-align: center;
 }
 
-li.u-nav-item a.titlemainmenu.active:after {
+li.u-nav-item a.titlemainmenu.active:after, li.u-nav-item a.titlemainmenu2.active:after {
     content: '';
     width: 100%;
     height: 5px;
@@ -224,7 +234,7 @@ li.u-nav-item a.titlemainmenu.active:after {
     left: 0px;
 }
 
-header.narrow li.u-nav-item a.titlemainmenu {
+header.narrow li.u-nav-item a.titlemainmenu, header.narrow li.u-nav-item a.titlemainmenu2 {
     line-height: 62px;
     font-family: "Microsoft Yahei" !important;
 }
@@ -268,6 +278,42 @@ div.free-consultation {
 
 @media (max-width: 1430px) {
     .u-header .u-menu-1 { margin-left: 200px !Important;}
-    li.u-nav-item a.titlemainmenu {width: 100px}
+    li.u-nav-item a.titlemainmenu2 {width: 100px}
     li.u-nav-item { margin-right: 10px}
+}
+@media (max-width: 991px) {
+    header nav.open #mobilemenu {
+        display: flex !important;
+    }
+    .u-header .u-nav-2 {
+        margin-top: 10px;
+    }
+    li.u-nav-item a.titlemainmenu2 { line-height: 50px;}
+}
+@media (max-width: 400px) {
+    .u-offcanvas .u-sidenav.mobileheadermenu {
+        flex-basis: 150px !important;
+    }
+    li.u-nav-item a.titlemainmenu2 { padding: 0px !important;}
+}
+
+body {
+    padding-top: 62px;
+}
+body.narrowPadding{
+    padding-top: 80px;
+}
+li.u-nav-item a.titlemainmenu2, .submenuclicked li a {cursor: pointer; text-decoration: none; color: #ff6500;}
+li.u-nav-item a.titlemainmenu2 { color: white;}
+.submenuclicked li a{
+    line-height: 50px;
+}
+.submenuclicked {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: 'column';
+}
+.submenuclicked ul {
+    padding-left: 0px;
+    padding-top: 100px;
 }

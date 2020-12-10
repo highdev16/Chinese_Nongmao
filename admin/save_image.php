@@ -65,10 +65,15 @@ $id = intval($_REQUEST['id']);
 if ($id < 0) {
     $url = $_REQUEST['path'];
     if (substr("../" . $_REQUEST['path'], 0, 13) == '../allimages/' || $_REQUEST['path'] == 'allimages') {
-        $t = time();
-        if (move_uploaded_file($_FILES['image']['tmp_name'], '../' . $url . "/"  . $t . ".jpg")) {
-            make_thumb('../' . $url . "/"  . $t . ".jpg", '../' . $url . "/"  . $t . ".jpgthumb.jpg", 80);
-            echo 'success'; exit;
+        $ts = time();
+        $count = 0;
+        for ($i = 0; $i < sizeof($_FILES['image']); $i++) {
+            $t = $ts . "$i";
+            if (move_uploaded_file($_FILES['image']['tmp_name'][$i], '../' . $url . "/"  . $t . ".jpg")) {
+                make_thumb('../' . $url . "/"  . $t . ".jpg", '../' . $url . "/"  . $t . ".jpgthumb.jpg", 80);
+                $count++;
+            }
         }
+        echo "success$count"; exit;
     }
 }

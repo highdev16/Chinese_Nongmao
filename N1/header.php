@@ -92,7 +92,7 @@ if (!$flag) {
                 </defs></svg>
             </a>
           </div>
-          <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: row; justify-content: space-around'>
+          <div class="u-custom-menu u-nav-container" style='display: flex; flex-direction: row; justify-content: space-around' id='bigheadermenu'>
             <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" style='height:100%'>
                 <li class="u-nav-item"><a class="titlemainmenu mainmenu1  u-button-style u-nav-link u-text-active-custom-color-1 " href="/" style="padding: 0px 0;">首页</a></li>
                 <li class="u-nav-item"><a class="titlemainmenu mainmenu2  u-button-style u-nav-link u-text-active-custom-color-1 " style="padding: 0px 0;">农贸市场设计</a></li>
@@ -106,20 +106,31 @@ if (!$flag) {
               <img src='/N1/images/phonering.png' style='margin:auto 5px auto 0; height: 20px'><span style='font-style: italic'>400-000-3840</span>
             </div>
           </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+          <div class="u-custom-menu u-nav-container-collapse" id='mobilemenu'>
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav mobileheadermenu">
               <div class="u-menu-close"></div>
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                  <li class="u-nav-item"><a class="u-button-style u-nav-link titlemainmenu mainmenu1" href="/" style="padding: 10px 0;">首页</a></li>
-                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu2" style="padding: 10px 0;">农贸市场设计</a></li>
-                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu3" style="padding: 10px 0;">农贸市场运营</a></li>
-                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu4" style="padding: 10px 0;">智能菜场</a></li>
-                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu5" style="padding: 10px 0;">农贸市场投资</a></li>
-                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu6" style="padding: 10px 0;">农贸新闻资讯</a></li>
-                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu mainmenu7" style="padding: 10px 0;">光影集团</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link titlemainmenu2 mainmenu1" href="/" style="padding: 10px 0;">首页</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu2 mainmenu2" style="padding: 10px 0;">农贸市场设计</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu2 mainmenu3" style="padding: 10px 0;">农贸市场运营</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu2 mainmenu4" style="padding: 10px 0;">智能菜场</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu2 mainmenu5" style="padding: 10px 0;">农贸市场投资</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu2 mainmenu6" style="padding: 10px 0;">农贸新闻资讯</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-section-1 titlemainmenu2 mainmenu7" style="padding: 10px 0;">光影集团</a></li>
               </ul>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-50">
+              <div id='submobilemenu' class='u-opacity u-opacity-50 submenuclicked' style='background: white; width: 100%; height: 100%; z-index: 1000000'>
+                <ul id='mainmenu2'>
+                  <li><a href=''>农贸市场设计案例</a></li>
+                  <li><a href=''>农贸建筑设计</a></li>
+                  <li><a href=''>5G智能设计</a></li>
+                  <li><a href=''>设计合作流程</a></li>
+                  <li><a href=''>城市智慧菜场建设</a></li>
+                  <li><a href=''>农贸市场定位策划</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
@@ -348,8 +359,8 @@ if (!$flag) {
     </section>
     <script>
         $(window).scroll(function(event) {
-          if ($(window).scrollTop() >= 40) $("header, .titlesubmenu").addClass('narrow');
-          else if ($(window).scrollTop() <= 0) $("header, .titlesubmenu").removeClass('narrow');
+          if ($(window).scrollTop() >= 40) {$("header, .titlesubmenu").addClass('narrow'); $("body").addClass('narrowPadding'); }
+          else if ($(window).scrollTop() <= 0) {$("header, .titlesubmenu").removeClass('narrow'); $("body").remove('narrowPadding'); }
         })
         $(document).ready(function() {            
             let mousemove = false;
@@ -435,5 +446,18 @@ if (!$flag) {
                     }
                 }
             });
+
+            $(".titlemainmenu2").click(function() {
+              $(".u-opacity.u-opacity-50").addClass('opacity-100').removeClass('u-opacity-50');
+              for (let i = 2; i <= 7; i++) {
+                if ($(this).hasClass('mainmenu' + i)) {
+                  let html = "";
+                  $("section.titlesubmenu.mainmenu" + i + " div[my-href]").each(function() {
+                    html += "<li><a href='" + $(this).attr('my-href') + "'>" + $(this).find('p').html() + "</a></li>";
+                  });
+                  $("#submobilemenu").html("<ul id='mainmenu2'>" + html +"</ul>");
+                }
+              }
+            })
         })
     </script>

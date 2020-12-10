@@ -181,7 +181,10 @@ var foldertree, selectedItem = {id: "allimages"};
 		}).then(result => {
 			if ($("#image")[0].files.length == 0) return;
 			var formData = new FormData();
-			formData.append("image", $("#image")[0].files);
+			let files = [];
+			for (let i in $("#image")[0].files){				
+				formData.append("image[]", $("#image")[0].files[i]);
+			}
 			formData.append("path", selectedItem.id);
 			formData.append('id', '-1');
 			$.ajax({
@@ -191,8 +194,8 @@ var foldertree, selectedItem = {id: "allimages"};
 				processData: false,
 				contentType: false,
 				success: function(a) {
-					if (a == 'success') {
-						alert("成功！");
+					if (a.startsWith('success')) {
+						alert("成功！ 成功上传" + a.substr(7) + "个文件。");
 						phoneTable.ajax.reload(null, false);
 					} else if (a == '1') {
 						alert ("失败! 仅允许使用BMP, PNG, JPG, JPEG, GIF文件类型");

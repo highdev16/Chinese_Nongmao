@@ -174,6 +174,7 @@ include ('config.php');
 						if ($("input[name=url]")[0]) {
 							$("input[name=url]").next().append(`<input type="button" name="ok" value="..." style="width: 50px;" onclick='BrowseImage()'>`);
 							clearInterval(enableTimer);
+							$("form > label:first-child > span.trumbowyg-input-infos > span").html("图片")
 						}
 					}, 100);
 				});
