@@ -208,10 +208,10 @@ if (!$flag) {
                   <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 菜原佳佳加盟 </p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-6" my-href="/nmyy/">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-6" my-href="/nmyy/?">
                 <div class="u-container-layout u-valign-middle-xl u-container-layout-5">
-                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
-                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 农贸运营案例 </p>
+                  <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-6">
+                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-6"> 农贸运营案例 </p>
                 </div>
               </div>
             </div>
