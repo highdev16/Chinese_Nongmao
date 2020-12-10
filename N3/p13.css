@@ -185,7 +185,7 @@
 background-color: #dfd;
 
 }
-.u-section-3 .u-text-1, .u-section-4 .u-text-2 { font-size: 16px !Important; line-height: 25px !Important;}
+.u-section-4 .u-text-2 { font-size: 16px !Important; line-height: 25px !Important;}
 div.grid-3 {
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -209,7 +209,7 @@ div.grid-3 {
   .u-section-5 {
     min-height: 400px;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 991px) {
     .u-section-3 .u-sheet-1 {
       min-height: 0px !important;
     }
@@ -268,3 +268,7 @@ div.grid-3 {
   .u-section-3 .u-image-1 {width: 300px; height: 300px; margin-left: 0}  
 }
 .u-section-3 .u-text-1, .u-section-4 .u-text-2 {text-align: justify}
+
+@media(max-width: 1390px) { .u-section-3 .u-text-1 {line-height: 50px !important;}}
+@media(max-width: 1100px) { .u-section-3 .u-text-1 {line-height: 42px !important;}}
+@media(max-width: 900px) { .u-section-3 .u-text-1 {line-height: 36px !important;}}

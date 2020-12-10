@@ -85,7 +85,7 @@ include('../N1/header.php');
             <div class="u-layout-row" style='display: grid; grid-auto-flow: column; grid-gap: 20px 20px; grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2.666667%'>
               <div class="u-container-style u-layout-cell u-left-cell u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-1" style='height: 100%'>
+                  <div class="u-align-center u-container-style u-expanded-width u-group u-palette-1-base u-group-1">
                     <div class="u-container-layout u-container-layout-2" style='background-color: green'>
                       <p class="u-text u-text-1"> 免</p>
                       <p class="u-text u-text-2">租 金</p>

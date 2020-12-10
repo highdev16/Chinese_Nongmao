@@ -9,6 +9,7 @@ $pageNum = 15;
 $pageIndex = $_REQUEST['pageNumber'];
 $query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
 $rows = $db->rawQuery($query);
-
-echo json_encode(array('result' => 'success', 'length' => $pageTotal, 'items' => $rows));
+$query = "SELECT count(*) as `b` FROM news WHERE category = " . intval($_REQUEST['category']);
+$a = $db->rawQuery($query);
+echo json_encode(array('result' => 'success', 'length' => $pageTotal, 'items' => $rows, 'length1' => $a[0]['b']));
   

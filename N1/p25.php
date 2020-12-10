@@ -104,7 +104,7 @@
           
           let htmlString = "";
           let rows = data.items;
-          refreshPaginator(rows.length, pageNumber);
+          refreshPaginator(data.length1, pageNumber);
           
           for (let i = 0; i < rows.length; i++) {
             row = rows[i];
