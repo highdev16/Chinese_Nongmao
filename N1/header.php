@@ -352,7 +352,7 @@ if (!$flag) {
     <script>
         $(window).scroll(function(event) {
           if ($(window).scrollTop() >= 40) {$("header, .titlesubmenu").addClass('narrow'); $("body").addClass('narrowPadding'); }
-          else if ($(window).scrollTop() <= 0) {$("header, .titlesubmenu").removeClass('narrow'); $("body").remove('narrowPadding'); }
+          else if ($(window).scrollTop() <= 0) {$("header, .titlesubmenu").removeClass('narrow'); $("body").removeClass('narrowPadding'); }
         })
         $(document).ready(function() {            
             let mousemove = false;
