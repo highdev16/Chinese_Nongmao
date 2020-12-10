@@ -127,6 +127,20 @@ if (!$flag) {
         </nav>
       </div>
     </header>
+    <section class='bottommenu u-clearfix' style='display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index:9999999; background-color: white; border-top: 1px solid #ccc'>
+      <div style='width: 33.3333%;'>
+        <img src='/N1/images/home.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
+        <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>首页</p>
+      </div>
+      <div style='width: 33.3333%;'>
+        <img src='/N1/images/call.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
+        <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>在线咨询</p>
+      </div>
+      <div style='width: 33.3333%;'>
+        <img src='/N1/images/call2.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
+        <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>一键拨号</p>
+      </div>
+    </section>
     <section class="u-clearfix u-grey-5 u-section-1 titlesubmenu mainmenu2" style='position: fixed; display:none' id="carousel_80dd">
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:800px">
@@ -199,19 +213,19 @@ if (!$flag) {
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-4" my-href="/nmyy/nmzht.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
-                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">农贸综合体</p>
+                  <p class="u-align-center u-text u-text-4">农贸综合体</p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" my-href="/nmyy/cyjj.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
                   <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
-                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 菜原佳佳加盟 </p>
+                  <p class="u-align-center  u-text u-text-5"> 菜原佳佳加盟 </p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-6" my-href="/nmyy/?">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
-                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5"> 农贸运营案例 </p>
+                  <p class="u-align-center  u-text u-text-5"> 农贸运营案例 </p>
                 </div>
               </div>
             </div>
@@ -245,7 +259,7 @@ if (!$flag) {
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" my-href="/znsj/">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
-                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">5G智能设计</p>
+                  <p class="u-align-center  u-text u-text-4">5G智能设计</p>
                 </div>
               </div>
             </div>
@@ -279,7 +293,7 @@ if (!$flag) {
               <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-4" my-href="/gyzy.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
-                  <p class="u-align-center u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">建设光影置业</p>
+                  <p class="u-align-center u-text u-text-4">建设光影置业</p>
                 </div>
               </div>
             </div>
@@ -313,7 +327,7 @@ if (!$flag) {
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-4" my-href="/gov/">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
-                  <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">政府政策文件</p>
+                  <p class="u-align-center u-text u-text-4">政府政策文件</p>
                 </div>
               </div>
             </div>

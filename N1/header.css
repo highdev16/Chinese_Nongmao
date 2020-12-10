@@ -318,3 +318,10 @@ li.u-nav-item a.titlemainmenu2 { color: white;}
     padding-top: 100px;
 }
 section.titlesubmenu p {line-height: 20px !important; margin-top: 5px !important;}
+
+div.bottommenu {display: none}
+footer {margin-bottom: 0px !important}
+@media (max-width: 768px) {
+    footer {margin-bottom: 50px !important}
+    section.bottommenu {display: flex !Important; position: fixed; width: "100%"; height: 50px; flex-direction: row; justify-content: space-between;}
+}
