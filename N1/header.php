@@ -120,8 +120,7 @@ if (!$flag) {
               </ul>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-50">
-              <div id='submobilemenu' class='u-opacity u-opacity-50 submenuclicked' style='background: white; width: 100%; height: 100%; z-index: 1000000'>
-                
+              <div id='submobilemenu' class='u-opacity u-opacity-50 submenuclicked' style='background: white; width: 100%; height: 100%; z-index: 1000000'>                
               </div>
             </div>
           </div>
