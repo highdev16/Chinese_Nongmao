@@ -332,7 +332,7 @@ if (!$flag) {
                   <p class="u-align-center u-text u-text-1">公司简介</p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2" my-href="/about/contact.html">
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2" my-href="/about/contact.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">团队</p>
