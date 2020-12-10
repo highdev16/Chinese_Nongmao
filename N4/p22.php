@@ -101,21 +101,46 @@ include('../N1/header.php');
           $("#messagefield_second").addClass('u-form-field-error');
           return;
         }
-        let type = 1;        
-        $.post('/N1/save_consult.php', { data: {
+
+        $("#captcha").css('visibility', 'visible');
+        getotherpicture();
+      }
+      function submitForm1(veccode) {
+        document.getElementById("captcha_value").value = "";
+        $("#captcha").css('visibility', 'visible');
+        let type = 1;
+        $.post('/N1/save_consult.php', { c: veccode, data: {          
                     name: $("#namefield").val().trim(),
                     email: $("#emailfield").val().trim(),
                     message: $("#messagefield").val().trim(),
                     type: type
               }}, function(a,b) {
                 if (a == 'success') {
+                  $("#captcha").css('visibility', 'hidden');
                   $("div.u-form-send-success").show(0).delay(3000).hide(0);
-                } else
+                  return;
+                } else if (a == 'caperror') {
+                  getotherpicture(); return;
+                }
+                $("#captcha").css('visibility', 'hidden');
                   $("div.u-form-send-error").show(0).delay(3000).hide(0);
               }).fail(function() {
                 alert("失败！网络错误。");
               })
       }
     </script>
-    
+<div style='position:fixed; left:0; right:0; bottom:0; top: 0; z-index:999999; display: flex; flex-direction: column; justify-content: space-between; visibility: hidden;' id='captcha'>
+        <div style='width: 100%; height: 100%; left: 0; top: 0; position: absolute; z-index:9999999; background-color:rgba(0,0,0,0.5)' onclick='$("#captcha").css("visibility", "hidden");'></div>
+        <div style='width: 90%; max-width: 400px; margin: auto auto auto auto; display:block; z-index:19000000; height: 150px; position: relative; background-color: white'>
+          <table style='width: calc(100% - 40px); margin: 30px 20px 20px 20px'><tr><td>
+          <img src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' onclick="getotherpicture()" id='cap_image' 
+              style="cursor:pointer;margin-left:15px;width:130px; height: 30px" title="更换验证码">
+              </td><td><input type='text' id='captcha_value' style='max-width: calc(100% ); width: max-width: calc(100%)' placeholder='验证码'></td></tr>
+              <tr><td colspan='2'><a href="javascript:void(0)" style='display: block; margin-left: auto; margin-right: auto; max-width: 120px;' 
+              class="u-btn  u-button-style u-custom-color-1 u-btn-1" onclick='submitForm1(document.getElementById("captcha_value").value)'>立即咨询</a></td></tr></table>
+                <script> function getotherpicture() {
+                  document.getElementById('cap_image').src = '/admin/captcha.php?length=4&a=' + Math.random();
+                }</script>
+        </div>
+    </div>    
     <?php include('../N1/footer.php'); ?>

@@ -279,7 +279,8 @@ $(function(){
 <p class="loginT">密　码:</p>
 <p class="inputP"><input name="password" tabindex="2" type="password" class="formstyle" id="loginpwd" placeholder="请输入密码" size="20" value=""></p>
 <p class="loginT">验证码:</p>
-<div class="formstyle inputP"><input name="code" tabindex="3" type="text" id="code"  placeholder="请输入验证码"><img src="captcha.php" align="absmiddle" onclick="this.src='captcha.php?'+Math.random();" style="cursor:pointer;margin-left:15px;width:130px" title="更换验证码"/></div> 
+<div class="formstyle inputP"><input name="code" tabindex="3" type="text" id="code"  placeholder="请输入验证码">
+<img src="captcha.php" align="absmiddle" onclick="this.src='captcha.php?'+Math.random();" style="cursor:pointer;margin-left:15px;width:130px" title="更换验证码"/></div> 
 <div class="loginBtn">
 	<input type="submit" value="登  陆" tabindex="4" class="subBtn">
 	<input type="hidden" name="act" id="act" value="login"/>

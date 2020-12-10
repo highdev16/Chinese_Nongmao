@@ -1,7 +1,7 @@
 <?php
 session_start();
  
-$permitted_chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+$permitted_chars = '0123456789';
   
 function generate_string($input, $strength = 10) {
     $input_length = strlen($input);
@@ -47,7 +47,7 @@ $textcolors = [$black, $white, $red, $green, $blue, $cyan];
  
 $fonts = array(dirname(__FILE__).'/fonts/Roboto-Bold.ttf');
 
-$string_length = 6;
+$string_length = array_key_exists("length", $_REQUEST) ? intval($_REQUEST['length']) : 6;
 $captcha_string = generate_string($permitted_chars, $string_length);
  
 $_SESSION['captcha_text'] = $captcha_string;

@@ -176,11 +176,12 @@ var foldertree, selectedItem = {id: "allimages"};
 		Swal.fire({
 			title: "新图片",
 			width: 600,
-			html: "<div style='font-size:1.125em !important; text-align:left'>选择文件。(*.jpg, *.jpeg, *.png, *.gif, *.bmp)</div><input type='file' id='image'><br style='height:20px'>\
+			html: "<div style='font-size:1.125em !important; text-align:left'>选择文件。(*.jpg, *.jpeg, *.png, *.gif, *.bmp)</div><input type='file' id='image' multiple><br style='height:20px'>\
 			<div style='font-size:1.125em !important; text-align:left'>资料夹路径:  /" + selectedItem.id + "</div>"
 		}).then(result => {
+			if ($("#image")[0].files.length == 0) return;
 			var formData = new FormData();
-			formData.append("image", $("#image")[0].files[0]);
+			formData.append("image", $("#image")[0].files);
 			formData.append("path", selectedItem.id);
 			formData.append('id', '-1');
 			$.ajax({
