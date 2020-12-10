@@ -451,7 +451,7 @@ if (!$flag) {
                   $("section.titlesubmenu.mainmenu" + i + " div[my-href]").each(function() {
                     html += "<li><a href='" + $(this).attr('my-href') + "'>" + $(this).find('p').html() + "</a></li>";
                   });
-                  $("#submobilemenu").html("<ul id='mainmenu2'>" + html +"</ul>");
+                  $("#submobilemenu").html("<ul id='mainmenu23'>" + html +"</ul>");
                 }
               }
             })
