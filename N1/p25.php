@@ -85,7 +85,7 @@
           currentPage: pageNumber + 1,
           onPageChange: function (num, type) {
             if (num - 1 == pageNumber) return;
-            loadPages(category, num - 1);
+            loadPages(<?php echo $_REQUEST['category']; ?>, num - 1);
           }
         });
       }  
