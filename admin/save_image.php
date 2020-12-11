@@ -71,6 +71,7 @@ if ($id < 0) {
             $t = $ts . "$i";
             if (move_uploaded_file($_FILES['image']['tmp_name'][$i], '../' . $url . "/"  . $t . ".jpg")) {
                 make_thumb('../' . $url . "/"  . $t . ".jpg", '../' . $url . "/"  . $t . ".jpgthumb.jpg", 80);
+                file_put_contents('../' . $url . "/"  . $t . ".jpgt", $_FILES['image']['name'][$i]);
                 $count++;
             }
         }

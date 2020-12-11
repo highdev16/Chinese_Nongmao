@@ -26,7 +26,7 @@ include ('config.php');
 
 	<title>农贸市场设计|改造|效果图_智能菜场设计|升级|运营_农贸市场研究院 网站管理后台</title>
 	<link href="css/jquery.min.css" rel="stylesheet">
-	
+	<link rel="stylesheet" href="dist/themes/default/style.min.css" />
 	<link href="css/dt.css" rel="stylesheet" />
 	<link href="css/bs.css" rel="stylesheet" />
 	<link href="css/app.css" rel="stylesheet">
@@ -84,9 +84,10 @@ include ('config.php');
 	  <script src="js/app.js"></script>
 	  <!-- <script src="js/jquery.1.12.4.js"></script> -->
 	<script src="js/jquery.ui.min.js"></script>
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>	
 	<script src='js/dt.js'></script>
-<script src='js/bs.js'></script>
+	<script src='js/bs.js'></script>
+	<script src="dist/jstree.min.js"></script>
 </head>
 
 <body>
@@ -176,22 +177,37 @@ include ('config.php');
 		}, 100);
 		
 	});
-
+	var foldertree = null;
+	var phoneTable;
 	function BrowseImage() {
 		Swal.fire({
-			title: "选择一个图片。",
-			html: "<table id='imagetable' class='table table-striped table-bordered' style='min-width:700px; max-width:700px'><thead>" + 
+			title: "选择一个图片",
+			html: "<div style='width:200px; height: 500px; float:left; overflow: auto'><div style='max-width: 100%; width: 100%; overflow: auto; min-height: 500px' id='jsTree'></div></div><div style='float:left; width: 750px'><table id='imagetable' class='table table-striped table-bordered' style='float:left; min-width: 700px;margin-left: 20px;max-width:700px'><thead>" + 
 					`<tr>
 						<th style='width: 5%'>No</th>
 						<th style='width: 20%'>图片</th>
 						<th style='width: 20%'>文件名</th>
 						<th style='width: 20%'>URL</td>
-						<th style='width: 20%'>说明</td>
 						<th style='width: 15%'></th>
-					</tr></thead></table>`,
-			width: 800
-		})
-		$("#imagetable").DataTable({
+					</tr></thead></table></div>`,
+			width: 1200
+		});
+		setTimeout(function() {
+			foldertree = $("#jsTree").jstree({
+				'core' : {
+					'multiple': false,
+					'data' : {
+						'url' : 'get_tree_image.php',
+						'data' : function (node) {
+							return { 'id' : node.id };
+						}
+					}
+				}
+			});
+		}, 100)
+		
+		
+		phoneTable = $("#imagetable").DataTable({
 			"language": {
 				"url": "js/chinese.json"
 			},
@@ -199,6 +215,16 @@ include ('config.php');
 			"lengthMenu": [[5, 10, 20, 50, 100, -1], [5, 10, 20, 50, 100, "看都"]],
 			"pageLength" : 5
 		});
+
+		$('#jsTree')
+			// listen for event
+			.on('changed.jstree', function (e, data) {
+				selectedItem = data && data.node;
+				if (!selectedItem || !selectedItem.id) selectedItem = {id: "allimages"};
+				phoneTable.ajax.url("index7_images.php?path=" + encodeURIComponent(selectedItem.id));
+				phoneTable.ajax.reload(null, true);
+			})
+
 	}
 
 	function SelectImage(url) {
