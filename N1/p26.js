@@ -140,7 +140,7 @@ function make2(s) {
               let href = $(this).attr('href');
               if (!href.trim().startsWith("http://")) {
                 href = "http://" + href.trim();
-                $(this).attr('href', href);
+                $(this).attr('href', href).css('cursor', 'pointer');
               }
             })
           }
