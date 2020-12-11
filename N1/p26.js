@@ -136,6 +136,13 @@ function make2(s) {
               $("#prevLinkButton, #prevLinkLabel").css('opacity', 0);
             }
             $("div.main_content_area").html(a.row.content);
+            $("div.main_content_area a").each(function() {
+              let href = $(this).attr('href');
+              if (!href.trim().startsWith("http://")) {
+                href = "http://" + href.trim();
+                $(this).attr('href', href);
+              }
+            })
           }
         } catch(e) {}
       }
