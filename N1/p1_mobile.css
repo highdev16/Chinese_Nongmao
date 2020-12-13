@@ -131,8 +131,8 @@ div.bigcontainer {
     .u-section-2 .u-list-1 > div > div > span {transform: scale(0.6) !important;}
 }
 @media (max-width: 1430px) and (min-width: 768px) {
-    .u-container-layout.u-container-layout-2, .u-container-layout.u-container-layout-8 { padding-left: 30px !Important;padding-right: 30px !important }
-    .u-container-layout.u-container-layout-2 p, .u-container-layout.u-container-layout-8 p {line-height: 24px !important; margin-right: 0px !Important; margin-top: 0px !important; margin-right: 0px; font-size: 16px !important}
+    #sec-993c .u-container-layout.u-container-layout-2, #sec-993c .u-container-layout.u-container-layout-8 { padding-left: 30px !Important;padding-right: 30px !important }
+    #sec-993c .u-container-layout.u-container-layout-2 p, #sec-993c .u-container-layout.u-container-layout-8 p {line-height: 24px !important; margin-right: 0px !Important; margin-top: 0px !important; margin-right: 0px; font-size: 16px !important}
     .u-section-8 .u-layout-cell-2 { min-height: 0px}
     #four-pictures {height: 150px !important}
 }
@@ -365,3 +365,5 @@ div.bigcontainer {
     #four-pictures {height: 80px !important;}
     .percentage-20 {font-size: 10px !important;}
 }
+
+section.titlesubmenu p { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}

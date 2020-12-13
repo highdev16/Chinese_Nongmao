@@ -142,42 +142,42 @@ if (!$flag) {
       </div>
     </section>
     <section class="u-clearfix u-grey-5 u-section-1 titlesubmenu mainmenu2" style='position: fixed; display:none' id="carousel_80dd">
-      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:800px">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/zxsj/">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/zxsj/">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">农贸市场设计案例</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-2" my-href="/jzsj/">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/jzsj/">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">农贸建筑设计</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-3" my-href="/znsj/">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-3">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/znsj/">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">5G智能设计</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-4" my-href="/sj/sjhz.html">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-4">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/sj/sjhz.html">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4">设计合作流程</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-5" my-href="/sj/zfhz.html">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/sj/zfhz.html">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5">城市智慧菜场建设</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-5" my-href="/sj/nmscdw.html">
-                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/sj/nmscdw.html">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-5">农贸市场定位策划</p>
                 </div>
@@ -278,7 +278,7 @@ if (!$flag) {
                   <p class="u-align-center u-text u-text-1">我要投资农贸</p>
                 </div>
               </div>
-              <div class="uu-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" my-href="/rz.html">
+              <div class="u-align-left u-container-style u-layout-cell u-size-15 u-size-20-md u-layout-cell-2" my-href="/rz.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">我有农贸项目</p>
