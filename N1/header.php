@@ -76,6 +76,9 @@ if (!$flag) {
     <meta property="og:url" content="index.html">
     <link rel="stylesheet" href="/N1/header.css" media="screen">   
     <link rel="stylesheet" href="<?php echo $oname; ?>_mobile.css" media="screen">                 
+    <style>
+      section.titlesubmenu p { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
+    </style>
   </head>
   <body class="u-body" style='overflow-x: hidden'>
       <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style=' z-index:9999999; position: fixed; width: 100%'>
