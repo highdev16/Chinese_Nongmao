@@ -152,11 +152,38 @@ include ('config.php');
 	</div>
 	<script src='js/trumbowyg.min.js'></script>
 	<script src='js/langs/zh_cn.min.js'></script>
+	<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+	<script src='js/trumbowyg_fontfamily.js'></script>
 	<script src='js/sweetalert.js'></script>
 	<script>
 	var data = <?php echo json_encode($row); ?>;
 	$(document).ready(function() {
-		$('#editor').trumbowyg({lang: 'zh_cn'});
+		$('#editor').trumbowyg({lang: 'zh_cn', btns: [
+			['strong', 'em', 'underline'],
+			['justifyLeft', 'justifyCenter', 'justifyRight'],
+			['insertImage', 'link'],
+			'fontfamily', 'fontsize'
+		], plugins: {
+        fontsize: {
+            sizeList: [
+				'10px',
+				'12px',
+				'14px',
+				'16px',
+				'18px',
+				'20px',
+				'22px',
+				'24px',
+				'26px',
+				'28px',
+				'30px',
+				'34px',
+				'36px',
+				'40px',
+				'50px',
+            ],
+            allowCustomSize: false
+        }
 		$("#name").val(data['title'] || "");
         $("#writer").val(data['writer'] || "");
 		$("#category").val(data['category'] || "");
