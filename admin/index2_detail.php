@@ -81,6 +81,7 @@ include ('config.php');
 			z-index:99999 !important;
 		}
 	  </style>
+	  <link rel="stylesheet" href="dist/themes/default/style.min.css" />
 	  <script src="js/app.js"></script>
 	  <!-- <script src="js/jquery.1.12.4.js"></script> -->
 	<script src="js/jquery.ui.min.js"></script>
@@ -152,7 +153,7 @@ include ('config.php');
 	</div>
 	<script src='js/trumbowyg.min.js'></script>
 	<script src='js/langs/zh_cn.min.js'></script>
-	<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+	
 	<script src='js/trumbowyg_fontfamily.js'></script>
 	<script src='js/sweetalert.js'></script>
 	<script>
