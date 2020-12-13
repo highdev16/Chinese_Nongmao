@@ -184,7 +184,7 @@ include ('config.php');
 				'50px',
             ],
             allowCustomSize: false
-		}
+		}}}
 		);
 		$("#name").val(data['title'] || "");
         $("#writer").val(data['writer'] || "");
