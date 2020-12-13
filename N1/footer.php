@@ -149,7 +149,7 @@
         </table>
         <div style='clear:both; display: block'></div>
         <p class="u-text u-text-3" style='font-weight: 200 !important; margin-top: 30px; margin-bottom: 10px !important'>
-        联系电话: 0571-88776655           0571-28120373           19957895916<br>地址:杭州市拱墅区通益路861号録景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br><SPAN STYLE='cursor:pointer;' onclick='window.open("https://beian.miit.gov.cn/", "_blank");'>浙ICP备1049450号-1</span><br>
+        联系电话: 0571-88776655           0571-28120373           19957895916<br>地址:杭州市拱墅区通益路861号绿景国际杭州光影<br>Copyright光影农贸市场设计研究院 版权所有<br><SPAN STYLE='cursor:pointer;' onclick='window.open("https://beian.miit.gov.cn/", "_blank");'>浙ICP备1049450号-1</span><br>
           <br>
         </p>
       </div></footer>
