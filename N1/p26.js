@@ -168,34 +168,48 @@ function make2(s) {
     })
   })
 
-  function submitForm() {
-    $("div.u-form-send-message").hide();
-    $(".u-form-field-error").removeClass('u-form-field-error');
-    if ($("#namefield").val().trim().length == 0) {
-      $("#namefield").addClass('u-form-field-error');
-    }
-    if ($("#emailfield").val().trim().length == 0 || $("#emailfield").val().indexOf('@') == -1) {
-      $("#emailfield").addClass('u-form-field-error');
-    }
-    if ($("#messagefield").val().trim().length == 0 || $("#emailfield").val().indexOf('@') == -1) {
-      $("#messagefield").addClass('u-form-field-error');
-    }
-    let type = [];
-    if ($("#s111111")[0].checked) type.push('设计');
-    if ($("#s111112")[0].checked) type.push('运营');
-    if ($("#s111113")[0].checked) type.push('投资');
-    if ($("#s111114")[0].checked) type.push('融资');
-    $.post('/N1/save_consult.php', { data: {
-          name: $("#namefield").val().trim(), 
-          email: $("#emailfield").val().trim(), 
-          message: $("#messagefield").val().trim(), 
-          type
-    }}, function(a,b) {
-      if (a == 'success') {
-        $("div.u-form-send-success").show(0).delay(3000).hide(0);
-      } else 
-        $("div.u-form-send-error").show(0).delay(3000).hide(0);
-    }).fail(function() {
-      alert("失败！网络错误。");
-    });
-  }
+      function submitForm() {
+        $("div.u-form-send-message").hide();
+        $(".u-form-field-error").removeClass('u-form-field-error');
+        if ($("#namefield").val().trim().length == 0) {
+          $("#namefield").addClass('u-form-field-error');
+          $("#namefield_second").addClass('u-form-field-error');
+          return;
+        }
+        if ($("#emailfield").val().trim().length == 0) {
+          $("#emailfield").addClass('u-form-field-error');
+          $("#emailfield_second").addClass('u-form-field-error');
+          return;
+        }
+        if ($("#messagefield").val().trim().length == 0) {
+          $("#messagefield").addClass('u-form-field-error');
+          $("#messagefield_second").addClass('u-form-field-error');
+          return;
+        }
+
+        $("#captcha").css('visibility', 'visible');
+        getotherpicture();
+      }
+      function submitForm1(veccode) {
+        document.getElementById("captcha_value").value = "";
+        $("#captcha").css('visibility', 'visible');
+        let type = 1;
+        $.post('/N1/save_consult.php', { c: veccode, data: {          
+                    name: $("#namefield").val().trim(),
+                    email: $("#emailfield").val().trim(),
+                    message: $("#messagefield").val().trim(),
+                    type: type
+              }}, function(a,b) {
+                if (a == 'success') {
+                  $("#captcha").css('visibility', 'hidden');
+                  $("div.u-form-send-success").show(0).delay(3000).hide(0);
+                  return;
+                } else if (a == 'caperror') {
+                  getotherpicture(); return;
+                }
+                $("#captcha").css('visibility', 'hidden');
+                  $("div.u-form-send-error").show(0).delay(3000).hide(0);
+              }).fail(function() {
+                alert("失败！网络错误。");
+              })
+      }
