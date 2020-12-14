@@ -127,7 +127,7 @@
 .u-section-3 .u-custom-html-2 {min-height: 61px; margin: 18px 0 0} 
 
 @media (max-width: 1199px){ .u-section-3 .u-sheet-1 {min-height: 725px}
-.u-section-3 .u-layout-wrap-1 {position: relative; width: 940px; margin-right: 0; margin-left: 0}
+.u-section-3 .u-layout-wrap-1 {position: relative; margin-right: 0; margin-left: 0}
 .u-section-3 .u-layout-cell-1 {min-height: 687px}
 .u-section-3 .u-image-1 {height: 408px; margin-right: initial; margin-left: initial}
 .u-section-3 .u-table-1 {margin-right: initial; margin-left: initial}
@@ -173,7 +173,7 @@
 .u-section-4 .u-container-layout-2 {padding: 30px} 
 
 @media (max-width: 1199px){ .u-section-4 .u-sheet-1 {min-height: 419px}
-.u-section-4 .u-layout-wrap-1 {width: 940px; margin-left: 0}
+.u-section-4 .u-layout-wrap-1 { margin-left: 0}
 .u-section-4 .u-layout-cell-1 {min-height: 377px}
 .u-section-4 .u-image-1 {height: 225px; margin-right: initial; margin-left: initial}
 .u-section-4 .u-layout-cell-2 {min-height: 377px} }
@@ -407,4 +407,23 @@ img.article-image {
         display: block !important;
         visibility: visible !Important;
     }
+}
+
+@media (max-width: 768px) {
+  div.nextprevpagebutton {
+    display: block !important;
+  }
+  div.nextprevpagebutton > div > div {
+    max-width: calc(100% - 150px) !Important;
+  }
+}
+
+div.subtitleinfo {
+  display: flex; 
+  flex-direction: row;
+}
+@media (max-width: 568px) {
+  div.subtitleinfo {
+    flex-direction: column;
+  }
 }

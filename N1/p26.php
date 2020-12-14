@@ -26,18 +26,23 @@ $data = $rows[0]['keywords'];
                 <div class="u-container-style u-layout-cell u-left-cell u-size-45 u-white u-layout-cell-1">                
                   <div class="u-container-layout u-container-layout-1" id='maincontent_area' style='padding: 30px 30px 30px 30px'>
                     <div class='yahei' style='font-size: 24px; font-weight: bold; text-align: center' id='titleLabel'></div>
-                    <div style='font-size: 14px; font-weight: 100; color: #999; margin-top: 10px'>
-                        <div style='float:left;margin-right: 10px'><i class='fa fa-clock'></i></div>
-                        <div style='float:left; margin-right: 50px' id='createdTimeLabel'></div>
-                        <div style='float:left;margin-right: 10px'><i class='fa fa-user'></i></div>
-                        <div style='float:left;margin-right: 50px' id='writerLabel'></div>
-                        <div style='float:left;margin-right: 10px'><i class='fa fa-eye'></i></div>
-                        <div style='float:left;' id='browsecount'></div>
-                        <div style='width: 100%; height: 30px'></div>
+                    <div style='font-size: 14px; font-weight: 100; color: #999; margin-top: 10px' class='subtitleinfo'>
+                        <div style='display: flex; flex-direction:row'>
+                          <div style='float:left;margin-right: 10px'><i class='fa fa-clock'></i></div>
+                          <div style='float:left;margin-right: 50px' id='createdTimeLabel'></div>
+                        </div>
+                        <div style='display: flex; flex-direction:row'>
+                          <div style='float:left;margin-right: 10px'><i class='fa fa-user'></i></div>
+                          <div style='float:left;margin-right: 50px' id='writerLabel'></div>
+                        </div>
+                        <div style='display: flex; flex-direction:row'>
+                          <div style='float:left;margin-right: 10px'><i class='fa fa-eye'></i></div>
+                          <div style='float:left;' id='browsecount'></div>
+                        </div>
                     </div>
                     <div style='width: 100%;' class='main_content_area'>
                     </div>
-                    <div style='width: 100%; display: flex; justify-content: space-between; margin-top: 30px'>
+                    <div style='width: 100%; display: flex; justify-content: space-between; margin-top: 30px' class='nextprevpagebutton'>
                       <div style='display: flex'>
                         <button class='gotootherpage' style='margin-right: 10px;' id='prevLinkButton'>上一页</button>
                         <div style='max-width: 200px; text-overflow: ellipsis;; white-space:nowrap; overflow: hidden' id='prevLinkLabel'></div>
