@@ -221,7 +221,7 @@ while (strlen($temp) > 0) {
                         <textarea placeholder="我需要解决的同题是" rows="4" cols="50" id="messagefield" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
                       </div>
                       <div class="u-align-center u-form-group u-form-group-4">
-                        <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1" onclick='submitForm()'>立即咨询</a>
+                        <a href="javascript:void(0)" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1" onclick='submitForm()'>立即咨询</a>
                         <input type="submit" value="submit" class="u-form-control-hidden">
                       </div>
                       <div class="u-form-send-message u-form-send-success"> 谢谢！ 您的留言已发送。 </div>
@@ -316,7 +316,7 @@ while (strlen($temp) > 0) {
                         <textarea placeholder="我需要解决的同题是" rows="4" cols="50" id="messagefield" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
                       </div>
                       <div class="u-align-center u-form-group u-form-group-4">
-                        <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1" onclick='submitForm()'>立即咨询</a>
+                        <a href="javascript:void(0)" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1" onclick='submitForm()'>立即咨询</a>
                         <input type="submit" value="submit" class="u-form-control-hidden">
                       </div>
                       <div class="u-form-send-message u-form-send-success"> 谢谢！ 您的留言已发送。 </div>
