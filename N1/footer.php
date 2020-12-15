@@ -165,4 +165,13 @@
       </script>
       <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279380584'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279380584' type='text/javascript'%3E%3C/script%3E"));</script>      
   </body>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cf3a2ec3f27e8c1124c0b1aa1654cca5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </html>
