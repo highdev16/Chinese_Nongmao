@@ -2,7 +2,7 @@
 include('config.php');
 $categoryArr = array('', '室内设计', '建筑设计', '5G智能设计', '运营案例');
 $db = getDbInstance();
-$rows = $db->rawQuery("select id,name,stars,category,location,content,goodone from cases order by id desc");
+$rows = $db->rawQuery("select id,name,stars,hidden,category,location,content,goodone from cases order by id desc");
 $result = array();
 for ($i = 0; $i < sizeof($rows); $i++) {									
     $ab = array();
