@@ -140,9 +140,11 @@ include ('config.php');
 	function setHidden(id, ele) {
 		if (ele.checked)
 			$.post('hide_case.php', {id, hiddenValue: 1}, function(a,b) {
+				if (a != 'success') { alert("失败！"); ele.checked = false;}
 			});
 		else 
 			$.post('hide_case.php', {id, hiddenValue: 0}, function(a,b) {
+				if (a != 'success') { alert("失败！"); ele.checked = true;}
 			});
 	}
 	

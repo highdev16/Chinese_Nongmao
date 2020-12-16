@@ -19,9 +19,9 @@ $pageIndex = isset($_REQUEST['pageIndex']) ? intval($_REQUEST['pageIndex']) - 1 
 $pageNum = 15;
 
 switch ($mode) {
-  case 1: $query = "SELECT * FROM cases WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_date DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
-  case 2: $query = "SELECT * FROM cases WHERE category = " . intval($_REQUEST['category']) . "  ORDER BY browse DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
-  case 3: $query = "SELECT * FROM cases WHERE category = " . intval($_REQUEST['category']) . "  ORDER BY stars DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
+  case 1: $query = "SELECT * FROM cases WHERE hidden=false and category = " . intval($_REQUEST['category']) . " ORDER BY created_date DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
+  case 2: $query = "SELECT * FROM cases WHERE hidden=false and category = " . intval($_REQUEST['category']) . "  ORDER BY browse DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
+  case 3: $query = "SELECT * FROM cases WHERE hidden=false and category = " . intval($_REQUEST['category']) . "  ORDER BY stars DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum; break;
   default: exit;
 }
 
@@ -29,7 +29,7 @@ switch ($mode) {
 
 include('../N1/dbconfig.php');
 $db = getDbInstance();
-$pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
+$pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where hidden=false and category = " . intval($_REQUEST['category']));
 
 $pageTotal = $pageTotal[0]['co'];
 

@@ -159,9 +159,9 @@ $db = getDbInstance();
           <?php
           $categoryLabel = array('', 'zxsj', 'jzsj', 'znsj', 'nmyy');
           $categoryLabel1 = array('', 'sjbk', 'news', 'gyxw', 'gov');
-          $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where category = " . intval($_REQUEST['category']));
+          $pageTotal = $db->rawQuery("SELECT count(id) as co FROM cases where hidden=false and category = " . intval($_REQUEST['category']));
           $pageTotal = $pageTotal[0]['co'];
-          $query = "SELECT * FROM cases WHERE goodone=1 limit 6";
+          $query = "SELECT * FROM cases WHERE hidden=false and goodone=1 limit 6";
           $rows = $db->rawQuery($query);
 
           for ($i = 0; $i < sizeof($rows); $i++) {
