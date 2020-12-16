@@ -294,7 +294,7 @@ include ('config.php');
 				service_time: $("#service_time").val(),
 				location: $("#location").val(),
 				category: $("#category").val(),
-				hidden: $("#hidden")[0].checked ? "true" : "false",
+				hidden: $("#hidden")[0].checked ? 1 : 0,
 				goodone: $("#goodone")[0].checked ? 1 : 0,
 			}, function(a,b) {
 			try {
