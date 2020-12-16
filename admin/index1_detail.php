@@ -128,9 +128,9 @@ include ('config.php');
 							<div style='float: left; width: 100px'>类别</div>
 							<div style='float: left; width: 350px'><select id='category' style='width: 250px'><option value=1>室内设计</option><option value=2>建筑设计</option><option value=3>5G智能设计</option><option value=4>运营案例</option></select></div>
 							<div style='float: left; width: 180px'>最好的案例(1个在首页)</div>
-							<div><input type='checkbox' id='goodone' style='width: 25px; height:25px'></div>
-							<div style='float: left; width: 180px'>隐藏的</div>
-							<div><input type='checkbox' id='hidden' style='width: 25px; height:25px'></div>
+							<div><input type='checkbox' id='goodone' style='width: 20px; height:20px'></div>
+							<div style='float: left; width: 180px; line-height: 20px'>隐藏的</div>
+							<div><input type='checkbox' id='hidden' style='width: 20px; height:20px'></div>
 							<div style='height: 20px'></div>
 							<div style='float: left; width: 100px'>关键词</div>
 							<div style='float: left; width: 350px'><textarea id='keywords'></textarea></div>							
