@@ -196,6 +196,7 @@ include ('config.php');
 		$("#location").val(data['location'] || "");
 		$("#category").val(data['category'] || "");
 		$("#goodone").prop('checked', (data['goodone'] || 0) ? true : false);
+		$("#hidden").prop('checked', (data['hidden'] || 0) ? true : false);
 
 		let buttonTimer = setInterval(function() {
 			if ($("button.trumbowyg-insertImage-button")[0]) {
