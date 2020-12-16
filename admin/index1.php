@@ -103,6 +103,7 @@ include ('config.php');
 									<th style='width: 15%'>项目位置</th>
 									<th style='width: 5%'>图片</th>
 									<th style='width: 5%'>最好的案例</th>
+									<th style='width: 5%'>隐藏的</th>
 									<th style='width: 10%'></th>
 								</tr>
 							</thead>
@@ -135,6 +136,16 @@ include ('config.php');
 				phoneTable.ajax.reload(null, false);
 			}
 		})
+	}
+	function setHidden(id, ele) {
+		if (ele.checked)
+			$.post('hide_case.php', {id, hiddenValue: 0}, function(a,b) {
+				ele.checked = false;
+			});
+		else 
+			$.post('hide_case.php', {id, hiddenValue: 1}, function(a,b) {
+				ele.checked = true;
+			});
 	}
 	
 </script>

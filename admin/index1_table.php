@@ -15,6 +15,7 @@ for ($i = 0; $i < sizeof($rows); $i++) {
     $ab[] = htmlspecialchars($rows[$i]['location']);
     $ab[] = substr_count(strtolower($rows[$i]['content']), '<img ');
     $ab[] = $rows[$i]['goodone'] ? "<input type='checkbox' checked disabled onclick='setBestOne({$rows[$i]['id']})'>" : '';
+    $ab[] = $rows[$i]['hidden'] ? "<input type='checkbox' checked onclick='setHidden({$rows[$i]['id']})'>" : "<input type='checkbox' onclick='setHidden({$rows[$i]['id']})'>";
     $ab[] = "<button type='button' onclick=\"window.location.href='index1_detail.php?id={$rows[$i]['id']}';\" class='btn btn-success' style='float:left; margin-right: 20px;'>编辑</button><button type='button' onclick='deleteThis({$rows[$i]['id']})' class='btn btn-danger' style='float:left'>删除</button>";
     $result[] = $ab;
 } 
