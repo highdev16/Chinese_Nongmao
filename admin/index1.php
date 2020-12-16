@@ -138,6 +138,7 @@ include ('config.php');
 		})
 	}
 	function setHidden(id, ele) {
+		console.log(ele.checked);
 		if (ele.checked)
 			$.post('hide_case.php', {id, hiddenValue: 0}, function(a,b) {
 				ele.checked = false;
