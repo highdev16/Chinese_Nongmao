@@ -15,6 +15,7 @@ function listFolderFiles($dir){
     foreach($ffs as $ff){
         if(is_dir("../" . $dir.'/'.$ff)) continue;
         if (substr($ff, strlen($ff) - 13, 13) == '.jpgthumb.jpg') continue;
+        if (substr($ff, strlen($ff) - 5, 5) == '.jpgt') continue;
         $retVal[] = array(
             ++$no, 
             "<img src='../$dir/{$ff}thumb.jpg' style='height: 80px; max-width: 80%'>", 
