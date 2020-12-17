@@ -78,9 +78,6 @@ if (!$flag) {
     <link rel="stylesheet" href="<?php echo $oname; ?>_mobile.css" media="screen">                 
     <style>
       section.titlesubmenu p { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
-      img {
-          pointer-events: none !important;
-      }
       p, div, * {
         -webkit-user-select: none !important;
         -khtml-user-select: none !important;
