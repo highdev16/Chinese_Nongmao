@@ -127,11 +127,11 @@ include ('config.php');
 						<div style='float:left; width: 420px'>
 							<div>
 								<label for='keywords' style='width: 100px; float:left;'>关键词</label>
-								<textarea id='keywords' style='width: 300px'><?php if ($row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
+								<textarea id='keywords' style='width: 300px'><?php if (array_key_exists('keywords', $row) && $row['keywords'] != null) echo htmlspecialchars($row['keywords']); ?></textarea>
 							</div>
 							<div style='margin-top: 20px;'>
 								<label for='description' style='width: 100px; float:left;'>描述</label>
-								<textarea id='description' style='width: 300px'><?php if ($row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
+								<textarea id='description' style='width: 300px'><?php if (array_key_exists('description', $row) && $row['description'] != null) echo htmlspecialchars($row['description']); ?></textarea>
 							</div>
 						</div>
 					</div>
