@@ -99,8 +99,9 @@ include ('config.php');
 									<th style='width: 5%'>No</th>
 									<th style='width: 20%'>项目名称</th>
 									<th style='width: 10%'>星级标准</th>
-									<th style='width: 10%'>类别</td>
-									<th style='width: 15%'>项目位置</th>
+									<th style='width: 5%'>类别</td>
+									<th style='width: 10%'>项目位置</th>
+									<th style='width: 10%'>上传时间</th>
 									<th style='width: 5%'>图片</th>
 									<th style='width: 5%'>最好的案例</th>
 									<th style='width: 5%'>隐藏的</th>
@@ -123,11 +124,22 @@ include ('config.php');
 	
 </body>
 <script>
+	function make2(s) {return s < 10? "0" + s : s;}
 	var phoneTable = $("#phones").DataTable({
 		"language": {
 			"url": "js/chinese.json"
 		},
-		"ajax" : "index1_table.php"
+		"ajax" : "index1_table.php",
+		"columnDefs" : [{
+			"targets" : "_all",
+			"orderable" : false,
+		}, {
+			"render" : function (data, type, row) {
+				let date = new Date(data * 1000);
+				return date.getFullYear() + "年 " + (date.getMonth() + 1) + "月 " + date.getDate() + "日 " + make2(date.getHours()) + ":" + make2(date.getMinutes()) + ":" + make2(date.getSeconds());
+			},
+			"targets" : 5
+		}]
 	});
 	function deleteThis(id) {
 		if (!confirm("确定要删除吗?")) return;

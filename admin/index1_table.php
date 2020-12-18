@@ -13,6 +13,7 @@ for ($i = 0; $i < sizeof($rows); $i++) {
     $ab[] = $rows[$i]['stars'];
     $ab[] = $categoryArr[$rows[$i]['category']];
     $ab[] = htmlspecialchars($rows[$i]['location']);
+    $ab[] = ($rows[$i]['created_date']);
     $ab[] = substr_count(strtolower($rows[$i]['content']), '<img ');
     $ab[] = $rows[$i]['goodone'] ? "<input type='checkbox' checked disabled onclick='setBestOne({$rows[$i]['id']})'>" : '';
     $ab[] = $rows[$i]['hidden'] ? "<input type='checkbox' checked onclick='setHidden({$rows[$i]['id']},this)'>" : "<input type='checkbox' onclick='setHidden({$rows[$i]['id']}, this)'>";
