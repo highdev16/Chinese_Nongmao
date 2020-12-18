@@ -169,7 +169,7 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?cf3a2ec3f27e8c1124c0b1aa1654cca5";
+  hm.src = "https://hm.baidu.com/hm.js?67309d78d3e0b2b7184928c2dbefaaa6";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
