@@ -98,10 +98,10 @@ include ('config.php');
 								<tr>
 									<th style='width: 5%'>No</th>
 									<th style='width: 20%'>项目名称</th>
-									<th style='width: 10%'>星级标准</th>
+									<th style='width: 3%'>星级标准</th>
 									<th style='width: 5%'>类别</td>
 									<th style='width: 10%'>项目位置</th>
-									<th style='width: 10%'>上传时间</th>
+									<th style='width: 15%'>上传时间</th>
 									<th style='width: 5%'>图片</th>
 									<th style='width: 5%'>最好的案例</th>
 									<th style='width: 5%'>隐藏的</th>
