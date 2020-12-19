@@ -99,6 +99,7 @@ include ('config.php');
 									<th style='width: 5%'>No</th>
 									<th style='width: 50%'>资讯标题</th>
 									<th style='width: 10%'>资讯作家</th>
+									<th style='width: 10%'>上传时间</th>
 									<th style='width: 10%'>图片</th>
 									<th style='width: 5%'>最好的资讯</th>																		
 									<th style='width: 10%'></th>
@@ -124,7 +125,17 @@ include ('config.php');
 		"language": {
 			"url": "js/chinese.json"
 		},
-		"ajax" : "index2_table.php"
+		"ajax" : "index2_table.php",
+		"columnDefs" : [{
+			"targets" : "_all",
+			"orderable" : false,
+		}, {
+			"render" : function (data, type, row) {
+				let date = new Date(data * 1000);
+				return date.getFullYear() + "年 " + (date.getMonth() + 1) + "月 " + date.getDate() + "日 " + make2(date.getHours()) + ":" + make2(date.getMinutes()) + ":" + make2(date.getSeconds());
+			},
+			"targets" : 3
+		}
 	});
 	function deleteThis(id) {
 		if (!confirm("确定要删除吗?")) return;
