@@ -97,7 +97,7 @@ include ('config.php');
 							<thead>
 								<tr>
 									<th style='width: 5%'>No</th>
-									<th style='width: 50%'>资讯标题</th>
+									<th style='width: 40%'>资讯标题</th>
 									<th style='width: 10%'>资讯作家</th>
 									<th style='width: 10%'>上传时间</th>
 									<th style='width: 10%'>图片</th>
