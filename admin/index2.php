@@ -121,6 +121,7 @@ include ('config.php');
 	
 </body>
 <script>
+function make2(s) {return s < 10? "0" + s : s;}
 	var phoneTable = $("#phones").DataTable({
 		"language": {
 			"url": "js/chinese.json"
