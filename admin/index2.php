@@ -135,7 +135,7 @@ include ('config.php');
 				return date.getFullYear() + "年 " + (date.getMonth() + 1) + "月 " + date.getDate() + "日 " + make2(date.getHours()) + ":" + make2(date.getMinutes()) + ":" + make2(date.getSeconds());
 			},
 			"targets" : 3
-		}
+		}]
 	});
 	function deleteThis(id) {
 		if (!confirm("确定要删除吗?")) return;
