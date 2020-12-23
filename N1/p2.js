@@ -90,7 +90,7 @@
             <div style='float:left; font-size: 12px;line-height: 24px'>
               <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
                   </div>              
-                  <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                  <a href="javascript:void(0)" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6 consultation-link" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                 </div>
               </div>
             `;
@@ -100,7 +100,14 @@
       alert("失败！");
     })
   }    
-  $(document).ready(function() {
+  $.post('/api/get-consultation.php', function(a,b) {
+    try {
+      a = JSON.parse(a);
+      if (a.result != 'success') return;
+    } catch (e) {return;}
+    $('.consultation-link').attr('href', a.link).attr('target', '_blank');
+  })
+  $(document).ready(function() {    
     if (window.location.href.includes("/zxsj")) currentCategory = 1;
     else if (window.location.href.includes("/jzsj")) currentCategory = 2;
     else if (window.location.href.includes("/znsj")) currentCategory = 3;

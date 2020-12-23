@@ -348,6 +348,15 @@ while (strlen($temp) > 0) {
             <hr style='border-top: 1px solid #ccc'>
             <div class="grid-cell-container" style="display: grid;padding: 0;" id='mycategory_best'>
               <script>
+                var consulLink = '';
+                $.post('/api/get-consultation.php', function(a,b) {
+                  try {
+                    a = JSON.parse(a);
+                    if (a.result != 'success') return;
+                  } catch (e) {return;}
+                  consulLink = a.link;
+                  $('.consultation-link').attr('href', a.link);
+                })
                 $(document).ready(function() {
                   $.post("/api/getp7part1.php", {category: <?php echo $info[0]['category']; ?>, caseIndex: <?php echo $caseIndex; ?>}, function(a,b) {
                     if (b != 'success') {
@@ -392,7 +401,7 @@ while (strlen($temp) > 0) {
                             <div style='float:left;font-size: 12px;line-height: 24px'>
                               <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
                             </div>
-                            <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                            <a target='_blank' href="` + consulLink + `" class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                           </div>
                         </div>
                       </div>`;
@@ -470,7 +479,7 @@ while (strlen($temp) > 0) {
                             <div style='float:left;font-size: 12px;line-height: 24px'>
                               <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
                             </div>
-                            <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                            <a href="` + consulLink + `" target='_blank' class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                           </div>
                         </div>
                       </div>`;
