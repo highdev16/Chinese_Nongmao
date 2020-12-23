@@ -1,5 +1,5 @@
 <?php
-$ACTIVE = 8;
+$ACTIVE = 9;
 session_start();
 function get_value($array, $key, $default = '') {
 	if (array_key_exists($key, $array)) return $array[$key];
@@ -94,7 +94,7 @@ include ('config.php');
                         ?>">					        
 					</div>
                     <div class='row'>
-                        <input type='button' style='background-color: blue; color: white; width: 80px; height: 30px; border:0px solid white' value='修改' onclick='submitForm()' id='submitButton'>
+                        <input type='button' style='background-color: #3b7ddd; color: white; width: 80px; height: 30px; border:0px solid white' value='修改' onclick='submitForm()' id='submitButton'>
                     </div>
 				</div>
 			</main>
