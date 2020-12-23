@@ -555,7 +555,7 @@ $db = getDbInstance();
           a = JSON.parse(a);
           if (a.result != 'success') return;
         } catch (e) {return;}
-        $('.consultation-link').attr('href', a.link).attr('target', '_blank');
+        $('.consultation-link').attr('href', a.link).attr('target', 'popup');
       })
     </script>
     <?php include('../N1/footer.php'); ?>

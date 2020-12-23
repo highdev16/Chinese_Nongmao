@@ -401,7 +401,7 @@ while (strlen($temp) > 0) {
                             <div style='float:left;font-size: 12px;line-height: 24px'>
                               <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
                             </div>
-                            <a target='_blank' href="` + consulLink + `" class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                            <a target='popup' href="` + consulLink + `" class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                           </div>
                         </div>
                       </div>`;
@@ -479,7 +479,7 @@ while (strlen($temp) > 0) {
                             <div style='float:left;font-size: 12px;line-height: 24px'>
                               <i class="far fa-user"></i>&nbsp;` + row['browse'] + `<span style='display:none'>浏览</span>
                             </div>
-                            <a href="` + consulLink + `" target='_blank' class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                            <a href="` + consulLink + `" target='popup' class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
                           </div>
                         </div>
                       </div>`;
