@@ -86,7 +86,7 @@ include ('config.php');
 				<div class="container-fluid p-0">
 					<div style='font-weight: bold; font-size: 120%'>咨询的链接</div>
 					<div class="row">
-                        <input type='text' id='consultation' value="<?php
+                        <input type='text' id='consultation' style='width:400px' value="<?php
                             if (file_exists('../api/consultation_link.txt')) {
                                 $e = file_get_contents('../api/consultation_link.txt');
                                 echo htmlspecialchars($e);
@@ -94,7 +94,7 @@ include ('config.php');
                         ?>">					        
 					</div>
                     <div class='row'>
-                        <input type='button' value='修改' onclick='submitForm()' id='submitButton'>
+                        <input type='button' style='background-color: blue; color: white; width: 80px; height: 30px; border:0px solid white' value='修改' onclick='submitForm()' id='submitButton'>
                     </div>
 				</div>
 			</main>
