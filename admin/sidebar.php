@@ -39,6 +39,11 @@
 	              <i class="align-middle" data-feather="book"></i> <span class="align-middle">表单管理</span>
 	            </a>
 			</li>
+			<li class="sidebar-item <?php if ($ACTIVE == 9) echo 'active'; ?>">
+				<a class="sidebar-link" href="index9.php">
+	              <i class="align-middle" data-feather="external-link"></i> <span class="align-middle">咨询的链接</span>
+	            </a>
+			</li>
 			<li class="sidebar-item <?php if ($ACTIVE == 8) echo 'active'; ?>">
 				<a class="sidebar-link" href="index8.php">
 	              <i class="align-middle" data-feather="slack"></i> <span class="align-middle">合作伙伴</span>

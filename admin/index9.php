@@ -1,5 +1,5 @@
 <?php
-$ACTIVE = 3;
+$ACTIVE = 8;
 session_start();
 function get_value($array, $key, $default = '') {
 	if (array_key_exists($key, $array)) return $array[$key];
@@ -26,20 +26,14 @@ include ('config.php');
 
 	<title>农贸市场设计|改造|效果图_智能菜场设计|升级|运营_农贸市场研究院 网站管理后台</title>
 
-	
+	<link href="css/app.css" rel="stylesheet">
 	<link href="css/jquery.min.css" rel="stylesheet">
-		<link href="css/dt.css" rel="stylesheet">
-		<link href="css/bs.css" rel="stylesheet">
-		<link href="css/app.css" rel="stylesheet">
 	<style>
-		#sidebar * {
-			font-size: 16px !Important;
-		}
 		* {
 			font-size: 14px !Important;
 		}
-		#phones_paginate a {
-			margin-left: 20px;
+		#sidebar * {
+			font-size: 16px !Important;
 		}
 		ul.sidebar-nav li a.sidebar-link {
 			font-size: 130%;
@@ -80,8 +74,7 @@ include ('config.php');
 	<script src="js/jquery.ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 </head>
-<script src='js/dt.js'></script>
-<script src='js/bs.js'></script>
+
 <body>
 	<div class="wrapper">
 		<?php include('sidebar.php'); ?>
@@ -91,61 +84,32 @@ include ('config.php');
 
 			<main class="content">				
 				<div class="container-fluid p-0">
+					<div style='font-weight: bold; font-size: 120%'>咨询的链接</div>
 					<div class="row">
-						<div style='float: left; width: 100%;'>
-						<table id='phones' class='table table-striped table-bordered db-show-table' style='width: 100%;'>
-							<thead>
-								<tr>
-									<th style='width: 5%'>No</th>
-									<th style='width: 40%'>资讯标题</th>
-									<th style='width: 10%'>资讯作家</th>
-									<th style='width: 10%'>上传时间</th>
-									<th style='width: 10%'>图片</th>
-									<th style='width: 5%'>最好的资讯</th>																		
-									<th style='width: 10%'></th>
-								</tr>
-							</thead>
-							
-						</table>
-
-					    </div>
-					    <div style="clear: both; margin-top: 50px;">
-					        <button type='button' class='btn btn-primary' onclick='window.location.href="index2_detail.php?id=-1";' id='submitButton'>添加</button>
+                        <input type='text' id='consultation' value="<?php
+                            if (file_exists('../api/consultation_link.txt')) {
+                                $e = file_get_contents('../api/consultation_link.txt');
+                                echo htmlspecialchars($e);
+                            }
+                        ?>"
+					    <div style="clear: both; margin-top: 20px;">
+					        <input type='button' value='修改' onclick='submitForm()' id='submitButton'>
 					    </div>
 					</div>
 				</div>
 			</main>
-			<input type='file' style='position: absolute; left: -10000px; top: -10000px' id='fileselect'>
+
 		</div>
 	</div>
 	
+	<script>
+        function submitForm() {
+            $.post('/api/set-consultation.php', {t: $("#consultation").val()}, function(a,b) {
+                if (a == b && b == 'success') alert("OK");
+                else alert("失败！");
+            });
+        }
+    </script>
 </body>
-<script>
-	function make2(s) {return s < 10? "0" + s : s;}
-	var phoneTable = $("#phones").DataTable({
-		"language": {
-			"url": "js/chinese.json"
-		},
-		"ajax" : "index2_table.php",
-		"columnDefs" : [{
-			"targets" : "_all",
-			"orderable" : false,
-		}, {
-			"render" : function (data, type, row) {
-				let date = new Date(data * 1000);
-				return date.getFullYear() + "年 " + (date.getMonth() + 1) + "月 " + date.getDate() + "日 " + make2(date.getHours()) + ":" + make2(date.getMinutes()) + ":" + make2(date.getSeconds());
-			},
-			"targets" : 3
-		}]
-	});
-	function deleteThis(id) {
-		if (!confirm("确定要删除吗?")) return;
-		$.post('save_news.php', {del_id: id}, function(a,b) {
-			if (a == 'success') {
-				phoneTable.ajax.reload(null, false);
-			}
-		})
-	}
-	
-</script>
+
 </html>

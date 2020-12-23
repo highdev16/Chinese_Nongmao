@@ -200,7 +200,7 @@ $db = getDbInstance();
                   <i class="far fa-user"></i>&nbsp;
                   <?php echo $row['browse']; ?><span style='display:none'>浏览</span>
                 </div>
-                <a href="/N1/consult.php" class="u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
+                <a target='_blank' href="" class="consultation-link u-blog-control u-btn u-button-style u-custom-color-1 u-btn-6" style='border-radius: 5px; margin-bottom: 10px; margin-right:5px; float:right; margin-top: -3px; padding: 5px 10px !Important; font-size: 12px'>这样装修多少钱?</a>
               </div>
             </div>
           <?php } ?> 
@@ -549,4 +549,13 @@ $db = getDbInstance();
         </div>
       </div>
     </section>
+    <script>
+      $.post('/api/get-consultation.php', function(a,b) {
+        try {
+          a = JSON.parse(a);
+          if (a.result != 'success') return;
+        } catch (e) {return;}
+        $('.consulation-link').attr('href', a.link);
+      })
+    </script>
     <?php include('../N1/footer.php'); ?>
