@@ -91,11 +91,11 @@ include ('config.php');
                                 $e = file_get_contents('../api/consultation_link.txt');
                                 echo htmlspecialchars($e);
                             }
-                        ?>"
-					    <div style="clear: both; margin-top: 20px;">
-					        <input type='button' value='修改' onclick='submitForm()' id='submitButton'>
-					    </div>
+                        ?>">					        
 					</div>
+                    <div class='row'>
+                        <input type='button' value='修改' onclick='submitForm()' id='submitButton'>
+                    </div>
 				</div>
 			</main>
 
