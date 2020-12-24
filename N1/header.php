@@ -170,7 +170,7 @@ if (!$flag) {
                   <p class="u-align-center u-text u-text-2">农贸建筑设计</p>
                 </div>
               </div>
-              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/znsj/">
+              <div class="u-align-center u-container-style u-layout-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/znsj/?">
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">5G智能设计</p>
@@ -458,13 +458,14 @@ if (!$flag) {
                     while (parentObj != null && !parentObj.hasClass('titlesubmenu')) {
                       parentObj = parentObj.parent();
                     }
-                    if (parentObj == null) return;
+                    if (parentObj == null) return false;
                     for (let i = 2; i <= 7; i++) {
                       if (parentObj.hasClass('mainmenu' + i)) {
                         $("a.titlemainmenu.mainmenu" + i).addClass('active'); 
-                        $("a.titlemainmenu2.mainmenu" + i).addClass('active'); return;
+                        $("a.titlemainmenu2.mainmenu" + i).addClass('active'); return false;
                       }
                     }
+                    return false;
                 }
             });
 
