@@ -144,7 +144,7 @@ if (!$flag) {
         <img src='/N1/images/home.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
         <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>首页</p>
       </div>
-      <div style='width: 33.3333%;' onclick='window.location.href="http://p.qiao.baidu.com/cps/chat?siteId=11056750&userId=643974";'>
+      <div style='width: 33.3333%;' onclick='$("#nb_nodeboard").click()'>
         <img src='/N1/images/call.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
         <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>在线咨询</p>
       </div>
