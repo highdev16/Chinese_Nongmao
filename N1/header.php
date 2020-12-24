@@ -144,7 +144,7 @@ if (!$flag) {
         <img src='/N1/images/home.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
         <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>首页</p>
       </div>
-      <div style='width: 33.3333%;' onclick='window.open(decodeURI("https://p.qiao.baidu.com/cps4/chatIndex?siteToken=67309d78d3e0b2b7184928c2dbefaaa6&speedLogId=16087785328723579_1608778532872_58874&eid=31778683&reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%2216131559%22%2C%22userId%22%3A%2231778683%22%2C%22pageId%22%3A0%7D"), "_blank")'>
+      <div style='width: 33.3333%;' onclick='window.open(("https://ada.baidu.com/imlp/?imid=2e95d5a32948510e1c4e231e66611c87#back1608711129039"), "_blank")'>
         <img src='/N1/images/call.png' style='display: block;width: 20px; height: 20px; margin: 5px auto;'>
         <p style='text-align: center; width: 100%; margin-top: 0; margin-bottom: 0; font-size: 10px'>在线咨询</p>
       </div>
