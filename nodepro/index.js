@@ -95,6 +95,7 @@ function processFiles(domain) {
     urlList.push(["/N1/p25.php?category=2", "/news/index.html"]);
     urlList.push(["/N1/p25.php?category=3", "/gyxw/index.html"]);
     urlList.push(["/N1/p25.php?category=4", "/gov/index.html"]);
+    urlList.push(["/N1/p25.php?category=5", "/nmpx/index.html"]);
 
     writeFile("/var/www/html/sj/index.html", "<script>window.location.href='/zxsj/';</script>", () => {});
     urlIndex = 0;
@@ -115,7 +116,7 @@ function processFiles(domain) {
             processAsyncCount++;
             return;
         }
-        let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov'];
+        let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov', 'nmpx'];
         for (let i in result)
             urlList.push(["/N1/p26.php?r=" + result[i].id, "/" + categoryLabel[result[i].category] + "/" + result[i]['id'] + ".html"]);
         processAsyncCount++;
@@ -192,7 +193,7 @@ app.all("/generatenews/:id/:category", (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     let id = req.params.id;
     let category = req.params.category;
-    let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov'];
+    let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov', 'nmpx'];
     CheckLocalhost(function( domain ) {
         scrapeFile(domain, "/N1/p26.php?r=" + id, "/" + categoryLabel[category] + "/" + id + ".html", true);        
     });

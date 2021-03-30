@@ -83,6 +83,12 @@ $data = $rows[0]['keywords'];
                         </tr>
                         <tr>
                           <td>
+                            <input type="checkbox" id="s111115">
+                          </td>
+                          <td> 农贸市场培训 </td>
+                        </tr>
+                        <tr>
+                          <td>
                             <input type="checkbox" id="s111113">
                           </td>
                           <td> 投资<br>
@@ -154,6 +160,12 @@ $data = $rows[0]['keywords'];
                             <input type="checkbox" id="s111112">
                           </td>
                           <td> 运营 </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="s111115">
+                          </td>
+                          <td> 农贸市场培训 </td>
                         </tr>
                         <tr>
                           <td>

@@ -112,7 +112,7 @@ function make2(s) {
         } catch(e) {}
       }
     });
-    let categoryArr = ['', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件'];
+    let categoryArr = ['', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件', '农贸培训周刊'];
     $.post('/api/getarticle.php', {r}, function(a,b) {
       if (b == 'success') {
         try {
@@ -132,7 +132,7 @@ function make2(s) {
             $("#createdTimeLabel").html(GetDateStringOf(new Date(a.row.created_time * 1000)));
             $("#writerLabel").html(a.row.writer);
             
-            let categoryLabelStrings = ['', 'sjbk', 'news', 'gyxw', 'gov'];
+            let categoryLabelStrings = ['', 'sjbk', 'news', 'gyxw', 'gov', 'nmpx'];
             $("#currentCategoryButton").click(function() {
                 window.location.href="/" + categoryLabelStrings[a.row.category] + "/"; //'/N1/p25.php?category=' + a.row.category;
               });

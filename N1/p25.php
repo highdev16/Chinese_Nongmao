@@ -6,6 +6,7 @@
     case 2: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/\';">首页</span>／农贸新闻资讯'; break;
     case 3: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/\';">首页</span>／光影新闻动态'; break;
     case 4: $label = '所在位置／<span style="cursor:pointer" onclick="window.location.href=\'/\';">首页</span>／政府政策文件'; break;
+    case 5: $label = '农贸市场运营 / 农贸培训周刊'; break;
     default: exit;
   }
 

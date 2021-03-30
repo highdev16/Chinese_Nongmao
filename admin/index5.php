@@ -26,12 +26,12 @@ include ('config.php');
 
 	<title>农贸市场设计|改造|效果图_智能菜场设计|升级|运营_农贸市场研究院 网站管理后台</title>
 
-	
+
 	<link href="css/jquery.min.css" rel="stylesheet" />
 	<link href="css/dt.css" rel="stylesheet" />
 	<link href="css/bs.css" rel="stylesheet" />
 	<link href="css/app.css" rel="stylesheet" />
-	<link href="css/sweetalert.css" rel="stylesheet" />	
+	<link href="css/sweetalert.css" rel="stylesheet" />
 	<style>
 		#sidebar * {
 			font-size: 16px !Important;
@@ -52,22 +52,22 @@ include ('config.php');
 		color: #ddd;
 		}
 		:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
-		color: #ddd;  
+		color: #ddd;
 		}
 		::-moz-placeholder {  /* Firefox 19+ */
-		color: #ddd;  
+		color: #ddd;
 		}
-		:-ms-input-placeholder {  
-		color: #ddd;  
+		:-ms-input-placeholder {
+		color: #ddd;
 		}
-		#sortable { 
-		    list-style-type: none; 
-		    margin: 0; 
-		    padding: 0; 
-		    width: 90%; 
+		#sortable {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    width: 90%;
 		  }
-		  #sortable li { 		    
-		    float: left; 
+		  #sortable li {
+		    float: left;
 		    cursor: pointer;
 
 		  }
@@ -81,7 +81,7 @@ include ('config.php');
 		    height: 100px;
 		    margin: 10px 10px 10px 10px;
 	  	}
-	  	li.imgplusbutton {	  		
+	  	li.imgplusbutton {
 		    position: relative;
 		    background: #f7f7f7;
 		    font-size: 42px;
@@ -96,7 +96,7 @@ include ('config.php');
 			max-width: 50px; max-height: 50px;
 			resize: none;
 			border: 0px solid white;
-		}  
+		}
 		table td { border: 1px solid #bbb; padding: 2px 2px 2px 2px; text-align: center;}
 	  </style>
 	  <script src="js/app.js"></script>
@@ -112,7 +112,7 @@ include ('config.php');
 		<?php include('sidebar.php'); ?>
 
 		<div class="main">
-			<?php include('nav.php'); ?>			
+			<?php include('nav.php'); ?>
 			<?php
 				if (!file_exists("../title_description_keywords.txt")) {
 					file_put_contents("../title_description_keywords.txt", "{}");
@@ -143,7 +143,8 @@ include ('config.php');
 					array(	"25.1" , "/sjbk", "装修设计百科"),
 					array(	"25.2" , "/news", "农贸新闻资讯"),
 					array(	"25.3" , "/gyxw", "光影新闻动态"),
-					array(	"25.4" , "/gov", "政府政策文件"),														
+					array(	"25.4" , "/gov", "政府政策文件"),
+					array(	"25.5" , "/nmpx", "农贸培训周刊"),
 					array(	"36" , "/about", "联系我们"),
 					array(	"35" , "/about/contact.html", "团队"),
 					array(	"34" , "/about/certify.html", "公司简介")
@@ -167,10 +168,10 @@ include ('config.php');
 					$no++;
 				}
             ?>
-			<main class="content">				
-				<div class="container-fluid p-0">					
+			<main class="content">
+				<div class="container-fluid p-0">
                     <div class='row'>
-					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton' style='width: 100px; height: 30px'>保存</button>					    
+					    <button type='button' class='btn btn-primary' onclick='SaveData();' id='submitButton' style='width: 100px; height: 30px'>保存</button>
 					</div>
 					<div class='row'>
 					    <table id='maintable' style='width:100%; border: 1px solid #bbb; margin-top: 30px'>
@@ -190,10 +191,10 @@ include ('config.php');
 					</div>
 				</div>
 			</main>
-			
+
 		</div>
 	</div>
-	
+
 </body>
 <script>
     function SaveData() {
@@ -211,10 +212,10 @@ include ('config.php');
             else alert("失败！");
         })
 	}
-	
+
 	function resetThisRow(obj) {
 		$(obj).parent().parent().find('textarea').val("");
-		
+
 	}
 </script>
 </html>

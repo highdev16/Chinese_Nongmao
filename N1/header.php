@@ -204,6 +204,24 @@ if (!$flag) {
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:800px">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/gyxw/408.html">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
+                  <img class="u-image u-image-contain u-image-1" SRC="/images/education.png">
+                  <p class="u-align-center u-text u-text-1">农贸运营培训</p>
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/gyxw/408.html">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
+                  <img class="u-image u-image-contain u-image-1" SRC="/images/registration.png">
+                  <p class="u-align-center u-text u-text-1">运营培训报名</p>
+                </div>
+              </div>
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/nmpx/">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
+                  <img class="u-image u-image-contain u-image-1" SRC="/images/weeklyhighres.png">
+                  <p class="u-align-center u-text u-text-1">农贸培训周刊</p>
+                </div>
+              </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/yyms.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
