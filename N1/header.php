@@ -201,7 +201,7 @@ if (!$flag) {
     </section>
     <section class="u-clearfix u-grey-5 u-section-1 titlesubmenu mainmenu3" style='position: fixed; display:none' id="carousel_80dd1">
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:800px">
+        <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:1300px">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/gyxw/408.html">
