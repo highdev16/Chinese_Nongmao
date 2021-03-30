@@ -77,6 +77,7 @@ if (!$flag) {
     <link rel="stylesheet" href="/N1/header.css" media="screen">   
     <link rel="stylesheet" href="<?php echo $oname; ?>_mobile.css" media="screen">                 
     <style>
+      .u-layout-row > .u-size-10 { max-width: 11.1%; }
       section.titlesubmenu p { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
       p, div, * {
         -webkit-user-select: none !important;
@@ -204,55 +205,55 @@ if (!$flag) {
         <div class="u-clearfix u-expanded-width-xs u-gutter-4 u-layout-wrap u-layout-wrap-1" style="width:1300px">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/gyxw/408.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-1" my-href="/gyxw/408.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/images/education.png">
                   <p class="u-align-center u-text u-text-1">农贸运营培训</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/gyxw/408.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-1" my-href="/gyxw/409.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/images/registration.png">
                   <p class="u-align-center u-text u-text-1">运营培训报名</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/nmpx/">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-1" my-href="/nmpx/">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/images/weeklyhighres.png">
                   <p class="u-align-center u-text u-text-1">农贸培训周刊</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-1" my-href="/yyms.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-1" my-href="/yyms.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-1">
                   <img class="u-image u-image-contain u-image-1" SRC="/N1/images/books.png">
                   <p class="u-align-center u-text u-text-1">农贸运营模式</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-2" my-href="/nmyy/nmzs.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-2" my-href="/nmyy/nmzs.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-2">
                   <img SRC="/N1/images/_new85.png" alt="" class="u-image u-image-contain u-image-default u-image-2">
                   <p class="u-align-center u-text u-text-2">农贸市场招商</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-3" my-href="/nmyy/nmds.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-3" my-href="/nmyy/nmds.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-3">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-3">
                   <p class="u-align-center u-text u-text-3">农贸市场电商</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-4" my-href="/nmyy/nmzht.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-4" my-href="/nmyy/nmzht.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-4">
                   <img SRC="/N1/images/menu.png" alt="" class="u-image u-image-contain u-image-default u-image-4">
                   <p class="u-align-center u-text u-text-4">农贸综合体</p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-5" my-href="/nmyy/cyjj.html">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-5" my-href="/nmyy/cyjj.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
                   <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center  u-text u-text-5"> 菜原佳佳加盟 </p>
                 </div>
               </div>
-              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-10 u-size-30-md u-layout-cell-6" my-href="/nmyy/?">
+              <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-6" my-href="/nmyy/?">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
                   <img SRC="/N1/images/world.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
                   <p class="u-align-center  u-text u-text-5"> 农贸运营案例 </p>
