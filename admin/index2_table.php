@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-$categoryArr = array('', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件'， "农贸培训周刊");
+$categoryArr = array('', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件', "农贸培训周刊");
 $db = getDbInstance();
 $rows = $db->rawQuery("select * from news order by id desc");
 $result = array();
