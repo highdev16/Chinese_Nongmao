@@ -77,7 +77,7 @@ if (!$flag) {
     <link rel="stylesheet" href="/N1/header.css" media="screen">   
     <link rel="stylesheet" href="<?php echo $oname; ?>_mobile.css" media="screen">                 
     <style>
-      .u-layout-row > .u-size-10 { max-width: 11.1%; }
+      .u-layout-row > .u-size-109 { max-width: 11.1%; }
       section.titlesubmenu p { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
       p, div, * {
         -webkit-user-select: none !important;
