@@ -11,7 +11,7 @@ if (sizeof($info) == 0) {
   header('location: /N1/p1.php');
   exit;
 }
-$categoryArr = array('', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件'， "农贸培训周刊");
+$categoryArr = array('', '农贸设计百科', '农贸新闻资讯', '光影新闻动态', '政府政策文件', "农贸培训周刊");
 $row = null;
 $prev = null;
 $next = null;
