@@ -76,6 +76,7 @@
         else if (currentCategory == 2)  window.location.href="/news/" + id + ".html";
         else if (currentCategory == 3)  window.location.href="/gyxw/" + id + ".html";
         else if (currentCategory == 4)  window.location.href="/gov/" + id + ".html";
+        else if (currentCategory == 5)  window.location.href="/nmpx/" + id + ".html";
       }
       var pageFunc = ($.jqPaginator);
       function refreshPaginator(totalCount, pageNumber) {
@@ -143,6 +144,7 @@
         else if (window.location.href.includes("/news")) currentCategory = 2;
         else if (window.location.href.includes("/gyxw")) currentCategory = 3;
         else if (window.location.href.includes("/gov")) currentCategory = 4;
+        else if (window.location.href.includes("/nmpx")) currentCategory = 5;
         else {
           let cIndex = window.location.href.indexOf("category=");
           if (cIndex == -1) { window.location.href = '/'; return; }
