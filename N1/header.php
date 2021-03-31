@@ -258,7 +258,7 @@ if (!$flag) {
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-5" my-href="/nmyy/cyjj.html">
                 <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-5">
                   <img SRC="/N1/images/Handshake.png" alt="" class="u-image u-image-contain u-image-default u-image-5">
-                  <p class="u-align-center  u-text u-text-5"> 菜原佳佳加盟 </p>
+                  <p class="u-align-center  u-text u-text-5"> 菜源佳佳加盟 </p>
                 </div>
               </div>
               <div class="u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-right-cell u-size-109 u-size-30-md u-layout-cell-6" my-href="/nmyy/?">
