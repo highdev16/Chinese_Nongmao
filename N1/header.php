@@ -20,13 +20,21 @@ foreach ($arr as $urlNumber) {
     }
     $tdkFile = json_decode(file_get_contents("../title_description_keywords.txt"), true);
     $key = $urlNumber;
-    if ($urlNumber == 2 || $urlNumber == 25) {
+    if ($urlNumber == 2) {
       for ($k = 1; $k <= 4; $k++) {
         if (strpos($origin_url, "category=" . $k) !== FALSE) {
           $urlNumber .= ".$k"; break;
         }
       } 
       if ($k > 4) exit;
+    }    
+    if ($urlNumber == 25) {
+      for ($k = 1; $k <= 5; $k++) {
+        if (strpos($origin_url, "category=" . $k) !== FALSE) {
+          $urlNumber .= ".$k"; break;
+        }
+      } 
+      if ($k > 5) exit;
     }    
     if (array_key_exists("$urlNumber", $tdkFile) && sizeof(array_keys($tdkFile["$urlNumber"])) == 3) {
       $metaData = $tdkFile["$urlNumber"];
