@@ -7,7 +7,7 @@ $dirname = ($t[0]);
 $filename = strtolower($url[0]);
 $oname = explode('.', $dirname . "/" . $filename);
 $oname = $oname[0];
-?><!DOCTYPE html><html style="font-size: 16px;" lang='cn'><head>
+?><!DOCTYPE html><html style="font-size: 16px;" lang='cn'><head><meta name="baidu-site-verification" content="code-QkfumPsMMt" />
 <?php
 $arr = array(1,2,5,6,37,10,11,12,13,14,17,18,19,21,22,23,24,25,34,35,36);
 $origin_url = ($_SERVER['REQUEST_URI']);
