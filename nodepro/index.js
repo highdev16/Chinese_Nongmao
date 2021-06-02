@@ -196,6 +196,7 @@ app.all("/generatenews/:id/:category", (req, res) => {
     let categoryLabel = ['', 'sjbk', 'news', 'gyxw', 'gov', 'nmpx'];
     CheckLocalhost(function( domain ) {
         scrapeFile(domain, "/N1/p26.php?r=" + id, "/" + categoryLabel[category] + "/" + id + ".html", true);        
+        scrapeFile(domain, "/N1/p1.php", "/index.html", true);        
     });
     res.send("success");
 });
@@ -206,6 +207,7 @@ app.all("/generatecase/:id/:category", (req, res) => {
     let categoryLabel = ['', 'zxsj', 'jzsj', 'znsj', 'nmyy'];
     CheckLocalhost(function( domain ) {
         scrapeFile(domain, "/N1/p7.php?r=" + id, "/" + categoryLabel[category] + "/" + id + ".html", true);        
+        scrapeFile(domain, "/N1/p1.php", "/index.html", true);        
     });
     res.send("success");
 });
