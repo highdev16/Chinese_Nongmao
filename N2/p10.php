@@ -130,7 +130,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-9" id="carousel_ba17">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1 bigtitle">-菜源佳佳运营四大优势-</h1>
+        <h1 class="u-text u-text-default u-text-1 bigtitle">-菜乐源运营四大优势-</h1>
         <h2 class="u-text u-text-default u-text-2 smalltitle">CAIYUAN JIAJIA FARMERS' MARKET OPERATION</h2>
       </div>
     </section>

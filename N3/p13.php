@@ -59,7 +59,7 @@ include('../N1/header.php');
               <div class="u-container-layout u-container-layout-2">
                 <h2 class="u-align-center u-text u-text-1 yahei">综合体运营</h2>
                 <p class="u-align-left u-text u-text-2" style='text-align: justify'>  我们按照万达商业的团队和万达商业综合体的制度以及万达双效的管理模式进行综合管理，综合运营。<br>
-                  这是我们菜源佳佳未来主要核心推广的合作发展模式。 
+                  这是我们菜乐源未来主要核心推广的合作发展模式。 
                 </p>
               </div>
             </div>

@@ -30,12 +30,12 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-image u-shading u-section-3" id="sec-a679" data-image-width="1600" data-image-height="1000">
       <div class="u-clearfix u-sheet u-sheet-1"  style='padding-bottom: 50px; min-height: 0px'>
-        <p class="u-align-center u-text u-text-1">菜源佳佳品牌加盟</p>
+        <p class="u-align-center u-text u-text-1">菜乐源品牌加盟</p>
         <p class="u-align-center u-text u-text-default u-text-2"> 整租合作、股份合作、委托经营 </p>
-        <p class="u-align-left u-text u-text-3 yahei" style='width: fit-content; margin: 30px auto 0 auto; font-size: 20px'><!--[if !supportLists]-->1、<!--[endif]-->加盟菜源佳佳品牌，采用菜源佳佳整套智能菜场系统。&nbsp;<!--[if !supportLists]-->
+        <p class="u-align-left u-text u-text-3 yahei" style='width: fit-content; margin: 30px auto 0 auto; font-size: 20px'><!--[if !supportLists]-->1、<!--[endif]-->加盟菜乐源品牌，采用菜乐源整套智能菜场系统。&nbsp;<!--[if !supportLists]-->
           <br>2、<!--[endif]-->建立标准化的：管理标准，监督标准，智能标准。建立双方股权合作机制，共同发展智能菜场新事业。&nbsp;<!--[if !supportLists]-->
           <br>3、<!--[endif]-->委托经营管理：打造标准化的五星级农贸市场和超市商场般的品质。&nbsp;<!--[if !supportLists]-->
-          <br>4、<!--[endif]-->菜源佳佳管理优势：&nbsp;<!--[if !supportLists]-->
+          <br>4、<!--[endif]-->菜乐源管理优势：&nbsp;<!--[if !supportLists]-->
           <br>（1）<!--[endif]-->招商成功率高：杭州光影科学的招商流程不仅能提升农贸市场的商业价值，而且对市场内的商铺销售也有极大的促进和拉升作用；&nbsp;<!--[if !supportLists]-->
           <br>（2）<!--[endif]-->营收快速提升：通过农贸市场改造让市场管理借助新技术、新模式的应用以提升效率，让市场方和经营户快速提升营收；&nbsp;<!--[if !supportLists]-->
           <br>（3）<!--[endif]-->高效的管理模式：用分散经营，统一管理新模式，规范市场经营。用好农贸市场管理系统，实现商户在交易结算管理上的电子化、现代化；&nbsp;<!--[if !supportLists]-->
@@ -45,7 +45,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-4" id="sec-fb1d" style='margin-top: 50px'>
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-text u-text-default u-text-1 yahei"> 菜源佳佳指导培训 </h1>
+        <h1 class="u-align-center u-text u-text-default u-text-1 yahei"> 菜乐源指导培训 </h1>
         <p class="u-align-center u-text u-text-default u-text-2"> 管理员培训、经营户培训、招商、开业、长效管理 </p>
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">

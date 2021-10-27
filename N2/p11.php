@@ -145,7 +145,7 @@ include('../N1/header.php');
     </section>
     <section class="u-clearfix u-section-6" id="sec-d54b" style='background-color: #eee'>
       <div style='margin: 50px auto 50px auto;'>
-        <h1 class="u-text u-text-default u-text-1 bigtitle" style='width: 100%; text-align: center'> 菜源佳佳招商的优势：“三快三省一系统”的优点 </h1>
+        <h1 class="u-text u-text-default u-text-1 bigtitle" style='width: 100%; text-align: center'> 菜乐源招商的优势：“三快三省一系统”的优点 </h1>
         <h2 class="u-text u-text-default u-text-2 smalltitle" style='width: 100%; text-align: center; margin-top: 20px'>NEW MACHINERY PRODUCTS</h2>
       </div>
       <div class="u-clearfix u-sheet u-sheet-1" style='padding-bottom: 30px'>
