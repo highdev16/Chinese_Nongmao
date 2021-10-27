@@ -87,18 +87,19 @@ if (!$flag) {
     <style>
       .u-layout-row > .u-size-109 { max-width: 11.1%; flex: 0 0 11.1%; }
       section.titlesubmenu p { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
-      p, div, * {
+      /* p, div, * {
         -webkit-user-select: none !important;
         -khtml-user-select: none !important;
         -moz-user-select: none !important;
         -ms-user-select: none !important;
         -o-user-select: none !important;
         user-select: none !important;
-      }
+      } */
     </style>
     <script> function checkKey(e) {return [83,67,88,86,65].indexOf(e.keyCode) == -1;}</script>
   </head>
-  <body class="u-body" style='overflow-x: hidden' onkeydown="return checkKey(event)" onkeyup="return checkKey(event)">
+  <body class="u-body" style='overflow-x: hidden' 
+    onkeydown="return checkKey(event)" onkeyup="return checkKey(event)">
       <header class="u-align-left u-clearfix u-header u-sticky u-white u-header" id="sec-0bb0" style=' z-index:9999999; position: fixed; width: 100%'>
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1 titlebar">
         <a href="/" class="logo-image u-image u-logo u-image-1" data-image-width="349" data-image-height="98" style='height: 100%;display: flex; flex-direction: column; justify-content: space-around;'>
