@@ -201,9 +201,9 @@ include('header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 
             </h2>
-            <p class="u-align-left u-custom-font u-text u-text-2"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>19957895916 || 057188776655</div></p>
+            <p class="u-align-left u-custom-font u-text u-text-2"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>19957895916</div></p>
             <div style='clear: both'></div>
-            <p class="u-align-left u-custom-font u-text u-text-5"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></p>
+            <p class="u-align-left u-custom-font u-text u-text-5"><img SRC='/N1/images/phonecall.png' style='margin-left: 40px; width: 50px; float: left;'><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>057188776655</div></p>
           </div>
         </div>
       </div>
@@ -212,7 +212,7 @@ include('header.php');
       <h2 class="u-align-center u-text u-text-1 image-text-woman"> 整个城市市场升级改造档次提升<br>只需要一个电话, 剩下的交给我们 </h2>
       <div style='margin: 0 auto 30px auto; width: fit-content'>
         <table><tr><td><img SRC='/N1/images/phonecall.png' style='margin-left: 0px; width: 50px; float: left; filter:invert(1)'></td>
-        <td><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>19957895916 || 057188776655</div></td></tr>
+        <td><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>19957895916</div></td></tr>
         <tr><td>
         <img SRC='/N1/images/phonecall.png' style='margin-left: 0px; width: 50px; float: left;filter:invert(1)'></td>
         <td><div style='font-size: 30px; line-height: 55px; margin-left: 20px; float: left;'>0571-88776655</div></td></tr></table>
