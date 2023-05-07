@@ -50,13 +50,12 @@ include('../N1/header.php');
                 </div>
               </div>
 
-
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/2019011711285412.png" data-image-width="200" data-image-height="200" style='float:left'>
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/20190117130841629.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>在线客服</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">杭州光影农贸市场研究院专注农贸市场研究19年，提供农贸市场需求一站式解决方案，顾客可以在线咨询 </p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>友情链接 / 广告合作</b></p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 电话：0571-28120373&nbsp;<br>邮箱：712323016@qq.com </p>
                   </div>
                 </div>
               </div>
@@ -71,13 +70,14 @@ include('../N1/header.php');
               </div>
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/20190117130841629.png" data-image-width="200" data-image-height="200" style='float:left'>
+                  <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/2019011711285412.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>友情链接 / 广告合作</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 电话：0571-28120373&nbsp;<br>邮箱：712323016@qq.com </p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>在线客服</b></p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">杭州光影农贸市场研究院专注农贸市场研究19年，提供农贸市场需求一站式解决方案，顾客可以在线咨询 </p>
                   </div>
                 </div>
               </div>
+              
 
             </div>
           </div>
