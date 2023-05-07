@@ -27,7 +27,7 @@ include('../N1/header.php');
                   <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/2019011711285412.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
                     <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>客服专线</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 服务时间：7*24H专家必接&nbsp;&nbsp;<br>全国统一客服热线：0571-28120373 </p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 服务时间：7*24H专家必接&nbsp;&nbsp;<br>全国统一客服热线：19957895916 || 057188776655 </p>
                   </div>
                 </div>
               </div>
@@ -36,7 +36,7 @@ include('../N1/header.php');
                 <img class="u-expand-resize u-image u-image-2" SRC="/N5/images/20190117112911729.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
                     <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>合作联系</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">电话：0571-28120373&nbsp;<br>邮箱：712323016@qq.com
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">电话：19957895916 || 057188776655&nbsp;<br>邮箱：712323016@qq.com
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ include('../N1/header.php');
                   <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/20190117112925987.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
                     <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>杭州总部地址</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 地址：杭州市拱墅区绿景国际1幢5F&nbsp;<br>电话：0571-28120373<br> 邮箱：712323016@qq.com </p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 地址：杭州市拱墅区绿景国际1幢5F&nbsp;<br>电话：19957895916 || 057188776655<br> 邮箱：712323016@qq.com </p>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@ include('../N1/header.php');
                   <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/20190117130841629.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
                     <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>友情链接 / 广告合作</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 电话：0571-28120373&nbsp;<br>邮箱：712323016@qq.com </p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2"> 电话：19957895916 || 057188776655&nbsp;<br>邮箱：712323016@qq.com </p>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@ include('../N1/header.php');
                 <img class="u-expand-resize u-image u-image-2" SRC="/N5/images/20190117112000767.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
                     <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>产品咨询</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">对于农贸市场定位，设计，营运，招商，电商，智能菜场升级有任何疑问，既可以在心留言也可以拨打我们的客服专线：0571-28120373
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">对于农贸市场定位，设计，营运，招商，电商，智能菜场升级有任何疑问，既可以在心留言也可以拨打我们的客服专线：19957895916 || 057188776655
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ include('../N1/header.php');
           ]}));
         mapmap_style_01_1547277313285.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
         mapmap_style_01_1547277313285.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-        var data_info = [[120.137426,30.339242,"杭州光影建筑设计有限公司","电话：0571-28120373"]];
+        var data_info = [[120.137426,30.339242,"杭州光影建筑设计有限公司","电话：19957895916 || 057188776655"]];
         var opts = {
           width : 250,     // 信息窗口宽度
           height: 80,     // 信息窗口高度
