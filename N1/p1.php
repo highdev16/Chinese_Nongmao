@@ -379,7 +379,7 @@ $db = getDbInstance();
         </div>
       </div>
     </section>
-    <section style="display: none" class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
+    <!-- <section style="display: none" class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-text u-text-1" STYLE='font-size:2.25rem'> 光影集团专注农贸行业 <span style='color: #c00; font-size: 120%'>19年</span> </h2>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
@@ -422,7 +422,7 @@ $db = getDbInstance();
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="u-align-center u-clearfix u-section-8" id="sec-993c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1 yahei" style='width: 100%; margin-left: 0px'> 不是任何设计公司都叫专业农贸市场设计 </h2>
