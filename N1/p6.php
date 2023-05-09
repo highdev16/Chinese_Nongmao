@@ -9,7 +9,7 @@ include('header.php');
     <section class="u-clearfix u-grey-10 u-section-3" id="sec-d240">
       <div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-text u-text-default u-text-1" style='font-size: 18px; text-align: justify'> 农贸市场是一个与人民的生活息息相关，其社会价值取向代表了政府在老百姓心中的形象，是名副其实的“民生工程”和“民心工程”。政府如何规划农贸市场网点，如何制定农贸市场行业标准将直接影响当地农贸市场的发展方向。&nbsp; &nbsp; &nbsp;<br>
-          <br>光影农贸市场设计研究院专注农贸项目网点规划，定位调研，装修设计，招商运营时间长达19年，在全国32个省
+          <br>光影农贸市场设计研究院专注农贸项目网点规划，定位调研，装修设计，招商运营时间长达12年，在全国32个省
 市，地区进行了大量的调研，成功打造3000多符合当地人文和风土民情的市场案例。与个地区的市场方和政府建立了良好的政府合作关系。 
         </p>
       </div>

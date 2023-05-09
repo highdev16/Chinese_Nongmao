@@ -262,7 +262,7 @@ $db = getDbInstance();
           <div class="u-layout-col" id='four-area'>
             <div class="u-size-30">
               <div class="u-layout-row">
-                <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1 gridimage21" src="">
+                <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1 gridimage21" src="" style="visibility: hidden">
                   <div class="u-container-layout u-container-layout-1">
                     <h2 class="u-text u-text-1 cross-text-image1 yahei" style='font-size: 26px; margin-top: 0px; font-family: "Microsoft YaHei" !important'>菜源佳佳营运合作</h2>
                     <p class="u-text u-text-2 cross-text-image1" style='font-size: 14px; margin-top: 20px; font-family: "Microsoft YaHei" !important'>菜源佳佳颠覆传统农贸市场经营模式，创建智能菜场管理新体系</p>
@@ -379,7 +379,7 @@ $db = getDbInstance();
         </div>
       </div>
     </section>
-    <section class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
+    <section style="display: none" class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-text u-text-1" STYLE='font-size:2.25rem'> 光影集团专注农贸行业 <span style='color: #c00; font-size: 120%'>19年</span> </h2>
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
@@ -443,7 +443,7 @@ $db = getDbInstance();
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
                         <div class="u-container-layout u-container-layout-2" style='padding-top: 0px; padding-left: 95px'>
-                          <p class="u-text u-text-3  yahei certi_text" style='font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业19年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
+                          <p class="u-text u-text-3  yahei certi_text" style='font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业12年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
                           </p>
                         </div>
                       </div>

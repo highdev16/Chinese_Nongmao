@@ -58,10 +58,10 @@ include('../N1/header.php');
         <h2 class="u-align-center u-text u-text-default u-text-1 yahei" style='margin-top: 50px;'>杭州光影简介</h2>
         <p class="u-align-center u-text u-text-default u-text-2 center-align yahei" style='margin-top: 20px; line-height: 10px; margin-bottom: 0px'>——</p>
         <p class="u-align-center u-text u-text-2 yahei" style='width: 300px; margin-top: 20px; margin-bottom: 30px'>COMPANY PROFILE</p>
-        <p class="u-align-center u-text u-text-default u-text-3 yahei" style='margin-bottom: 20px; text-align: left; line-height: 40px'> &nbsp;&nbsp;&nbsp;杭州光影建筑设计有限公司（旗下运营的光影农贸市场设计研究院）专注农贸市场设计19年，成功案例遍及全中国32个省市县镇，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究、农贸市场定位、农贸市场室内设计、建筑设计，农贸市场营运管理、农贸市场招商、
+        <p class="u-align-center u-text u-text-default u-text-3 yahei" style='margin-bottom: 20px; text-align: left; line-height: 40px'> &nbsp;&nbsp;&nbsp;杭州光影建筑设计有限公司（旗下运营的光影农贸市场设计研究院）专注农贸市场设计12年，成功案例遍及全中国32个省市县镇，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究、农贸市场定位、农贸市场室内设计、建筑设计，农贸市场营运管理、农贸市场招商、
 农贸市场电商o2o，农贸市场培训指导，农贸市场智能升级、智能菜场运营管理等。专业提供农贸市场设计、菜市场设计、生鲜超市设计、农贸市场建筑设计、农贸市场效果图、农贸市场改造、菜市场效果图、菜市场改造等一整套农贸市场解决方案服务。&nbsp;&nbsp;</p>
         <img SRC="/N4/images/20190119173051760.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="1399" data-image-height="300" style='margin-top: 30px'>
-        <p class="u-align-center u-text u-text-default u-text-4 yahei" style='text-align:left; line-height: 40px'>&nbsp;&nbsp;&nbsp;企业顶尖团队技术成员100多人在19年时间对全国32省市的农贸市场进行了大量调研，高水准设计出符合全国本土化的星级农贸市场，科学设计摊位大小，合理分布蔬菜水果鲜肉家禽水产干货粮油业态，设计风格亲民有档次，摊位美观适用，树立多个城市五星四星三星农贸市场样板，赢得了政府，消费者，经营户一致的好评。 光影农贸市场研究院申请国家农贸市场设计专利八类，出版农贸市场管理教材八册，申请农贸市场电商系统知识产权，全国知名农贸市场尖端设计.管理.电商服务的专业服务性企业。</p>
+        <p class="u-align-center u-text u-text-default u-text-4 yahei" style='text-align:left; line-height: 40px'>&nbsp;&nbsp;&nbsp;企业顶尖团队技术成员100多人在12年时间对全国32省市的农贸市场进行了大量调研，高水准设计出符合全国本土化的星级农贸市场，科学设计摊位大小，合理分布蔬菜水果鲜肉家禽水产干货粮油业态，设计风格亲民有档次，摊位美观适用，树立多个城市五星四星三星农贸市场样板，赢得了政府，消费者，经营户一致的好评。 光影农贸市场研究院申请国家农贸市场设计专利八类，出版农贸市场管理教材八册，申请农贸市场电商系统知识产权，全国知名农贸市场尖端设计.管理.电商服务的专业服务性企业。</p>
         <p class="u-align-left u-text u-text-default u-text-5 yahei" style='margin-top: 50px; line-height: 40px; margin-bottom:'> 
         <span style='font-weight:bold; font-size: 130%;' class='yahei'>发展历程</span><br><br>
         阶段一：扎根农贸行业 探索成长<br>2001：杭州光影图文设计工作室,创始人开始从事农贸行业。<br>2007：注册杭州光影投资咨询有限公司，公司业务范围扩大至：农贸市场建筑设计，农贸市场策划定位，农贸市场管理培训和顾问。<br>
