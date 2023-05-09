@@ -379,50 +379,7 @@ $db = getDbInstance();
         </div>
       </div>
     </section>
-    <!-- <section style="display: none" class="u-align-left u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-white u-section-7" id="sec-c227">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-align-center u-text u-text-1" STYLE='font-size:2.25rem'> 光影集团专注农贸行业 <span style='color: #c00; font-size: 120%'>19年</span> </h2>
-        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div class="u-size-18 u-size-30-md">
-                <div class="u-layout-col">
-                  <div class="u-align-left u-container-style u-image u-image-contain u-layout-cell u-left-cell u-image-1">
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-13 u-size-30-md">
-                <div class="u-layout-col">
-                  <div class="u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-2" style='flex: 1 1 auto'>                    
-                  </div>
-                  <div class="u-align-justify u-container-style u-layout-cell u-size-20 u-layout-cell-3"  style='    flex: 0 1 auto;'>
-                    <div class="u-container-layout u-valign-middle u-container-layout-3" style='margin-top: 20px'>
-                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2" style='color: black !important'> 不敢出示营业执照都是虚报年限</p>
-                      <p class="u-align-center u-text u-text-custom-color-1 u-text-2" style='color: black !important'>没有真正十几年的农贸行业经验</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-25 u-size-60-md">
-                <div class="u-layout-col">
-                  <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
-                    <div class="u-container-layout u-valign-middle u-container-layout-4" style='padding-right: 0px; justify-content: space-between !important; display: flex; -webkit-justify-content: space-between !important; display: -webkit-flex;'>
-                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计</p>
-                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场</p>
-                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场</p>
-                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，</p>
-                      <p class="u-text u-text-default u-text-3 wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>智能菜场运营管理等一整套农贸市场解决方案。 </p>
-                      <p class="u-text u-text-default u-text-3 not-wide" style='font-size: 18px; flex: 1 1 auto; -webkit-flex: 1 1 auto; display:block'>光影集团成功案例遍及全中国32个省市县，是我国从事农贸市场设计行业实力雄厚的“老字号”品牌。业务矩阵包含农贸市场研究,农贸市场定位，农贸市场室内设计，建筑设计，农贸市场运营管理，农贸市场招商，农贸市场电商O2O，农贸市场培训指导，农贸市场智能升级，智能菜场运营管理等一整套农贸市场解决方案。 </p>
-                      <img SRC="/N1/images/12.jpg" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="636" data-image-height="176" style='flex: 0 1 auto; -webkit-flex: 0 1 auto; display:block'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    
     <section class="u-align-center u-clearfix u-section-8" id="sec-993c">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1 yahei" style='width: 100%; margin-left: 0px'> 不是任何设计公司都叫专业农贸市场设计 </h2>
