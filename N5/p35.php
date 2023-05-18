@@ -31,10 +31,7 @@ include('../N1/header.php');
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-layout-cell-1"  style='width: 100%'>
                 <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img SRC="/N5/images/20190117140700825.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="1600" data-image-height="1106">
                   <img SRC="/N5/images/20190117142045724.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="1600" data-image-height="1106">
-                  <img SRC="/N5/images/20190119174111197.png" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="900" data-image-height="622">
-                  <img SRC="/N5/images/20190114161213135.png" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-4" data-image-width="495" data-image-height="700">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-layout-cell-2" style='width: 100%'>

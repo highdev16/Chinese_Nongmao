@@ -36,16 +36,12 @@ include('../N1/header.php');
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1" style='margin-top: 0px'>
           <div class="u-layout">
             <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-40 u-layout-cell-1">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1 cert-text-area">
-                  <p class="u-text u-text-1 cert-text">杭州光影置业有限公司已经成功打造并营运了多个智慧农贸市场，农贸市场招商工作十分顺利。已经成功已经为各级政府和农贸市场建立了规范化的智能体系和智能管理标准。建立的全新的农贸市场​商业模式结合新零售电商为消费者带来了优美的购物环境，全新便捷购物体验，全面颠覆了传统农贸市场经营管理模式和购物环境模式。 </p>
+                  <p class="u-text u-text-1 cert-text" style="margin-right: 100px" >杭州光影建筑设计有限公司已经成功打造并营运了多个智慧农贸市场，农贸市场招商工作十分顺利。已经成功已经为各级政府和农贸市场建立了规范化的智能体系和智能管理标准。建立的全新的农贸市场​商业模式结合新零售电商为消费者带来了优美的购物环境，全新便捷购物体验，全面颠覆了传统农贸市场经营管理模式和购物环境模式。 </p>
                 </div>
               </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2 cert-image">
-                  <img SRC="/N4/images/p24img.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="562" data-image-height="713">
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

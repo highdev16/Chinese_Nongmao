@@ -91,21 +91,15 @@ include('../N1/header.php');
         <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-size-37 u-size-60-md">
+              <div class="u-size-30 u-size-60-md">
                 <div class="u-layout-col">
-                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-40 u-image-1" src="" data-image-width="1440" data-image-height="1080">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1"></div>
-                  </div>
                   <div class="u-container-style u-image u-layout-cell u-left-cell u-size-20 u-image-2" src="" data-image-width="1043" data-image-height="497">
                     <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
                   </div>
                 </div>
               </div>
-              <div class="u-size-23 u-size-60-md">
+              <div class="u-size-30 u-size-60-md">
                 <div class="u-layout-col">
-                  <div class="u-container-style u-image u-layout-cell u-right-cell u-size-20 u-image-3" src="" data-image-width="535" data-image-height="284">
-                    <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
-                  </div>
                   <div class="u-container-style u-image u-layout-cell u-right-cell u-size-40 u-image-4" src="" data-image-width="1280" data-image-height="960">
                     <div class="u-container-layout u-valign-middle u-container-layout-4"></div>
                   </div>

@@ -389,18 +389,18 @@ $db = getDbInstance();
             <div class="u-layout-col">
               <div class="u-size-40">
                 <div class="u-layout-row">
-                  <div class="u-size-37">
+                  <!-- <div class="u-size-37">
                     <div class="u-layout-col">
                       <div class="u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-60 u-image-1">
                         <img SRC='/N1/images/gongchong.jpg' style='width:100%; height: 100%'>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="u-size-23">
                     <div class="u-layout-col">
                       <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2" src="">
                         <div class="u-container-layout u-container-layout-2" style='padding-top: 0px; padding-left: 95px'>
-                          <p class="u-text u-text-3  yahei certi_text" style='font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业12年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
+                          <p class="u-text u-text-3  yahei certi_text" style='text-align: center; font-size: 18px; line-height: 70px; margin-top: -25px'> 同行千千万，只有光影敢做以下保证：&nbsp;&nbsp;<br>真正专注农贸行业12年时间和经验；&nbsp;<br>真实营业执照时间年限；&nbsp;&nbsp;<br>真实建筑设计工程资质证书；&nbsp;&nbsp;<br>真实国家八大农贸设计专利；&nbsp;&nbsp;<br>真实真是独家星级农贸管理丛书；&nbsp;<br>真实农贸电商知识产权；&nbsp;&nbsp;<br>我们一直被模仿，从未被超越。
                           </p>
                         </div>
                       </div>
@@ -413,15 +413,15 @@ $db = getDbInstance();
                   <div class="u-size-37">
                     <div class="u-layout-row" style='position: relative'>
                       <div id='four-pictures' style='height: 300px; padding-left: 8px;padding-right: 8px; width: 100%; flex-direction: row; display: flex; justify-content: space-between;'>
-                        <img SRC='/N1/images/lALPD3lGrF9CGfTNA-rNAsg_712_1002.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available;'>
-                        <img SRC='/N1/images/lALPD26eMHDuBeLNA-zNAsc_711_1004.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
+                        <div style="width: 20%"></div>
                         <img SRC='/N1/images/lADPD26eMHDpLQPNCSLNBnU_1653_2338.jpg' class='u-size-14' style='object-fit: contain; width: 20%;height: min-intrinsic;height: -webkit-fill-available'>
+                        <div style="width: 20%"></div>
                         <img SRC='/N1/images/5 copy.jpg' class='u-size-14' style='object-fit: contain; width: 20%; height: min-intrinsic;height: -webkit-fill-available'>
                       </div>
                       <div class="u-layout-row"  style='height: 50px; min-height: 0; display: flex; justify-content: space-between; padding-left: 8px; padding-right: 8px'>                  
-                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
-                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(设计专利)</div>
+                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'></div>
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(知识产权)</div>
+                        <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'></div>
                         <div class="percentage-20 yahei" style='height: 50px; text-align:center; flex-direction: column'>(管理著作)</div>
                       </div>
                     </div>

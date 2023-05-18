@@ -73,7 +73,7 @@ include('../N1/header.php');
                   <img class="u-expand-resize u-image u-image-1" SRC="/N5/images/2019011711285412.png" data-image-width="200" data-image-height="200" style='float:left'>
                   <div style='float: left; margin-left: 30px'>
                     <p class="u-custom-font u-heading-font u-text u-text-default u-text-1"><b class='yahei'>在线客服</b></p>
-                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">杭州光影农贸市场研究院专注农贸市场研究12年，提供农贸市场需求一站式解决方案，顾客可以在线咨询 </p>
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-2">光影农贸研究院隶属于杭州光影建筑设计有限公司，该公司专注农贸市场设计12年 </p>
                   </div>
                 </div>
               </div>
