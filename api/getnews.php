@@ -7,7 +7,7 @@ $pageTotal = $pageTotal[0]['co'];
 
 $pageNum = 15;
 $pageIndex = $_REQUEST['pageNumber'];
-$query = "SELECT * FROM news WHERE category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
+$query = "SELECT * FROM news WHERE id != 1433 and id != 956 and category = " . intval($_REQUEST['category']) . " ORDER BY created_time DESC LIMIT " . ($pageIndex * $pageNum) . ", " . $pageNum;
 $rows = $db->rawQuery($query);
 $query = "SELECT count(*) as `b` FROM news WHERE category = " . intval($_REQUEST['category']);
 $a = $db->rawQuery($query);
