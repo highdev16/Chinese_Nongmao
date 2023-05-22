@@ -108,6 +108,7 @@
           let rows = data.items;
           refreshPaginator(data.length1, pageNumber);
           
+          rows = rows.filter(s => s.id != 1433 && s.id != 956);
           for (let i = 0; i < rows.length; i++) {
             row = rows[i];
             let r = row['content'].indexOf('<img');
