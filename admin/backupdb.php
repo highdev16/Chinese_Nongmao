@@ -16,7 +16,7 @@ include ('config.php');
 $db = getDbInstance();
 
 $rows = $db->query("show tables");
-$tmpFolder = '/tmp/' . date('Y-m-d') . '/';
+$tmpFolder = '/var/www/html/allimages/' . date('Y-m-d') . '/';
 if (!file_exists($tmpFolder)) mkdir($tmpFolder);
 for ($i = 0; $i < sizeof($rows); $i++) {    
     $tableName = $rows[$i]['Tables_in_nongmao'];
