@@ -18,12 +18,10 @@ $db = getDbInstance();
 $rows = $db->query("show tables");
 $tmpFolder = '/var/www/html/allimages/' . date('Y-m-d') . '/';
 if (!file_exists($tmpFolder)) mkdir($tmpFolder);
+$data = array();
 for ($i = 0; $i < sizeof($rows); $i++) {    
-    $tableName = $rows[$i]['Tables_in_nongmao'];
-    var_dump($tableName);
-    $backup_file = $tmpFolder . $tableName . '.sql';
-    var_dump($backup_file);
-    var_dump($db->query("select * from $tableName"));
+    $tableName = $rows[$i]['Tables_in_nongmao'];        
+    $data[$tableName] = $db->query("select * from $tableName");
 }
 
-echo 'success';
+echo json_encode($data);
