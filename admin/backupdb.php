@@ -23,7 +23,7 @@ for ($i = 0; $i < sizeof($rows); $i++) {
     var_dump($tableName);
     $backup_file = $tmpFolder . $tableName . '.sql';
     var_dump($backup_file);
-    var_dump($db->rawQuery("select * into OUTFILE '$backup_file' from $tableName"));
+    var_dump($db->query("select * from $tableName"));
 }
 
 echo 'success';
