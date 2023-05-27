@@ -20,6 +20,7 @@ $tmpFolder = '/var/www/html/allimages/' . date('Y-m-d') . '/';
 if (!file_exists($tmpFolder)) mkdir($tmpFolder);
 for ($i = 0; $i < sizeof($rows); $i++) {    
     $tableName = $rows[$i]['Tables_in_nongmao'];
+    var_dump($tableName);
     $backup_file = $tmpFolder . $tableName . '.sql';
     var_dump($db->rawQuery("select * into OUTFILE '$backup_file' from $tableName"));
 }
