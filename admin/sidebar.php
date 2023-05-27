@@ -59,6 +59,11 @@
 	              <i class="align-middle" data-feather="refresh-ccw" style='color: yellow;'></i> <span class="align-middle" style='color: yellow; font-weight: bold'>重新生成页面</span>
 	            </a>
 			</li>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="javascript:void(0)" onclick='backupDB()'>
+	              Backup DB
+	            </a>
+			</li>
 			<script>
 				let processingPages = false;
 				function confirmRegeneratePages() {
@@ -101,6 +106,11 @@
 					}).fail(function() {
 						alert("失败！!! 服务器功能失败。\n与开发人员联系以解决此问题。");
 					})
+				}
+
+				function backupDB() {
+					if (!confirm("Are you sure?")) return;
+					window.open('/admin/backupdb.php', '_blank');
 				}
 			</script>			
 		</ul>
