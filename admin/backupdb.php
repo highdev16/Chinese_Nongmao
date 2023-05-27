@@ -23,5 +23,6 @@ for ($i = 0; $i < sizeof($rows); $i++) {
     $tableName = $rows[$i]['Tables_in_nongmao'];        
     $data[$tableName] = $db->query("select * from $tableName");
 }
-
+header('Content-type: text/plain');
+header('Content-Disposition: attachment; filename=test.txt');
 echo json_encode($data);
