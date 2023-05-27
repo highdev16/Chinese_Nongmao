@@ -16,7 +16,12 @@ include ('config.php');
 $db = getDbInstance();
 
 $rows = $db->query("show tables");
-
-for ($i = 0; $i < sizeof($rows); $i++) {	
-    var_dump($rows[$i]);
+$tmpFolder = '/tmp/' . date('Y-m-d') . '/';
+if (!file_exists($tmpFolder)) mkdir($tmpFolder);
+for ($i = 0; $i < sizeof($rows); $i++) {    
+    $tableName = $rows[$i]['Tables_in_nongmao'];
+    $backup_file = $tmpFolder . $tableName . '.sql';
+    $db->rawQuery("select * into OUTFILE '$backup_file' from $tableName");
 }
+
+echo 'success';
