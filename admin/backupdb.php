@@ -21,7 +21,7 @@ if (!file_exists($tmpFolder)) mkdir($tmpFolder);
 for ($i = 0; $i < sizeof($rows); $i++) {    
     $tableName = $rows[$i]['Tables_in_nongmao'];
     $backup_file = $tmpFolder . $tableName . '.sql';
-    $db->rawQuery("select * into OUTFILE '$backup_file' from $tableName");
+    var_dump($db->rawQuery("select * into OUTFILE '$backup_file' from $tableName"));
 }
 
 echo 'success';
